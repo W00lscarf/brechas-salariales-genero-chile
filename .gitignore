@@ -1,0 +1,16 @@
+﻿# Datos descargados (se regeneran ejecutando el notebook 01)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+.vscode/
