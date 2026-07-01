@@ -27,10 +27,23 @@ Brecha (%) = (Ingreso_Mujeres - Ingreso_Hombres) / Ingreso_Hombres × 100
 
 ---
 
+## App interactiva
+
+`app.py` es una app **Streamlit** que deja explorar en vivo cómo se mueve la brecha al activar controles, uno por uno o todos a la vez: edad, educación, horas trabajadas, categoría ocupacional, sector económico, zona rural/urbana, estado civil, hijos en el hogar y año. Cada combinación reestima la regresión en tiempo real sobre los microdatos ESI (misma metodología que los notebooks 06-07: WLS ponderado, errores estándar cluster-robustos) y muestra el ingreso promedio predicho para un hombre y una mujer "típicos", además de un gráfico con el historial de brechas probadas en la sesión.
+
+```bash
+streamlit run app.py
+```
+
+Requiere los microdatos ESI en `../ESI/` (ver sección siguiente) — igual que los notebooks 06 y 07.
+
+---
+
 ## Estructura del proyecto
 
 ```
 brechas-salariales-genero-chile/
+├── app.py                                  ← app interactiva (Streamlit)
 ├── notebooks/
 │   ├── 01_descarga_api.ipynb              ← descarga los 10 datasets SIMEL de brecha salarial
 │   ├── 02_brecha_multidimensional.ipynb   ← brecha por educación, sector, edad (datos agregados)
@@ -54,7 +67,7 @@ brechas-salariales-genero-chile/
 | API SDMX SIMEL-INE (`DF_BGYMEDIOOCU*`, `DF_BGYHDEP*`) | Indicadores agregados de brecha por región, educación, edad, sector, ocupación, jornada y categoría ocupacional | Pública, sin autenticación, vía `simel_client.py` |
 | Microdatos ESI 2018-2024 (INE, formato CSV) | Registros individuales: sexo, edad, educación, horas, categoría ocupacional, sector, ingreso del trabajo principal | Pública, descarga manual desde el sitio del INE (sección Encuesta Suplementaria de Ingresos → Bases de Datos → CSV) |
 
-**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar el notebook 06, descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio (el notebook los referencia con una ruta relativa `../../ESI/`).
+**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar los notebooks 06-07 o la app interactiva, descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio.
 
 ---
 
@@ -94,7 +107,7 @@ jupyter lab
 
 ## Stack técnico
 
-**Python 3.11** · pandas · numpy · matplotlib · seaborn · scipy · statsmodels · scikit-learn · patsy · requests
+**Python 3.11** · pandas · numpy · matplotlib · seaborn · plotly · scipy · statsmodels · scikit-learn · patsy · streamlit · requests
 
 ---
 
