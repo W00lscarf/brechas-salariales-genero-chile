@@ -1,8 +1,8 @@
 # Brechas Salariales de Género en Chile: un análisis multidimensional 🇨🇱
 
-> *En Chile, las mujeres ganan en promedio menos que los hombres — pero ¿cuánto de esa brecha se explica por dónde trabajan, cuánto estudiaron o cuántos años tienen? ¿Y cuánto es simplemente discriminación?*
+> *En Chile, las mujeres ganan en promedio menos que los hombres — pero ¿cuánto de esa brecha se explica por dónde trabajan, cuánto estudiaron, cuántas horas trabajan o cuántos años tienen? ¿Y cuánto queda sin explicación?*
 
-Este proyecto descompone la brecha salarial de género en Chile usando datos de la **Encuesta Suplementaria de Ingresos (ESI)** disponibles vía la API SDMX del SIMEL-INE, con cobertura nacional y regional desde 2010.
+Este proyecto descompone la brecha salarial de género en Chile en dos etapas: primero con **datos agregados oficiales** del SIMEL-INE (indicadores públicos vía API, sin autenticación), y luego con **microdatos individuales** de la Encuesta Suplementaria de Ingresos (ESI 2018-2024), que permiten una regresión multivariable real.
 
 ---
 
@@ -10,36 +10,20 @@ Este proyecto descompone la brecha salarial de género en Chile usando datos de 
 
 La brecha salarial observada mezcla dos fenómenos distintos:
 
-1. **Composición** — diferencias en características observables (educación, sector, horas, ocupación)
+1. **Composición** — diferencias en características observables (educación, sector, horas, ocupación, edad)
 2. **Discriminación residual** — la parte que persiste después de controlar todo lo anterior
 
-Este análisis aplica una **descomposición de Oaxaca-Blinder** para separar ambos componentes, respondiendo: *¿qué parte de la brecha desaparecería si hombres y mujeres tuvieran las mismas características?*
+Los notebooks 01-05 exploran la brecha con datos agregados SIMEL (máximo 2 variables cruzadas simultáneamente — el techo real de ese tipo de datos). El notebook 06 rompe ese techo usando **microdatos individuales**, estimando una regresión tipo Mincer que controla por edad, edad², educación, horas trabajadas, categoría ocupacional y sector **al mismo tiempo**.
 
----
+### Convención de signo (importante)
 
-## Dimensiones de análisis
+El indicador SIMEL/ESI usado es:
 
-| Dataset SIMEL | Pregunta específica |
-|---------------|---------------------|
-| `DF_BGYMEDIOOCU` | ¿Cuál es la brecha por región y cómo evoluciona? |
-| `DF_BGYMEDIOOCU_EDU` | ¿Más educación reduce la brecha o la amplía? |
-| `DF_BGYMEDIOOCU_EDAD` | ¿En qué etapa de la vida es mayor la brecha? |
-| `DF_BGYMEDIOOCU_RAMA` | ¿Qué sectores tienen la mayor y menor brecha? |
-| `DF_BGYMEDIOOCU_CIUO` | ¿Cómo varía por grupo ocupacional? |
-| `DF_BGYMEDIOOCU_TRAMOHORA` | ¿El trabajo a tiempo parcial amplifica la brecha? |
-| `DF_BGYMEDIOOCU_CISE` | ¿Empleadas vs. independientes — quién enfrenta mayor brecha? |
-| `DF_BGYHDEP_CISE_EDU` | Brecha en ingreso **por hora** según educación |
-| `DF_BGYHDEP_CISE_EDAD` | Brecha en ingreso por hora según edad |
-| `DF_BGREIMPROMSP` | Brecha en remuneración imponible (sistema de pensiones) |
+```
+Brecha (%) = (Ingreso_Mujeres - Ingreso_Hombres) / Ingreso_Hombres × 100
+```
 
----
-
-## Hallazgos anticipados (hipótesis)
-
-- La brecha es **mayor en los extremos educativos**: sin educación formal y con posgrado.
-- Las mujeres con hijos pequeños enfrentan la mayor penalización salarial (*motherhood penalty*).
-- La brecha **regional** es más pronunciada en zonas con economía extractiva (minería, pesca).
-- El trabajo a tiempo parcial, mayoritariamente femenino, explica una fracción relevante de la brecha.
+**Negativo = las mujeres ganan menos** (la situación habitual). Positivo = las mujeres ganan más (ocurre en algunos grupos específicos, ej. electricidad).
 
 ---
 
@@ -48,19 +32,40 @@ Este análisis aplica una **descomposición de Oaxaca-Blinder** para separar amb
 ```
 brechas-salariales-genero-chile/
 ├── notebooks/
-│   ├── 01_descarga_api.ipynb          ← descarga todos los datasets SIMEL
-│   ├── 02_brecha_multidimensional.ipynb ← análisis por EDU, EDAD, RAMA, CIUO
-│   ├── 03_evolucion_temporal.ipynb    ← tendencias 2010–2023 por región
-│   ├── 04_descomposicion_oaxaca.ipynb ← Oaxaca-Blinder con datos ESI
-│   └── 05_visualizaciones.ipynb       ← figuras publicables
-├── src/
-│   ├── oaxaca.py                      ← implementación descomposición
-│   └── plots.py                       ← visualizaciones reutilizables
+│   ├── 01_descarga_api.ipynb              ← descarga los 10 datasets SIMEL de brecha salarial
+│   ├── 02_brecha_multidimensional.ipynb   ← brecha por educación, sector, edad (datos agregados)
+│   ├── 03_evolucion_regional.ipynb        ← convergencia temporal + heatmap regional + benchmark OCDE
+│   ├── 04_brecha_ajustada.ipynb           ← ranking sector/ocupación, control por jornada, heatmap CISE×educación
+│   ├── 05_serie_educacion.ipynb           ← serie 2010-2023: ¿qué niveles educativos convergen más rápido?
+│   └── 06_regresion_microdatos.ipynb      ← regresión Mincer con microdatos ESI 2018-2024 (máximo de controles)
+├── data/            ← CSVs descargados de SIMEL (se regeneran ejecutando el notebook 01)
 ├── outputs/
-│   ├── figures/
-│   └── tables/
+│   └── figures/     ← gráficos exportados en PNG
 └── requirements.txt
 ```
+
+---
+
+## Fuentes de datos
+
+| Fuente | Qué aporta | Acceso |
+|---|---|---|
+| API SDMX SIMEL-INE (`DF_BGYMEDIOOCU*`, `DF_BGYHDEP*`) | Indicadores agregados de brecha por región, educación, edad, sector, ocupación, jornada y categoría ocupacional | Pública, sin autenticación, vía `simel_client.py` |
+| Microdatos ESI 2018-2024 (INE, formato CSV) | Registros individuales: sexo, edad, educación, horas, categoría ocupacional, sector, ingreso del trabajo principal | Pública, descarga manual desde el sitio del INE (sección Encuesta Suplementaria de Ingresos → Bases de Datos → CSV) |
+
+**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar el notebook 06, descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio (el notebook los referencia con una ruta relativa `../../ESI/`).
+
+---
+
+## Hallazgo principal
+
+Con microdatos individuales (notebook 06) y controlando **simultáneamente** por edad, edad², nivel educativo, horas trabajadas, categoría ocupacional y sector económico:
+
+- **Brecha bruta (2018-2024, pooled):** -22.7%
+- **Brecha ajustada (con todos los controles):** -20.7% (IC 95%: -21.1% a -20.2%, p < 0.001)
+- **Solo ~9% de la brecha bruta se explica por composición observable**
+
+La brecha ajustada y la bruta se mueven casi juntas en los 7 años de la serie — no hay evidencia de que la brecha sea un artefacto de composición del mercado laboral. Es la aproximación más rigurosa posible, con datos públicos, a un componente de discriminación salarial pura.
 
 ---
 
@@ -71,24 +76,15 @@ git clone https://github.com/W00lscarf/brechas-salariales-genero-chile
 cd brechas-salariales-genero-chile
 pip install -r requirements.txt
 jupyter lab
-# Ejecutar en orden: 01 → 05
+# Notebooks 01-05: ejecutar en orden, no requieren nada adicional (descargan datos SIMEL automáticamente)
+# Notebook 06: requiere descargar microdatos ESI 2018-2024 del INE y ubicarlos en ../ESI/
 ```
 
 ---
 
 ## Stack técnico
 
-**Python 3.11** · pandas · numpy · matplotlib · seaborn · plotly · statsmodels · requests
-
----
-
-## Nota metodológica
-
-Los valores negativos en `DF_BGYMEDIOOCU_*` representan la brecha favorable a mujeres (situación atípica que también se analiza). Los valores positivos — la mayoría — representan el porcentaje en que el ingreso masculino supera al femenino:
-
-```
-Brecha = (Ingreso_H - Ingreso_M) / Ingreso_H × 100
-```
+**Python 3.11** · pandas · numpy · matplotlib · seaborn · scipy · statsmodels · scikit-learn · requests
 
 ---
 
