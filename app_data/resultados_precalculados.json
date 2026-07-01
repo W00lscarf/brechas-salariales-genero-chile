@@ -1,0 +1,5122 @@
+{
+"__ninguno__": {
+"brecha_pct": -25.877617473184877,
+"ic_bajo": -26.64295190065664,
+"ic_alto": -25.104298308035556,
+"p_valor": 0.0,
+"ingreso_hombre": 565147.6931212321,
+"ingreso_mujer": 418900.9349367907,
+"r2": 0.02672012529904555,
+"n": 250477
+},
+"Edad": {
+"brecha_pct": -27.218694308623803,
+"ic_bajo": -27.964410192528455,
+"ic_alto": -26.465258738089325,
+"p_valor": 0.0,
+"ingreso_hombre": 569513.25266451,
+"ingreso_mujer": 414499.18137465656,
+"r2": 0.08044053425290765,
+"n": 250477
+},
+"Educación": {
+"brecha_pct": -30.74820528684836,
+"ic_bajo": -31.419268562066893,
+"ic_alto": -30.070575649476726,
+"p_valor": 0.0,
+"ingreso_hombre": 581570.5051700426,
+"ingreso_mujer": 402748.0123525969,
+"r2": 0.26296571790903034,
+"n": 250477
+},
+"Horas trabajadas": {
+"brecha_pct": -16.045715761491607,
+"ic_bajo": -16.86019365162511,
+"ic_alto": -15.22325885068615,
+"p_valor": 7.467038161349588e-271,
+"ingreso_hombre": 536246.4387805299,
+"ingreso_mujer": 450201.8594326852,
+"r2": 0.18365670949405266,
+"n": 250477
+},
+"Categoría ocupacional": {
+"brecha_pct": -24.674615267583235,
+"ic_bajo": -25.39768412510298,
+"ic_alto": -23.94453820171788,
+"p_valor": 0.0,
+"ingreso_hombre": 561326.0624776271,
+"ingreso_mujer": 422821.0161645984,
+"r2": 0.2227935156453742,
+"n": 250477
+},
+"Sector económico": {
+"brecha_pct": -29.02718690856797,
+"ic_bajo": -29.8261224232378,
+"ic_alto": -28.219155445681487,
+"p_valor": 0.0,
+"ingreso_hombre": 575584.8210702194,
+"ingreso_mujer": 408508.73924082064,
+"r2": 0.1854897288287577,
+"n": 250477
+},
+"Rural / Urbano": {
+"brecha_pct": -26.83867598367845,
+"ic_bajo": -27.59580362927284,
+"ic_alto": -26.07363108603988,
+"p_valor": 0.0,
+"ingreso_hombre": 568264.651888759,
+"ingreso_mujer": 415749.943238557,
+"r2": 0.03990355535542933,
+"n": 250477
+},
+"Estado civil": {
+"brecha_pct": -24.269627285572383,
+"ic_bajo": -25.068148075560913,
+"ic_alto": -23.462596957441285,
+"p_valor": 0.0,
+"ingreso_hombre": 560058.9843476799,
+"ingreso_mujer": 424134.75626713585,
+"r2": 0.04147489886892819,
+"n": 250477
+},
+"Tiene hijos": {
+"brecha_pct": -25.317547387613658,
+"ic_bajo": -26.082872879303622,
+"ic_alto": -24.544297844610487,
+"p_valor": 0.0,
+"ingreso_hombre": 563357.6085487775,
+"ingreso_mujer": 420729.2790427139,
+"r2": 0.028394417923140902,
+"n": 250477
+},
+"Año": {
+"brecha_pct": -26.107117352333997,
+"ic_bajo": -26.85105048025932,
+"ic_alto": -25.35561833997071,
+"p_valor": 0.0,
+"ingreso_hombre": 565886.7791749319,
+"ingreso_mujer": 418150.0536543891,
+"r2": 0.05931821414362448,
+"n": 250477
+},
+"Edad|Educación": {
+"brecha_pct": -31.080155111353612,
+"ic_bajo": -31.737382805999836,
+"ic_alto": -30.41659967452044,
+"p_valor": 0.0,
+"ingreso_hombre": 582749.3847951866,
+"ingreso_mujer": 401629.97209038347,
+"r2": 0.2987982175437186,
+"n": 250477
+},
+"Edad|Horas trabajadas": {
+"brecha_pct": -17.879477997772575,
+"ic_bajo": -18.672996606379,
+"ic_alto": -17.0782169204174,
+"p_valor": 0.0,
+"ingreso_hombre": 541260.8149894741,
+"ingreso_mujer": 444486.2066628662,
+"r2": 0.21657099682776526,
+"n": 250477
+},
+"Categoría ocupacional|Edad": {
+"brecha_pct": -25.24902574882093,
+"ic_bajo": -25.96018763446063,
+"ic_alto": -24.531033062137453,
+"p_valor": 0.0,
+"ingreso_hombre": 563139.9111821275,
+"ingreso_mujer": 420952.5700058653,
+"r2": 0.26066522293523353,
+"n": 250477
+},
+"Edad|Sector económico": {
+"brecha_pct": -30.167287418974276,
+"ic_bajo": -30.94612664330437,
+"ic_alto": -29.37966388598967,
+"p_valor": 0.0,
+"ingreso_hombre": 579526.6527056651,
+"ingreso_mujer": 404699.18171438604,
+"r2": 0.2222362933429083,
+"n": 250477
+},
+"Edad|Rural / Urbano": {
+"brecha_pct": -28.065077118954886,
+"ic_bajo": -28.803714767543788,
+"ic_alto": -27.318776351789886,
+"p_valor": 0.0,
+"ingreso_hombre": 572327.7590230621,
+"ingreso_mujer": 411703.53208005434,
+"r2": 0.09232302372647683,
+"n": 250477
+},
+"Edad|Estado civil": {
+"brecha_pct": -26.119486612898623,
+"ic_bajo": -26.89225724742097,
+"ic_alto": -25.338547562404244,
+"p_valor": 0.0,
+"ingreso_hombre": 565926.7060457448,
+"ingreso_mujer": 418109.5558213085,
+"r2": 0.08996959445438835,
+"n": 250477
+},
+"Edad|Tiene hijos": {
+"brecha_pct": -26.352518735459974,
+"ic_bajo": -27.097555139976127,
+"ic_alto": -25.599868330547537,
+"p_valor": 0.0,
+"ingreso_hombre": 566680.6932387424,
+"ingreso_mujer": 417346.05738276814,
+"r2": 0.08519891908967347,
+"n": 250477
+},
+"Año|Edad": {
+"brecha_pct": -27.450556264484405,
+"ic_bajo": -28.174661031567283,
+"ic_alto": -26.71915145926397,
+"p_valor": 0.0,
+"ingreso_hombre": 570279.6273490324,
+"ingreso_mujer": 413734.69737869466,
+"r2": 0.111850726186567,
+"n": 250477
+},
+"Educación|Horas trabajadas": {
+"brecha_pct": -21.58635768787628,
+"ic_bajo": -22.285601633433238,
+"ic_alto": -20.88082221712354,
+"p_valor": 0.0,
+"ingreso_hombre": 551900.5722198278,
+"ingreso_mujer": 432765.34061901964,
+"r2": 0.40723714658782817,
+"n": 250477
+},
+"Categoría ocupacional|Educación": {
+"brecha_pct": -29.03578718588349,
+"ic_bajo": -29.68055001228199,
+"ic_alto": -28.385112494383957,
+"p_valor": 0.0,
+"ingreso_hombre": 575614.2185499389,
+"ingreso_mujer": 408480.099040092,
+"r2": 0.3747231070897731,
+"n": 250477
+},
+"Educación|Sector económico": {
+"brecha_pct": -28.48384653102324,
+"ic_bajo": -29.237046093312703,
+"ic_alto": -27.722629926633157,
+"p_valor": 0.0,
+"ingreso_hombre": 573737.7766241727,
+"ingreso_mujer": 410315.1888400386,
+"r2": 0.3191275097987828,
+"n": 250477
+},
+"Educación|Rural / Urbano": {
+"brecha_pct": -30.9024947858907,
+"ic_bajo": -31.572543785162498,
+"ic_alto": -30.22588459486547,
+"p_valor": 0.0,
+"ingreso_hombre": 582117.4443232253,
+"ingreso_mujer": 402228.6314434807,
+"r2": 0.26372329818885065,
+"n": 250477
+},
+"Educación|Estado civil": {
+"brecha_pct": -29.852831637415132,
+"ic_bajo": -30.538464111056506,
+"ic_alto": -29.16043150620766,
+"p_valor": 0.0,
+"ingreso_hombre": 578430.3514169866,
+"ingreso_mujer": 405752.5124687648,
+"r2": 0.2789053658283869,
+"n": 250477
+},
+"Educación|Tiene hijos": {
+"brecha_pct": -30.59832515346378,
+"ic_bajo": -31.26708169653719,
+"ic_alto": -29.923061752760237,
+"p_valor": 0.0,
+"ingreso_hombre": 581040.8527564865,
+"ingreso_mujer": 403252.083355598,
+"r2": 0.2630978721867171,
+"n": 250477
+},
+"Año|Educación": {
+"brecha_pct": -30.857119638711005,
+"ic_bajo": -31.513835666698043,
+"ic_alto": -30.194106339653036,
+"p_valor": 0.0,
+"ingreso_hombre": 581956.414400197,
+"ingreso_mujer": 402381.42736357544,
+"r2": 0.28654872888209315,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas": {
+"brecha_pct": -18.14608356828742,
+"ic_bajo": -18.904428891600467,
+"ic_alto": -17.380646764866025,
+"p_valor": 0.0,
+"ingreso_hombre": 542003.0998177737,
+"ingreso_mujer": 443650.7643821332,
+"r2": 0.30280869107590835,
+"n": 250477
+},
+"Horas trabajadas|Sector económico": {
+"brecha_pct": -21.663644844449394,
+"ic_bajo": -22.46818077305466,
+"ic_alto": -20.850760368539667,
+"p_valor": 0.0,
+"ingreso_hombre": 552129.9882905317,
+"ingreso_mujer": 432518.5085475711,
+"r2": 0.31832680286689863,
+"n": 250477
+},
+"Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -17.116690901832566,
+"ic_bajo": -17.924314860145163,
+"ic_alto": -16.301119931479434,
+"p_valor": 4.974891167675565e-309,
+"ingreso_hombre": 539155.8443052113,
+"ingreso_mujer": 446870.20495632244,
+"r2": 0.19515987463173445,
+"n": 250477
+},
+"Estado civil|Horas trabajadas": {
+"brecha_pct": -14.800676548278258,
+"ic_bajo": -15.64386276310633,
+"ic_alto": -13.949062221208875,
+"p_valor": 1.125839888727226e-218,
+"ingreso_hombre": 532929.7827577376,
+"ingreso_mujer": 454052.569382323,
+"r2": 0.1923116676540868,
+"n": 250477
+},
+"Horas trabajadas|Tiene hijos": {
+"brecha_pct": -15.377347128246043,
+"ic_bajo": -16.18855178053452,
+"ic_alto": -14.558290887637892,
+"p_valor": 5.374956064157409e-253,
+"ingreso_hombre": 534457.3494006569,
+"ingreso_mujer": 452271.98753089504,
+"r2": 0.18548533786123478,
+"n": 250477
+},
+"Año|Horas trabajadas": {
+"brecha_pct": -16.151062752573598,
+"ic_bajo": -16.9306739955717,
+"ic_alto": -15.364134805330465,
+"p_valor": 5.036584844782727e-299,
+"ingreso_hombre": 536530.2791436602,
+"ingreso_mujer": 449874.9370726093,
+"r2": 0.22113613627884976,
+"n": 250477
+},
+"Categoría ocupacional|Sector económico": {
+"brecha_pct": -26.14537321755269,
+"ic_bajo": -26.901646029386395,
+"ic_alto": -25.381276035745504,
+"p_valor": 0.0,
+"ingreso_hombre": 566010.296458366,
+"ingreso_mujer": 418024.7919995494,
+"r2": 0.2992295555765073,
+"n": 250477
+},
+"Categoría ocupacional|Rural / Urbano": {
+"brecha_pct": -25.441119974388627,
+"ic_bajo": -26.15902983863564,
+"ic_alto": -24.7162303186782,
+"p_valor": 0.0,
+"ingreso_hombre": 563750.924685492,
+"ingreso_mujer": 420326.37557953066,
+"r2": 0.2304901271266624,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil": {
+"brecha_pct": -23.447976031116234,
+"ic_bajo": -24.19888388081771,
+"ic_alto": -22.689629470382368,
+"p_valor": 0.0,
+"ingreso_hombre": 557517.6516467623,
+"ingreso_mujer": 426791.04631938733,
+"r2": 0.23552838413254662,
+"n": 250477
+},
+"Categoría ocupacional|Tiene hijos": {
+"brecha_pct": -23.954368357694268,
+"ic_bajo": -24.677754571804588,
+"ic_alto": -23.224034825274597,
+"p_valor": 0.0,
+"ingreso_hombre": 559079.2880512959,
+"ingreso_mujer": 425155.37597991363,
+"r2": 0.22520507575533888,
+"n": 250477
+},
+"Año|Categoría ocupacional": {
+"brecha_pct": -24.99032841956804,
+"ic_bajo": -25.686916190349017,
+"ic_alto": -24.287211051338986,
+"p_valor": 0.0,
+"ingreso_hombre": 562320.5643672993,
+"ingreso_mujer": 421794.8085611427,
+"r2": 0.25519202240905126,
+"n": 250477
+},
+"Rural / Urbano|Sector económico": {
+"brecha_pct": -29.158720581196253,
+"ic_bajo": -29.95514441205178,
+"ic_alto": -28.35324125421571,
+"p_valor": 0.0,
+"ingreso_hombre": 576034.9839801415,
+"ingreso_mujer": 408070.5525514332,
+"r2": 0.18918751704632575,
+"n": 250477
+},
+"Estado civil|Sector económico": {
+"brecha_pct": -27.965677726023085,
+"ic_bajo": -28.788186180520313,
+"ic_alto": -27.133669160218,
+"p_valor": 0.0,
+"ingreso_hombre": 571994.7887652019,
+"ingreso_mujer": 412032.56952947885,
+"r2": 0.19774884870095744,
+"n": 250477
+},
+"Sector económico|Tiene hijos": {
+"brecha_pct": -28.480536233447896,
+"ic_bajo": -29.28287612917968,
+"ic_alto": -27.669093177504735,
+"p_valor": 0.0,
+"ingreso_hombre": 573726.5846944929,
+"ingreso_mujer": 410326.17685965454,
+"r2": 0.1867056240101429,
+"n": 250477
+},
+"Año|Sector económico": {
+"brecha_pct": -29.160326232352396,
+"ic_bajo": -29.941663937520822,
+"ic_alto": -28.37027452334333,
+"p_valor": 0.0,
+"ingreso_hombre": 576040.4865248782,
+"ingreso_mujer": 408065.20142379357,
+"r2": 0.21478209585788666,
+"n": 250477
+},
+"Estado civil|Rural / Urbano": {
+"brecha_pct": -25.238739159848265,
+"ic_bajo": -26.02712371674568,
+"ic_alto": -24.441952196004102,
+"p_valor": 0.0,
+"ingreso_hombre": 563107.2545577255,
+"ingreso_mujer": 420986.08338971855,
+"r2": 0.055280200123268175,
+"n": 250477
+},
+"Rural / Urbano|Tiene hijos": {
+"brecha_pct": -26.29313141828732,
+"ic_bajo": -27.04949120382527,
+"ic_alto": -25.528929602109418,
+"p_valor": 0.0,
+"ingreso_hombre": 566488.2208913687,
+"ingreso_mujer": 417540.7285032837,
+"r2": 0.041522276413317405,
+"n": 250477
+},
+"Año|Rural / Urbano": {
+"brecha_pct": -27.05322229142444,
+"ic_bajo": -27.788163072446725,
+"ic_alto": -26.310801601642154,
+"p_valor": 0.0,
+"ingreso_hombre": 568968.435932154,
+"ingreso_mujer": 415044.1401913874,
+"r2": 0.07218033344843378,
+"n": 250477
+},
+"Estado civil|Tiene hijos": {
+"brecha_pct": -23.38660345209831,
+"ic_bajo": -24.185315612031523,
+"ic_alto": -22.57947681257483,
+"p_valor": 0.0,
+"ingreso_hombre": 557329.3856556293,
+"ingreso_mujer": 426988.97231033194,
+"r2": 0.04465376567522972,
+"n": 250477
+},
+"Año|Estado civil": {
+"brecha_pct": -24.492283533656355,
+"ic_bajo": -25.26972405276894,
+"ic_alto": -23.706755077585196,
+"p_valor": 0.0,
+"ingreso_hombre": 560754.4091901769,
+"ingreso_mujer": 423412.84936383896,
+"r2": 0.07460878774839852,
+"n": 250477
+},
+"Año|Tiene hijos": {
+"brecha_pct": -25.663388165782187,
+"ic_bajo": -26.410264263010706,
+"ic_alto": -24.908931882281426,
+"p_valor": 0.0,
+"ingreso_hombre": 564460.7141251952,
+"ingreso_mujer": 419600.9700159001,
+"r2": 0.06036548567669675,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas": {
+"brecha_pct": -22.21496744967534,
+"ic_bajo": -22.90076129728339,
+"ic_alto": -21.523073500311007,
+"p_valor": 0.0,
+"ingreso_hombre": 553775.8978857555,
+"ingreso_mujer": 430754.7624262873,
+"r2": 0.42904764169741993,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación": {
+"brecha_pct": -28.858600197472008,
+"ic_bajo": -29.49168381674445,
+"ic_alto": -28.219832215124583,
+"p_valor": 0.0,
+"ingreso_hombre": 575009.5782950559,
+"ingreso_mujer": 409069.862997715,
+"r2": 0.40959602706809106,
+"n": 250477
+},
+"Edad|Educación|Sector económico": {
+"brecha_pct": -28.972011899423165,
+"ic_bajo": -29.71146722967338,
+"ic_alto": -28.224777289055915,
+"p_valor": 0.0,
+"ingreso_hombre": 575396.3421528577,
+"ingreso_mujer": 408692.44543548644,
+"r2": 0.34857461472950346,
+"n": 250477
+},
+"Edad|Educación|Rural / Urbano": {
+"brecha_pct": -31.24204878586252,
+"ic_bajo": -31.898111734691714,
+"ic_alto": -30.57966562178247,
+"p_valor": 0.0,
+"ingreso_hombre": 583327.2627981555,
+"ingreso_mujer": 401083.8747735188,
+"r2": 0.29961836536344855,
+"n": 250477
+},
+"Edad|Educación|Estado civil": {
+"brecha_pct": -30.30344828927506,
+"ic_bajo": -30.977614483394223,
+"ic_alto": -29.62269727410267,
+"p_valor": 0.0,
+"ingreso_hombre": 580003.5360052674,
+"ingreso_mujer": 404242.46439594345,
+"r2": 0.30574860310023066,
+"n": 250477
+},
+"Edad|Educación|Tiene hijos": {
+"brecha_pct": -30.767920412440684,
+"ic_bajo": -31.42258307592799,
+"ic_alto": -30.107008123024215,
+"p_valor": 0.0,
+"ingreso_hombre": 581640.2965361783,
+"ingreso_mujer": 402681.67301124264,
+"r2": 0.29942239016077343,
+"n": 250477
+},
+"Año|Edad|Educación": {
+"brecha_pct": -31.203346474555126,
+"ic_bajo": -31.847013691315993,
+"ic_alto": -30.5536001773552,
+"p_valor": 0.0,
+"ingreso_hombre": 583188.9394539995,
+"ingreso_mujer": 401214.4740748846,
+"r2": 0.32130963128344203,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas": {
+"brecha_pct": -19.172223493958075,
+"ic_bajo": -19.916097706336654,
+"ic_alto": -18.421439667687146,
+"p_valor": 0.0,
+"ingreso_hombre": 544892.4713129776,
+"ingreso_mujer": 440424.468911102,
+"r2": 0.32926984660957714,
+"n": 250477
+},
+"Edad|Horas trabajadas|Sector económico": {
+"brecha_pct": -23.028972077133226,
+"ic_bajo": -23.816299404111096,
+"ic_alto": -22.233508044863314,
+"p_valor": 0.0,
+"ingreso_hombre": 556236.5673704961,
+"ingreso_mujer": 428141.0035879406,
+"r2": 0.34011030148992427,
+"n": 250477
+},
+"Edad|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.827007965963993,
+"ic_bajo": -19.61466997158746,
+"ic_alto": -18.031627991963905,
+"p_valor": 0.0,
+"ingreso_hombre": 543914.6316279656,
+"ingreso_mujer": 441511.78060332447,
+"r2": 0.22719189058100464,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas": {
+"brecha_pct": -17.00610999600326,
+"ic_bajo": -17.822718082317824,
+"ic_alto": -16.18138715155758,
+"p_valor": 7.903201278362381e-299,
+"ingreso_hombre": 538852.972574102,
+"ingreso_mujer": 447215.04334141687,
+"r2": 0.22231475847744198,
+"n": 250477
+},
+"Edad|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -16.977951642703935,
+"ic_bajo": -17.767549085478407,
+"ic_alto": -16.180772471369732,
+"p_valor": 0.0,
+"ingreso_hombre": 538775.9408472617,
+"ingreso_mujer": 447302.82214769046,
+"r2": 0.22079559910071334,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas": {
+"brecha_pct": -17.972671273945263,
+"ic_bajo": -18.731779527843152,
+"ic_alto": -17.206472359789426,
+"p_valor": 0.0,
+"ingreso_hombre": 541519.8943715863,
+"ingreso_mujer": 444194.3038731667,
+"r2": 0.2527439416452272,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Sector económico": {
+"brecha_pct": -26.967459613179223,
+"ic_bajo": -27.70687024643199,
+"ic_alto": -26.22048632374555,
+"p_valor": 0.0,
+"ingreso_hombre": 568686.7529412399,
+"ingreso_mujer": 415326.3825163104,
+"r2": 0.3304652837695522,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Rural / Urbano": {
+"brecha_pct": -25.956846856850813,
+"ic_bajo": -26.66312369139483,
+"ic_alto": -25.243768165013137,
+"p_valor": 0.0,
+"ingreso_hombre": 565402.4769629734,
+"ingreso_mujer": 418641.82189285324,
+"r2": 0.2681995289729656,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil": {
+"brecha_pct": -24.422699049144803,
+"ic_bajo": -25.157341723800275,
+"ic_alto": -23.6808452482165,
+"p_valor": 0.0,
+"ingreso_hombre": 560536.762348203,
+"ingreso_mujer": 423638.5558200812,
+"r2": 0.2673603024687782,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Tiene hijos": {
+"brecha_pct": -24.321894006902756,
+"ic_bajo": -25.031604996965218,
+"ic_alto": -23.605464323057458,
+"p_valor": 0.0,
+"ingreso_hombre": 560221.9683408426,
+"ingreso_mujer": 423965.37499759835,
+"r2": 0.2653787824064183,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad": {
+"brecha_pct": -25.585210092678135,
+"ic_bajo": -26.270126331484324,
+"ic_alto": -24.89393130052906,
+"p_valor": 0.0,
+"ingreso_hombre": 564210.7173613084,
+"ingreso_mujer": 419856.2199590114,
+"r2": 0.29185098199053927,
+"n": 250477
+},
+"Edad|Rural / Urbano|Sector económico": {
+"brecha_pct": -30.2836109125724,
+"ic_bajo": -31.060221743428183,
+"ic_alto": -29.498251513069395,
+"p_valor": 0.0,
+"ingreso_hombre": 579933.9761494948,
+"ingreso_mujer": 404309.0272625711,
+"r2": 0.22580890924355734,
+"n": 250477
+},
+"Edad|Estado civil|Sector económico": {
+"brecha_pct": -29.421270378831522,
+"ic_bajo": -30.22022930160101,
+"ic_alto": -28.613163599113168,
+"p_valor": 0.0,
+"ingreso_hombre": 576937.1011646547,
+"ingreso_mujer": 407194.8767152088,
+"r2": 0.22995488980999723,
+"n": 250477
+},
+"Edad|Sector económico|Tiene hijos": {
+"brecha_pct": -29.347235305320417,
+"ic_bajo": -30.129270072581104,
+"ic_alto": -28.556447539803674,
+"p_valor": 0.0,
+"ingreso_hombre": 576682.2354343651,
+"ingreso_mujer": 407441.9428374598,
+"r2": 0.2254476149992518,
+"n": 250477
+},
+"Año|Edad|Sector económico": {
+"brecha_pct": -30.310601918658662,
+"ic_bajo": -31.071901574117433,
+"ic_alto": -29.540893832115366,
+"p_valor": 0.0,
+"ingreso_hombre": 580028.6271453709,
+"ingreso_mujer": 404218.45895707683,
+"r2": 0.25066380461447435,
+"n": 250477
+},
+"Edad|Estado civil|Rural / Urbano": {
+"brecha_pct": -26.934440531628656,
+"ic_bajo": -27.69901508902303,
+"ic_alto": -26.16178068667515,
+"p_valor": 0.0,
+"ingreso_hombre": 568578.4288395918,
+"ingreso_mujer": 415435.0100481232,
+"r2": 0.10210988487405326,
+"n": 250477
+},
+"Edad|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -27.219222305176793,
+"ic_bajo": -27.95680764052031,
+"ic_alto": -26.474085498152245,
+"p_valor": 0.0,
+"ingreso_hombre": 569514.9939107081,
+"ingreso_mujer": 414497.4416568386,
+"r2": 0.09689647792177991,
+"n": 250477
+},
+"Año|Edad|Rural / Urbano": {
+"brecha_pct": -28.282808787352266,
+"ic_bajo": -28.999158962592595,
+"ic_alto": -27.559231126267136,
+"p_valor": 0.0,
+"ingreso_hombre": 573059.4119127756,
+"ingreso_mujer": 410982.11420355993,
+"r2": 0.12342214315981681,
+"n": 250477
+},
+"Edad|Estado civil|Tiene hijos": {
+"brecha_pct": -24.97398248516378,
+"ic_bajo": -25.74715640836104,
+"ic_alto": -24.192757719916624,
+"p_valor": 0.0,
+"ingreso_hombre": 562268.9284230085,
+"ingreso_mujer": 421847.98471912835,
+"r2": 0.09676593320317317,
+"n": 250477
+},
+"Año|Edad|Estado civil": {
+"brecha_pct": -26.354837536924446,
+"ic_bajo": -27.106041492606316,
+"ic_alto": -25.59589209766031,
+"p_valor": 0.0,
+"ingreso_hombre": 566688.2128732118,
+"ingreso_mujer": 417338.4550295766,
+"r2": 0.12204382644403777,
+"n": 250477
+},
+"Año|Edad|Tiene hijos": {
+"brecha_pct": -26.690141828138458,
+"ic_bajo": -27.415920580589226,
+"ic_alto": -25.957105908527588,
+"p_valor": 0.0,
+"ingreso_hombre": 567779.1261469227,
+"ingreso_mujer": 416238.07210774394,
+"r2": 0.11550589585696924,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas": {
+"brecha_pct": -22.529981323812198,
+"ic_bajo": -23.200846659986574,
+"ic_alto": -21.85325576288656,
+"p_valor": 0.0,
+"ingreso_hombre": 554723.7987893949,
+"ingreso_mujer": 429744.63052340253,
+"r2": 0.46355981375377253,
+"n": 250477
+},
+"Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.958755151383656,
+"ic_bajo": -21.708185090001876,
+"ic_alto": -20.20215147137825,
+"p_valor": 0.0,
+"ingreso_hombre": 550049.4492927045,
+"ingreso_mujer": 434765.9320039126,
+"r2": 0.44845842549127124,
+"n": 250477
+},
+"Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.754704603366225,
+"ic_bajo": -22.45380620753363,
+"ic_alto": -21.049300393886472,
+"p_valor": 0.0,
+"ingreso_hombre": 552400.6995899233,
+"ingreso_mujer": 432227.5591672067,
+"r2": 0.4079202445546146,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -21.080089121428113,
+"ic_bajo": -21.791074111643393,
+"ic_alto": -20.362640678984466,
+"p_valor": 0.0,
+"ingreso_hombre": 550405.6932000346,
+"ingreso_mujer": 434379.6825440533,
+"r2": 0.4169054418362943,
+"n": 250477
+},
+"Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.411351682147238,
+"ic_bajo": -22.109004761707705,
+"ic_alto": -20.70744987232045,
+"p_valor": 0.0,
+"ingreso_hombre": 551382.2773572294,
+"ingreso_mujer": 433323.8788392402,
+"r2": 0.4073772332880007,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas": {
+"brecha_pct": -21.559317817306358,
+"ic_bajo": -22.23282557634605,
+"ic_alto": -20.879977099761394,
+"p_valor": 0.0,
+"ingreso_hombre": 551820.3840455636,
+"ingreso_mujer": 432851.6736685004,
+"r2": 0.4351273328968126,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Sector económico": {
+"brecha_pct": -25.811600507955966,
+"ic_bajo": -26.52692443682114,
+"ic_alto": -25.08931228204342,
+"p_valor": 0.0,
+"ingreso_hombre": 564935.6929212044,
+"ingreso_mujer": 419116.7487375302,
+"r2": 0.40613774866201513,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Rural / Urbano": {
+"brecha_pct": -29.168927515256694,
+"ic_bajo": -29.813348390062867,
+"ic_alto": -28.518589870603826,
+"p_valor": 0.0,
+"ingreso_hombre": 576069.9660235539,
+"ingreso_mujer": 408036.53519697924,
+"r2": 0.3753213677257585,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil": {
+"brecha_pct": -28.321619033772517,
+"ic_bajo": -28.978154010433045,
+"ic_alto": -27.659014964291696,
+"p_valor": 0.0,
+"ingreso_hombre": 573190.1592279527,
+"ingreso_mujer": 410853.4259923379,
+"r2": 0.3900838326698087,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Tiene hijos": {
+"brecha_pct": -28.74357942147715,
+"ic_bajo": -29.386788144987975,
+"ic_alto": -28.0945117736782,
+"p_valor": 0.0,
+"ingreso_hombre": 574618.22119934,
+"ingreso_mujer": 409452.3764186285,
+"r2": 0.37515086817173315,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación": {
+"brecha_pct": -29.195660495582608,
+"ic_bajo": -29.819594845835873,
+"ic_alto": -28.566179097366728,
+"p_valor": 0.0,
+"ingreso_hombre": 576161.6214611887,
+"ingreso_mujer": 407947.4305535358,
+"r2": 0.39998295979939313,
+"n": 250477
+},
+"Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.52550046135103,
+"ic_bajo": -29.278089606920176,
+"ic_alto": -27.764902617786024,
+"p_valor": 0.0,
+"ingreso_hombre": 573878.669176251,
+"ingreso_mujer": 410176.90675278445,
+"r2": 0.3196393423741982,
+"n": 250477
+},
+"Educación|Estado civil|Sector económico": {
+"brecha_pct": -27.842041596406574,
+"ic_bajo": -28.606906144212186,
+"ic_alto": -27.0689827297265,
+"p_valor": 0.0,
+"ingreso_hombre": 571581.5400038471,
+"ingreso_mujer": 412441.56987859454,
+"r2": 0.3325194353889612,
+"n": 250477
+},
+"Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -28.258456622566484,
+"ic_bajo": -29.010558549922983,
+"ic_alto": -27.49838650589087,
+"p_valor": 0.0,
+"ingreso_hombre": 572977.4235745426,
+"ingreso_mujer": 411062.8468766317,
+"r2": 0.31934491820209876,
+"n": 250477
+},
+"Año|Educación|Sector económico": {
+"brecha_pct": -28.617901228111965,
+"ic_bajo": -29.35507987165683,
+"ic_alto": -27.873030136879272,
+"p_valor": 0.0,
+"ingreso_hombre": 574191.6276585608,
+"ingreso_mujer": 409870.0347951453,
+"r2": 0.3426838421423064,
+"n": 250477
+},
+"Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -29.999111397141764,
+"ic_bajo": -30.683311368938572,
+"ic_alto": -29.308157934798153,
+"p_valor": 0.0,
+"ingreso_hombre": 578939.4622799152,
+"ingreso_mujer": 405262.76806854975,
+"r2": 0.27971256540261513,
+"n": 250477
+},
+"Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -30.754702095903742,
+"ic_bajo": -31.422249652830136,
+"ic_alto": -30.080656516827265,
+"p_valor": 0.0,
+"ingreso_hombre": 581593.500694903,
+"ingreso_mujer": 402726.1521470479,
+"r2": 0.26385170918317824,
+"n": 250477
+},
+"Año|Educación|Rural / Urbano": {
+"brecha_pct": -31.01450964998933,
+"ic_bajo": -31.669744662610867,
+"ic_alto": -30.35299143354182,
+"p_valor": 0.0,
+"ingreso_hombre": 582515.6134416744,
+"ingreso_mujer": 401851.2522981121,
+"r2": 0.2873400057720874,
+"n": 250477
+},
+"Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -29.451612617216515,
+"ic_bajo": -30.13717975762258,
+"ic_alto": -28.75931797422219,
+"p_valor": 0.0,
+"ingreso_hombre": 577041.6641310961,
+"ingreso_mujer": 407093.58857126604,
+"r2": 0.2796408490605795,
+"n": 250477
+},
+"Año|Educación|Estado civil": {
+"brecha_pct": -29.946232094521918,
+"ic_bajo": -30.61794845110022,
+"ic_alto": -29.268012573888626,
+"p_valor": 0.0,
+"ingreso_hombre": 578755.2472090174,
+"ingreso_mujer": 405439.85762058117,
+"r2": 0.3029629814307313,
+"n": 250477
+},
+"Año|Educación|Tiene hijos": {
+"brecha_pct": -30.797060898043448,
+"ic_bajo": -31.45280590633215,
+"ic_alto": -30.135042817288692,
+"p_valor": 0.0,
+"ingreso_hombre": 581743.5053444367,
+"ingreso_mujer": 402583.60373309784,
+"r2": 0.28656991343070926,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.787396589585573,
+"ic_bajo": -21.560097389054743,
+"ic_alto": -20.007084019759404,
+"p_valor": 0.0,
+"ingreso_hombre": 549547.6521539969,
+"ingreso_mujer": 435311.00225198927,
+"r2": 0.37975988352285117,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.978030005863566,
+"ic_bajo": -19.732123046119533,
+"ic_alto": -18.216852483808132,
+"p_valor": 0.0,
+"ingreso_hombre": 544341.6801226262,
+"ingreso_mujer": 441036.3527345325,
+"r2": 0.31042254244937095,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas": {
+"brecha_pct": -17.185484436910702,
+"ic_bajo": -17.969577052399654,
+"ic_alto": -16.393897026105908,
+"p_valor": 0.0,
+"ingreso_hombre": 539344.5539418042,
+"ingreso_mujer": 446655.57956281025,
+"r2": 0.3113041662019461,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -17.371961106888424,
+"ic_bajo": -18.128236559144952,
+"ic_alto": -16.608699698355302,
+"p_valor": 0.0,
+"ingreso_hombre": 539857.2063480052,
+"ingreso_mujer": 446073.42242849525,
+"r2": 0.3051788442029236,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas": {
+"brecha_pct": -18.34469267499548,
+"ic_bajo": -19.068679737149218,
+"ic_alto": -17.614229044011974,
+"p_valor": 0.0,
+"ingreso_hombre": 542558.3058147624,
+"ingreso_mujer": 443027.65203038167,
+"r2": 0.33881491182053836,
+"n": 250477
+},
+"Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.814262409937378,
+"ic_bajo": -22.616764014332567,
+"ic_alto": -21.003438475558788,
+"p_valor": 0.0,
+"ingreso_hombre": 552578.0011804362,
+"ingreso_mujer": 432037.1859833492,
+"r2": 0.32115847186516855,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.85247172002953,
+"ic_bajo": -21.676571529308763,
+"ic_alto": -20.01970093568046,
+"p_valor": 0.0,
+"ingreso_hombre": 549738.0327628646,
+"ingreso_mujer": 435104.0649467414,
+"r2": 0.3258537155194001,
+"n": 250477
+},
+"Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.0482311551476,
+"ic_bajo": -21.855373826536027,
+"ic_alto": -20.23275164316146,
+"p_valor": 0.0,
+"ingreso_hombre": 550312.0809403919,
+"ingreso_mujer": 434481.12206935557,
+"r2": 0.3195862672946266,
+"n": 250477
+},
+"Año|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.67796613273151,
+"ic_bajo": -22.457856199692884,
+"ic_alto": -20.89023222129104,
+"p_valor": 0.0,
+"ingreso_hombre": 552172.534358574,
+"ingreso_mujer": 432472.759366076,
+"r2": 0.3520239202522827,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -15.875031773582993,
+"ic_bajo": -16.70956307092656,
+"ic_alto": -15.032138862206368,
+"p_valor": 3.795611508773878e-253,
+"ingreso_hombre": 535787.631489778,
+"ingreso_mujer": 450731.17475184763,
+"r2": 0.20429096285393322,
+"n": 250477
+},
+"Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -16.464341468271236,
+"ic_bajo": -17.268034647828323,
+"ic_alto": -15.652840874444262,
+"p_valor": 3.1255465424117227e-291,
+"ingreso_hombre": 537377.3615791196,
+"ingreso_mujer": 448901.7177955467,
+"r2": 0.19693339794303188,
+"n": 250477
+},
+"Año|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -17.20490058757512,
+"ic_bajo": -17.97705459951984,
+"ic_alto": -16.425477611863613,
+"p_valor": 0.0,
+"ingreso_hombre": 539397.8552984903,
+"ingreso_mujer": 446594.99052287237,
+"r2": 0.23229165833192045,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -13.844344602862545,
+"ic_bajo": -14.683572124936873,
+"ic_alto": -12.996861896513067,
+"p_valor": 1.2893851460438789e-195,
+"ingreso_hombre": 530428.6413543464,
+"ingreso_mujer": 456994.2723729691,
+"r2": 0.19529797583338593,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas": {
+"brecha_pct": -14.902108570127071,
+"ic_bajo": -15.710608926505643,
+"ic_alto": -14.085853111736968,
+"p_valor": 1.0688434034942125e-240,
+"ingreso_hombre": 533197.4033472857,
+"ingreso_mujer": 453739.74740737514,
+"r2": 0.23013666706854996,
+"n": 250477
+},
+"Año|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -15.624347238342196,
+"ic_bajo": -16.40475248192288,
+"ic_alto": -14.836656504709255,
+"p_valor": 3.2196778064016606e-281,
+"ingreso_hombre": 535116.1721989856,
+"ingreso_mujer": 451507.763326091,
+"r2": 0.22226932661414855,
+"n": 250477
+},
+"Categoría ocupacional|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.24949221191616,
+"ic_bajo": -27.004465159056647,
+"ic_alto": -25.486710785090505,
+"p_valor": 0.0,
+"ingreso_hombre": 566346.9281038926,
+"ingreso_mujer": 417683.73531883484,
+"r2": 0.3012559417962891,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Sector económico": {
+"brecha_pct": -25.26753328585858,
+"ic_bajo": -26.043421926806374,
+"ic_alto": -24.4835046903748,
+"p_valor": 0.0,
+"ingreso_hombre": 563198.6827711931,
+"ingreso_mujer": 420892.2681364651,
+"r2": 0.3113531570821255,
+"n": 250477
+},
+"Categoría ocupacional|Sector económico|Tiene hijos": {
+"brecha_pct": -25.443171084474926,
+"ic_bajo": -26.20114246946764,
+"ic_alto": -24.677414746710667,
+"p_valor": 0.0,
+"ingreso_hombre": 563757.4609298349,
+"ingreso_mujer": 420319.6856439649,
+"r2": 0.301040304561633,
+"n": 250477
+},
+"Año|Categoría ocupacional|Sector económico": {
+"brecha_pct": -26.284459199581466,
+"ic_bajo": -27.016674923512983,
+"ic_alto": -25.544897415905332,
+"p_valor": 0.0,
+"ingreso_hombre": 566460.1329599587,
+"ingreso_mujer": 417569.15043020336,
+"r2": 0.3296543627325691,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Rural / Urbano": {
+"brecha_pct": -24.21661461269464,
+"ic_bajo": -24.960996370325937,
+"ic_alto": -23.464848639198355,
+"p_valor": 0.0,
+"ingreso_hombre": 559893.8374955689,
+"ingreso_mujer": 424306.50462903985,
+"r2": 0.24363656256453803,
+"n": 250477
+},
+"Categoría ocupacional|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -24.73471383686101,
+"ic_bajo": -25.451881866757,
+"ic_alto": -24.01064650493051,
+"p_valor": 0.0,
+"ingreso_hombre": 561514.9169456684,
+"ingreso_mujer": 422625.8090878697,
+"r2": 0.23283620486613754,
+"n": 250477
+},
+"Año|Categoría ocupacional|Rural / Urbano": {
+"brecha_pct": -25.74243151210871,
+"ic_bajo": -26.433215998669134,
+"ic_alto": -25.045160630725537,
+"p_valor": 0.0,
+"ingreso_hombre": 564713.858083345,
+"ingreso_mujer": 419342.7799268529,
+"r2": 0.26267541845305276,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Tiene hijos": {
+"brecha_pct": -22.395139593154056,
+"ic_bajo": -23.14731927329784,
+"ic_alto": -21.635598110326594,
+"p_valor": 0.0,
+"ingreso_hombre": 554317.3802091443,
+"ingreso_mujer": 430177.2291221916,
+"r2": 0.2395811992478838,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil": {
+"brecha_pct": -23.7546990560337,
+"ic_bajo": -24.479326486350427,
+"ic_alto": -23.023118762503014,
+"p_valor": 0.0,
+"ingreso_hombre": 558461.7782228666,
+"ingreso_mujer": 425800.86346305016,
+"r2": 0.26845792306027116,
+"n": 250477
+},
+"Año|Categoría ocupacional|Tiene hijos": {
+"brecha_pct": -24.396965698052963,
+"ic_bajo": -25.09732345666038,
+"ic_alto": -23.69005942859549,
+"p_valor": 0.0,
+"ingreso_hombre": 560456.3455254178,
+"ingreso_mujer": 423722.0031550202,
+"r2": 0.2568228676253289,
+"n": 250477
+},
+"Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.0856877984625,
+"ic_bajo": -28.905195793326687,
+"ic_alto": -27.25673335584252,
+"p_valor": 0.0,
+"ingreso_hombre": 572396.8829993249,
+"ingreso_mujer": 411635.2814720042,
+"r2": 0.20167784220436202,
+"n": 250477
+},
+"Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.62177842313639,
+"ic_bajo": -29.421293136182523,
+"ic_alto": -27.813206817370318,
+"p_valor": 0.0,
+"ingreso_hombre": 574204.7721830995,
+"ingreso_mujer": 409857.15459377744,
+"r2": 0.19036175767274188,
+"n": 250477
+},
+"Año|Rural / Urbano|Sector económico": {
+"brecha_pct": -29.293444603000417,
+"ic_bajo": -30.07197656836028,
+"ic_alto": -28.5062449820807,
+"p_valor": 0.0,
+"ingreso_hombre": 576497.2989337851,
+"ingreso_mujer": 407621.3820328229,
+"r2": 0.21857178505570263,
+"n": 250477
+},
+"Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -27.12374803320422,
+"ic_bajo": -27.95005968054689,
+"ic_alto": -26.287959751522827,
+"p_valor": 0.0,
+"ingreso_hombre": 569200.426965564,
+"ingreso_mujer": 414811.93735150155,
+"r2": 0.2001336998654314,
+"n": 250477
+},
+"Año|Estado civil|Sector económico": {
+"brecha_pct": -28.09316949126356,
+"ic_bajo": -28.898653127604803,
+"ic_alto": -27.27856079728341,
+"p_valor": 0.0,
+"ingreso_hombre": 572421.9820236986,
+"ingreso_mujer": 411610.5044085307,
+"r2": 0.22750548622571465,
+"n": 250477
+},
+"Año|Sector económico|Tiene hijos": {
+"brecha_pct": -28.740754113007917,
+"ic_bajo": -29.52759717976672,
+"ic_alto": -27.945125734738085,
+"p_valor": 0.0,
+"ingreso_hombre": 574608.619414927,
+"ingreso_mujer": 409461.7689967331,
+"r2": 0.2154972866321525,
+"n": 250477
+},
+"Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -24.371536536558523,
+"ic_bajo": -25.15944111268398,
+"ic_alto": -23.57533707821533,
+"p_valor": 0.0,
+"ingreso_hombre": 560376.9175072091,
+"ingreso_mujer": 423804.4523144991,
+"r2": 0.05841520901071329,
+"n": 250477
+},
+"Año|Estado civil|Rural / Urbano": {
+"brecha_pct": -25.447098043994764,
+"ic_bajo": -26.213577926424826,
+"ic_alto": -24.672656108470658,
+"p_valor": 0.0,
+"ingreso_hombre": 563769.9756309844,
+"ingreso_mujer": 420306.8771895626,
+"r2": 0.08809143252836926,
+"n": 250477
+},
+"Año|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -26.622204669205228,
+"ic_bajo": -27.359251779538894,
+"ic_alto": -25.877679133109734,
+"p_valor": 0.0,
+"ingreso_hombre": 567557.5201918652,
+"ingreso_mujer": 416461.19555092085,
+"r2": 0.07318748055982738,
+"n": 250477
+},
+"Año|Estado civil|Tiene hijos": {
+"brecha_pct": -23.739996606961576,
+"ic_bajo": -24.520434374738553,
+"ic_alto": -22.951489329187723,
+"p_valor": 0.0,
+"ingreso_hombre": 558416.399374862,
+"ingreso_mujer": 425848.36511055275,
+"r2": 0.07691145850499359,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas": {
+"brecha_pct": -22.6882549491664,
+"ic_bajo": -23.34560629782586,
+"ic_alto": -22.025266470334536,
+"p_valor": 0.0,
+"ingreso_hombre": 555202.1267904568,
+"ingreso_mujer": 429236.45278104435,
+"r2": 0.4873752165937687,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.578322043771447,
+"ic_bajo": -22.316752620081857,
+"ic_alto": -20.832872197098094,
+"p_valor": 0.0,
+"ingreso_hombre": 551876.7379860167,
+"ingreso_mujer": 432790.9981787336,
+"r2": 0.4660218118719962,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.389571387373252,
+"ic_bajo": -23.075054693284702,
+"ic_alto": -21.697979694113467,
+"p_valor": 0.0,
+"ingreso_hombre": 554300.61898893,
+"ingreso_mujer": 430195.08619975136,
+"r2": 0.42976642252474573,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -21.6728012396307,
+"ic_bajo": -22.373001284104078,
+"ic_alto": -20.966285350021085,
+"p_valor": 0.0,
+"ingreso_hombre": 552157.189081034,
+"ingreso_mujer": 432489.2589611705,
+"r2": 0.4328884389617107,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.93408655663377,
+"ic_bajo": -22.617962227466858,
+"ic_alto": -21.24416702928541,
+"p_valor": 0.0,
+"ingreso_hombre": 552935.2959813947,
+"ingreso_mujer": 431653.98955865676,
+"r2": 0.4294638407232072,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas": {
+"brecha_pct": -22.198212146358177,
+"ic_bajo": -22.859792119534774,
+"ic_alto": -21.530958244202992,
+"p_valor": 0.0,
+"ingreso_hombre": 553725.6327624362,
+"ingreso_mujer": 430808.44209306693,
+"r2": 0.45569778385377224,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Sector económico": {
+"brecha_pct": -26.060877013360884,
+"ic_bajo": -26.76141951167741,
+"ic_alto": -25.353633678017285,
+"p_valor": 0.0,
+"ingreso_hombre": 565737.6035814566,
+"ingreso_mujer": 418301.4224937575,
+"r2": 0.43665957299421243,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Rural / Urbano": {
+"brecha_pct": -28.996752956495207,
+"ic_bajo": -29.629485817421987,
+"ic_alto": -28.35833091057459,
+"p_valor": 0.0,
+"ingreso_hombre": 575480.8323439318,
+"ingreso_mujer": 408610.0770771796,
+"r2": 0.4102066915897802,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil": {
+"brecha_pct": -28.25620311134034,
+"ic_bajo": -28.904092819370064,
+"ic_alto": -27.602409250871794,
+"p_valor": 0.0,
+"ingreso_hombre": 572969.8385015822,
+"ingreso_mujer": 411070.31716785673,
+"r2": 0.41518167596392885,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Tiene hijos": {
+"brecha_pct": -28.447767886513365,
+"ic_bajo": -29.07884519780931,
+"ic_alto": -27.811075063541914,
+"p_valor": 0.0,
+"ingreso_hombre": 573615.8364651185,
+"ingreso_mujer": 410434.93474723864,
+"r2": 0.4105143015740018,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación": {
+"brecha_pct": -29.048377207037525,
+"ic_bajo": -29.661822004721927,
+"ic_alto": -28.429582334464477,
+"p_valor": 0.0,
+"ingreso_hombre": 575657.2629119047,
+"ingreso_mujer": 408438.16976154665,
+"r2": 0.4333893248072571,
+"n": 250477
+},
+"Edad|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -29.017502400780526,
+"ic_bajo": -29.75625720078343,
+"ic_alto": -28.27097810227457,
+"p_valor": 0.0,
+"ingreso_hombre": 575551.723533245,
+"ingreso_mujer": 408540.9883392517,
+"r2": 0.3491088593126088,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Sector económico": {
+"brecha_pct": -28.414937759772528,
+"ic_bajo": -29.167302210180324,
+"ic_alto": -27.6545819115513,
+"p_valor": 0.0,
+"ingreso_hombre": 573504.951710935,
+"ingreso_mujer": 410543.87663305906,
+"r2": 0.35458984474463506,
+"n": 250477
+},
+"Edad|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -28.592915489068936,
+"ic_bajo": -29.331141196333853,
+"ic_alto": -27.846978079590446,
+"p_valor": 0.0,
+"ingreso_hombre": 574106.9449684991,
+"ingreso_mujer": 409953.0313767806,
+"r2": 0.3492821858291406,
+"n": 250477
+},
+"Año|Edad|Educación|Sector económico": {
+"brecha_pct": -29.128399019938556,
+"ic_bajo": -29.852450771303218,
+"ic_alto": -28.39687372253531,
+"p_valor": 0.0,
+"ingreso_hombre": 575931.105673841,
+"ingreso_mujer": 408171.5951332203,
+"r2": 0.37110929642886437,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -30.458030596379192,
+"ic_bajo": -31.130733106040644,
+"ic_alto": -29.778757250597153,
+"p_valor": 0.0,
+"ingreso_hombre": 580546.5453979514,
+"ingreso_mujer": 403723.50097442087,
+"r2": 0.30663709760009383,
+"n": 250477
+},
+"Edad|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -30.931358293018263,
+"ic_bajo": -31.584689362740537,
+"ic_alto": -30.271788247214637,
+"p_valor": 0.0,
+"ingreso_hombre": 582219.9550312178,
+"ingreso_mujer": 402131.41468706215,
+"r2": 0.30023717745617773,
+"n": 250477
+},
+"Año|Edad|Educación|Rural / Urbano": {
+"brecha_pct": -31.36844755355559,
+"ic_bajo": -32.01046178828084,
+"ic_alto": -30.72037088204329,
+"p_valor": 0.0,
+"ingreso_hombre": 583779.7882436379,
+"ingreso_mujer": 400657.1315401741,
+"r2": 0.322165870144968,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -29.794945596292134,
+"ic_bajo": -30.468741805150312,
+"ic_alto": -29.114619930857767,
+"p_valor": 0.0,
+"ingreso_hombre": 578229.3018757385,
+"ingreso_mujer": 405946.1959600416,
+"r2": 0.3070984992619332,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil": {
+"brecha_pct": -30.423291857903756,
+"ic_bajo": -31.083679119239203,
+"ic_alto": -29.756576468058814,
+"p_valor": 0.0,
+"ingreso_hombre": 580424.3674364216,
+"ingreso_mujer": 403840.16811684694,
+"r2": 0.3288104753691401,
+"n": 250477
+},
+"Año|Edad|Educación|Tiene hijos": {
+"brecha_pct": -30.97259981928523,
+"ic_bajo": -31.615126251719026,
+"ic_alto": -30.324036376124532,
+"p_valor": 0.0,
+"ingreso_hombre": 582366.5328251,
+"ingreso_mujer": 401992.47713173577,
+"r2": 0.3216501680466568,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.869130380877387,
+"ic_bajo": -22.625997215534966,
+"ic_alto": -21.10485993021458,
+"p_valor": 0.0,
+"ingreso_hombre": 552741.5112705611,
+"ingreso_mujer": 431861.7495015691,
+"r2": 0.40054704144108844,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -19.93716251419013,
+"ic_bajo": -20.67702058905968,
+"ic_alto": -19.190403665105915,
+"p_valor": 0.0,
+"ingreso_hombre": 547080.5030304105,
+"ingreso_mujer": 438008.1740577887,
+"r2": 0.33672234033885573,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas": {
+"brecha_pct": -18.48636596528045,
+"ic_bajo": -19.252174279986278,
+"ic_alto": -17.713294763064745,
+"p_valor": 0.0,
+"ingreso_hombre": 542955.5237602905,
+"ingreso_mujer": 442582.7786092582,
+"r2": 0.3339240075143409,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -18.23392086904134,
+"ic_bajo": -18.9744306559937,
+"ic_alto": -17.48664340678584,
+"p_valor": 0.0,
+"ingreso_hombre": 542248.4100149752,
+"ingreso_mujer": 443375.26401920913,
+"r2": 0.3335688143096184,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas": {
+"brecha_pct": -19.38296238860171,
+"ic_bajo": -20.093654077888658,
+"ic_alto": -18.66594976608482,
+"p_valor": 0.0,
+"ingreso_hombre": 545492.3224876376,
+"ingreso_mujer": 439759.75078714866,
+"r2": 0.36397100146454753,
+"n": 250477
+},
+"Edad|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -23.16567080113098,
+"ic_bajo": -23.951101217990477,
+"ic_alto": -22.372128485879685,
+"p_valor": 0.0,
+"ingreso_hombre": 556653.4254804032,
+"ingreso_mujer": 427700.92543039384,
+"r2": 0.3428971238464522,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -22.432922819604073,
+"ic_bajo": -23.23737463478054,
+"ic_alto": -21.62004056422496,
+"p_valor": 0.0,
+"ingreso_hombre": 554431.159140545,
+"ingreso_mujer": 430056.0451227092,
+"r2": 0.34503361902491914,
+"n": 250477
+},
+"Edad|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -22.206649765509525,
+"ic_bajo": -22.99607715544606,
+"ic_alto": -21.40912933847875,
+"p_valor": 0.0,
+"ingreso_hombre": 553750.9432998333,
+"ingreso_mujer": 430781.41074803396,
+"r2": 0.3428627281876465,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Sector económico": {
+"brecha_pct": -23.043463004516585,
+"ic_bajo": -23.806528386435033,
+"ic_alto": -22.272755645342702,
+"p_valor": 0.0,
+"ingreso_hombre": 556280.7070796717,
+"ingreso_mujer": 428094.3681425044,
+"r2": 0.372851064618687,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -17.91726197272283,
+"ic_bajo": -18.726954199884783,
+"ic_alto": -17.09950309201944,
+"p_valor": 0.0,
+"ingreso_hombre": 541365.8048847255,
+"ingreso_mujer": 444367.87539278955,
+"r2": 0.233154427581046,
+"n": 250477
+},
+"Edad|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -17.945974941504094,
+"ic_bajo": -18.729482697421908,
+"ic_alto": -17.15491359267266,
+"p_valor": 0.0,
+"ingreso_hombre": 541445.6352286509,
+"ingreso_mujer": 444277.93720864976,
+"r2": 0.23125400289700337,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.9044181573495,
+"ic_bajo": -19.657142358124712,
+"ic_alto": -18.144641758792655,
+"p_valor": 0.0,
+"ingreso_hombre": 544133.384990118,
+"ingreso_mujer": 441268.13455784525,
+"r2": 0.26302557106507596,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -15.866109658302097,
+"ic_bajo": -16.67883267494168,
+"ic_alto": -15.045459259906103,
+"p_valor": 1.340101123574444e-266,
+"ingreso_hombre": 535763.6847840551,
+"ingreso_mujer": 450758.8310468573,
+"r2": 0.22802160208150102,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas": {
+"brecha_pct": -17.107881752861342,
+"ic_bajo": -17.890269661521096,
+"ic_alto": -16.318038810101566,
+"p_valor": 0.0,
+"ingreso_hombre": 539131.6957420888,
+"ingreso_mujer": 446897.68274233636,
+"r2": 0.25897515531113147,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -17.19845616749617,
+"ic_bajo": -17.956820106465145,
+"ic_alto": -16.43308231174099,
+"p_valor": 0.0,
+"ingreso_hombre": 539380.1620606396,
+"ingreso_mujer": 446615.1013124705,
+"r2": 0.25585592745099783,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Rural / Urbano|Sector económico": {
+"brecha_pct": -27.066473055912287,
+"ic_bajo": -27.804573086170514,
+"ic_alto": -26.320826956907663,
+"p_valor": 0.0,
+"ingreso_hombre": 569011.9993545581,
+"ingreso_mujer": 415000.51986434864,
+"r2": 0.3325085988942422,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Sector económico": {
+"brecha_pct": -26.30831091153952,
+"ic_bajo": -27.066266422333886,
+"ic_alto": -25.54247843451619,
+"p_valor": 0.0,
+"ingreso_hombre": 566537.3961549831,
+"ingreso_mujer": 417490.97654439014,
+"r2": 0.3369122218601889,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Sector económico|Tiene hijos": {
+"brecha_pct": -26.06653912673922,
+"ic_bajo": -26.806925744723674,
+"ic_alto": -25.318663106927232,
+"p_valor": 0.0,
+"ingreso_hombre": 565755.8629549266,
+"ingreso_mujer": 418282.88957595965,
+"r2": 0.3339626299400369,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Sector económico": {
+"brecha_pct": -27.12282522243038,
+"ic_bajo": -27.838862234574012,
+"ic_alto": -26.399683153207032,
+"p_valor": 0.0,
+"ingreso_hombre": 569197.3893633186,
+"ingreso_mujer": 414814.9762756689,
+"r2": 0.35979215011109345,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Rural / Urbano": {
+"brecha_pct": -25.103073786675935,
+"ic_bajo": -25.832042693111113,
+"ic_alto": -24.366940119529456,
+"p_valor": 0.0,
+"ingreso_hombre": 562677.157185795,
+"ingreso_mujer": 421427.89523667464,
+"r2": 0.27508115775640785,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -25.04597972474285,
+"ic_bajo": -25.75020079969107,
+"ic_alto": -24.335079475874387,
+"p_valor": 0.0,
+"ingreso_hombre": 562496.4838993894,
+"ingreso_mujer": 421613.728589558,
+"r2": 0.2727666540182324,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Rural / Urbano": {
+"brecha_pct": -26.278573242764747,
+"ic_bajo": -26.958016171838672,
+"ic_alto": -25.592810076073025,
+"p_valor": 0.0,
+"ingreso_hombre": 566441.0719614082,
+"ingreso_mujer": 417588.4399889282,
+"r2": 0.2991603149942694,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Tiene hijos": {
+"brecha_pct": -23.24833257435034,
+"ic_bajo": -23.98237794504623,
+"ic_alto": -22.5071990760378,
+"p_valor": 0.0,
+"ingreso_hombre": 556906.0115874704,
+"ingreso_mujer": 427434.64988706494,
+"r2": 0.2737678932879919,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil": {
+"brecha_pct": -24.765993021033584,
+"ic_bajo": -25.474376106886076,
+"ic_alto": -24.050876592068914,
+"p_valor": 0.0,
+"ingreso_hombre": 561613.2938654065,
+"ingreso_mujer": 422524.18470150314,
+"r2": 0.29912510474514165,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Tiene hijos": {
+"brecha_pct": -24.77283629528636,
+"ic_bajo": -25.459153462451212,
+"ic_alto": -24.080200025564668,
+"p_valor": 0.0,
+"ingreso_hombre": 561634.824566067,
+"ingreso_mujer": 422501.94889899605,
+"r2": 0.2954550892007598,
+"n": 250477
+},
+"Edad|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -29.517649768257915,
+"ic_bajo": -30.31411966288572,
+"ic_alto": -28.71207667668433,
+"p_valor": 0.0,
+"ingreso_hombre": 577269.4571354291,
+"ingreso_mujer": 406873.0805590696,
+"r2": 0.23365563700977443,
+"n": 250477
+},
+"Edad|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -29.474200137907737,
+"ic_bajo": -30.253757209939437,
+"ic_alto": -28.685929919414743,
+"p_valor": 0.0,
+"ingreso_hombre": 577119.5449322177,
+"ingreso_mujer": 407018.1752239137,
+"r2": 0.22893730161538606,
+"n": 250477
+},
+"Año|Edad|Rural / Urbano|Sector económico": {
+"brecha_pct": -30.428196485712256,
+"ic_bajo": -31.187009976671433,
+"ic_alto": -29.66101541889472,
+"p_valor": 0.0,
+"ingreso_hombre": 580441.6120115988,
+"ingreso_mujer": 403823.69782387366,
+"r2": 0.2543186200451557,
+"n": 250477
+},
+"Edad|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -28.360116457807806,
+"ic_bajo": -29.16289418838911,
+"ic_alto": -27.54824106467616,
+"p_valor": 0.0,
+"ingreso_hombre": 573319.9521331917,
+"ingreso_mujer": 410725.74603237095,
+"r2": 0.23466843142332094,
+"n": 250477
+},
+"Año|Edad|Estado civil|Sector económico": {
+"brecha_pct": -29.572953238896847,
+"ic_bajo": -30.354401575342514,
+"ic_alto": -28.782736774725283,
+"p_valor": 0.0,
+"ingreso_hombre": 577460.4582017423,
+"ingreso_mujer": 406688.3469246217,
+"r2": 0.2589512393465254,
+"n": 250477
+},
+"Año|Edad|Sector económico|Tiene hijos": {
+"brecha_pct": -29.606433928525398,
+"ic_bajo": -30.372915420958247,
+"ic_alto": -28.831514715602104,
+"p_valor": 0.0,
+"ingreso_hombre": 577576.193773668,
+"ingreso_mujer": 406576.479577175,
+"r2": 0.2530295501188311,
+"n": 250477
+},
+"Edad|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -25.812496379055084,
+"ic_bajo": -26.57717490808542,
+"ic_alto": -25.039853933463007,
+"p_valor": 0.0,
+"ingreso_hombre": 564938.5680360242,
+"ingreso_mujer": 419113.82061783964,
+"r2": 0.10868994742300264,
+"n": 250477
+},
+"Año|Edad|Estado civil|Rural / Urbano": {
+"brecha_pct": -27.15588595605125,
+"ic_bajo": -27.89816597157785,
+"ic_alto": -26.405964253889714,
+"p_valor": 0.0,
+"ingreso_hombre": 569306.2489895894,
+"ingreso_mujer": 414706.0932733033,
+"r2": 0.13385730880273194,
+"n": 250477
+},
+"Año|Edad|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -27.541620420320466,
+"ic_bajo": -28.25924260754903,
+"ic_alto": -26.816819864444565,
+"p_valor": 0.0,
+"ingreso_hombre": 570581.575112028,
+"ingreso_mujer": 413434.16350638657,
+"r2": 0.12692344926781318,
+"n": 250477
+},
+"Año|Edad|Estado civil|Tiene hijos": {
+"brecha_pct": -25.32193605323122,
+"ic_bajo": -26.075673380849896,
+"ic_alto": -24.560513569926613,
+"p_valor": 0.0,
+"ingreso_hombre": 563371.5612774802,
+"ingreso_mujer": 420714.9747887062,
+"r2": 0.1275605882408899,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.162080738844335,
+"ic_bajo": -20.88512958207679,
+"ic_alto": -19.432423787339204,
+"p_valor": 0.0,
+"ingreso_hombre": 547729.5200019671,
+"ingreso_mujer": 437295.8519486855,
+"r2": 0.4911011104490399,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.673295846066143,
+"ic_bajo": -23.34416073152156,
+"ic_alto": -21.99655978760118,
+"p_valor": 0.0,
+"ingreso_hombre": 555156.8584673892,
+"ingreso_mujer": 429284.5015373518,
+"r2": 0.46413411677877514,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -22.118017405760725,
+"ic_bajo": -22.798559918794293,
+"ic_alto": -21.43147580629097,
+"p_valor": 0.0,
+"ingreso_hombre": 553485.2652023137,
+"ingreso_mujer": 431065.29790654517,
+"r2": 0.47391654628838564,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -22.250274313767193,
+"ic_bajo": -22.919353979451795,
+"ic_alto": -21.575386865946033,
+"p_valor": 0.0,
+"ingreso_hombre": 553881.867222103,
+"ingreso_mujer": 430641.6323909694,
+"r2": 0.46389659724409826,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas": {
+"brecha_pct": -22.581296914875292,
+"ic_bajo": -23.2244337889557,
+"ic_alto": -21.932772584091975,
+"p_valor": 0.0,
+"ingreso_hombre": 554878.7303571752,
+"ingreso_mujer": 429579.9167377314,
+"r2": 0.4920007491269498,
+"n": 250477
+},
+"Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.999654939953537,
+"ic_bajo": -21.74875913654165,
+"ic_alto": -20.24337952037708,
+"p_valor": 0.0,
+"ingreso_hombre": 550169.4466567537,
+"ingreso_mujer": 434635.76127378363,
+"r2": 0.44875927926337034,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.59908816245666,
+"ic_bajo": -21.357298997833883,
+"ic_alto": -19.833567256805175,
+"p_valor": 0.0,
+"ingreso_hombre": 548997.9964143467,
+"ingreso_mujer": 435909.41512283444,
+"r2": 0.4568202536667657,
+"n": 250477
+},
+"Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.726203053634073,
+"ic_bajo": -21.47557221019446,
+"ic_alto": -19.96968256660736,
+"p_valor": 0.0,
+"ingreso_hombre": 549368.8300592294,
+"ingreso_mujer": 435505.5308277796,
+"r2": 0.44864922415446884,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.978100936388934,
+"ic_bajo": -21.7038389397621,
+"ic_alto": -20.245635966553955,
+"p_valor": 0.0,
+"ingreso_hombre": 550106.1975855046,
+"ingreso_mujer": 434704.364198686,
+"r2": 0.4760304794341883,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.23766918918326,
+"ic_bajo": -21.947969064163907,
+"ic_alto": -20.52090534515085,
+"p_valor": 0.0,
+"ingreso_hombre": 550869.521675253,
+"ingreso_mujer": 433877.6749978263,
+"r2": 0.41761617429109676,
+"n": 250477
+},
+"Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.581922693078248,
+"ic_bajo": -22.279196943334977,
+"ic_alto": -20.87839282835344,
+"p_valor": 0.0,
+"ingreso_hombre": 551887.4173131569,
+"ingreso_mujer": 432779.5015558057,
+"r2": 0.4080566679420269,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.731755750715998,
+"ic_bajo": -22.40465720535839,
+"ic_alto": -21.05301894112378,
+"p_valor": 0.0,
+"ingreso_hombre": 552332.4328168218,
+"ingreso_mujer": 432300.8975850828,
+"r2": 0.43584493242640776,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -20.689416806081606,
+"ic_bajo": -21.399695546527443,
+"ic_alto": -19.972719567735076,
+"p_valor": 0.0,
+"ingreso_hombre": 549261.4262789264,
+"ingreso_mujer": 435622.4404410505,
+"r2": 0.41747190241815446,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -21.039006760394475,
+"ic_bajo": -21.724337763106917,
+"ic_alto": -20.347675443282178,
+"p_valor": 0.0,
+"ingreso_hombre": 550284.9857672197,
+"ingreso_mujer": 434510.490410218,
+"r2": 0.4451079607698001,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.494618422678645,
+"ic_bajo": -22.168669930879492,
+"ic_alto": -20.814729349639794,
+"p_valor": 0.0,
+"ingreso_hombre": 551628.6739321621,
+"ingreso_mujer": 433058.19536036137,
+"r2": 0.43514647493931835,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.836640703479308,
+"ic_bajo": -26.551726756784955,
+"ic_alto": -25.114592634035592,
+"p_valor": 0.0,
+"ingreso_hombre": 565016.0728931774,
+"ingreso_mujer": 419034.9002228583,
+"r2": 0.40633107821856906,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Sector económico": {
+"brecha_pct": -25.310358215474437,
+"ic_bajo": -26.03435910869152,
+"ic_alto": -24.579270554846676,
+"p_valor": 0.0,
+"ingreso_hombre": 563334.754787368,
+"ingreso_mujer": 420752.71039842063,
+"r2": 0.4199304124616303,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -25.46296529205283,
+"ic_bajo": -26.17681749650155,
+"ic_alto": -24.74221031055611,
+"p_valor": 0.0,
+"ingreso_hombre": 563820.5519976113,
+"ingreso_mujer": 420255.12053299893,
+"r2": 0.40660718817064145,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Sector económico": {
+"brecha_pct": -25.93900395624186,
+"ic_bajo": -26.63167942443726,
+"ic_alto": -25.239788890295323,
+"p_valor": 0.0,
+"ingreso_hombre": 565345.0644162616,
+"ingreso_mujer": 418700.1857909095,
+"r2": 0.43118485603018775,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -28.4448010451387,
+"ic_bajo": -29.100585357067533,
+"ic_alto": -27.782951054587013,
+"p_valor": 0.0,
+"ingreso_hombre": 573605.8128958036,
+"ingreso_mujer": 410444.7806342416,
+"r2": 0.39069150581568113,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -28.878694024897953,
+"ic_bajo": -29.5212503013355,
+"ic_alto": -28.23027954907188,
+"p_valor": 0.0,
+"ingreso_hombre": 575078.0396446796,
+"ingreso_mujer": 409003.01217131154,
+"r2": 0.3757429409745502,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Rural / Urbano": {
+"brecha_pct": -29.332090382872178,
+"ic_bajo": -29.955322342278244,
+"ic_alto": -28.703313133114104,
+"p_valor": 0.0,
+"ingreso_hombre": 576630.1458093014,
+"ingreso_mujer": 407492.47026562924,
+"r2": 0.40061418165796125,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -27.758640717368642,
+"ic_bajo": -28.416237513380526,
+"ic_alto": -27.09500297671926,
+"p_valor": 0.0,
+"ingreso_hombre": 571303.3439655191,
+"ingreso_mujer": 412717.3013078177,
+"r2": 0.3913541412250744,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil": {
+"brecha_pct": -28.465930070808543,
+"ic_bajo": -29.102156415374083,
+"ic_alto": -27.823994328875568,
+"p_valor": 0.0,
+"ingreso_hombre": 573677.2108720234,
+"ingreso_mujer": 410374.65719302814,
+"r2": 0.41575593931419064,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Tiene hijos": {
+"brecha_pct": -29.005369543320825,
+"ic_bajo": -29.629811375607527,
+"ic_alto": -28.375386620274924,
+"p_valor": 0.0,
+"ingreso_hombre": 575510.2676332281,
+"ingreso_mujer": 408581.38774645573,
+"r2": 0.40016408268457726,
+"n": 250477
+},
+"Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -27.875790824782033,
+"ic_bajo": -28.6399397235222,
+"ic_alto": -27.103459147927833,
+"p_valor": 0.0,
+"ingreso_hombre": 571694.2455082987,
+"ingreso_mujer": 412329.9534730896,
+"r2": 0.3330606973078458,
+"n": 250477
+},
+"Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.303343949067195,
+"ic_bajo": -29.054721986103726,
+"ic_alto": -27.544008103275143,
+"p_valor": 0.0,
+"ingreso_hombre": 573128.580009134,
+"ingreso_mujer": 410914.0267387444,
+"r2": 0.319850294667992,
+"n": 250477
+},
+"Año|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.66236663731395,
+"ic_bajo": -29.398794044937947,
+"ic_alto": -27.918257699050876,
+"p_valor": 0.0,
+"ingreso_hombre": 574342.4359045586,
+"ingreso_mujer": 409722.3011719144,
+"r2": 0.3432679565704063,
+"n": 250477
+},
+"Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -27.35785826797599,
+"ic_bajo": -28.12342862052992,
+"ic_alto": -26.584133687229738,
+"p_valor": 0.0,
+"ingreso_hombre": 569972.8149648868,
+"ingreso_mujer": 414040.4600808,
+"r2": 0.33335483301473057,
+"n": 250477
+},
+"Año|Educación|Estado civil|Sector económico": {
+"brecha_pct": -27.964421173111333,
+"ic_bajo": -28.71395547661827,
+"ic_alto": -27.207005920732996,
+"p_valor": 0.0,
+"ingreso_hombre": 571990.5837175726,
+"ingreso_mujer": 412036.7278162529,
+"r2": 0.3564881552139417,
+"n": 250477
+},
+"Año|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -28.498249881023085,
+"ic_bajo": -29.235606324066342,
+"ic_alto": -27.753210272819295,
+"p_valor": 0.0,
+"ingreso_hombre": 573786.4821132489,
+"ingreso_mujer": 410267.3766570836,
+"r2": 0.3427450189878932,
+"n": 250477
+},
+"Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -29.59979936005369,
+"ic_bajo": -30.28378452261814,
+"ic_alto": -28.90910362521557,
+"p_valor": 0.0,
+"ingreso_hombre": 577553.2532765814,
+"ingreso_mujer": 406598.6491092505,
+"r2": 0.280442167747154,
+"n": 250477
+},
+"Año|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -30.09549841017941,
+"ic_bajo": -30.765363758153164,
+"ic_alto": -29.419151919113506,
+"p_valor": 0.0,
+"ingreso_hombre": 579275.7541153111,
+"ingreso_mujer": 404939.8287449826,
+"r2": 0.3038064202265962,
+"n": 250477
+},
+"Año|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -30.956665265455406,
+"ic_bajo": -31.61077684838929,
+"ic_alto": -30.296297404950135,
+"p_valor": 0.0,
+"ingreso_hombre": 582309.8845773541,
+"ingreso_mujer": 402046.16280108306,
+"r2": 0.28735964377381484,
+"n": 250477
+},
+"Año|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -29.645142140459612,
+"ic_bajo": -30.317910910237977,
+"ic_alto": -28.965877902139738,
+"p_valor": 0.0,
+"ingreso_hombre": 577710.0973344924,
+"ingreso_mujer": 406447.1178198942,
+"r2": 0.3033768907450649,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.900162017309686,
+"ic_bajo": -21.671802836391805,
+"ic_alto": -20.12091947145185,
+"p_valor": 0.0,
+"ingreso_hombre": 549877.6944931139,
+"ingreso_mujer": 434952.36544700596,
+"r2": 0.3815765397805002,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.113231261084852,
+"ic_bajo": -20.902373837627785,
+"ic_alto": -19.31621555311778,
+"p_valor": 0.0,
+"ingreso_hombre": 547588.3407153554,
+"ingreso_mujer": 437450.63138853834,
+"r2": 0.3878742424215458,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.06009058576066,
+"ic_bajo": -20.833925481169725,
+"ic_alto": -19.278691586043127,
+"p_valor": 0.0,
+"ingreso_hombre": 547434.898778718,
+"ingreso_mujer": 437618.96218563983,
+"r2": 0.3814656916445667,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.81694908509909,
+"ic_bajo": -21.561568799042895,
+"ic_alto": -20.0652606612142,
+"p_valor": 0.0,
+"ingreso_hombre": 549634.0819186318,
+"ingreso_mujer": 435217.0349312785,
+"r2": 0.41355463610642773,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.0156635996782,
+"ic_bajo": -18.794114167770715,
+"ic_alto": -17.229750699505285,
+"p_valor": 0.0,
+"ingreso_hombre": 541639.5550687845,
+"ingreso_mujer": 444059.59490479884,
+"r2": 0.31926140775388234,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -18.218783465266974,
+"ic_bajo": -18.969823125258024,
+"ic_alto": -17.46078268791651,
+"p_valor": 0.0,
+"ingreso_hombre": 542206.1078783461,
+"ingreso_mujer": 443422.7511485385,
+"r2": 0.3127281495112092,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -19.162145076867144,
+"ic_bajo": -19.881318913292066,
+"ic_alto": -18.436515679766696,
+"p_valor": 0.0,
+"ingreso_hombre": 544863.8396255539,
+"ingreso_mujer": 440456.24020511616,
+"r2": 0.3462043386919723,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -16.115335902205675,
+"ic_bajo": -16.897726505591848,
+"ic_alto": -15.325579254179244,
+"p_valor": 9.770412015281567e-296,
+"ingreso_hombre": 536433.9621677415,
+"ingreso_mujer": 449985.82727089874,
+"r2": 0.3149893058001929,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas": {
+"brecha_pct": -17.37725900243192,
+"ic_bajo": -18.126786419393348,
+"ic_alto": -16.620869862029984,
+"p_valor": 0.0,
+"ingreso_hombre": 539871.7950803606,
+"ingreso_mujer": 446056.87496816745,
+"r2": 0.34767225954653125,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -17.715582227910186,
+"ic_bajo": -18.441195754287865,
+"ic_alto": -16.98351305281951,
+"p_valor": 0.0,
+"ingreso_hombre": 540806.1933721688,
+"ingreso_mujer": 444999.22749169095,
+"r2": 0.3403763123219333,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.99291530614732,
+"ic_bajo": -21.814566777295465,
+"ic_alto": -20.16262909177129,
+"p_valor": 0.0,
+"ingreso_hombre": 550149.6669260615,
+"ingreso_mujer": 434657.2132912219,
+"r2": 0.3288592494295294,
+"n": 250477
+},
+"Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.208198855445627,
+"ic_bajo": -22.0130603378495,
+"ic_alto": -20.395030828270755,
+"p_valor": 0.0,
+"ingreso_hombre": 550782.677100634,
+"ingreso_mujer": 433971.5916797846,
+"r2": 0.3223806703629817,
+"n": 250477
+},
+"Año|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.83053409240916,
+"ic_bajo": -22.608052285885005,
+"ic_alto": -21.045204562495336,
+"p_valor": 0.0,
+"ingreso_hombre": 552626.474826078,
+"ingreso_mujer": 431985.1638354923,
+"r2": 0.35492804506810005,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.97816923339599,
+"ic_bajo": -20.804002126967724,
+"ic_alto": -19.14372479395805,
+"p_valor": 0.0,
+"ingreso_hombre": 547198.6374188255,
+"ingreso_mujer": 437878.3675924553,
+"r2": 0.3280163127896141,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.863854534717042,
+"ic_bajo": -21.663607487162515,
+"ic_alto": -20.05593673366891,
+"p_valor": 0.0,
+"ingreso_hombre": 549771.356631415,
+"ingreso_mujer": 435067.8605102961,
+"r2": 0.359867667175773,
+"n": 250477
+},
+"Año|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.21242144027834,
+"ic_bajo": -21.99780782337951,
+"ic_alto": -20.419127179801556,
+"p_valor": 0.0,
+"ingreso_hombre": 550795.1175794499,
+"ingreso_mujer": 433958.1359660202,
+"r2": 0.352743793384127,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -14.935165361365021,
+"ic_bajo": -15.765118989798065,
+"ic_alto": -14.09703432451056,
+"p_valor": 2.2233988698589565e-229,
+"ingreso_hombre": 533284.7191339965,
+"ingreso_mujer": 453637.7644844429,
+"r2": 0.20723876160882015,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -15.960046332028089,
+"ic_bajo": -16.75924769248581,
+"ic_alto": -15.153171773084628,
+"p_valor": 1.3536062200550104e-278,
+"ingreso_hombre": 536015.9894053532,
+"ingreso_mujer": 450467.5891491803,
+"r2": 0.24176723456387839,
+"n": 250477
+},
+"Año|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -16.692091833701483,
+"ic_bajo": -17.464268004441585,
+"ic_alto": -15.912691445955707,
+"p_valor": 0.0,
+"ingreso_hombre": 537996.0215938078,
+"ingreso_mujer": 448193.2316077098,
+"r2": 0.23338549639785244,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -14.101855324220336,
+"ic_bajo": -14.910256375363318,
+"ic_alto": -13.285774002440142,
+"p_valor": 6.767818174696841e-218,
+"ingreso_hombre": 531098.2256038296,
+"ingreso_mujer": 456203.52219967614,
+"r2": 0.23222467274758996,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.36130546628773,
+"ic_bajo": -26.135537348026293,
+"ic_alto": -24.578958247549753,
+"p_valor": 0.0,
+"ingreso_hombre": 563496.7792011715,
+"ingreso_mujer": 420586.6397352698,
+"r2": 0.31349997927552364,
+"n": 250477
+},
+"Categoría ocupacional|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.55566120817394,
+"ic_bajo": -26.31203705793287,
+"ic_alto": -24.791521479441357,
+"p_valor": 0.0,
+"ingreso_hombre": 564116.3235455141,
+"ingreso_mujer": 419952.6670802164,
+"r2": 0.30302295366551246,
+"n": 250477
+},
+"Año|Categoría ocupacional|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.390432110357242,
+"ic_bajo": -27.121090339241317,
+"ic_alto": -25.65244855992376,
+"p_valor": 0.0,
+"ingreso_hombre": 566803.6846612107,
+"ingreso_mujer": 417221.74306169036,
+"r2": 0.3317553924442469,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -24.24904423977452,
+"ic_bajo": -25.027017403038986,
+"ic_alto": -23.462998271857018,
+"p_valor": 0.0,
+"ingreso_hombre": 559994.8438452133,
+"ingreso_mujer": 424201.44642073155,
+"r2": 0.3145437484245207,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Sector económico": {
+"brecha_pct": -25.40056772034799,
+"ic_bajo": -26.152976552484773,
+"ic_alto": -24.640492783008185,
+"p_valor": 0.0,
+"ingreso_hombre": 563621.7498322593,
+"ingreso_mujer": 420458.62557950563,
+"r2": 0.34223356744056765,
+"n": 250477
+},
+"Año|Categoría ocupacional|Sector económico|Tiene hijos": {
+"brecha_pct": -25.71980905524257,
+"ic_bajo": -26.45642047192459,
+"ic_alto": -24.975819749386975,
+"p_valor": 0.0,
+"ingreso_hombre": 564641.3683679545,
+"ingreso_mujer": 419416.6865768081,
+"r2": 0.3308236854526234,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -23.179099596276163,
+"ic_bajo": -23.923715532891677,
+"ic_alto": -22.42719554225395,
+"p_valor": 0.0,
+"ingreso_hombre": 556694.433000776,
+"ingreso_mujer": 427657.67592860095,
+"r2": 0.24763143080220285,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Rural / Urbano": {
+"brecha_pct": -24.509594997769423,
+"ic_bajo": -25.227067422533533,
+"ic_alto": -23.785238174299085,
+"p_valor": 0.0,
+"ingreso_hombre": 560808.6004016347,
+"ingreso_mujer": 423356.68373053503,
+"r2": 0.2763512018257853,
+"n": 250477
+},
+"Año|Categoría ocupacional|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -25.161646588261643,
+"ic_bajo": -25.8550865070426,
+"ic_alto": -24.461721276237824,
+"p_valor": 0.0,
+"ingreso_hombre": 562862.7134790883,
+"ingreso_mujer": 421237.18673638004,
+"r2": 0.26425598282626905,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Tiene hijos": {
+"brecha_pct": -22.84283256841404,
+"ic_bajo": -23.571814896585998,
+"ic_alto": -22.106897108566017,
+"p_valor": 0.0,
+"ingreso_hombre": 555670.6303410463,
+"ingreso_mujer": 428739.71862039005,
+"r2": 0.27149241474489005,
+"n": 250477
+},
+"Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -27.2530043579563,
+"ic_bajo": -28.076060203403742,
+"ic_alto": -26.42052993885119,
+"p_valor": 0.0,
+"ingreso_hombre": 569626.4389477377,
+"ingreso_mujer": 414386.12071723957,
+"r2": 0.2040143333269422,
+"n": 250477
+},
+"Año|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.214649606527065,
+"ic_bajo": -29.01682312913718,
+"ic_alto": -27.403410804103558,
+"p_valor": 0.0,
+"ingreso_hombre": 572830.0346101059,
+"ingreso_mujer": 411208.04750391684,
+"r2": 0.23153260962277644,
+"n": 250477
+},
+"Año|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.883844029552495,
+"ic_bajo": -29.66760257381441,
+"ic_alto": -28.091351566382905,
+"p_valor": 0.0,
+"ingreso_hombre": 575095.5905676162,
+"ingreso_mujer": 408985.87716723175,
+"r2": 0.21925405702473577,
+"n": 250477
+},
+"Año|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -27.38870084567341,
+"ic_bajo": -28.199969716745045,
+"ic_alto": -26.568265443911287,
+"p_valor": 0.0,
+"ingreso_hombre": 570074.8361052237,
+"ingreso_mujer": 413938.7446479011,
+"r2": 0.2291737175969638,
+"n": 250477
+},
+"Año|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -24.708418823502132,
+"ic_bajo": -25.477151322811263,
+"ic_alto": -23.931756546064754,
+"p_valor": 0.0,
+"ingreso_hombre": 561432.2608126662,
+"ingreso_mujer": 422711.2264008161,
+"r2": 0.09036189230935998,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.616255760614187,
+"ic_bajo": -21.32588773045214,
+"ic_alto": -19.900222987283335,
+"p_valor": 0.0,
+"ingreso_hombre": 549048.0303284924,
+"ingreso_mujer": 435854.8841473557,
+"r2": 0.5114351864216194,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.83538706950975,
+"ic_bajo": -23.492681377876323,
+"ic_alto": -22.172445774481098,
+"p_valor": 0.0,
+"ingreso_hombre": 555648.0334799179,
+"ingreso_mujer": 428763.6542906593,
+"r2": 0.4879501327847259,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -22.245263362586932,
+"ic_bajo": -22.916147375854877,
+"ic_alto": -21.56854044345302,
+"p_valor": 0.0,
+"ingreso_hombre": 553866.823285656,
+"ingreso_mujer": 430657.68976776773,
+"r2": 0.4909530398007883,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -22.328712002475616,
+"ic_bajo": -22.98415389928379,
+"ic_alto": -21.667691979842154,
+"p_valor": 0.0,
+"ingreso_hombre": 554117.5335488317,
+"ingreso_mujer": 430390.22532749164,
+"r2": 0.48800741266474534,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas": {
+"brecha_pct": -22.766505722088613,
+"ic_bajo": -23.39809349155775,
+"ic_alto": -22.129710469820086,
+"p_valor": 0.0,
+"ingreso_hombre": 555439.1275634017,
+"ingreso_mujer": 428985.0468039606,
+"r2": 0.5142442318827996,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.623125718131032,
+"ic_bajo": -22.361126998554703,
+"ic_alto": -20.878109319264095,
+"p_valor": 0.0,
+"ingreso_hombre": 552009.6728534694,
+"ingreso_mujer": 432647.92731611955,
+"r2": 0.4663350523671306,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.18738466179716,
+"ic_bajo": -21.93660536665154,
+"ic_alto": -20.430973241406768,
+"p_valor": 0.0,
+"ingreso_hombre": 550721.3686653874,
+"ingreso_mujer": 434037.9138715382,
+"r2": 0.46959336485172565,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.248721108767832,
+"ic_bajo": -21.986817097991253,
+"ic_alto": -20.503641867880496,
+"p_valor": 0.0,
+"ingreso_hombre": 550902.1019048117,
+"ingreso_mujer": 433842.4506887185,
+"r2": 0.4664807869121159,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.615792418950562,
+"ic_bajo": -22.331720615338778,
+"ic_alto": -20.89326496239533,
+"p_valor": 0.0,
+"ingreso_hombre": 551987.907175511,
+"ingreso_mujer": 432671.34698274307,
+"r2": 0.4924544381195761,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.83836726987083,
+"ic_bajo": -22.537884897776006,
+"ic_alto": -21.132532684171444,
+"p_valor": 0.0,
+"ingreso_hombre": 552649.8151224408,
+"ingreso_mujer": 431960.1187797397,
+"r2": 0.4336545955580191,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.110191005458134,
+"ic_bajo": -22.79354881412531,
+"ic_alto": -21.420784765766165,
+"p_valor": 0.0,
+"ingreso_hombre": 553461.8259892823,
+"ingreso_mujer": 431090.3591207557,
+"r2": 0.4301785936017539,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.377022073415453,
+"ic_bajo": -23.037812855217364,
+"ic_alto": -21.71055779825902,
+"p_valor": 0.0,
+"ingreso_hombre": 554262.8497454374,
+"ingreso_mujer": 430235.32951315865,
+"r2": 0.45645259130849636,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.23413595723722,
+"ic_bajo": -21.933478532907145,
+"ic_alto": -20.528528467632945,
+"p_valor": 0.0,
+"ingreso_hombre": 550859.1073435165,
+"ingreso_mujer": 433888.9355573712,
+"r2": 0.4337433564408716,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -21.65693250243753,
+"ic_bajo": -22.33254600992255,
+"ic_alto": -20.975441969402596,
+"p_valor": 0.0,
+"ingreso_hombre": 552110.0508911482,
+"ingreso_mujer": 432539.9498304782,
+"r2": 0.45995116762409227,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -22.016310075855717,
+"ic_bajo": -22.678072525220216,
+"ic_alto": -21.34888390917724,
+"p_valor": 0.0,
+"ingreso_hombre": 553180.9235509052,
+"ingreso_mujer": 431390.8961414549,
+"r2": 0.4558724989710633,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.087639246807313,
+"ic_bajo": -26.78790946500822,
+"ic_alto": -25.380670976755727,
+"p_valor": 0.0,
+"ingreso_hombre": 565823.9248414243,
+"ingreso_mujer": 418213.82055666746,
+"r2": 0.4368333838364842,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Sector económico": {
+"brecha_pct": -25.57547363633452,
+"ic_bajo": -26.288154122665897,
+"ic_alto": -24.855902622849023,
+"p_valor": 0.0,
+"ingreso_hombre": 564179.6083988615,
+"ingreso_mujer": 419888.00139123556,
+"r2": 0.44189066403671784,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -25.607624575834752,
+"ic_bajo": -26.30612354706624,
+"ic_alto": -24.902504962071003,
+"p_valor": 0.0,
+"ingreso_hombre": 564282.3558993386,
+"ingreso_mujer": 419783.0486529601,
+"r2": 0.4375708997029415,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Sector económico": {
+"brecha_pct": -26.218014500284326,
+"ic_bajo": -26.897036417464438,
+"ic_alto": -25.53268544121261,
+"p_valor": 0.0,
+"ingreso_hombre": 566245.0849374281,
+"ingreso_mujer": 417786.8664613856,
+"r2": 0.4602958747481769,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -28.387453959013897,
+"ic_bajo": -29.03469408409496,
+"ic_alto": -27.73431067077292,
+"p_valor": 0.0,
+"ingreso_hombre": 573412.1799079488,
+"ingreso_mujer": 410635.0613412019,
+"r2": 0.41583837405008983,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -28.587284505370214,
+"ic_bajo": -29.217723924698024,
+"ic_alto": -27.95122992524961,
+"p_valor": 0.0,
+"ingreso_hombre": 574087.8660238117,
+"ingreso_mujer": 409971.7344527759,
+"r2": 0.41111982056452434,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Rural / Urbano": {
+"brecha_pct": -29.19012913132766,
+"ic_bajo": -29.80281828718504,
+"ic_alto": -28.572092353350044,
+"p_valor": 0.0,
+"ingreso_hombre": 576142.6528506045,
+"ingreso_mujer": 407965.8685028559,
+"r2": 0.43403542459862765,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -27.654665645065137,
+"ic_bajo": -28.302352152827524,
+"ic_alto": -27.001128208786497,
+"p_valor": 0.0,
+"ingreso_hombre": 570957.1583237998,
+"ingreso_mujer": 413060.86521278735,
+"r2": 0.4168488088864736,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil": {
+"brecha_pct": -28.446771388650838,
+"ic_bajo": -29.074968707609894,
+"ic_alto": -27.813009999230953,
+"p_valor": 0.0,
+"ingreso_hombre": 573612.4696989796,
+"ingreso_mujer": 410438.241786917,
+"r2": 0.43948447118894474,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Tiene hijos": {
+"brecha_pct": -28.729330207155222,
+"ic_bajo": -29.34289920799298,
+"ic_alto": -28.11043312301701,
+"p_valor": 0.0,
+"ingreso_hombre": 574569.8008948575,
+"ingreso_mujer": 409499.7455251797,
+"r2": 0.4339423888065017,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.452770648244886,
+"ic_bajo": -29.20438001627127,
+"ic_alto": -27.69318173794971,
+"p_valor": 0.0,
+"ingreso_hombre": 573632.7397953032,
+"ingreso_mujer": 410418.331978102,
+"r2": 0.3551705260354585,
+"n": 250477
+},
+"Edad|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.640740945604293,
+"ic_bajo": -29.378167329249514,
+"ic_alto": -27.895614426593983,
+"p_valor": 0.0,
+"ingreso_hombre": 574269.0738332812,
+"ingreso_mujer": 409794.1560659697,
+"r2": 0.3498071442860967,
+"n": 250477
+},
+"Año|Edad|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -29.17694053517067,
+"ic_bajo": -29.900128836066376,
+"ic_alto": -28.44629143142513,
+"p_valor": 0.0,
+"ingreso_hombre": 576097.4339252163,
+"ingreso_mujer": 408009.828204212,
+"r2": 0.3717179751466656,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -27.84426708710319,
+"ic_bajo": -28.596996118762274,
+"ic_alto": -27.08360280112282,
+"p_valor": 0.0,
+"ingreso_hombre": 571588.9697193485,
+"ingreso_mujer": 412434.21035027166,
+"r2": 0.35599000761638555,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Sector económico": {
+"brecha_pct": -28.57612022215146,
+"ic_bajo": -29.313129236372284,
+"ic_alto": -27.831426863141083,
+"p_valor": 0.0,
+"ingreso_hombre": 574050.0454303414,
+"ingreso_mujer": 410008.8143128519,
+"r2": 0.37762658998418996,
+"n": 250477
+},
+"Año|Edad|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -28.842672298782645,
+"ic_bajo": -29.56688181135413,
+"ic_alto": -28.111016297519665,
+"p_valor": 0.0,
+"ingreso_hombre": 574955.3301381945,
+"ingreso_mujer": 409122.8484020509,
+"r2": 0.37151081747780534,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -29.95117977552425,
+"ic_bajo": -30.623373686749677,
+"ic_alto": -29.272472940879226,
+"p_valor": 0.0,
+"ingreso_hombre": 578772.4750104891,
+"ingreso_mujer": 405423.2905288465,
+"r2": 0.30798180247763995,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -30.58080048090067,
+"ic_bajo": -31.239257281350618,
+"ic_alto": -29.91603826051318,
+"p_valor": 0.0,
+"ingreso_hombre": 580979.0295361627,
+"ingreso_mujer": 403310.9916778358,
+"r2": 0.3297364053447046,
+"n": 250477
+},
+"Año|Edad|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -31.139267336422762,
+"ic_bajo": -31.78000738548875,
+"ic_alto": -30.49250928889704,
+"p_valor": 0.0,
+"ingreso_hombre": 582960.161497881,
+"ingreso_mujer": 401430.6383442136,
+"r2": 0.3225022350534166,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -30.000601402988636,
+"ic_bajo": -30.661899002713945,
+"ic_alto": -29.332996816064195,
+"p_valor": 0.0,
+"ingreso_hombre": 578944.6558630734,
+"ingreso_mujer": 405257.77731368877,
+"r2": 0.3297432113742226,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.977101595853178,
+"ic_bajo": -22.732859106099834,
+"ic_alto": -21.213951947011942,
+"p_valor": 0.0,
+"ingreso_hombre": 553063.7495671711,
+"ingreso_mujer": 431516.36743495887,
+"r2": 0.4023866325266495,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.3247965473118,
+"ic_bajo": -22.09763416792432,
+"ic_alto": -20.544291919652014,
+"p_valor": 0.0,
+"ingreso_hombre": 551126.543067953,
+"ingreso_mujer": 433599.9290404796,
+"r2": 0.4050854396625152,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.984111949544204,
+"ic_bajo": -21.74153683465314,
+"ic_alto": -20.219356324303426,
+"p_valor": 0.0,
+"ingreso_hombre": 550123.8341152383,
+"ingreso_mujer": 434685.2329033721,
+"r2": 0.4036062375294227,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.906209808182876,
+"ic_bajo": -22.63609364992639,
+"ic_alto": -21.16943993330619,
+"p_valor": 0.0,
+"ingreso_hombre": 552852.1028046779,
+"ingreso_mujer": 431743.1612353342,
+"r2": 0.43319784197992783,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -19.220007241186277,
+"ic_bajo": -19.981018760531487,
+"ic_alto": -18.451758207396296,
+"p_valor": 0.0,
+"ingreso_hombre": 545028.2888436153,
+"ingreso_mujer": 440273.8122613586,
+"r2": 0.3415422715460611,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -19.015738801730464,
+"ic_bajo": -19.751709488930025,
+"ic_alto": -18.273018402493825,
+"p_valor": 0.0,
+"ingreso_hombre": 544448.486716943,
+"ingreso_mujer": 440917.5845728751,
+"r2": 0.3408824668500906,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -20.13344164069365,
+"ic_bajo": -20.83959600966512,
+"ic_alto": -19.420987986123816,
+"p_valor": 0.0,
+"ingreso_hombre": 547646.7356032446,
+"ingreso_mujer": 437386.5996934019,
+"r2": 0.37118541637040026,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -17.33250761641778,
+"ic_bajo": -18.095295952738077,
+"ic_alto": -16.562615340796384,
+"p_valor": 0.0,
+"ingreso_hombre": 539748.6056873396,
+"ingreso_mujer": 446196.6374970726,
+"r2": 0.3395699219640437,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas": {
+"brecha_pct": -18.708504164072824,
+"ic_bajo": -19.4409529465002,
+"ic_alto": -17.969395903430396,
+"p_valor": 0.0,
+"ingreso_hombre": 543580.3256988622,
+"ingreso_mujer": 441884.57783040986,
+"r2": 0.36908007782843466,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -18.574813413994317,
+"ic_bajo": -19.284942594081265,
+"ic_alto": -17.858436534052867,
+"p_valor": 0.0,
+"ingreso_hombre": 543204.0071250926,
+"ingreso_mujer": 442304.8763442661,
+"r2": 0.36715251107704583,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -22.55078846571611,
+"ic_bajo": -23.353107698620036,
+"ic_alto": -21.740070768997665,
+"p_valor": 0.0,
+"ingreso_hombre": 554786.6019358631,
+"ingreso_mujer": 429677.84889717243,
+"r2": 0.3479221205820646,
+"n": 250477
+},
+"Edad|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -22.353128775611818,
+"ic_bajo": -23.14049214357373,
+"ic_alto": -21.557699508055993,
+"p_valor": 0.0,
+"ingreso_hombre": 554190.9628888888,
+"ingreso_mujer": 430311.9432915326,
+"r2": 0.3455830716813748,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -23.181745278741374,
+"ic_bajo": -23.942620189888675,
+"ic_alto": -22.413258606160035,
+"p_valor": 0.0,
+"ingreso_hombre": 556702.5133243528,
+"ingreso_mujer": 427649.1547251498,
+"r2": 0.3757018304454802,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.404492023950162,
+"ic_bajo": -22.21042898805502,
+"ic_alto": -20.59020516947234,
+"p_valor": 0.0,
+"ingreso_hombre": 551361.9953253745,
+"ingreso_mujer": 433345.761012862,
+"r2": 0.34889254573176265,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -22.46065353412785,
+"ic_bajo": -23.24072368250536,
+"ic_alto": -21.672655882188796,
+"p_valor": 0.0,
+"ingreso_hombre": 554514.7164708538,
+"ingreso_mujer": 429967.08720858325,
+"r2": 0.3782152307060912,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -22.35730162272619,
+"ic_bajo": -23.125078459653214,
+"ic_alto": -21.581856728915206,
+"p_valor": 0.0,
+"ingreso_hombre": 554203.5153084026,
+"ingreso_mujer": 430298.5637871513,
+"r2": 0.3747675171124767,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -16.800291394983923,
+"ic_bajo": -17.605917468517664,
+"ic_alto": -15.986788137186247,
+"p_valor": 1.9075745346247396e-300,
+"ingreso_hombre": 538290.7774119185,
+"ingreso_mujer": 447856.3582543919,
+"r2": 0.23867884127873773,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.003472322554426,
+"ic_bajo": -18.778332910197047,
+"ic_alto": -17.221219508775665,
+"p_valor": 0.0,
+"ingreso_hombre": 541605.6139839417,
+"ingreso_mujer": 444097.797172942,
+"r2": 0.2694610688669905,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -18.149438447256074,
+"ic_bajo": -18.90114604606259,
+"ic_alto": -17.390763249198095,
+"p_valor": 0.0,
+"ingreso_hombre": 542012.4623806969,
+"ingreso_mujer": 443640.2441444555,
+"r2": 0.2660059840704273,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -16.101024295746345,
+"ic_bajo": -16.88228802967369,
+"ic_alto": -15.312417084628882,
+"p_valor": 4.065153776173068e-296,
+"ingreso_hombre": 536395.3954792302,
+"ingreso_mujer": 450030.242531855,
+"r2": 0.26342439573026466,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.391777989111876,
+"ic_bajo": -27.14821100809487,
+"ic_alto": -25.627490792213347,
+"p_valor": 0.0,
+"ingreso_hombre": 566808.0523619473,
+"ingreso_mujer": 417217.3295581731,
+"r2": 0.3390392217013798,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -26.1737343534991,
+"ic_bajo": -26.912584045201747,
+"ic_alto": -25.427415539242347,
+"p_valor": 0.0,
+"ingreso_hombre": 566101.9251999812,
+"ingreso_mujer": 417931.9111280938,
+"r2": 0.3359392520348674,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Rural / Urbano|Sector económico": {
+"brecha_pct": -27.22347846267833,
+"ic_bajo": -27.937964418210047,
+"ic_alto": -26.501908469393165,
+"p_valor": 0.0,
+"ingreso_hombre": 569529.030679664,
+"ingreso_mujer": 414483.4176738847,
+"r2": 0.3619057667601656,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -25.172447978409995,
+"ic_bajo": -25.93161193610588,
+"ic_alto": -24.405502969583804,
+"p_valor": 0.0,
+"ingreso_hombre": 562896.9543963228,
+"ingreso_mujer": 421202.01137885463,
+"r2": 0.34183711947530304,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Sector económico": {
+"brecha_pct": -26.474179729672187,
+"ic_bajo": -27.208824581841817,
+"ic_alto": -25.732120475197352,
+"p_valor": 0.0,
+"ingreso_hombre": 567075.6823084266,
+"ingreso_mujer": 416947.04697082896,
+"r2": 0.3667656409518989,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Sector económico|Tiene hijos": {
+"brecha_pct": -26.34679578933923,
+"ic_bajo": -27.06633792821993,
+"ic_alto": -25.62015485855753,
+"p_valor": 0.0,
+"ingreso_hombre": 566662.1357539939,
+"ingreso_mujer": 417364.8200313809,
+"r2": 0.36238502387333704,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -23.94703897087176,
+"ic_bajo": -24.674859279989537,
+"ic_alto": -23.212186183655692,
+"p_valor": 0.0,
+"ingreso_hombre": 559056.5799942631,
+"ingreso_mujer": 425179.0829138144,
+"r2": 0.2813240787826511,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Rural / Urbano": {
+"brecha_pct": -25.432163487994618,
+"ic_bajo": -26.1342731786387,
+"ic_alto": -24.72338009306427,
+"p_valor": 0.0,
+"ingreso_hombre": 563722.3861675905,
+"ingreso_mujer": 420355.5872990246,
+"r2": 0.3066101822616619,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -25.48170651695849,
+"ic_bajo": -26.161914280991706,
+"ic_alto": -24.79523257473626,
+"p_valor": 0.0,
+"ingreso_hombre": 563880.30879348,
+"ingreso_mujer": 420193.9833998064,
+"r2": 0.30264273983168766,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Tiene hijos": {
+"brecha_pct": -23.71145443573395,
+"ic_bajo": -24.421763856183766,
+"ic_alto": -22.994469290915287,
+"p_valor": 0.0,
+"ingreso_hombre": 558328.3399643468,
+"ingreso_mujer": 425940.57003191183,
+"r2": 0.3042803599964041,
+"n": 250477
+},
+"Edad|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.46757687765724,
+"ic_bajo": -29.267678407051356,
+"ic_alto": -27.658424854190223,
+"p_valor": 0.0,
+"ingreso_hombre": 573682.776925383,
+"ingreso_mujer": 410369.1913702704,
+"r2": 0.2382727192885331,
+"n": 250477
+},
+"Año|Edad|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -29.67035329685215,
+"ic_bajo": -30.449050236649157,
+"ic_alto": -28.882938015664948,
+"p_valor": 0.0,
+"ingreso_hombre": 577797.3667734398,
+"ingreso_mujer": 406362.84671185067,
+"r2": 0.26273428672408605,
+"n": 250477
+},
+"Año|Edad|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -29.734978570314574,
+"ic_bajo": -30.498751324867367,
+"ic_alto": -28.962812458351415,
+"p_valor": 0.0,
+"ingreso_hombre": 578021.2730086072,
+"ingreso_mujer": 406146.7713476384,
+"r2": 0.2566112649046718,
+"n": 250477
+},
+"Año|Edad|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -28.63059056943641,
+"ic_bajo": -29.417744327668583,
+"ic_alto": -27.83465824450645,
+"p_valor": 0.0,
+"ingreso_hombre": 574234.6510278801,
+"ingreso_mujer": 409827.8791842561,
+"r2": 0.2626678786823954,
+"n": 250477
+},
+"Año|Edad|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -26.14525141749875,
+"ic_bajo": -26.88975576258543,
+"ic_alto": -25.39316555321959,
+"p_valor": 0.0,
+"ingreso_hombre": 566009.903056516,
+"ingreso_mujer": 418025.19085444894,
+"r2": 0.13918906549351362,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.186509617983017,
+"ic_bajo": -20.909433984401815,
+"ic_alto": -19.45697738837786,
+"p_valor": 0.0,
+"ingreso_hombre": 547800.167675171,
+"ingreso_mujer": 437218.43414009566,
+"r2": 0.4912375309271336,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -19.900376360552087,
+"ic_bajo": -20.629822857953016,
+"ic_alto": -19.164225932131597,
+"p_valor": 0.0,
+"ingreso_hombre": 546974.6006368337,
+"ingreso_mujer": 438124.59651347704,
+"r2": 0.5004115702462029,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.83509572649921,
+"ic_bajo": -20.557481936832865,
+"ic_alto": -19.10614071837813,
+"p_valor": 0.0,
+"ingreso_hombre": 546786.8365591826,
+"ingreso_mujer": 438331.1441077718,
+"r2": 0.491465339435575,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.188601446221433,
+"ic_bajo": -20.884432969999146,
+"ic_alto": -19.486649995257977,
+"p_valor": 0.0,
+"ingreso_hombre": 547806.2186158347,
+"ingreso_mujer": 437211.8044418675,
+"r2": 0.5191977664495714,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.24958951370226,
+"ic_bajo": -22.929659028393388,
+"ic_alto": -21.56351905832524,
+"p_valor": 0.0,
+"ingreso_hombre": 553879.8112260092,
+"ingreso_mujer": 430643.8268289542,
+"r2": 0.47449330774073606,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.395668434996384,
+"ic_bajo": -23.06442728132533,
+"ic_alto": -21.72109643385831,
+"p_valor": 0.0,
+"ingreso_hombre": 554318.9721994216,
+"ingreso_mujer": 430175.533113359,
+"r2": 0.4644655326384495,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.728669981428475,
+"ic_bajo": -23.37143417673535,
+"ic_alto": -22.080514248301085,
+"p_valor": 0.0,
+"ingreso_hombre": 555324.4905731395,
+"ingreso_mujer": 429106.61978472205,
+"r2": 0.49260997774063,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.60559944647167,
+"ic_bajo": -22.285962829277615,
+"ic_alto": -20.91927968371796,
+"p_valor": 0.0,
+"ingreso_hombre": 551957.658620558,
+"ingreso_mujer": 432703.8977848768,
+"r2": 0.47485111265592284,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -22.154916314183815,
+"ic_bajo": -22.80790058420744,
+"ic_alto": -21.496408312325897,
+"p_valor": 0.0,
+"ingreso_hombre": 553595.8185193471,
+"ingreso_mujer": 430947.1282075649,
+"r2": 0.5026262843626763,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -22.41851904267077,
+"ic_bajo": -23.062045608442904,
+"ic_alto": -21.769609874201056,
+"p_valor": 0.0,
+"ingreso_hombre": 554387.7748791692,
+"ingreso_mujer": 430102.24599764356,
+"r2": 0.49211472574261284,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.633465612038393,
+"ic_bajo": -21.391226357329096,
+"ic_alto": -19.868400321459735,
+"p_valor": 0.0,
+"ingreso_hombre": 549098.2028268649,
+"ingreso_mujer": 435800.21397026314,
+"r2": 0.45713771988490426,
+"n": 250477
+},
+"Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.769734984558664,
+"ic_bajo": -21.518667065821305,
+"ic_alto": -20.01365599024836,
+"p_valor": 0.0,
+"ingreso_hombre": 549496.0205817885,
+"ingreso_mujer": 435367.1533562554,
+"r2": 0.44894545524782825,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.022654730024215,
+"ic_bajo": -21.74792309599488,
+"ic_alto": -20.290664316237205,
+"p_valor": 0.0,
+"ingreso_hombre": 550236.9653693176,
+"ingreso_mujer": 434562.54794276337,
+"r2": 0.4763893661067703,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.14675066708661,
+"ic_bajo": -20.905382050142595,
+"ic_alto": -19.380842915672368,
+"p_valor": 0.0,
+"ingreso_hombre": 547685.2015289227,
+"ingreso_mujer": 437344.4295363602,
+"r2": 0.4574394022900946,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.60796372858693,
+"ic_bajo": -21.34289937520728,
+"ic_alto": -19.866161182470133,
+"p_valor": 0.0,
+"ingreso_hombre": 549023.8617884561,
+"ingreso_mujer": 435881.223489804,
+"r2": 0.48467143841651994,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.87128641091367,
+"ic_bajo": -21.598814542147526,
+"ic_alto": -20.13700714219833,
+"p_valor": 0.0,
+"ingreso_hombre": 549793.1175686857,
+"ingreso_mujer": 435044.2213334338,
+"r2": 0.476070697319548,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -20.848897294144887,
+"ic_bajo": -21.558306473066967,
+"ic_alto": -20.13307237685065,
+"p_valor": 0.0,
+"ingreso_hombre": 549727.5698234638,
+"ingreso_mujer": 435115.4333933714,
+"r2": 0.41817784493167853,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.20045901356743,
+"ic_bajo": -21.884701103767668,
+"ic_alto": -20.510223382478067,
+"p_valor": 0.0,
+"ingreso_hombre": 550759.8766226184,
+"ingreso_mujer": 433996.2547160657,
+"r2": 0.4458549995768405,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.669438094841066,
+"ic_bajo": -22.34269156626666,
+"ic_alto": -20.99034782265675,
+"p_valor": 0.0,
+"ingreso_hombre": 552147.1977020919,
+"ingreso_mujer": 432500.00250363786,
+"r2": 0.43586267498231246,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -20.76908598292694,
+"ic_bajo": -21.455636735787444,
+"ic_alto": -20.07653413824184,
+"p_valor": 0.0,
+"ingreso_hombre": 549494.1236148305,
+"ingreso_mujer": 435369.2166101357,
+"r2": 0.445378357524457,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.329392615848157,
+"ic_bajo": -26.053079235217,
+"ic_alto": -24.59862358766991,
+"p_valor": 0.0,
+"ingreso_hombre": 563395.2703347388,
+"ingreso_mujer": 420690.67033253383,
+"r2": 0.4201213514319887,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.490069732031273,
+"ic_bajo": -26.20356838738529,
+"ic_alto": -24.769672635654196,
+"p_valor": 0.0,
+"ingreso_hombre": 563906.9819781621,
+"ingreso_mujer": 420166.69904813566,
+"r2": 0.4067941322861849,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.96698788050822,
+"ic_bajo": -26.65931439198119,
+"ic_alto": -25.26812589701839,
+"p_valor": 0.0,
+"ingreso_hombre": 565435.1161849648,
+"ingreso_mujer": 418608.6480930773,
+"r2": 0.4314267731903616,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -24.684418817977296,
+"ic_bajo": -25.408893420252642,
+"ic_alto": -23.952907673768074,
+"p_valor": 0.0,
+"ingreso_hombre": 561356.8546503802,
+"ingreso_mujer": 422789.1775850564,
+"r2": 0.42120594967915836,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Sector económico": {
+"brecha_pct": -25.425367054657443,
+"ic_bajo": -26.127397633201177,
+"ic_alto": -24.71666489669969,
+"p_valor": 0.0,
+"ingreso_hombre": 563700.7335907072,
+"ingreso_mujer": 420377.75298547314,
+"r2": 0.4453421848829152,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -25.705621461564622,
+"ic_bajo": -26.398664754250934,
+"ic_alto": -25.00605234969401,
+"p_valor": 0.0,
+"ingreso_hombre": 564595.9227095334,
+"ingreso_mujer": 419463.03203039255,
+"r2": 0.43139498633015794,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -27.883696160962458,
+"ic_bajo": -28.540269196901193,
+"ic_alto": -27.221090522512103,
+"p_valor": 0.0,
+"ingreso_hombre": 571720.6562050525,
+"ingreso_mujer": 412303.8055393753,
+"r2": 0.3919542320744045,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -28.592275060766525,
+"ic_bajo": -29.22743776785339,
+"ic_alto": -27.951411957201845,
+"p_valor": 0.0,
+"ingreso_hombre": 574104.774956498,
+"ingreso_mujer": 409955.1585639412,
+"r2": 0.4163981669309724,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -29.143939560067178,
+"ic_bajo": -29.767434086634857,
+"ic_alto": -28.51490991713852,
+"p_valor": 0.0,
+"ingreso_hombre": 575984.3379474657,
+"ingreso_mujer": 408119.81062060327,
+"r2": 0.4007910761360509,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -28.015144559253034,
+"ic_bajo": -28.65407416165774,
+"ic_alto": -27.37049310192765,
+"p_valor": 0.0,
+"ingreso_hombre": 572160.4121517191,
+"ingreso_mujer": 411868.8455765971,
+"r2": 0.4165699680424353,
+"n": 250477
+},
+"Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -27.39463407723366,
+"ic_bajo": -28.159410030519748,
+"ic_alto": -26.621716733976065,
+"p_valor": 0.0,
+"ingreso_hombre": 570094.4691252925,
+"ingreso_mujer": 413919.1754138706,
+"r2": 0.33388526971674715,
+"n": 250477
+},
+"Año|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.00041314875771,
+"ic_bajo": -28.74909485502839,
+"ic_alto": -27.24386453474509,
+"p_valor": 0.0,
+"ingreso_hombre": 572111.0719676882,
+"ingreso_mujer": 411917.60814694926,
+"r2": 0.35710526769149686,
+"n": 250477
+},
+"Año|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.5464250572247,
+"ic_bajo": -29.28294297013716,
+"ic_alto": -27.80223631270774,
+"p_valor": 0.0,
+"ingreso_hombre": 573949.489733417,
+"ingreso_mujer": 410107.4287803434,
+"r2": 0.343325325490598,
+"n": 250477
+},
+"Año|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -27.59421601957538,
+"ic_bajo": -28.345548413787125,
+"ic_alto": -26.83500553329685,
+"p_valor": 0.0,
+"ingreso_hombre": 570756.2158602814,
+"ingreso_mujer": 413260.5127106417,
+"r2": 0.35697617007461413,
+"n": 250477
+},
+"Año|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -29.796334173105322,
+"ic_bajo": -30.46714592646701,
+"ic_alto": -29.119050825639746,
+"p_valor": 0.0,
+"ingreso_hombre": 578234.1219158574,
+"ingreso_mujer": 405941.5506468873,
+"r2": 0.30421566995280125,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.215718211719256,
+"ic_bajo": -21.003477805488004,
+"ic_alto": -19.420103016712197,
+"p_valor": 0.0,
+"ingreso_hombre": 547884.6785131855,
+"ingreso_mujer": 437125.8557797756,
+"r2": 0.3897929425033826,
+"n": 250477
+},
+"Categoría ocupacional|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.18120938635908,
+"ic_bajo": -20.95373551887626,
+"ic_alto": -19.40113328763743,
+"p_valor": 0.0,
+"ingreso_hombre": 547784.8369345742,
+"ingreso_mujer": 437235.2320060818,
+"r2": 0.38324227967177515,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.93186265672272,
+"ic_bajo": -21.675126267290068,
+"ic_alto": -20.1815458487678,
+"p_valor": 0.0,
+"ingreso_hombre": 549970.5965183785,
+"ingreso_mujer": 434851.5066027932,
+"r2": 0.4154417428246179,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.10869940206712,
+"ic_bajo": -19.898379209931562,
+"ic_alto": -18.31123455573781,
+"p_valor": 0.0,
+"ingreso_hombre": 544712.0910288102,
+"ingreso_mujer": 440624.69494739984,
+"r2": 0.390666383643662,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.139280160670815,
+"ic_bajo": -20.90056846103273,
+"ic_alto": -19.370664881277676,
+"p_valor": 0.0,
+"ingreso_hombre": 547663.6090498613,
+"ingreso_mujer": 437368.10048526875,
+"r2": 0.42197982784688604,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.2441769566578,
+"ic_bajo": -20.992678493089734,
+"ic_alto": -19.488584247669273,
+"p_valor": 0.0,
+"ingreso_hombre": 547967.0620820378,
+"ingreso_mujer": 437035.6403699513,
+"r2": 0.4146114118875718,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -16.961272771272473,
+"ic_bajo": -17.7370400599939,
+"ic_alto": -16.17818973696289,
+"p_valor": 0.0,
+"ingreso_hombre": 538730.3306099026,
+"ingreso_mujer": 447354.80973357917,
+"r2": 0.3228921613348289,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -18.19359324166836,
+"ic_bajo": -18.936933793534283,
+"ic_alto": -17.443436328148408,
+"p_valor": 0.0,
+"ingreso_hombre": 542135.7373631052,
+"ingreso_mujer": 443501.76648954174,
+"r2": 0.35540353228767263,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -18.54648133393927,
+"ic_bajo": -19.266210760484437,
+"ic_alto": -17.820335629249428,
+"p_valor": 0.0,
+"ingreso_hombre": 543124.3695176946,
+"ingreso_mujer": 442393.9097050203,
+"r2": 0.34771689254538396,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -16.46587360619116,
+"ic_bajo": -17.217088773884626,
+"ic_alto": -15.707841521578313,
+"p_valor": 0.0,
+"ingreso_hombre": 537381.5154588594,
+"ingreso_mujer": 448896.95434036886,
+"r2": 0.3503409844802545,
+"n": 250477
+},
+"Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.127270998168367,
+"ic_bajo": -20.950454008412777,
+"ic_alto": -19.295515765783332,
+"p_valor": 0.0,
+"ingreso_hombre": 547628.9042216974,
+"ingreso_mujer": 437406.150604697,
+"r2": 0.3309822721897997,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.006114997733285,
+"ic_bajo": -21.803072061786153,
+"ic_alto": -20.201035612526752,
+"p_valor": 0.0,
+"ingreso_hombre": 550188.4081287804,
+"ingreso_mujer": 434615.19841305027,
+"r2": 0.36295027360302357,
+"n": 250477
+},
+"Año|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.374585343326157,
+"ic_bajo": -22.157393624119127,
+"ic_alto": -20.583904910854212,
+"p_valor": 0.0,
+"ingreso_hombre": 551273.5992859759,
+"ingreso_mujer": 433441.153331369,
+"r2": 0.3556189528350022,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.149693407136926,
+"ic_bajo": -20.9539248197118,
+"ic_alto": -19.3372795748341,
+"p_valor": 0.0,
+"ingreso_hombre": 547693.7079056748,
+"ingreso_mujer": 437335.1049525012,
+"r2": 0.36130922721039094,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -15.173704601915873,
+"ic_bajo": -15.972068725437927,
+"ic_alto": -14.367755080728317,
+"p_valor": 5.524614811155031e-255,
+"ingreso_hombre": 533916.2265984224,
+"ingreso_mujer": 452901.3555526809,
+"r2": 0.24382793863169305,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -24.351178089779758,
+"ic_bajo": -25.127243947343537,
+"ic_alto": -23.5670682086348,
+"p_valor": 0.0,
+"ingreso_hombre": 560313.355229914,
+"ingreso_mujer": 423870.4522370571,
+"r2": 0.3166392375689674,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.49600933559214,
+"ic_bajo": -26.246495751779953,
+"ic_alto": -24.737886267198796,
+"p_valor": 0.0,
+"ingreso_hombre": 563925.9280118649,
+"ingreso_mujer": 420147.3207601354,
+"r2": 0.34445876436618594,
+"n": 250477
+},
+"Año|Categoría ocupacional|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.834517916619916,
+"ic_bajo": -26.569303641983876,
+"ic_alto": -25.092379543263,
+"p_valor": 0.0,
+"ingreso_hombre": 565009.2571708382,
+"ingreso_mujer": 419041.8393964769,
+"r2": 0.3328882916743334,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -24.530326531438774,
+"ic_bajo": -25.287200888629926,
+"ic_alto": -23.765784695590863,
+"p_valor": 0.0,
+"ingreso_hombre": 560873.5209297484,
+"ingreso_mujer": 423289.41481730354,
+"r2": 0.34456145319137566,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -23.611421636959395,
+"ic_bajo": -24.332167194995545,
+"ic_alto": -22.883810887465106,
+"p_valor": 0.0,
+"ingreso_hombre": 558020.0842122079,
+"ingreso_mujer": 426263.6093099476,
+"r2": 0.27933994135221507,
+"n": 250477
+},
+"Año|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -27.519653975511428,
+"ic_bajo": -28.32739832842862,
+"ic_alto": -26.70280640986784,
+"p_valor": 0.0,
+"ingreso_hombre": 570508.6900942753,
+"ingreso_mujer": 413506.6726801077,
+"r2": 0.23315888901568016,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.641979286257992,
+"ic_bajo": -21.351429965275358,
+"ic_alto": -19.926128996087677,
+"p_valor": 0.0,
+"ingreso_hombre": 549123.0287650665,
+"ingreso_mujer": 435773.16691130906,
+"r2": 0.5115552700724757,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.261603484638247,
+"ic_bajo": -20.98158522262066,
+"ic_alto": -19.53506158337631,
+"p_valor": 0.0,
+"ingreso_hombre": 548017.5297567975,
+"ingreso_mujer": 436980.39085116587,
+"r2": 0.5148788701908705,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.222202507659105,
+"ic_bajo": -20.930821120551148,
+"ic_alto": -19.507233249096355,
+"p_valor": 0.0,
+"ingreso_hombre": 547903.445850225,
+"ingreso_mujer": 437105.3014839499,
+"r2": 0.5120631372386937,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.667458947016016,
+"ic_bajo": -21.351552844499277,
+"ic_alto": -19.977414716404773,
+"p_valor": 0.0,
+"ingreso_hombre": 549197.3502723252,
+"ingreso_mujer": 435692.21336669294,
+"r2": 0.5380564484804022,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.384292440938424,
+"ic_bajo": -23.05480162034992,
+"ic_alto": -21.707940368544097,
+"p_valor": 0.0,
+"ingreso_hombre": 554284.7300655738,
+"ingreso_mujer": 430212.01513222966,
+"r2": 0.4915635634146909,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.477165570813085,
+"ic_bajo": -23.132252369928665,
+"ic_alto": -21.81649595279612,
+"p_valor": 0.0,
+"ingreso_hombre": 554564.4902077884,
+"ingreso_mujer": 429914.1115468481,
+"r2": 0.4885782436626487,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.91803793078836,
+"ic_bajo": -23.54915599797096,
+"ic_alto": -22.281709848988875,
+"p_valor": 0.0,
+"ingreso_hombre": 555899.0502158848,
+"ingreso_mujer": 428497.8950305161,
+"r2": 0.5148561377220511,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.72808916039002,
+"ic_bajo": -22.39817539590029,
+"ic_alto": -21.05221677790047,
+"p_valor": 0.0,
+"ingreso_hombre": 552321.5283160714,
+"ingreso_mujer": 432312.6141915264,
+"r2": 0.4920861895440475,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas": {
+"brecha_pct": -22.328238260954247,
+"ic_bajo": -22.97315058916798,
+"ic_alto": -21.677926362145794,
+"p_valor": 0.0,
+"ingreso_hombre": 554116.1091752307,
+"ingreso_mujer": 430391.74407625606,
+"r2": 0.518226296977699,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -22.511404930053125,
+"ic_bajo": -23.14318303902715,
+"ic_alto": -21.874433481115762,
+"p_valor": 0.0,
+"ingreso_hombre": 554667.7490670844,
+"ingreso_mujer": 429804.2460581821,
+"r2": 0.5145624488429033,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.226185558659296,
+"ic_bajo": -21.97490539172462,
+"ic_alto": -20.470281096196985,
+"p_valor": 0.0,
+"ingreso_hombre": 550835.6756776074,
+"ingreso_mujer": 433914.27303498355,
+"r2": 0.4699352042951195,
+"n": 250477
+},
+"Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.29530683019778,
+"ic_bajo": -22.032873164836385,
+"ic_alto": -20.550763143435603,
+"p_valor": 0.0,
+"ingreso_hombre": 551039.5045854857,
+"ingreso_mujer": 433693.9513284041,
+"r2": 0.46678847806834345,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.66455649964767,
+"ic_bajo": -22.379888862594832,
+"ic_alto": -20.942631768022068,
+"p_valor": 0.0,
+"ingreso_hombre": 552132.696331463,
+"ingreso_mujer": 432515.5963817054,
+"r2": 0.4928272570069967,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.701539335808405,
+"ic_bajo": -21.45094872830111,
+"ic_alto": -19.94498008690797,
+"p_valor": 0.0,
+"ingreso_hombre": 549296.8122667744,
+"ingreso_mujer": 435583.9166050268,
+"r2": 0.47048413796919475,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.2339412968219,
+"ic_bajo": -21.960545796348242,
+"ic_alto": -20.500571577008998,
+"p_valor": 0.0,
+"ingreso_hombre": 550858.5335943104,
+"ingreso_mujer": 433889.55594236124,
+"r2": 0.496419781289241,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.396856397142905,
+"ic_bajo": -22.11431903245987,
+"ic_alto": -20.672784682638568,
+"p_valor": 0.0,
+"ingreso_hombre": 551339.4219386829,
+"ingreso_mujer": 433370.11756562523,
+"r2": 0.4926569558531039,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.401167703027212,
+"ic_bajo": -22.099652763635934,
+"ic_alto": -20.69641975146611,
+"p_valor": 0.0,
+"ingreso_hombre": 551352.1671730756,
+"ingreso_mujer": 433356.3652420904,
+"r2": 0.4345058781675951,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -21.826294767102205,
+"ic_bajo": -22.50076486032564,
+"ic_alto": -21.145954810700996,
+"p_valor": 0.0,
+"ingreso_hombre": 552613.8444152738,
+"ingreso_mujer": 431998.71780938085,
+"r2": 0.4607540318005042,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.19664885018693,
+"ic_bajo": -22.857446753351883,
+"ic_alto": -21.530190596794373,
+"p_valor": 0.0,
+"ingreso_hombre": 553720.9437320172,
+"ingreso_mujer": 430813.45024188043,
+"r2": 0.4566245524567064,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.32094974764541,
+"ic_bajo": -21.997574546041665,
+"ic_alto": -20.638455630248632,
+"p_valor": 0.0,
+"ingreso_hombre": 551115.1866635215,
+"ingreso_mujer": 433612.1946633503,
+"r2": 0.46045317053633883,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.598102595218673,
+"ic_bajo": -26.310453167045743,
+"ic_alto": -24.878865791096917,
+"p_valor": 0.0,
+"ingreso_hombre": 564251.9191156301,
+"ingreso_mujer": 419814.1339649211,
+"r2": 0.44208642058290304,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.635561325094546,
+"ic_bajo": -26.333681575834678,
+"ic_alto": -24.930825135144772,
+"p_valor": 0.0,
+"ingreso_hombre": 564371.6870180705,
+"ingreso_mujer": 419691.83709108195,
+"r2": 0.4377387522167049,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.248238606550846,
+"ic_bajo": -26.926851972474395,
+"ic_alto": -25.563323115799776,
+"p_valor": 0.0,
+"ingreso_hombre": 566342.8710005023,
+"ingreso_mujer": 417687.8428890996,
+"r2": 0.4605176718270142,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -24.931278643917288,
+"ic_bajo": -25.643186589425348,
+"ic_alto": -24.212554740333157,
+"p_valor": 0.0,
+"ingreso_hombre": 562134.1046685881,
+"ingreso_mujer": 421986.8846811728,
+"r2": 0.44351518670490575,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Sector económico": {
+"brecha_pct": -25.739052321181987,
+"ic_bajo": -26.43024139310507,
+"ic_alto": -25.04136951674989,
+"p_valor": 0.0,
+"ingreso_hombre": 564703.0280617005,
+"ingreso_mujer": 419353.8202096005,
+"r2": 0.46600226390884425,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Sector económico|Tiene hijos": {
+"brecha_pct": -25.865766090673027,
+"ic_bajo": -26.544710601167264,
+"ic_alto": -25.1805461212962,
+"p_valor": 0.0,
+"ingreso_hombre": 565109.6150280065,
+"ingreso_mujer": 418939.68384895957,
+"r2": 0.46084587117602627,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -27.78739002359254,
+"ic_bajo": -28.434161134546297,
+"ic_alto": -27.134773765336718,
+"p_valor": 0.0,
+"ingreso_hombre": 571399.1899692903,
+"ingreso_mujer": 412622.2684608755,
+"r2": 0.41750083504136715,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano": {
+"brecha_pct": -28.58128606219994,
+"ic_bajo": -29.208449331577878,
+"ic_alto": -27.948566568064336,
+"p_valor": 0.0,
+"ingreso_hombre": 574067.5444018809,
+"ingreso_mujer": 409991.6573461326,
+"r2": 0.4401776378962293,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -28.872484143096976,
+"ic_bajo": -29.485061719822614,
+"ic_alto": -28.25458498066681,
+"p_valor": 0.0,
+"ingreso_hombre": 575056.8791229683,
+"ingreso_mujer": 409023.6728844008,
+"r2": 0.4345842059872622,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Tiene hijos": {
+"brecha_pct": -27.940164275593382,
+"ic_bajo": -28.570004188716325,
+"ic_alto": -27.30477069679178,
+"p_valor": 0.0,
+"ingreso_hombre": 571909.4285674638,
+"ingreso_mujer": 412116.99471810716,
+"r2": 0.4406667323830794,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -27.884357446934814,
+"ic_bajo": -28.636261149580598,
+"ic_alto": -27.124531525145812,
+"p_valor": 0.0,
+"ingreso_hombre": 571722.8656615865,
+"ingreso_mujer": 412301.6181946506,
+"r2": 0.35655924878350664,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -28.616418167408508,
+"ic_bajo": -29.35251374183584,
+"ic_alto": -27.872653010899928,
+"p_valor": 0.0,
+"ingreso_hombre": 574186.6000322988,
+"ingreso_mujer": 409874.96150583104,
+"r2": 0.378285597700044,
+"n": 250477
+},
+"Año|Edad|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.893921197196804,
+"ic_bajo": -29.617191534249375,
+"ic_alto": -28.163218363603328,
+"p_valor": 0.0,
+"ingreso_hombre": 575129.9382087237,
+"ingreso_mujer": 408952.3470812081,
+"r2": 0.3721115710807409,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -28.100524015799877,
+"ic_bajo": -28.839212188132247,
+"ic_alto": -27.354167853374623,
+"p_valor": 0.0,
+"ingreso_hombre": 572446.6580516732,
+"ingreso_mujer": 411586.14742821915,
+"r2": 0.37859883638497993,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -30.159717972358667,
+"ic_bajo": -30.818988928465085,
+"ic_alto": -29.494164393508903,
+"p_valor": 0.0,
+"ingreso_hombre": 579500.1806239964,
+"ingreso_mujer": 404724.5604984896,
+"r2": 0.3306645331305391,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.41719896360088,
+"ic_bajo": -22.188736554905418,
+"ic_alto": -20.638011191224358,
+"p_valor": 0.0,
+"ingreso_hombre": 551399.5680695315,
+"ingreso_mujer": 433305.22549164377,
+"r2": 0.4069967888270396,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.10004817121197,
+"ic_bajo": -21.85618386185253,
+"ic_alto": -20.336595955593285,
+"p_valor": 0.0,
+"ingreso_hombre": 550464.3687531695,
+"ingreso_mujer": 434316.12178089324,
+"r2": 0.4053872183694023,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -22.016078785824767,
+"ic_bajo": -22.744586845354053,
+"ic_alto": -21.280700994180567,
+"p_valor": 0.0,
+"ingreso_hombre": 553180.2320982955,
+"ingreso_mujer": 431391.6363719265,
+"r2": 0.4351032545784731,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.23549907365424,
+"ic_bajo": -21.008247183667027,
+"ic_alto": -19.455191444827925,
+"p_valor": 0.0,
+"ingreso_hombre": 547941.936554511,
+"ingreso_mujer": 437063.1510588599,
+"r2": 0.4092650796193925,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -21.37692913206125,
+"ic_bajo": -22.122602946974578,
+"ic_alto": -20.62411551202745,
+"p_valor": 0.0,
+"ingreso_hombre": 551280.5251636871,
+"ingreso_mujer": 433433.67798059084,
+"r2": 0.4381577869105284,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.16108303015334,
+"ic_bajo": -21.89395800778454,
+"ic_alto": -20.4213314304435,
+"p_valor": 0.0,
+"ingreso_hombre": 550643.9298294076,
+"ingreso_mujer": 434121.7106377075,
+"r2": 0.4353661560638433,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -18.084740256823086,
+"ic_bajo": -18.842253688617948,
+"ic_alto": -17.320156315737,
+"p_valor": 0.0,
+"ingreso_hombre": 541832.0032857276,
+"ingreso_mujer": 443843.09286316246,
+"r2": 0.34703518308329195,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -19.42789592382518,
+"ic_bajo": -20.155003519532077,
+"ic_alto": -18.69416693067275,
+"p_valor": 0.0,
+"ingreso_hombre": 545620.5104975441,
+"ingreso_mujer": 439617.9255790374,
+"r2": 0.3764495642208022,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -19.341321715104453,
+"ic_bajo": -20.046346560057103,
+"ic_alto": -18.630080018130492,
+"p_valor": 0.0,
+"ingreso_hombre": 545373.6191094995,
+"ingreso_mujer": 439891.15288822306,
+"r2": 0.37425362638749615,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -17.68887838769443,
+"ic_bajo": -18.420708481981094,
+"ic_alto": -16.950483204683188,
+"p_valor": 0.0,
+"ingreso_hombre": 540732.2429692391,
+"ingreso_mujer": 445082.774107358,
+"r2": 0.3734827190555766,
+"n": 250477
+},
+"Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.53233942989077,
+"ic_bajo": -22.336034710665775,
+"ic_alto": -20.720327214718527,
+"p_valor": 0.0,
+"ingreso_hombre": 551740.4173505327,
+"ingreso_mujer": 432937.79791472084,
+"r2": 0.3517065487602137,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -22.579802567480844,
+"ic_bajo": -23.35744641784786,
+"ic_alto": -21.79426845341893,
+"p_valor": 0.0,
+"ingreso_hombre": 554874.2165742457,
+"ingreso_mujer": 429584.7139739253,
+"r2": 0.3811672331751591,
+"n": 250477
+},
+"Año|Edad|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -22.505658476765987,
+"ic_bajo": -23.27111120453329,
+"ic_alto": -21.732569539382663,
+"p_valor": 0.0,
+"ingreso_hombre": 554650.4144178908,
+"ingreso_mujer": 429822.68640903255,
+"r2": 0.37756143927010344,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -21.57025777781243,
+"ic_bajo": -22.354209202715293,
+"ic_alto": -20.778391180299472,
+"p_valor": 0.0,
+"ingreso_hombre": 551852.8223473901,
+"ingreso_mujer": 432816.74601292476,
+"r2": 0.38110829167726523,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -17.018185640940054,
+"ic_bajo": -17.79172006617652,
+"ic_alto": -16.237372684787875,
+"p_valor": 0.0,
+"ingreso_hombre": 538886.018835455,
+"ingreso_mujer": 447177.39575696614,
+"r2": 0.27375841593624506,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.264503179001775,
+"ic_bajo": -26.02197255666663,
+"ic_alto": -24.499277986834567,
+"p_valor": 0.0,
+"ingreso_hombre": 563189.0591023593,
+"ingreso_mujer": 420902.1413616534,
+"r2": 0.3438876159314235,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -26.55898862341012,
+"ic_bajo": -27.29187047991862,
+"ic_alto": -25.818719479962116,
+"p_valor": 0.0,
+"ingreso_hombre": 567351.5759461359,
+"ingreso_mujer": 416668.7354358636,
+"r2": 0.3689630344397632,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -26.455998598018326,
+"ic_bajo": -27.17378354763209,
+"ic_alto": -25.73113906374276,
+"p_valor": 0.0,
+"ingreso_hombre": 567016.5957543136,
+"ingreso_mujer": 417006.69313102146,
+"r2": 0.3644392680138673,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -25.46574851447172,
+"ic_bajo": -26.203886005028032,
+"ic_alto": -24.720227885082345,
+"p_valor": 0.0,
+"ingreso_hombre": 563829.425011161,
+"ingreso_mujer": 420246.0415872267,
+"r2": 0.37064709786545735,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -24.395025408305614,
+"ic_bajo": -25.098499712447055,
+"ic_alto": -23.68494407900864,
+"p_valor": 0.0,
+"ingreso_hombre": 560450.2836894726,
+"ingreso_mujer": 423728.29458250455,
+"r2": 0.31162514371692407,
+"n": 250477
+},
+"Año|Edad|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.73935665226519,
+"ic_bajo": -29.523604401227555,
+"ic_alto": -27.946381945482013,
+"p_valor": 0.0,
+"ingreso_hombre": 574603.8703574479,
+"ingreso_mujer": 409466.41471770144,
+"r2": 0.26636297615756266,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -19.919284855923536,
+"ic_bajo": -20.648517056371762,
+"ic_alto": -19.18335108440892,
+"p_valor": 0.0,
+"ingreso_hombre": 547029.027017292,
+"ingreso_mujer": 438064.75688113034,
+"r2": 0.5005455835576715,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.861299581378912,
+"ic_bajo": -20.58344976879357,
+"ic_alto": -19.132582741400462,
+"p_valor": 0.0,
+"ingreso_hombre": 546862.1795390343,
+"ingreso_mujer": 438248.2437635285,
+"r2": 0.49159706545696014,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.216538785864458,
+"ic_bajo": -20.91212572713931,
+"ic_alto": -19.51483407751948,
+"p_valor": 0.0,
+"ingreso_hombre": 547887.0533607994,
+"ingreso_mujer": 437123.25471538346,
+"r2": 0.5193772889892461,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.336438752928643,
+"ic_bajo": -20.066019351780696,
+"ic_alto": -18.600199060585876,
+"p_valor": 0.0,
+"ingreso_hombre": 545359.7051524606,
+"ingreso_mujer": 439906.559782503,
+"r2": 0.501348005873965,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -19.915782167204455,
+"ic_bajo": -20.618384045680827,
+"ic_alto": -19.206961602024553,
+"p_valor": 0.0,
+"ingreso_hombre": 547018.9434686354,
+"ingreso_mujer": 438075.8422740785,
+"r2": 0.5287461971348671,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.991847176745903,
+"ic_bajo": -20.688821028246828,
+"ic_alto": -19.288748431428303,
+"p_valor": 0.0,
+"ingreso_hombre": 547238.0607223634,
+"ingreso_mujer": 437835.0639297608,
+"r2": 0.5193295381090337,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.739038948073098,
+"ic_bajo": -22.418656290774962,
+"ic_alto": -21.05346811564783,
+"p_valor": 0.0,
+"ingreso_hombre": 552354.0953225902,
+"ingreso_mujer": 432277.62340913573,
+"r2": 0.4754215920268965,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.29033370638972,
+"ic_bajo": -22.942531197857928,
+"ic_alto": -21.63261615859875,
+"p_valor": 0.0,
+"ingreso_hombre": 554002.1835685662,
+"ingreso_mujer": 430513.248110447,
+"r2": 0.5032392196048301,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.568164244873923,
+"ic_bajo": -23.211059058469154,
+"ic_alto": -21.91988696687327,
+"p_valor": 0.0,
+"ingreso_hombre": 554839.066423413,
+"ingreso_mujer": 429622.07461825205,
+"r2": 0.49272066939370185,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.769559968009943,
+"ic_bajo": -22.424186402169223,
+"ic_alto": -21.10940944395171,
+"p_valor": 0.0,
+"ingreso_hombre": 552444.905549843,
+"ingreso_mujer": 432180.0805459542,
+"r2": 0.5031547105903615,
+"n": 250477
+},
+"Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.18349270849784,
+"ic_bajo": -20.941593361662957,
+"ic_alto": -19.41812253619154,
+"p_valor": 0.0,
+"ingreso_hombre": 547791.4411891612,
+"ingreso_mujer": 437227.99559897167,
+"r2": 0.45774988560040986,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.645337479310133,
+"ic_bajo": -21.37968791303566,
+"ic_alto": -19.90412786956256,
+"p_valor": 0.0,
+"ingreso_hombre": 549132.8223225895,
+"ingreso_mujer": 435762.49794443004,
+"r2": 0.48504943774646525,
+"n": 250477
+},
+"Año|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.918994901910438,
+"ic_bajo": -21.6459725208748,
+"ic_alto": -20.185272301539527,
+"p_valor": 0.0,
+"ingreso_hombre": 549932.8798401315,
+"ingreso_mujer": 434892.44874244597,
+"r2": 0.47642717593565187,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.28957310246894,
+"ic_bajo": -21.026583059329774,
+"ic_alto": -19.54568508843958,
+"p_valor": 0.0,
+"ingreso_hombre": 548098.5632753898,
+"ingreso_mujer": 436891.7046060476,
+"r2": 0.4849780148958416,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -20.932462481129622,
+"ic_bajo": -21.617783160294625,
+"ic_alto": -20.24114982505675,
+"p_valor": 0.0,
+"ingreso_hombre": 549972.3548766315,
+"ingreso_mujer": 434849.598035496,
+"r2": 0.44612189451035966,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -24.705379496934242,
+"ic_bajo": -25.429450191929348,
+"ic_alto": -23.974278166216322,
+"p_valor": 0.0,
+"ingreso_hombre": 561422.7095941933,
+"ingreso_mujer": 422721.09860697686,
+"r2": 0.42138773248015116,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.446677657666427,
+"ic_bajo": -26.148291496992083,
+"ic_alto": -24.738398272079067,
+"p_valor": 0.0,
+"ingreso_hombre": 563768.6358704898,
+"ingreso_mujer": 420308.24836550304,
+"r2": 0.4455822927235161,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.73618378361955,
+"ic_bajo": -26.428784022206308,
+"ic_alto": -25.03706339874846,
+"p_valor": 0.0,
+"ingreso_hombre": 564693.8351903813,
+"ingreso_mujer": 419363.19195101527,
+"r2": 0.43163190772348337,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -24.923200520002364,
+"ic_bajo": -25.627208525676014,
+"ic_alto": -24.2125284203472,
+"p_valor": 0.0,
+"ingreso_hombre": 562108.6128314506,
+"ingreso_mujer": 422013.15611526446,
+"r2": 0.446162785995212,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -28.14343658517461,
+"ic_bajo": -28.781097452221026,
+"ic_alto": -27.50006639985991,
+"p_valor": 0.0,
+"ingreso_hombre": 572590.710623458,
+"ingreso_mujer": 411444.0070865441,
+"r2": 0.41720573622513457,
+"n": 250477
+},
+"Año|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -27.63367117389458,
+"ic_bajo": -28.384100621181783,
+"ic_alto": -26.87537832811291,
+"p_valor": 0.0,
+"ingreso_hombre": 570887.3429127578,
+"ingreso_mujer": 413130.2117988623,
+"r2": 0.3575839478344096,
+"n": 250477
+},
+"Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.219354242387755,
+"ic_bajo": -20.0074364172389,
+"ic_alto": -18.42350792689026,
+"p_valor": 0.0,
+"ingreso_hombre": 545026.4320316204,
+"ingreso_mujer": 440275.871344817,
+"r2": 0.3925402272504107,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.243690782482172,
+"ic_bajo": -21.00329828067693,
+"ic_alto": -19.47677913691471,
+"p_valor": 0.0,
+"ingreso_hombre": 547965.6543338279,
+"ingreso_mujer": 437037.18167628243,
+"r2": 0.42397197558519595,
+"n": 250477
+},
+"Año|Categoría ocupacional|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.367830916890373,
+"ic_bajo": -21.114757408553974,
+"ic_alto": -19.61383213685417,
+"p_valor": 0.0,
+"ingreso_hombre": 548325.5065629883,
+"ingreso_mujer": 436643.4945120563,
+"r2": 0.41646583337257315,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.299721420662642,
+"ic_bajo": -20.06405353132177,
+"ic_alto": -18.528080913703814,
+"p_valor": 0.0,
+"ingreso_hombre": 545255.1177859749,
+"ingreso_mujer": 440022.3990213756,
+"r2": 0.4239286428041472,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -17.296158227051585,
+"ic_bajo": -18.040123654395014,
+"ic_alto": -16.54543968364989,
+"p_valor": 0.0,
+"ingreso_hombre": 539648.6146407519,
+"ingreso_mujer": 446310.13638239587,
+"r2": 0.3580301528192781,
+"n": 250477
+},
+"Año|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.300788836424566,
+"ic_bajo": -21.102065692455906,
+"ic_alto": -19.49137431993804,
+"p_valor": 0.0,
+"ingreso_hombre": 548131.0688304785,
+"ingreso_mujer": 436856.1380003658,
+"r2": 0.3643584142908587,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -24.634450742627255,
+"ic_bajo": -25.389186134422847,
+"ic_alto": -23.872080726812484,
+"p_valor": 0.0,
+"ingreso_hombre": 561199.9683489182,
+"ingreso_mujer": 422951.4385783645,
+"r2": 0.34674105887967643,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.283823864062434,
+"ic_bajo": -21.003569697887226,
+"ic_alto": -19.557520340689805,
+"p_valor": 0.0,
+"ingreso_hombre": 548081.9032943076,
+"ingreso_mujer": 436909.93539928907,
+"r2": 0.515014063734715,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.248875349343443,
+"ic_bajo": -20.95720575429172,
+"ic_alto": -19.534197345384243,
+"p_valor": 0.0,
+"ingreso_hombre": 547980.6672049355,
+"ingreso_mujer": 437020.74496410746,
+"r2": 0.5121791911843552,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.69729382231977,
+"ic_bajo": -21.381063479259176,
+"ic_alto": -20.007577240066432,
+"p_valor": 0.0,
+"ingreso_hombre": 549284.4186241945,
+"ingreso_mujer": 435597.4085813243,
+"r2": 0.538218826066754,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.708350989769265,
+"ic_bajo": -20.427783816135836,
+"ic_alto": -18.982413586598433,
+"p_valor": 0.0,
+"ingreso_hombre": 546422.9056283524,
+"ingreso_mujer": 438731.9614986208,
+"r2": 0.515991214019623,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Sector económico": {
+"brecha_pct": -20.323449700140095,
+"ic_bajo": -21.017722941631543,
+"ic_alto": -19.62307362961151,
+"p_valor": 0.0,
+"ingreso_hombre": 548196.7646223317,
+"ingreso_mujer": 436784.27090651647,
+"r2": 0.5418836831897671,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.38720287804502,
+"ic_bajo": -21.072116394589536,
+"ic_alto": -19.696345878618203,
+"p_valor": 0.0,
+"ingreso_hombre": 548381.7331226093,
+"ingreso_mujer": 436582.0366447634,
+"r2": 0.5383740639576422,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.86844942910887,
+"ic_bajo": -22.537893566525547,
+"ic_alto": -21.193219811878194,
+"p_valor": 0.0,
+"ingreso_hombre": 552739.4809898627,
+"ingreso_mujer": 431863.9271148764,
+"r2": 0.49269314152078547,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano": {
+"brecha_pct": -22.47122173552405,
+"ic_bajo": -23.11536653020154,
+"ic_alto": -21.82168025105583,
+"p_valor": 0.0,
+"ingreso_hombre": 554546.5714277211,
+"ingreso_mujer": 429933.18173545133,
+"r2": 0.5188743646808238,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.66430240499303,
+"ic_bajo": -23.29535803244891,
+"ic_alto": -22.02805502910148,
+"p_valor": 0.0,
+"ingreso_hombre": 555129.6490567302,
+"ingreso_mujer": 429313.38665473636,
+"r2": 0.5151712352372425,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Tiene hijos": {
+"brecha_pct": -21.918011397923287,
+"ic_bajo": -22.563902793846,
+"ic_alto": -21.266732647648034,
+"p_valor": 0.0,
+"ingreso_hombre": 552887.3173878762,
+"ingreso_mujer": 431705.4121451295,
+"r2": 0.5189394730524354,
+"n": 250477
+},
+"Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.742000635423185,
+"ic_bajo": -21.49083472196872,
+"ic_alto": -19.986024038991246,
+"p_valor": 0.0,
+"ingreso_hombre": 549414.975564989,
+"ingreso_mujer": 435455.3178421885,
+"r2": 0.4708193771563399,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.276015914518666,
+"ic_bajo": -22.001959174756514,
+"ic_alto": -20.543316156149483,
+"p_valor": 0.0,
+"ingreso_hombre": 550982.592798323,
+"ingreso_mujer": 433755.4486683249,
+"r2": 0.4968240925290819,
+"n": 250477
+},
+"Año|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.447791134855322,
+"ic_bajo": -22.16458379124404,
+"ic_alto": -20.724397476798227,
+"p_valor": 0.0,
+"ingreso_hombre": 551490.060514642,
+"ingreso_mujer": 433207.62420597335,
+"r2": 0.49302550846300974,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.859619829210995,
+"ic_bajo": -21.588121121372726,
+"ic_alto": -20.124350249638333,
+"p_valor": 0.0,
+"ingreso_hombre": 549758.9584820835,
+"ingreso_mujer": 435081.32976569096,
+"r2": 0.49694865533811483,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.4917219535523,
+"ic_bajo": -22.167069213708267,
+"ic_alto": -20.81051478400845,
+"p_valor": 0.0,
+"ingreso_hombre": 551620.0966871653,
+"ingreso_mujer": 433067.4392672439,
+"r2": 0.4612530503870177,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -24.955104044461073,
+"ic_bajo": -25.6665969222435,
+"ic_alto": -24.23680101008451,
+"p_valor": 0.0,
+"ingreso_hombre": 562209.3123204355,
+"ingreso_mujer": 421909.39348322165,
+"r2": 0.44370372649918455,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Sector económico": {
+"brecha_pct": -25.76446538915492,
+"ic_bajo": -26.455195725076187,
+"ic_alto": -25.067247737077658,
+"p_valor": 0.0,
+"ingreso_hombre": 564784.4919812744,
+"ingreso_mujer": 419270.78702144424,
+"r2": 0.46624911354593424,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.897533906792503,
+"ic_bajo": -26.57598210022186,
+"ic_alto": -25.21281675717776,
+"p_valor": 0.0,
+"ingreso_hombre": 565211.7034466971,
+"ingreso_mujer": 418835.81090142863,
+"r2": 0.4610620912271778,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Sector económico|Tiene hijos": {
+"brecha_pct": -25.197286819572252,
+"ic_bajo": -25.889484368403604,
+"ic_alto": -24.498624095825782,
+"p_valor": 0.0,
+"ingreso_hombre": 562975.7213577704,
+"ingreso_mujer": 421121.1141226968,
+"r2": 0.46715120610751093,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -28.076131819745775,
+"ic_bajo": -28.704733057018405,
+"ic_alto": -27.441988285874164,
+"p_valor": 0.0,
+"ingreso_hombre": 572364.8307127497,
+"ingreso_mujer": 411666.92635197355,
+"r2": 0.44135561338849627,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -28.14341559243847,
+"ic_bajo": -28.881146740278208,
+"ic_alto": -27.398031800868594,
+"p_valor": 0.0,
+"ingreso_hombre": 572590.640123703,
+"ingreso_mujer": 411444.07663028577,
+"r2": 0.3792469841036279,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.336139085589423,
+"ic_bajo": -21.107455389348985,
+"ic_alto": -19.557281779782322,
+"p_valor": 0.0,
+"ingreso_hombre": 548233.5638431241,
+"ingreso_mujer": 436744.0237861032,
+"r2": 0.41111066847774,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -21.47087510560759,
+"ic_bajo": -22.214988970695348,
+"ic_alto": -20.719642832527228,
+"p_valor": 0.0,
+"ingreso_hombre": 551558.3766752402,
+"ingreso_mujer": 433133.9664847824,
+"r2": 0.4401345722674307,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.279302286482803,
+"ic_bajo": -22.010644028394932,
+"ic_alto": -20.54110241967916,
+"p_valor": 0.0,
+"ingreso_hombre": 550992.2868051796,
+"ingreso_mujer": 433744.9725207011,
+"r2": 0.43722055451470343,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -20.429224805496805,
+"ic_bajo": -21.176982709965987,
+"ic_alto": -19.674373263877953,
+"p_valor": 0.0,
+"ingreso_hombre": 548503.767432715,
+"ingreso_mujer": 436448.69971726707,
+"r2": 0.4413218284013748,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -18.425845230117666,
+"ic_bajo": -19.151832604922504,
+"ic_alto": -17.69333875060881,
+"p_valor": 0.0,
+"ingreso_hombre": 542785.7181531079,
+"ingreso_mujer": 442772.86179503286,
+"r2": 0.3807241403606759,
+"n": 250477
+},
+"Año|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -21.699641828280004,
+"ic_bajo": -22.481093921597395,
+"ic_alto": -20.910312077691064,
+"p_valor": 0.0,
+"ingreso_hombre": 552236.950135044,
+"ingreso_mujer": 432403.5099123223,
+"r2": 0.38399419435214,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.559477483830484,
+"ic_bajo": -26.295706200070633,
+"ic_alto": -24.81589461365069,
+"p_valor": 0.0,
+"ingreso_hombre": 564128.5116308252,
+"ingreso_mujer": 419940.21172067657,
+"r2": 0.3727743245433952,
+"n": 250477
+},
+"Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.356950525946882,
+"ic_bajo": -20.086228832407528,
+"ic_alto": -18.621016960442592,
+"p_valor": 0.0,
+"ingreso_hombre": 545418.1613120987,
+"ingreso_mujer": 439841.83766738704,
+"r2": 0.5014755451849287,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -19.937437527913104,
+"ic_bajo": -20.639720876365907,
+"ic_alto": -19.22893945961607,
+"p_valor": 0.0,
+"ingreso_hombre": 547081.2950181769,
+"ingreso_mujer": 438007.3035970299,
+"r2": 0.5289235876125884,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.022124048031607,
+"ic_bajo": -20.718763459067226,
+"ic_alto": -19.319363308795488,
+"p_valor": 0.0,
+"ingreso_hombre": 547325.3604314771,
+"ingreso_mujer": 437739.1978195503,
+"r2": 0.5195056750149489,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.490417876685285,
+"ic_bajo": -20.194673509018845,
+"ic_alto": -18.779947421137777,
+"p_valor": 0.0,
+"ingreso_hombre": 545799.0445414478,
+"ingreso_mujer": 439420.52999336354,
+"r2": 0.5292787252759495,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -21.906929337738024,
+"ic_bajo": -22.56055769757466,
+"ic_alto": -21.247784021424422,
+"p_valor": 0.0,
+"ingreso_hombre": 552854.2495813433,
+"ingreso_mujer": 431740.8597848768,
+"r2": 0.5037626026790636,
+"n": 250477
+},
+"Año|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.32976337497081,
+"ic_bajo": -21.066138473565722,
+"ic_alto": -19.586518622778005,
+"p_valor": 0.0,
+"ingreso_hombre": 548215.0732398368,
+"ingreso_mujer": 436764.2460642551,
+"r2": 0.4853503518195794,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -24.946908371634546,
+"ic_bajo": -25.65043225733413,
+"ic_alto": -24.236727475372867,
+"p_valor": 0.0,
+"ingreso_hombre": 562183.4378959343,
+"ingreso_mujer": 421936.0507635307,
+"r2": 0.4463942236551147,
+"n": 250477
+},
+"Año|Categoría ocupacional|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.412626254438702,
+"ic_bajo": -20.175096729827015,
+"ic_alto": -18.64287282345606,
+"p_valor": 0.0,
+"ingreso_hombre": 545576.9372378764,
+"ingreso_mujer": 439666.12548147416,
+"r2": 0.4258818206552393,
+"n": 250477
+},
+"Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.73151210766152,
+"ic_bajo": -20.45062214490432,
+"ic_alto": -19.005901463379338,
+"p_valor": 0.0,
+"ingreso_hombre": 546489.3487482351,
+"ingreso_mujer": 438658.7367328965,
+"r2": 0.5161216143586469,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico": {
+"brecha_pct": -20.349009367057715,
+"ic_bajo": -21.04291514279788,
+"ic_alto": -19.64900527567588,
+"p_valor": 0.0,
+"ingreso_hombre": 548270.8961740299,
+"ingreso_mujer": 436703.2001547259,
+"r2": 0.54206365957174,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.418382246756927,
+"ic_bajo": -21.102882611313976,
+"ic_alto": -19.7279432526962,
+"p_valor": 0.0,
+"ingreso_hombre": 548472.2711959317,
+"ingreso_mujer": 436483.1063456761,
+"r2": 0.5385328826293532,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Sector económico|Tiene hijos": {
+"brecha_pct": -19.88473278919678,
+"ic_bajo": -20.58008267610283,
+"ic_alto": -19.183294864409138,
+"p_valor": 0.0,
+"ingreso_hombre": 546929.585844625,
+"ingreso_mujer": 438174.0991543606,
+"r2": 0.5425832598475473,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Tiene hijos": {
+"brecha_pct": -22.062299582500167,
+"ic_bajo": -22.707211314520492,
+"ic_alto": -21.412006867995302,
+"p_valor": 0.0,
+"ingreso_hombre": 553318.4692982952,
+"ingreso_mujer": 431243.6909564017,
+"r2": 0.5195844359034258,
+"n": 250477
+},
+"Año|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.90368365494738,
+"ic_bajo": -21.63147783238154,
+"ic_alto": -20.169130585676843,
+"p_valor": 0.0,
+"ingreso_hombre": 549888.0124054258,
+"ingreso_mujer": 434941.1618357185,
+"r2": 0.4973470401318465,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -25.224223253123277,
+"ic_bajo": -25.91589846374739,
+"ic_alto": -24.52609031962649,
+"p_valor": 0.0,
+"ingreso_hombre": 563061.1820687591,
+"ingreso_mujer": 421033.3724520604,
+"r2": 0.46739074419402293,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -20.531747654014666,
+"ic_bajo": -21.27783996147138,
+"ic_alto": -19.778584227943142,
+"p_valor": 0.0,
+"ingreso_hombre": 548801.8849850901,
+"ingreso_mujer": 436123.2668394755,
+"r2": 0.44323950186635275,
+"n": 250477
+},
+"Año|Categoría ocupacional|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.51417929451733,
+"ic_bajo": -20.21805017935184,
+"ic_alto": -18.804098556155402,
+"p_valor": 0.0,
+"ingreso_hombre": 545866.9479517012,
+"ingreso_mujer": 439345.4930188962,
+"r2": 0.5294501961586414,
+"n": 250477
+},
+"Año|Categoría ocupacional|Edad|Educación|Estado civil|Horas trabajadas|Rural / Urbano|Sector económico|Tiene hijos": {
+"brecha_pct": -19.911570431824888,
+"ic_bajo": -20.606486421675363,
+"ic_alto": -19.210571977410428,
+"p_valor": 0.0,
+"ingreso_hombre": 547006.8195450186,
+"ingreso_mujer": 438089.1714044268,
+"r2": 0.5427585178064984,
+"n": 250477
+}
+}

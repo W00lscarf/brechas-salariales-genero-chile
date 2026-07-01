@@ -29,13 +29,22 @@ Brecha (%) = (Ingreso_Mujeres - Ingreso_Hombres) / Ingreso_Hombres × 100
 
 ## App interactiva
 
-`app.py` es una app **Streamlit** que deja explorar en vivo cómo se mueve la brecha al activar controles, uno por uno o todos a la vez: edad, educación, horas trabajadas, categoría ocupacional, sector económico, zona rural/urbana, estado civil, hijos en el hogar y año. Cada combinación reestima la regresión en tiempo real sobre los microdatos ESI (misma metodología que los notebooks 06-07: WLS ponderado, errores estándar cluster-robustos) y muestra el ingreso promedio predicho para un hombre y una mujer "típicos", además de un gráfico con el historial de brechas probadas en la sesión.
+`app.py` es una app **Streamlit** que deja explorar cómo se mueve la brecha al activar controles, uno por uno o todos a la vez: edad, educación, horas trabajadas, categoría ocupacional, sector económico, zona rural/urbana, estado civil, hijos en el hogar y año. Muestra el ingreso promedio predicho para un hombre y una mujer "típicos" bajo el modelo activo, y un gráfico con el historial de brechas probadas en la sesión.
 
 ```bash
 streamlit run app.py
 ```
 
-Requiere los microdatos ESI en `../ESI/` (ver sección siguiente) — igual que los notebooks 06 y 07.
+La app funciona en **dos modos**, detectados automáticamente:
+
+- **Precalculado (por defecto / despliegue en la nube):** lee `app_data/resultados_precalculados.json`, que contiene las 512 combinaciones posibles de los 9 controles (2⁹), ya calculadas con la metodología de los notebooks 06-07 (WLS ponderado, errores estándar cluster-robustos). No requiere los microdatos ESI — por eso la app puede desplegarse públicamente (ej. Streamlit Community Cloud) sin necesitar los CSV de 100+ MB que no se versionan en este repositorio.
+- **En vivo (desarrollo local):** si existe una carpeta `ESI/` con los microdatos al mismo nivel que este repositorio, la app ajusta cada regresión en tiempo real sobre los datos reales en lugar de usar el archivo precalculado.
+
+Para regenerar el archivo precalculado (por ejemplo, si se agregan más años de ESI):
+
+```bash
+python precalcular.py   # ~60-90 minutos, requiere ../ESI/
+```
 
 ---
 
@@ -44,6 +53,9 @@ Requiere los microdatos ESI en `../ESI/` (ver sección siguiente) — igual que 
 ```
 brechas-salariales-genero-chile/
 ├── app.py                                  ← app interactiva (Streamlit)
+├── precalcular.py                          ← genera app_data/resultados_precalculados.json
+├── app_data/
+│   └── resultados_precalculados.json      ← 512 combinaciones de controles ya calculadas
 ├── notebooks/
 │   ├── 01_descarga_api.ipynb              ← descarga los 10 datasets SIMEL de brecha salarial
 │   ├── 02_brecha_multidimensional.ipynb   ← brecha por educación, sector, edad (datos agregados)
@@ -67,7 +79,7 @@ brechas-salariales-genero-chile/
 | API SDMX SIMEL-INE (`DF_BGYMEDIOOCU*`, `DF_BGYHDEP*`) | Indicadores agregados de brecha por región, educación, edad, sector, ocupación, jornada y categoría ocupacional | Pública, sin autenticación, vía `simel_client.py` |
 | Microdatos ESI 2018-2024 (INE, formato CSV) | Registros individuales: sexo, edad, educación, horas, categoría ocupacional, sector, ingreso del trabajo principal | Pública, descarga manual desde el sitio del INE (sección Encuesta Suplementaria de Ingresos → Bases de Datos → CSV) |
 
-**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar los notebooks 06-07 o la app interactiva, descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio.
+**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar los notebooks 06-07, o la app interactiva en modo "en vivo", descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio. La app interactiva funciona sin ellos gracias a los resultados precalculados (`app_data/`).
 
 ---
 
