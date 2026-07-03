@@ -13,7 +13,7 @@ La brecha salarial observada mezcla dos fenómenos distintos:
 1. **Composición** — diferencias en características observables (educación, sector, horas, ocupación, edad)
 2. **Discriminación residual** — la parte que persiste después de controlar todo lo anterior
 
-Los notebooks 01-05 exploran la brecha con datos agregados SIMEL (máximo 2 variables cruzadas simultáneamente — el techo real de ese tipo de datos). El notebook 06 rompe ese techo usando **microdatos individuales**, estimando una regresión tipo Mincer que controla por edad, edad², educación, horas trabajadas, categoría ocupacional y sector **al mismo tiempo**. El notebook 07 suma estado civil y presencia de hijos en el hogar, y aplica una **descomposición de Oaxaca-Blinder** para cuantificar qué porcentaje de la brecha total se explica por cada factor específico.
+Los notebooks 01-05 exploran la brecha con datos agregados SIMEL (máximo 2 variables cruzadas simultáneamente — el techo real de ese tipo de datos). El notebook 06 rompe ese techo usando **microdatos individuales**, estimando una regresión tipo Mincer que controla por edad, edad², educación, horas trabajadas, categoría ocupacional y sector **al mismo tiempo**. El notebook 07 suma estado civil y presencia de hijos en el hogar, y aplica una **descomposición de Oaxaca-Blinder** para cuantificar qué porcentaje de la brecha total se explica por cada factor específico. El notebook 08 pone a prueba si el "residuo no explicado" depende de la resolución de la ocupación: usa microdatos de **CASEN** (que sí tiene ocupación a 4 dígitos CIUO, algo que la ESI no ofrece) para comparar controlar por ocupación amplia vs. ocupación exacta.
 
 ### Convención de signo (importante)
 
@@ -63,7 +63,8 @@ brechas-salariales-genero-chile/
 │   ├── 04_brecha_ajustada.ipynb           ← ranking sector/ocupación, control por jornada, heatmap CISE×educación
 │   ├── 05_serie_educacion.ipynb           ← serie 2010-2023: ¿qué niveles educativos convergen más rápido?
 │   ├── 06_regresion_microdatos.ipynb      ← regresión Mincer con microdatos ESI 2018-2024 (máximo de controles)
-│   └── 07_oaxaca_blinder_hijos.ipynb      ← estado civil, hijos y descomposición Oaxaca-Blinder por factor
+│   ├── 07_oaxaca_blinder_hijos.ipynb      ← estado civil, hijos y descomposición Oaxaca-Blinder por factor
+│   └── 08_ocupacion_granular_casen.ipynb  ← CASEN 2022+2024: ¿la brecha se achica con ocupación a 4 dígitos?
 ├── data/            ← CSVs descargados de SIMEL (se regeneran ejecutando el notebook 01)
 ├── outputs/
 │   └── figures/     ← gráficos exportados en PNG
@@ -78,8 +79,9 @@ brechas-salariales-genero-chile/
 |---|---|---|
 | API SDMX SIMEL-INE (`DF_BGYMEDIOOCU*`, `DF_BGYHDEP*`) | Indicadores agregados de brecha por región, educación, edad, sector, ocupación, jornada y categoría ocupacional | Pública, sin autenticación, vía `simel_client.py` |
 | Microdatos ESI 2018-2024 (INE, formato CSV) | Registros individuales: sexo, edad, educación, horas, categoría ocupacional, sector, ingreso del trabajo principal | Pública, descarga manual desde el sitio del INE (sección Encuesta Suplementaria de Ingresos → Bases de Datos → CSV) |
+| Microdatos CASEN 2022 y 2024 (Ministerio de Desarrollo Social, formato Stata) | Registros individuales con **ocupación a 4 dígitos CIUO-08** (356 categorías con muestra suficiente, frente a las ~9 de la ESI) | Pública, descarga manual desde el [Observatorio Social](https://observatorio.ministeriodesarrollosocial.gob.cl/encuesta-casen) |
 
-**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) no se versionan en este repositorio por su tamaño. Para ejecutar los notebooks 06-07, o la app interactiva en modo "en vivo", descárgalos del sitio del INE y colócalos en una carpeta `ESI/` al mismo nivel que este repositorio. La app interactiva funciona sin ellos gracias a los resultados precalculados (`app_data/`).
+**Nota de reproducibilidad:** los CSV de microdatos ESI (~100 MB cada uno) y las bases CASEN en Stata (hasta 1.6 GB) no se versionan en este repositorio por su tamaño. Para ejecutar los notebooks 06-07 descarga la ESI en `../ESI/`; para el notebook 08 descarga CASEN 2022 y 2024 en `../CASEN/` (misma carpeta que usa el proyecto hermano `empleabilidad-formacion-casen-chile`). La app interactiva funciona sin ninguna de las dos gracias a los resultados precalculados (`app_data/`).
 
 ---
 
@@ -102,6 +104,13 @@ El notebook 07 profundiza con una **descomposición de Oaxaca-Blinder**, que sum
 
 Es la aproximación más rigurosa posible, con datos públicos, a un componente de discriminación salarial pura.
 
+**El notebook 08 responde una pregunta pendiente: ¿el residuo no explicado se debe a que "ocupación" estaba definida de forma muy amplia?** Usando CASEN 2022+2024 (que sí tiene ocupación a 4 dígitos CIUO-08, algo que la ESI no ofrece), se comparan dos regresiones idénticas salvo por el nivel de detalle ocupacional:
+
+- **Control por ocupación amplia (1 dígito, ~9 categorías — equivalente a la ESI):** brecha ajustada -24.4%
+- **Control por ocupación granular (4 dígitos, 356 categorías):** brecha ajustada -17.6%
+- **Diferencia: 6.8 puntos porcentuales** — una parte real del "residuo no explicado" de los notebooks 06-07 es segregación ocupacional fina (ej. que los hombres se concentren en las especialidades mejor pagadas dentro de "Profesionales"), no solo discriminación en sentido estricto
+- Aun así, **-17.6% sigue siendo una brecha grande sin explicar**, incluso comparando la misma ocupación exacta (ej. médicos generales: -12%, médicos especialistas: -20%, enfermeros: -3%, técnicos de enfermería: -13%)
+
 ---
 
 ## Cómo reproducir
@@ -113,6 +122,7 @@ pip install -r requirements.txt
 jupyter lab
 # Notebooks 01-05: ejecutar en orden, no requieren nada adicional (descargan datos SIMEL automáticamente)
 # Notebooks 06-07: requieren descargar microdatos ESI 2018-2024 del INE y ubicarlos en ../ESI/
+# Notebook 08: requiere descargar microdatos CASEN 2022 y 2024 y ubicarlos en ../CASEN/
 ```
 
 ---
