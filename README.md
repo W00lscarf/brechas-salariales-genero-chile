@@ -113,6 +113,19 @@ Es la aproximación más rigurosa posible, con datos públicos, a un componente 
 
 El mismo notebook incluye un **ranking de 229 rubros específicos** (ocupaciones CIUO-08 a 4 dígitos, con al menos 20 hombres y 20 mujeres en la muestra) de menor a mayor brecha. Ejemplos de los extremos: "Conductores de camiones pesados" e "Ingenieros químicos" muestran brecha favorable a mujeres (+6.6% y +12.6%); "Cosmetólogos y especialistas en tratamiento de belleza" y "Avicultores" muestran las brechas más severas en contra de mujeres (-67% y -56%).
 
+Una **descomposición de Oaxaca-Blinder** (misma metodología del notebook 07, ponderada por el factor de expansión `expr` de CASEN) rankea qué controles explican más de la brecha total:
+
+| Control | % de la brecha explicado |
+|---|---|
+| **Ocupación (4 dígitos)** | **+22.2%** — el mayor factor, por lejos |
+| Horas trabajadas | +12.7% |
+| Educación | -10.7% (juega en sentido contrario: mujeres más educadas en promedio) |
+| Edad | -1.6% |
+| Año | -0.4% |
+| **No explicado** | **77.8%** |
+
+Ni siquiera el control más fino disponible en datos públicos chilenos logra explicar la mayoría de la brecha — pero sí confirma con precisión que la segregación ocupacional fina es el principal factor de composición identificado, muy por delante de horas y educación.
+
 ---
 
 ## Cómo reproducir
