@@ -140,7 +140,7 @@ En otras palabras: agregar hijos y estado civil no "explica más" brecha en el s
 
 **¿Cuánto de la brecha por ocupación sobrevive al aislar el efecto sexo lo más posible?** El ranking de 229 ocupaciones (arriba) es crudo: solo compara ingresos promedio por sexo dentro de cada ocupación. Para aislar el efecto sexo, se ajustó un solo modelo con interacción `mujer × ocupación` (más edad, educación, horas, hijos, estado civil y año), donde los controles comunes se estiman con toda la muestra combinada (~151 mil personas) y solo el efecto sexo varía libremente por ocupación:
 
-- **102 de 229 ocupaciones (44.5%) muestran una brecha ajustada estadísticamente significativa (p<0.05) — y las 102 son en contra de las mujeres.**
+- **102 de 229 ocupaciones (44.5%) muestran una brecha ajustada estadísticamente significativa (p<0.05) — y las 102 son en contra de las mujeres.** El resultado resiste correcciones por comparaciones múltiples: 76 sobreviven la corrección FDR de Benjamini-Hochberg y 33 incluso Bonferroni — todas en contra.
 - **Cero ocupaciones muestran una brecha significativamente favorable a mujeres.** Los casos "pro-mujer" del ranking crudo (joyeros +58.7%, músicos +41.0%, traductores +36.3%) tienen muestras chicas (n entre 55 y 148) y su ventaja aparente no se distingue del azar (p>0.2 en todos los casos) una vez que se contabiliza correctamente la incertidumbre estadística.
 - La correlación entre brecha cruda y ajustada es 0.79: el orden general se mantiene, pero el promedio baja levemente (-17.7% a -16.7%) al controlar composición.
 
