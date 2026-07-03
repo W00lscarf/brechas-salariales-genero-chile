@@ -111,6 +111,8 @@ Es la aproximación más rigurosa posible, con datos públicos, a un componente 
 - **Diferencia: 6.8 puntos porcentuales** — una parte real del "residuo no explicado" de los notebooks 06-07 es segregación ocupacional fina (ej. que los hombres se concentren en las especialidades mejor pagadas dentro de "Profesionales"), no solo discriminación en sentido estricto
 - Aun así, **-17.6% sigue siendo una brecha grande sin explicar**, incluso comparando la misma ocupación exacta (ej. médicos generales: -12%, médicos especialistas: -20%, enfermeros: -3%, técnicos de enfermería: -13%)
 
+El mismo notebook incluye un **ranking de 229 rubros específicos** (ocupaciones CIUO-08 a 4 dígitos, con al menos 20 hombres y 20 mujeres en la muestra) de menor a mayor brecha. Ejemplos de los extremos: "Conductores de camiones pesados" e "Ingenieros químicos" muestran brecha favorable a mujeres (+6.6% y +12.6%); "Cosmetólogos y especialistas en tratamiento de belleza" y "Avicultores" muestran las brechas más severas en contra de mujeres (-67% y -56%).
+
 ---
 
 ## Cómo reproducir
