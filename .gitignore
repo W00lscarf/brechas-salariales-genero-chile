@@ -1,5 +1,6 @@
 ﻿# Datos descargados (se regeneran ejecutando el notebook 01)
-data/
+/data/
+/notebooks/data/
 
 # Python
 __pycache__/

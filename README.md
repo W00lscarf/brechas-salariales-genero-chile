@@ -4,6 +4,8 @@
 
 Este proyecto descompone la brecha salarial de género en Chile en dos etapas: primero con **datos agregados oficiales** del SIMEL-INE (indicadores públicos vía API, sin autenticación), y luego con **microdatos individuales** de la Encuesta Suplementaria de Ingresos (ESI 2018-2024), que permiten una regresión multivariable real.
 
+📄 **Los hallazgos completos, con marco teórico, metodología y recomendaciones de política, están sintetizados en el [policy paper](policy_paper/README.md)** — *"Misma ocupación, distinto salario: la brecha de género que la composición no explica"*.
+
 ---
 
 ## Marco metodológico
@@ -52,6 +54,8 @@ python precalcular.py   # ~60-90 minutos, requiere ../ESI/
 
 ```
 brechas-salariales-genero-chile/
+├── policy_paper/
+│   └── README.md                          ← policy paper: marco teórico, metodología, resultados y propuestas
 ├── app.py                                  ← app interactiva (Streamlit)
 ├── precalcular.py                          ← genera app_data/resultados_precalculados.json
 ├── app_data/
@@ -125,6 +129,22 @@ Una **descomposición de Oaxaca-Blinder** (misma metodología del notebook 07, p
 | **No explicado** | **77.8%** |
 
 Ni siquiera el control más fino disponible en datos públicos chilenos logra explicar la mayoría de la brecha — pero sí confirma con precisión que la segregación ocupacional fina es el principal factor de composición identificado, muy por delante de horas y educación.
+
+**¿Y si sumamos hijos y estado civil a la ocupación granular?** CASEN pregunta directamente `s5` ("¿cuántos hijos ha tenido?") a hombres y mujeres por igual — a diferencia de la ESI, donde el notebook 07 tuvo que aproximar "tiene hijos" con la composición del hogar. Repitiendo la interacción del notebook 07 pero ahora con ocupación a 4 dígitos controlada:
+
+- **La interacción mujer×hijos es estadísticamente significativa aquí (-9.7%, p<0.001)** — a diferencia del notebook 07 (datos ESI), donde no lo era. Hay una penalización por maternidad real, no solo un efecto que pasa por estado civil.
+- Ser soltera **atenúa** la brecha frente a ser casada/conviviente (+5.9%, p<0.001): la penalización más severa recae sobre **mujeres casadas o convivientes con hijos**.
+- Pero en la descomposición de Oaxaca-Blinder, esto **no reduce el "no explicado"** — sube levemente de 77.8% a 82.2%. La razón: hombres y mujeres no difieren tanto en proporción de personas con hijos o en distribución de estado civil (poca diferencia de *composición*), así que el efecto es de *retorno* (el mismo hijo o el mismo estado civil pesa distinto en el salario de cada sexo) y queda absorbido en el residuo, no en la parte explicada.
+
+En otras palabras: agregar hijos y estado civil no "explica más" brecha en el sentido contable de Oaxaca-Blinder, pero sí le pone nombre a una parte del residuo — una penalización por maternidad concentrada en mujeres casadas/convivientes, detectable solo gracias a controlar ocupación a nivel granular.
+
+**¿Cuánto de la brecha por ocupación sobrevive al aislar el efecto sexo lo más posible?** El ranking de 229 ocupaciones (arriba) es crudo: solo compara ingresos promedio por sexo dentro de cada ocupación. Para aislar el efecto sexo, se ajustó un solo modelo con interacción `mujer × ocupación` (más edad, educación, horas, hijos, estado civil y año), donde los controles comunes se estiman con toda la muestra combinada (~151 mil personas) y solo el efecto sexo varía libremente por ocupación:
+
+- **102 de 229 ocupaciones (44.5%) muestran una brecha ajustada estadísticamente significativa (p<0.05) — y las 102 son en contra de las mujeres.**
+- **Cero ocupaciones muestran una brecha significativamente favorable a mujeres.** Los casos "pro-mujer" del ranking crudo (joyeros +58.7%, músicos +41.0%, traductores +36.3%) tienen muestras chicas (n entre 55 y 148) y su ventaja aparente no se distingue del azar (p>0.2 en todos los casos) una vez que se contabiliza correctamente la incertidumbre estadística.
+- La correlación entre brecha cruda y ajustada es 0.79: el orden general se mantiene, pero el promedio baja levemente (-17.7% a -16.7%) al controlar composición.
+
+La evidencia sólida —la que resiste el control estadístico— apunta consistentemente en una sola dirección: en contra de las mujeres.
 
 ---
 
