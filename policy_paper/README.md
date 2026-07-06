@@ -8,7 +8,17 @@
 
 ---
 
-## Resumen ejecutivo
+## Resumen
+
+Este documento estima la brecha salarial de género en Chile agotando el espacio de explicaciones observables basadas en composición y elección que permiten los datos públicos. Con microdatos de la Encuesta CASEN (2022 y 2024; *n* = 174.924) y de la ESI (2018-2024), se estima el diferencial de ingreso laboral entre hombres y mujeres controlando por ocupación a cuatro dígitos CIUO-08 (354 categorías), horas trabajadas, educación (nivel y tipo de institución), edad, región y zona, régimen de formalidad, sector público o privado, maternidad y estado civil. La brecha ajustada se sitúa entre -11% y -16% en las catorce especificaciones evaluadas y no se reduce al agregar controles: la especificación con el conjunto completo de controles (375 parámetros) arroja -15.6%. El efecto de la maternidad es asimétrico: el mismo hijo se asocia a un premio de +5.0% para los hombres y a una penalización adicional de -7.8% para las mujeres, dentro de la misma ocupación exacta. En el análisis por ocupación, ninguna de las 227 ocupaciones examinadas presenta una brecha favorable a las mujeres que sobreviva la corrección por comparaciones múltiples, mientras que 66 presentan brechas significativas en su contra. La brecha se concentra en los hogares de menor nivel socioeconómico (-21.2%, frente a -11.2% en los de mayor nivel) y exhibe forma de U a lo largo de la distribución salarial. Se concluye que el diferencial chileno es principalmente un problema de retornos desiguales y no de composición, y se derivan seis recomendaciones de política.
+
+**Palabras clave:** brecha salarial de género, segregación ocupacional, penalización por maternidad, descomposición de Oaxaca-Blinder, Chile
+
+**Códigos JEL:** J16, J31, J71
+
+---
+
+## Síntesis de resultados y recomendaciones
 
 - Con microdatos públicos de la Encuesta Suplementaria de Ingresos (ESI 2018-2024) y CASEN (2022 y 2024), estimamos que las mujeres ocupadas en Chile ganan en promedio **22-26% menos** que los hombres por su trabajo principal, según fuente y período.
 - Controlando simultáneamente por edad, educación, horas trabajadas, año y **ocupación exacta a 4 dígitos CIUO-08** (354 categorías, el control más fino posible con datos públicos chilenos), la brecha ajustada es **-15.3%**. Las horas trabajadas (28.7%) y la ocupación granular (17.0%) son los dos mayores factores de composición identificados, pero la mayoría del diferencial —**en torno a dos tercios**— permanece sin explicar por composición.
@@ -22,15 +32,36 @@
 
 ## 1. Introducción
 
+### 1.1 Motivación y pregunta de investigación
+
 La participación laboral femenina en Chile se sitúa en torno al 53%, unos 18 puntos por debajo de la masculina (INE, 2024), y las mujeres que sí participan ganan sistemáticamente menos. La magnitud reportada de esa brecha varía según la definición: el indicador de la OCDE —que compara medianas de ingreso entre asalariados a jornada completa— arroja cifras inferiores al 10% para Chile, mientras que definiciones más amplias (medias sobre todos los ocupados, incluyendo independientes y jornadas parciales) la sitúan por sobre el 20%, consistente con el promedio mundial ponderado por factores que estima la OIT (2018) en torno al 19%.
 
 Para el diseño de políticas, la magnitud importa menos que la **descomposición**: ¿cuánto de la brecha se debe a que hombres y mujeres trabajan en distintas ocupaciones, sectores y jornadas (*composición*), y cuánto a que características idénticas se remuneran distinto según el sexo (*retornos*)? La respuesta determina el instrumento. Si la brecha fuera principalmente composición, las políticas eficaces serían las de desegregación ocupacional (orientación vocacional, trayectorias formativas en áreas STEM, cuotas). Si es principalmente retornos, se requieren instrumentos que actúen sobre la fijación de salarios: transparencia, fiscalización, negociación y redistribución de los costos del cuidado.
+
+En ese contexto, este documento aborda la pregunta que la literatura chilena ha dejado abierta:
+
+> **¿Persiste la brecha salarial de género en Chile una vez agotado el conjunto completo de explicaciones observables basadas en composición y elección —ocupación exacta, horas trabajadas, educación y su calidad institucional, geografía, régimen de formalidad, sector y estructura familiar— que permiten los datos públicos? Y, de persistir, ¿en qué segmentos de la población es mayor?**
+
+La tesis que este trabajo somete a prueba, y que la evidencia sostiene, es la siguiente: *la brecha salarial de género chilena no es reducible a las elecciones observables de las mujeres. Tras descontar de manera simultánea todas las dimensiones de elección medibles con datos públicos, persiste un diferencial de entre -11% y -16% que no disminuye al agregar controles, que se concentra precisamente en los segmentos donde el margen de elección es menor —hogares de bajo nivel socioeconómico, madres casadas o convivientes y los extremos de la distribución salarial— y que corresponde, por tanto, a diferencias de retornos y no de composición.*
+
+### 1.2 Contribuciones y relación con la literatura chilena
 
 Este documento aporta a esa discusión con una ventaja metodológica poco frecuente en el debate público chileno: el uso de la ocupación a **4 dígitos de la clasificación CIUO-08** disponible en CASEN, que permite comparar salarios dentro de la misma ocupación específica (médico especialista con médico especialista, técnico en enfermería con técnico en enfermería), en lugar de las aproximadamente nueve categorías amplias que permiten las encuestas de empleo habituales. La crítica estándar a las estimaciones de brecha "ajustada" —que el residuo no explicado sería un artefacto de controles ocupacionales demasiado gruesos— se puede someter a prueba directa. Hasta donde conocemos, los estudios chilenos publicados y los boletines oficiales de brecha salarial trabajan con agrupaciones ocupacionales amplias (1 dígito CIUO o grandes grupos); no identificamos estimaciones publicadas de brechas dentro de la ocupación a 4 dígitos con inferencia estadística y datos de acceso abierto para Chile.
 
 Este ejercicio se sitúa, además, cerca del **techo de lo estimable con datos abiertos en el país**: los diseños que la literatura internacional utiliza para ir más lejos —datos administrativos vinculados empleador-empleado, estudios de eventos en torno al nacimiento del primer hijo— requieren fuentes que en Chile existen solo de forma parcial y bajo acceso restringido (los registros del Seguro de Cesantía, usados por ejemplo en Sánchez et al. (2020), cubren únicamente al sector privado formal asalariado; los datos tributarios del SII y los paneles EPS y ELPI tienen restricciones análogas de acceso o cobertura). Esa restricción de infraestructura de datos es, en sí misma, parte del diagnóstico de este documento (recomendación R5).
 
 Los resultados están disponibles en un repositorio público con código y datos de acceso abierto, lo que permite a cualquier investigador o servicio público replicar, auditar y extender las estimaciones.
+
+La literatura chilena ha documentado la magnitud de la brecha y su descomposición con categorías ocupacionales amplias (Perticará y Bueno, 2009; boletines del INE y de la Subsecretaría del Trabajo), su relación con el poder de mercado de las firmas mediante registros administrativos de acceso restringido y cobertura parcial (Sánchez et al., 2020) y, más recientemente, los diferenciales por área de formación con datos CASEN. Ninguno de estos trabajos estaba en condiciones de descartar la interpretación dominante en el debate público —que el diferencial refleja elecciones ocupacionales, horarias, educativas o familiares de las mujeres—, porque sus controles ocupacionales eran demasiado agregados para someterla a prueba. Frente a ese estado del arte, este documento realiza cuatro contribuciones:
+
+1. **La primera estimación para Chile, hasta donde conocemos, de la brecha salarial dentro de la ocupación a cuatro dígitos** (354 categorías) con datos de acceso abierto, inferencia estadística por ocupación y corrección por comparaciones múltiples.
+2. **Un diseño orientado a agotar la explicación por elecciones**: catorce especificaciones que descuentan, sucesiva y conjuntamente, cada dimensión de elección observable — incluida una especificación máxima con 375 parámetros — y una tabla de contraste directo entre cada versión de la objeción y la evidencia (Tabla 6).
+3. **La primera caracterización distributiva de la brecha ajustada para Chile con esta granularidad**: gradiente socioeconómico (la brecha duplica su magnitud en los hogares de menor nivel) y forma de U a lo largo de la distribución salarial, con piso pegajoso y techo de cristal simultáneos.
+4. **Un aparato empírico íntegramente reproducible con datos públicos**, que establece un estándar replicable para la estadística oficial y fundamenta una agenda de infraestructura de datos (recomendación R5).
+
+### 1.3 Estructura del documento
+
+El resto del documento se organiza como sigue. La sección 2 presenta el marco teórico y las predicciones contrastables que se derivan de él. La sección 3 describe los datos y la estrategia empírica. La sección 4 reporta los resultados: la prueba de granularidad ocupacional, la descomposición de la brecha, la penalización por maternidad, el análisis por ocupación, el contraste sistemático de la interpretación de elecciones y la heterogeneidad distributiva. La sección 5 revisa el marco institucional chileno y sus límites; la sección 6 deriva seis recomendaciones de política; la sección 7 somete los resultados a las pruebas de robustez; la sección 8 examina los mecanismos que la literatura internacional identifica dentro del componente no explicado, y la sección 9 discute las limitaciones.
 
 ---
 
