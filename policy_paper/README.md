@@ -181,7 +181,8 @@ La interpretación más frecuente para restar urgencia a la brecha salarial es a
 | *...de régimen: prefieren empleos informales o flexibles* | Separación y control por formalidad (contrato, cotización, categoría) | Composición casi idéntica por sexo; **-12.0% entre asalariados formales** |
 | *...de sector: optan por el sector público, más compatible* | Separación público/privado | **-9.8% incluso dentro del sector público**, con sus escalas regladas |
 | *...familiares: priorizan los hijos sobre la carrera* | Interacción mujer×hijos, mujer×estado civil | **El mismo hijo se asocia a +5.0% para él y -7.8% adicional para ella.** Una "elección familiar" simétrica no produce efectos asimétricos por sexo |
-| *...educativas: invierten menos en capital humano* | Control por nivel educativo | Juega al revés: las ocupadas están **más** educadas que los ocupados (contribución -10.3%) |
+| *...educativas: invierten menos en capital humano o estudian en peores instituciones* | Control por nivel educativo y por tipo de institución de educación superior | Juega al revés: las ocupadas están **más** educadas (contribución -10.3%), y el tipo de institución no mueve el coeficiente. Entre universitarios con tipo de institución controlado: -10.6% |
+| *...geográficas: viven en mercados laborales distintos* | Efectos fijos de región (16) y zona urbano/rural | La brecha queda en **-15.7%** — una décima más que sin geografía |
 | *"Es un artefacto estadístico"* | FDR/Bonferroni, outliers, forma funcional, referencias de la descomposición | El patrón sobrevive todas las correcciones |
 
 Y la prueba de síntesis: la **especificación máxima** — que descuenta simultáneamente todas las "elecciones" observables — no reduce la brecha, la deja en -15.6%.
@@ -240,6 +241,9 @@ Los resultados centrales fueron sometidos a la batería de robustez que un proce
 |---|---|---|
 | Baseline: ingreso mensual + control de horas, todos los ocupados | **-15.3%** | 174.924 |
 | **Especificación máxima**: todos los controles simultáneos (ocupación 4d, hijos, estado civil, categoría/sector, cotización; 375 parámetros) | **-15.6%** | 174.719 |
+| Máxima + efectos fijos de región (16) y zona urbano/rural | -15.7% | 174.719 |
+| Máxima + geografía + tipo de institución de educación superior (CFT/IP/universidades) | -15.6% | 174.719 |
+| Solo universitarios y posgraduados, con tipo de institución, región y zona | **-10.6%** | 46.532 |
 | Edad prima (25-59 años) | -14.9% | 135.471 |
 | Ingreso recortado (percentiles 1-99) | -13.0% | 171.481 |
 | Solo asalariados formales (cotizan previsión) | **-12.0%** | 110.098 |
@@ -250,7 +254,7 @@ Los resultados centrales fueron sometidos a la batería de robustez que un proce
 | Solo asalariados del sector privado | -12.7% | 98.163 |
 | Solo trabajadores independientes (cuenta propia y empleadores) | **-25.5%** | 44.697 |
 
-Seis conclusiones de robustez:
+Siete conclusiones de robustez:
 
 1. **La brecha ajustada nunca se acerca a cero — y agregar controles no la reduce**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -16%. La **especificación máxima**, con todos los controles disponibles simultáneamente, arroja -15.6% — *más* que el baseline, porque varios controles (educación, formalidad, sector público) capturan composición que favorece a las mujeres; al descontarla, el diferencial atribuible al sexo queda más expuesto. En la descomposición final con todas las familias, la composición explica 27.4% y el 72.6% queda sin explicar.
 2. **¿Formal con formal?** La comparación restringida a asalariados formales —el mismo universo que cubren los datos administrativos del Seguro de Cesantía— arroja -12.0%. Y la composición por formalidad casi no difiere por sexo en la muestra de ocupados con ingreso (asalariados: 74.6% de los hombres vs 77.7% de las mujeres; cotización: 73.3% vs 72.5%): la brecha no es un artefacto de mezclar universos. Incluida como **control** en la muestra completa (categoría ocupacional + cotización), la formalidad apenas mueve el coeficiente de sexo (-15.3% → -15.2%), pese a ser un fuerte predictor del nivel de ingreso (cotizar se asocia a +30%; cuenta propia, a -19%); en la descomposición, su aporte compositivo es levemente negativo (-1.7%), como el de la educación. El hallazgo nuevo es de heterogeneidad — **la brecha más severa está entre independientes (-25.5%)**, el segmento sin contrato ni fiscalización posible, lo que acota el alcance de los instrumentos regulatorios clásicos (R1) y refuerza el rol de los instrumentos de cuidado (R2-R4), que operan sobre todos los regímenes de empleo.
@@ -258,6 +262,7 @@ Seis conclusiones de robustez:
 4. **El patrón unidireccional por ocupación sobrevive al cambio de especificación**: en salario por hora, 41 ocupaciones sobreviven FDR (40 en contra de mujeres) y 16 sobreviven Bonferroni (todas en contra). La única excepción pro-mujer bajo FDR (conductoras de taxis, +13.1% por hora) refleja la dilución horaria de los conductores hombres, que trabajan jornadas extremas — bajo Bonferroni ninguna ocupación favorece a las mujeres en ninguna especificación.
 5. En salario por hora la brecha es menor que en ingreso mensual (-11.1% vs -15.3%): parte de la brecha mensual refleja directamente la menor cantidad de horas remuneradas de las mujeres — coherente con el peso de las horas en la descomposición y con el diagnóstico de Goldin (2014).
 6. **El sector público comprime la brecha, pero no la elimina.** Las mujeres están sobrerrepresentadas en el empleo público (56.1% de ese segmento; concentra el 19.0% del empleo femenino vs el 11.0% del masculino), y la brecha ajustada ahí es menor que en el privado: **-9.8% vs -12.7%** (diferencia marginalmente significativa; interacción mujer×público, p=0.078). El patrón es coherente con remuneraciones regidas por escalas y grados públicos — evidencia local a favor de la transparencia salarial (R1) — pero el -9.8% remanente indica que las escalas no bastan: asignaciones, horas extraordinarias y velocidad de ascenso quedan fuera de su alcance.
+7. **Ni la geografía ni la calidad de la educación superior explican la brecha.** Los efectos fijos de región y zona urbano/rural dejan el coeficiente en -15.7%, y el tipo de institución de educación superior — que sí predice con fuerza el nivel de ingreso (universidades CRUCH y estatales se asocian a ~+20% sobre un CFT, a igualdad de todo lo demás) — lo deja en -15.6%. La prueba más fina: **solo entre universitarios y posgraduados**, con tipo de institución, región, zona, ocupación exacta, horas, familia y formalidad controladas, la brecha es **-10.6%**. Nota de datos: CASEN solo registra el *nombre* de la institución para quienes estudian actualmente; para los titulados solo el tipo — el control ideal (efectos fijos por institución×carrera) requiere los registros SIES/Mineduc vinculados a ingresos, otro insumo para R5.
 
 ![Robustez de especificaciones](../notebooks/outputs/figures/robustez_especificaciones.png)
 
