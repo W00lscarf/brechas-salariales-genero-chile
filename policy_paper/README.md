@@ -206,7 +206,7 @@ Las recomendaciones se ordenan por el componente de la brecha sobre el que actú
 
 ### R1. Transparencia salarial obligatoria con brechas ajustadas por ocupación *(actúa sobre: retornos)*
 
-Obligación legal para empresas sobre un umbral de tamaño de calcular y reportar periódicamente su brecha salarial de género **por categoría ocupacional comparable**, con difusión a trabajadores y sindicatos. La evidencia causal de alto estándar es favorable: la ley danesa de reporte redujo la brecha en torno a un 13% relativo, principalmente moderando el crecimiento salarial masculino, sin efectos negativos de empleo (Bennedsen, Simintzi, Tsoutsoura y Wolfenzon, 2022); la transparencia en universidades canadienses la redujo del orden de 20-30% (Baker, Halberstam, Kroft, Mas y Messacar, 2023). Cullen (2024) resume las condiciones de diseño que evitan efectos adversos sobre la negociación individual. La evidencia local apunta en la misma dirección: en el sector público chileno, donde la remuneración se rige por escalas y grados de conocimiento público, la brecha ajustada es menor que en el privado (-9.8% vs -12.7%, sección 7) — aunque el remanente indica que la transparencia debe cubrir el total de la remuneración (asignaciones, bonos, ascensos), no solo el sueldo base. Complemento legislativo: reformar el art. 62 bis para adoptar el estándar de "trabajo de igual valor" e invertir la carga de la prueba una vez constatada una brecha injustificada en el reporte.
+Obligación legal para empresas sobre un umbral de tamaño de calcular y reportar periódicamente su brecha salarial de género **por categoría ocupacional comparable**, con difusión a trabajadores y sindicatos. La evidencia causal de alto estándar es favorable: la ley danesa de reporte redujo la brecha en torno a un 13% relativo, principalmente moderando el crecimiento salarial masculino, sin efectos negativos de empleo (Bennedsen, Simintzi, Tsoutsoura y Wolfenzon, 2022); la transparencia en universidades canadienses la redujo del orden de 20-30% (Baker, Halberstam, Kroft, Mas y Messacar, 2023). Cullen (2024) resume las condiciones de diseño que evitan efectos adversos sobre la negociación individual. La transparencia debe incluir además la **negociabilidad y los rangos salariales de cada cargo**: mostrar referencias salariales del mercado elimina la brecha de peticiones que explica gran parte del diferencial en contrataciones (Roussille, 2024), y explicitar que el salario es negociable elimina la diferencia por sexo en la propensión a negociar (Leibbrandt y List, 2015). La evidencia local apunta en la misma dirección: en el sector público chileno, donde la remuneración se rige por escalas y grados de conocimiento público, la brecha ajustada es menor que en el privado (-9.8% vs -12.7%, sección 7) — aunque el remanente indica que la transparencia debe cubrir el total de la remuneración (asignaciones, bonos, ascensos), no solo el sueldo base. Complemento legislativo: reformar el art. 62 bis para adoptar el estándar de "trabajo de igual valor" e invertir la carga de la prueba una vez constatada una brecha injustificada en el reporte.
 
 ### R2. Sala cuna universal: eliminar el umbral de 20 trabajadoras *(actúa sobre: retornos y participación)*
 
@@ -263,7 +263,25 @@ Seis conclusiones de robustez:
 
 ---
 
-## 8. Limitaciones
+## 8. ¿Qué hay dentro del 72% no explicado? Mecanismos con evidencia causal
+
+El 72.6% que la especificación máxima deja sin explicar no es una caja negra ni un sinónimo automático de "preferencias inobservables". La literatura internacional —con diseños experimentales y datos administrativos que Chile no tiene— ha identificado y cuantificado sus componentes principales:
+
+**8.1 La brecha de peticiones (*ask gap*).** Roussille (2024) documenta, en una plataforma de contratación donde los candidatos publican su pretensión salarial, que las mujeres piden en torno a 3% menos por el mismo perfil — y esa diferencia de *petición* da cuenta de prácticamente toda la brecha en las ofertas finales. El hallazgo de política es notable: cuando la plataforma comenzó a mostrar la mediana salarial de mercado para cada perfil, la brecha de peticiones (y con ella la de ofertas) prácticamente desapareció. En la misma línea, Leibbrandt y List (2015) muestran que cuando la negociabilidad del salario es ambigua los hombres negocian más, y que explicitar "salario negociable" elimina la diferencia. Exley, Niederle y Vesterlund (2020) advierten el reverso: empujar a las mujeres a negociar más no siempre les conviene, porque el castigo por pedir difiere según el sexo — el problema es el *entorno* de negociación, no una deficiencia femenina que corregir.
+
+**8.2 Sobretiempo y flexibilidad: el mecanismo dentro de la ocupación.** Bolotnyy y Emanuel (2022) estudian el caso más limpio disponible: operadores de buses y trenes de Boston — mismo cargo, mismo sindicato, misma tarifa horaria por contrato. Los hombres terminan ganando más porque aceptan más sobretiempo (especialmente el de última hora, mejor pagado) y las mujeres eligen configuraciones horarias compatibles con el cuidado. Es la versión micro del diagnóstico de Goldin (2014) sobre la no-linealidad de los retornos a las horas. Nuestros propios datos muestran la huella de ese mecanismo: las horas son el mayor factor observable de la descomposición (23.3%), y el único caso "pro-mujer" que sobrevive FDR (conductoras de taxi, en salario por hora) refleja precisamente jornadas masculinas extremas que diluyen el precio-hora.
+
+**8.3 Competencia, riesgo y personalidad.** Niederle y Vesterlund (2007) muestran experimentalmente que, a igual desempeño, el doble de hombres elige compensación por torneo; Buser, Niederle y Oosterbeek (2014) documentan que esa disposición predice la elección de carrera — es decir, alimenta la *composición* ocupacional, no solo el residuo. Croson y Gneezy (2009) y Bertrand (2011) revisan las diferencias de preferencias (riesgo, competencia, actitudes sociales); Mueller y Plug (2006) y Heckman, Stixrud y Urzúa (2006) muestran que los atributos de personalidad y las habilidades no cognitivas afectan los salarios. Pero la conclusión agregada de Blau y Kahn (2017) es aleccionadora: **estos factores explican una porción pequeña a moderada de la brecha** — relevante, pero lejos de agotar el residuo. Y una parte de esas "preferencias" es a su vez endógena a normas y expectativas, no un rasgo exógeno.
+
+**8.4 Firmas y negociación.** Card, Cardoso y Kline (2016), con datos administrativos portugueses: la combinación de sorting hacia firmas que pagan menores premios y menor captura de rentas en la negociación explica en torno a un quinto de la brecha. Este canal es completamente invisible para nuestros datos (no observamos el empleador) y queda, por construcción, dentro de nuestro 72%.
+
+**8.5 La dinámica de la maternidad.** Cortés y Pan (2023) concluyen que los hijos son hoy el principal factor detrás de las brechas restantes en países desarrollados; Kleven et al. (2019, 2024) cuantifican penalizaciones de largo plazo en torno al 20% en Dinamarca y sustancialmente mayores en América Latina. Nuestro coeficiente mujer×hijos (-7.8% transversal) es la huella estática de ese proceso dinámico: la penalización se acumula con los años posteriores al nacimiento, algo que un corte transversal solo puede subestimar.
+
+**Implicancia para Chile.** Ninguno de estos mecanismos es medible hoy con datos públicos chilenos: CASEN y ESI no incluyen módulos de negociación salarial, historia laboral efectiva ni atributos socioemocionales, y la ELPI mide lo socioemocional solo en cuidadores principales de niños pequeños (mayoritariamente mujeres), lo que impide comparar entre sexos. Esto convierte el 72% en un argumento adicional para la recomendación R5: **módulos breves de negociación** (¿negoció su remuneración al ser contratado?, ¿ha pedido un aumento?, ¿el salario era presentado como negociable?) **e historia laboral** en las encuestas existentes tienen costo marginal bajo y abrirían la caja negra local. Mientras tanto, la lectura correcta del residuo no es "diferencias de preferencias inabordables", sino un conjunto de mecanismos con nombre, evidencia y — cada uno — un instrumento de política asociado: transparencia de rangos y negociabilidad (8.1), diseño del sobretiempo y la flexibilidad (8.2), corresponsabilidad en el cuidado (8.5).
+
+---
+
+## 9. Limitaciones
 
 - **Identificación.** Los datos son observacionales y de corte transversal; los coeficientes describen asociaciones condicionales, no efectos causales. El componente "no explicado" acota pero no identifica discriminación.
 - **Selección.** La participación laboral femenina es ~18 pp menor; si las mujeres que participan están positivamente seleccionadas en productividad, nuestras brechas *subestiman* el diferencial poblacional. No aplicamos correcciones de selección (Heckman) para mantener la transparencia del pipeline.
@@ -273,7 +291,7 @@ Seis conclusiones de robustez:
 
 ---
 
-## 9. Referencias
+## 10. Referencias
 
 **Literatura académica**
 
@@ -281,24 +299,34 @@ Seis conclusiones de robustez:
 - Baker, M., Halberstam, Y., Kroft, K., Mas, A. y Messacar, D. (2023). "Pay Transparency and the Gender Gap". *American Economic Journal: Applied Economics*, 15(2).
 - Becker, G. (1957). *The Economics of Discrimination*. University of Chicago Press.
 - Bennedsen, M., Simintzi, E., Tsoutsoura, M. y Wolfenzon, D. (2022). "Do Firms Respond to Gender Pay Gap Transparency?". *Journal of Finance*, 77(4).
+- Bertrand, M. (2011). "New Perspectives on Gender". En O. Ashenfelter y D. Card (eds.), *Handbook of Labor Economics*, vol. 4B. Elsevier.
 - Bertrand, M., Goldin, C. y Katz, L. (2010). "Dynamics of the Gender Gap for Young Professionals in the Financial and Corporate Sectors". *American Economic Journal: Applied Economics*, 2(3).
 - Blau, F. y Kahn, L. (2017). "The Gender Wage Gap: Extent, Trends, and Explanations". *Journal of Economic Literature*, 55(3).
 - Blinder, A. (1973). "Wage Discrimination: Reduced Form and Structural Estimates". *Journal of Human Resources*, 8(4).
+- Bolotnyy, V. y Emanuel, N. (2022). "Why Do Women Earn Less Than Men? Evidence from Bus and Train Operators". *Journal of Labor Economics*, 40(2).
+- Buser, T., Niederle, M. y Oosterbeek, H. (2014). "Gender, Competitiveness, and Career Choices". *Quarterly Journal of Economics*, 129(3).
 - Card, D., Cardoso, A.R. y Kline, P. (2016). "Bargaining, Sorting, and the Gender Wage Gap: Quantifying the Impact of Firms on the Relative Pay of Women". *Quarterly Journal of Economics*, 131(2).
 - Cortés, P. y Pan, J. (2023). "Children and the Remaining Gender Gaps in the Labor Market". *Journal of Economic Literature*, 61(4).
+- Croson, R. y Gneezy, U. (2009). "Gender Differences in Preferences". *Journal of Economic Literature*, 47(2).
 - Cullen, Z. (2024). "Is Pay Transparency Good?". *Journal of Economic Perspectives*, 38(1).
+- Exley, C., Niederle, M. y Vesterlund, L. (2020). "Knowing When to Ask: The Cost of Leaning In". *Journal of Political Economy*, 128(3).
 - Goldin, C. (2014). "A Grand Gender Convergence: Its Last Chapter". *American Economic Review*, 104(4).
 - Goldin, C. (2021). *Career and Family: Women's Century-Long Journey toward Equity*. Princeton University Press.
-- Kleven, H., Landais, C. y Søgaard, J.E. (2019). "Children and Gender Inequality: Evidence from Denmark". *American Economic Journal: Applied Economics*, 11(4).
+- Heckman, J., Stixrud, J. y Urzúa, S. (2006). "The Effects of Cognitive and Noncognitive Abilities on Labor Market Outcomes and Social Behavior". *Journal of Labor Economics*, 24(3).
 - Kleven, H., Landais, C. y Leite-Mariante, G. (2024). "The Child Penalty Atlas". *Review of Economic Studies*.
+- Kleven, H., Landais, C. y Søgaard, J.E. (2019). "Children and Gender Inequality: Evidence from Denmark". *American Economic Journal: Applied Economics*, 11(4).
+- Leibbrandt, A. y List, J. (2015). "Do Women Avoid Salary Negotiations? Evidence from a Large-Scale Natural Field Experiment". *Management Science*, 61(9).
 - Martínez, C. y Perticará, M. (2017). "Childcare Effects on Maternal Employment: Evidence from Chile". *Journal of Development Economics*, 126.
 - Mincer, J. (1974). *Schooling, Experience, and Earnings*. NBER / Columbia University Press.
+- Mueller, G. y Plug, E. (2006). "Estimating the Effect of Personality on Male and Female Earnings". *ILR Review*, 60(1).
+- Niederle, M. y Vesterlund, L. (2007). "Do Women Shy Away from Competition? Do Men Compete Too Much?". *Quarterly Journal of Economics*, 122(3).
 - Oaxaca, R. (1973). "Male-Female Wage Differentials in Urban Labor Markets". *International Economic Review*, 14(3).
 - Patnaik, A. (2019). "Reserving Time for Daddy: The Consequences of Fathers' Quotas". *Journal of Labor Economics*, 37(4).
 - Perticará, M. y Bueno, I. (2009). "A New Approach to Gender Wage Gaps in Chile". *Revista CEPAL*, 99.
 - Petersen, T. y Morgan, L. (1995). "Separate and Unequal: Occupation-Establishment Sex Segregation and the Gender Wage Gap". *American Journal of Sociology*, 101(2).
 - Phelps, E. (1972). "The Statistical Theory of Racism and Sexism". *American Economic Review*, 62(4).
 - Prada, M.F., Rucci, G. y Urzúa, S. (2015). "The Effect of Mandated Child Care on Female Wages in Chile". NBER Working Paper 21080.
+- Roussille, N. (2024). "The Central Role of the Ask Gap in Gender Pay Inequality". *Quarterly Journal of Economics*, 139(3).
 - Sánchez, R., Finot, J. y Villena-Roldán, B. (2020). "Gender Wage Gap and Firm Market Power: Evidence from Chile". IZA Discussion Paper 13856.
 
 **Fuentes oficiales y datos**
