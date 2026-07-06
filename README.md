@@ -4,7 +4,7 @@
 
 Este proyecto descompone la brecha salarial de género en Chile en dos etapas: primero con **datos agregados oficiales** del SIMEL-INE (indicadores públicos vía API, sin autenticación), y luego con **microdatos individuales** de la Encuesta Suplementaria de Ingresos (ESI 2018-2024), que permiten una regresión multivariable real.
 
-📄 **Los hallazgos completos, con marco teórico, metodología y recomendaciones de política, están sintetizados en el [policy paper](policy_paper/README.md)** — *"Misma ocupación, distinto salario: la brecha de género que la composición no explica"*.
+📄 **Los hallazgos completos, con marco teórico, metodología y recomendaciones de política, están sintetizados en el [documento de trabajo](policy_paper/README.md)** — *"Misma ocupación, distinto salario: la brecha de género que la composición no explica"* — también disponible en inglés: [*Same Occupation, Different Pay*](policy_paper/README_EN.md).
 
 ---
 

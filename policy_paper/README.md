@@ -2,7 +2,7 @@
 
 ## La brecha de género que la composición no explica: evidencia desde microdatos públicos y propuestas de política para Chile
 
-*Documento de trabajo elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-09).*
+*Documento de trabajo elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-09). An English version is available at [README_EN.md](README_EN.md).*
 
 **Julio 2026**
 
