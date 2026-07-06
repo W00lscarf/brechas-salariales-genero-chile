@@ -14,7 +14,7 @@
 - Controlando simultáneamente por edad, educación, horas trabajadas, año y **ocupación exacta a 4 dígitos CIUO-08** (354 categorías, el control más fino posible con datos públicos chilenos), la brecha ajustada es **-15.3%**. Las horas trabajadas (28.7%) y la ocupación granular (17.0%) son los dos mayores factores de composición identificados, pero la mayoría del diferencial —**en torno a dos tercios**— permanece sin explicar por composición.
 - **La penalización por maternidad es identificable y significativa**: dentro de la misma ocupación exacta, una mujer con hijos gana un **7.8% adicional menos** (p<0.001) que lo que la brecha general ya le descuenta, mientras que para los hombres tener hijos se asocia a un *premio* salarial (+5.0%). El costo se concentra en mujeres casadas o convivientes.
 - Al aislar el efecto sexo ocupación por ocupación, **90 de 227 ocupaciones muestran brecha estadísticamente significativa — 89 en contra de las mujeres y solo una a favor, dentro de lo esperable por azar**. Tras la corrección por comparaciones múltiples, 66 ocupaciones sobreviven FDR y 30 el criterio de Bonferroni — **todas en contra de las mujeres; ninguna a favor**. Las brechas "pro-mujer" que aparecen en comparaciones simples no sobreviven el ajuste por composición ni el control de incertidumbre estadística.
-- Los resultados sobreviven una **batería de robustez** (sección 7): especificación en salario por hora (-11.1%), restricción a asalariados formales que cotizan (-12.0%), edad prima 25-59 (-14.9%), recorte de outliers (-13.0%) y tres vectores de referencia en la descomposición. La brecha ajustada nunca baja de -11%; la más severa está entre trabajadores independientes (-25.5%).
+- Los resultados sobreviven una **batería de robustez** (sección 7): especificación en salario por hora (-11.1%), restricción a asalariados formales que cotizan (-12.0%), edad prima 25-59 (-14.9%), recorte de outliers (-13.0%) y tres vectores de referencia en la descomposición. La **especificación máxima** — todos los controles disponibles simultáneamente, incluyendo sector público/privado y formalidad — arroja **-15.6%**: agregar controles no reduce la brecha. La más severa está entre trabajadores independientes (-25.5%); la más baja, en el sector público (-9.8%), donde las escalas salariales la comprimen pero no la eliminan.
 - Estos resultados indican que la brecha chilena es mayoritariamente un problema de **retornos desiguales** (lo que se paga a iguales características) y no solo de **composición** (dónde trabajan hombres y mujeres). Las políticas deben calibrarse a ese diagnóstico: transparencia salarial con reporte de brechas ajustadas, reforma del artículo 203 del Código del Trabajo (sala cuna), corresponsabilidad parental efectiva y expansión de la oferta pública de cuidado.
 
 ---
@@ -170,6 +170,24 @@ La distribución completa (227 ocupaciones, con brecha cruda, ajustada, p-valor 
 
 El problema chileno es, predominantemente, de **retornos**: características idénticas se remuneran distinto según el sexo, con la maternidad como el mecanismo identificable más claro dentro de ese residuo.
 
+### 4.7 La lectura de "elecciones": qué queda de ella
+
+La interpretación más frecuente para restar urgencia a la brecha salarial es atribuirla a **decisiones libres de las mujeres** — de carrera, de horas, de sector, de familia. El diseño de este trabajo está deliberadamente orientado a someter cada versión de esa lectura a prueba directa:
+
+| La objeción: "es producto de elecciones..." | Prueba aplicada | Resultado |
+|---|---|---|
+| *...de ocupación: eligen oficios peor pagados* | Control por ocupación exacta a 4 dígitos (354 categorías) | La brecha se reduce (-20.9% → -15.3%) pero **persiste dentro de la misma ocupación exacta** |
+| *...de horas: trabajan menos* | Control de horas + especificación en salario por hora | **-11.1% por hora trabajada**, misma ocupación |
+| *...de régimen: prefieren empleos informales o flexibles* | Separación y control por formalidad (contrato, cotización, categoría) | Composición casi idéntica por sexo; **-12.0% entre asalariados formales** |
+| *...de sector: optan por el sector público, más compatible* | Separación público/privado | **-9.8% incluso dentro del sector público**, con sus escalas regladas |
+| *...familiares: priorizan los hijos sobre la carrera* | Interacción mujer×hijos, mujer×estado civil | **El mismo hijo se asocia a +5.0% para él y -7.8% adicional para ella.** Una "elección familiar" simétrica no produce efectos asimétricos por sexo |
+| *...educativas: invierten menos en capital humano* | Control por nivel educativo | Juega al revés: las ocupadas están **más** educadas que los ocupados (contribución -10.3%) |
+| *"Es un artefacto estadístico"* | FDR/Bonferroni, outliers, forma funcional, referencias de la descomposición | El patrón sobrevive todas las correcciones |
+
+Y la prueba de síntesis: la **especificación máxima** — que descuenta simultáneamente todas las "elecciones" observables — no reduce la brecha, la deja en -15.6%.
+
+Dos vías de escape permanecen abiertas, y conviene nombrarlas con honestidad. Primero, la **experiencia laboral efectiva**: la edad captura experiencia *potencial*, no trayectorias reales — si las mujeres acumulan menos años efectivos por interrupciones de carrera, parte del residuo lo reflejaría (aunque esas interrupciones son, precisamente, la penalización por maternidad operando por otro canal, no una preferencia). Segundo, el **sorting entre firmas y la negociación** (Card, Cardoso y Kline, 2016), inobservable sin datos administrativos vinculados. Ninguna de las dos rescata la lectura de "elecciones libres": la primera es en gran medida consecuencia de la asignación asimétrica del cuidado que este trabajo documenta (el efecto asimétrico de los hijos), y la segunda es un mecanismo de mercado, no una preferencia. A esto se suma que, por el problema de sobre-control (sección 2.2), estas estimaciones son **pisos**: si la segregación ocupacional o las horas son a su vez elecciones restringidas por normas y barreras, parte de lo "explicado" también es discriminación.
+
 ---
 
 ## 5. Marco institucional vigente y sus límites
@@ -188,7 +206,7 @@ Las recomendaciones se ordenan por el componente de la brecha sobre el que actú
 
 ### R1. Transparencia salarial obligatoria con brechas ajustadas por ocupación *(actúa sobre: retornos)*
 
-Obligación legal para empresas sobre un umbral de tamaño de calcular y reportar periódicamente su brecha salarial de género **por categoría ocupacional comparable**, con difusión a trabajadores y sindicatos. La evidencia causal de alto estándar es favorable: la ley danesa de reporte redujo la brecha en torno a un 13% relativo, principalmente moderando el crecimiento salarial masculino, sin efectos negativos de empleo (Bennedsen, Simintzi, Tsoutsoura y Wolfenzon, 2022); la transparencia en universidades canadienses la redujo del orden de 20-30% (Baker, Halberstam, Kroft, Mas y Messacar, 2023). Cullen (2024) resume las condiciones de diseño que evitan efectos adversos sobre la negociación individual. Complemento legislativo: reformar el art. 62 bis para adoptar el estándar de "trabajo de igual valor" e invertir la carga de la prueba una vez constatada una brecha injustificada en el reporte.
+Obligación legal para empresas sobre un umbral de tamaño de calcular y reportar periódicamente su brecha salarial de género **por categoría ocupacional comparable**, con difusión a trabajadores y sindicatos. La evidencia causal de alto estándar es favorable: la ley danesa de reporte redujo la brecha en torno a un 13% relativo, principalmente moderando el crecimiento salarial masculino, sin efectos negativos de empleo (Bennedsen, Simintzi, Tsoutsoura y Wolfenzon, 2022); la transparencia en universidades canadienses la redujo del orden de 20-30% (Baker, Halberstam, Kroft, Mas y Messacar, 2023). Cullen (2024) resume las condiciones de diseño que evitan efectos adversos sobre la negociación individual. La evidencia local apunta en la misma dirección: en el sector público chileno, donde la remuneración se rige por escalas y grados de conocimiento público, la brecha ajustada es menor que en el privado (-9.8% vs -12.7%, sección 7) — aunque el remanente indica que la transparencia debe cubrir el total de la remuneración (asignaciones, bonos, ascensos), no solo el sueldo base. Complemento legislativo: reformar el art. 62 bis para adoptar el estándar de "trabajo de igual valor" e invertir la carga de la prueba una vez constatada una brecha injustificada en el reporte.
 
 ### R2. Sala cuna universal: eliminar el umbral de 20 trabajadoras *(actúa sobre: retornos y participación)*
 
@@ -221,21 +239,25 @@ Los resultados centrales fueron sometidos a la batería de robustez que un proce
 | Especificación | Brecha ajustada | n |
 |---|---|---|
 | Baseline: ingreso mensual + control de horas, todos los ocupados | **-15.3%** | 174.924 |
+| **Especificación máxima**: todos los controles simultáneos (ocupación 4d, hijos, estado civil, categoría/sector, cotización; 375 parámetros) | **-15.6%** | 174.719 |
 | Edad prima (25-59 años) | -14.9% | 135.471 |
 | Ingreso recortado (percentiles 1-99) | -13.0% | 171.481 |
 | Solo asalariados formales (cotizan previsión) | **-12.0%** | 110.098 |
 | Solo asalariados con contrato escrito firmado | -11.9% | 110.721 |
 | Formalidad como control (categoría ocupacional + cotización) | -15.2% | 174.924 |
 | Salario por hora (en vez de mensual + control de horas) | **-11.1%** | 174.924 |
+| Solo asalariados del sector público | **-9.8%** | 27.222 |
+| Solo asalariados del sector privado | -12.7% | 98.163 |
 | Solo trabajadores independientes (cuenta propia y empleadores) | **-25.5%** | 44.697 |
 
-Cinco conclusiones de robustez:
+Seis conclusiones de robustez:
 
-1. **La brecha ajustada nunca se acerca a cero**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -15%.
+1. **La brecha ajustada nunca se acerca a cero — y agregar controles no la reduce**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -16%. La **especificación máxima**, con todos los controles disponibles simultáneamente, arroja -15.6% — *más* que el baseline, porque varios controles (educación, formalidad, sector público) capturan composición que favorece a las mujeres; al descontarla, el diferencial atribuible al sexo queda más expuesto. En la descomposición final con todas las familias, la composición explica 27.4% y el 72.6% queda sin explicar.
 2. **¿Formal con formal?** La comparación restringida a asalariados formales —el mismo universo que cubren los datos administrativos del Seguro de Cesantía— arroja -12.0%. Y la composición por formalidad casi no difiere por sexo en la muestra de ocupados con ingreso (asalariados: 74.6% de los hombres vs 77.7% de las mujeres; cotización: 73.3% vs 72.5%): la brecha no es un artefacto de mezclar universos. Incluida como **control** en la muestra completa (categoría ocupacional + cotización), la formalidad apenas mueve el coeficiente de sexo (-15.3% → -15.2%), pese a ser un fuerte predictor del nivel de ingreso (cotizar se asocia a +30%; cuenta propia, a -19%); en la descomposición, su aporte compositivo es levemente negativo (-1.7%), como el de la educación. El hallazgo nuevo es de heterogeneidad — **la brecha más severa está entre independientes (-25.5%)**, el segmento sin contrato ni fiscalización posible, lo que acota el alcance de los instrumentos regulatorios clásicos (R1) y refuerza el rol de los instrumentos de cuidado (R2-R4), que operan sobre todos los regímenes de empleo.
 3. **El *index number problem* de Oaxaca-Blinder no altera el diagnóstico**: bajo referencia masculina, femenina o pooled (Neumark, 1988), el ranking de factores es idéntico (horas primero, ocupación granular segundo, educación en contra); el componente no explicado varía entre 49% y 71% pero nunca baja de aproximadamente la mitad de la brecha.
 4. **El patrón unidireccional por ocupación sobrevive al cambio de especificación**: en salario por hora, 41 ocupaciones sobreviven FDR (40 en contra de mujeres) y 16 sobreviven Bonferroni (todas en contra). La única excepción pro-mujer bajo FDR (conductoras de taxis, +13.1% por hora) refleja la dilución horaria de los conductores hombres, que trabajan jornadas extremas — bajo Bonferroni ninguna ocupación favorece a las mujeres en ninguna especificación.
 5. En salario por hora la brecha es menor que en ingreso mensual (-11.1% vs -15.3%): parte de la brecha mensual refleja directamente la menor cantidad de horas remuneradas de las mujeres — coherente con el peso de las horas en la descomposición y con el diagnóstico de Goldin (2014).
+6. **El sector público comprime la brecha, pero no la elimina.** Las mujeres están sobrerrepresentadas en el empleo público (56.1% de ese segmento; concentra el 19.0% del empleo femenino vs el 11.0% del masculino), y la brecha ajustada ahí es menor que en el privado: **-9.8% vs -12.7%** (diferencia marginalmente significativa; interacción mujer×público, p=0.078). El patrón es coherente con remuneraciones regidas por escalas y grados públicos — evidencia local a favor de la transparencia salarial (R1) — pero el -9.8% remanente indica que las escalas no bastan: asignaciones, horas extraordinarias y velocidad de ascenso quedan fuera de su alcance.
 
 ![Robustez de especificaciones](../notebooks/outputs/figures/robustez_especificaciones.png)
 
