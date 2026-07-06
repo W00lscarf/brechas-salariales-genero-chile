@@ -2,7 +2,7 @@
 
 ## La brecha de género que la composición no explica: evidencia desde microdatos públicos y propuestas de política para Chile
 
-*Policy paper elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-08).*
+*Policy paper elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-09).*
 
 **Julio 2026**
 
@@ -11,9 +11,10 @@
 ## Resumen ejecutivo
 
 - Con microdatos públicos de la Encuesta Suplementaria de Ingresos (ESI 2018-2024) y CASEN (2022 y 2024), estimamos que las mujeres ocupadas en Chile ganan en promedio **22-26% menos** que los hombres por su trabajo principal, según fuente y período.
-- Controlando simultáneamente por edad, educación, horas trabajadas, año y **ocupación exacta a 4 dígitos CIUO-08** (356 categorías, el control más fino posible con datos públicos chilenos), la brecha ajustada es **-17.6%**. La ocupación granular explica más que ningún otro factor observable (**~22% de la brecha total**), pero la mayoría del diferencial —**cerca del 80%**— permanece sin explicar por composición.
-- **La penalización por maternidad es identificable y significativa**: dentro de la misma ocupación exacta, una mujer con hijos gana un **9.7% adicional menos** (p<0.001) que lo que la brecha general ya le descuenta, mientras que para los hombres tener hijos se asocia a un *premio* salarial (+6.3%). El costo se concentra en mujeres casadas o convivientes.
-- Al aislar el efecto sexo ocupación por ocupación, **102 de 229 ocupaciones muestran brecha estadísticamente significativa — las 102 en contra de las mujeres; ninguna a favor**. El resultado es robusto a correcciones por comparaciones múltiples (76 ocupaciones sobreviven la corrección FDR y 33 el criterio de Bonferroni; todas en contra). Las brechas "pro-mujer" que aparecen en comparaciones simples no sobreviven el control de incertidumbre estadística.
+- Controlando simultáneamente por edad, educación, horas trabajadas, año y **ocupación exacta a 4 dígitos CIUO-08** (354 categorías, el control más fino posible con datos públicos chilenos), la brecha ajustada es **-15.3%**. Las horas trabajadas (28.7%) y la ocupación granular (17.0%) son los dos mayores factores de composición identificados, pero la mayoría del diferencial —**en torno a dos tercios**— permanece sin explicar por composición.
+- **La penalización por maternidad es identificable y significativa**: dentro de la misma ocupación exacta, una mujer con hijos gana un **7.8% adicional menos** (p<0.001) que lo que la brecha general ya le descuenta, mientras que para los hombres tener hijos se asocia a un *premio* salarial (+5.0%). El costo se concentra en mujeres casadas o convivientes.
+- Al aislar el efecto sexo ocupación por ocupación, **90 de 227 ocupaciones muestran brecha estadísticamente significativa — 89 en contra de las mujeres y solo una a favor, dentro de lo esperable por azar**. Tras la corrección por comparaciones múltiples, 66 ocupaciones sobreviven FDR y 30 el criterio de Bonferroni — **todas en contra de las mujeres; ninguna a favor**. Las brechas "pro-mujer" que aparecen en comparaciones simples no sobreviven el ajuste por composición ni el control de incertidumbre estadística.
+- Los resultados sobreviven una **batería de robustez** (sección 7): especificación en salario por hora (-11.1%), restricción a asalariados formales que cotizan (-12.0%), edad prima 25-59 (-14.9%), recorte de outliers (-13.0%) y tres vectores de referencia en la descomposición. La brecha ajustada nunca baja de -11%; la más severa está entre trabajadores independientes (-25.5%).
 - Estos resultados indican que la brecha chilena es mayoritariamente un problema de **retornos desiguales** (lo que se paga a iguales características) y no solo de **composición** (dónde trabajan hombres y mujeres). Las políticas deben calibrarse a ese diagnóstico: transparencia salarial con reporte de brechas ajustadas, reforma del artículo 203 del Código del Trabajo (sala cuna), corresponsabilidad parental efectiva y expansión de la oferta pública de cuidado.
 
 ---
@@ -75,14 +76,15 @@ Ambas encuestas tienen diseño muestral complejo. Todas las estimaciones usan lo
 
 ### 3.2 Muestra analítica (CASEN)
 
-Ocupados con ingreso positivo y ocupación válida: **176.542 personas** (2022+2024 combinados), en 444 códigos ocupacionales distintos, de los cuales 356 tienen n≥30. Para los análisis por ocupación específica se exige además **≥20 hombres y ≥20 mujeres** por celda, lo que deja **229 ocupaciones**.
+Ocupados con ingreso positivo y ocupación válida: **176.542 personas** (2022+2024 combinados), en 444 códigos ocupacionales distintos. Se excluyen los registros con horas semanales inválidas (código -88, "no sabe", y valores sobre 112 horas), lo que deja una muestra analítica de **174.924 personas**; 354 códigos ocupacionales alcanzan n≥30. Para los análisis por ocupación específica se exige además **≥20 hombres y ≥20 mujeres** por celda, lo que deja **227 ocupaciones**.
 
 ### 3.3 Estrategia empírica
 
-1. **Regresión minceriana con dos niveles de granularidad.** Misma especificación (`log ingreso ~ mujer + edad + edad² + educación + horas + año`), cambiando únicamente el control ocupacional: 1 dígito CIUO (~9 categorías, lo que permite la ESI) versus 4 dígitos (356 categorías). La diferencia entre ambos coeficientes de `mujer` aísla el aporte puro de la granularidad.
+1. **Regresión minceriana con dos niveles de granularidad.** Misma especificación (`log ingreso ~ mujer + edad + edad² + educación + horas + año`), cambiando únicamente el control ocupacional: 1 dígito CIUO (~9 categorías, lo que permite la ESI) versus 4 dígitos (354 categorías). La diferencia entre ambos coeficientes de `mujer` aísla el aporte puro de la granularidad.
 2. **Descomposición de Oaxaca-Blinder ponderada**, agrupando las contribuciones por familia de variable (educación, edad, horas, ocupación, hijos, estado civil, año), para rankear qué controles explican más de la brecha total.
 3. **Interacciones mujer×hijos y mujer×estado civil**, con la pregunta directa de fecundidad de CASEN (a diferencia de la ESI, que exige aproximar maternidad por composición del hogar).
-4. **Modelo de interacción completa `mujer × ocupación`** sobre las 229 ocupaciones: los controles comunes se estiman con toda la muestra (~151.000 observaciones) y el efecto sexo se deja variar libremente por ocupación. El efecto por ocupación se recupera como combinación lineal de coeficientes, con varianza calculada desde la matriz de covarianza cluster-robusta. Este diseño es más eficiente que estimar 229 regresiones separadas con 50-100 casos cada una.
+4. **Modelo de interacción completa `mujer × ocupación`** sobre las 227 ocupaciones: los controles comunes se estiman con toda la muestra (~149.000 observaciones) y el efecto sexo se deja variar libremente por ocupación. El efecto por ocupación se recupera como combinación lineal de coeficientes, con varianza calculada desde la matriz de covarianza cluster-robusta. Este diseño es más eficiente que estimar 227 regresiones separadas con 50-100 casos cada una.
+5. **Batería de robustez** (sección 7): salario por hora, tres vectores de referencia de Oaxaca-Blinder, edad prima, recorte de outliers, y separación por formalidad (asalariados formales/informales/independientes, vía categoría ocupacional `o15`, contrato firmado `o19` y cotización previsional `o32`).
 
 ### 3.4 Reproducibilidad
 
@@ -102,70 +104,69 @@ La crítica de Petersen y Morgan aplicada a Chile — ¿desaparece la brecha al 
 
 | Especificación (idéntica salvo el control ocupacional) | Brecha ajustada | R² |
 |---|---|---|
-| Ocupación **amplia** (1 dígito, ~9 categorías — equivalente ESI) | **-24.4%** (IC95: -25.2 a -23.6) | 0.449 |
-| Ocupación **granular** (4 dígitos, 356 categorías) | **-17.6%** (IC95: -18.5 a -16.7) | 0.508 |
-| **Diferencia** | **+6.8 pp** | |
+| Ocupación **amplia** (1 dígito, ~9 categorías — equivalente ESI) | **-20.9%** (IC95: -21.7 a -20.0) | 0.488 |
+| Ocupación **granular** (4 dígitos, 354 categorías) | **-15.3%** (IC95: -16.2 a -14.4) | 0.537 |
+| **Diferencia** | **+5.6 pp** | |
 
-La granularidad importa: una parte real de lo que las estimaciones convencionales reportan como "no explicado" es **segregación ocupacional fina** — dentro de "Profesionales", los hombres se concentran en las especialidades mejor pagadas. Pero la brecha no se desploma: **-17.6% persiste comparando la misma ocupación exacta**. Incluso dentro de ocupaciones idénticas: médicos especialistas -20%, técnicos de enfermería -13%, enfermeros -3%.
+La granularidad importa: una parte real de lo que las estimaciones convencionales reportan como "no explicado" es **segregación ocupacional fina** — dentro de "Profesionales", los hombres se concentran en las especialidades mejor pagadas. Pero la brecha no se desploma: **-15.3% persiste comparando la misma ocupación exacta**. Incluso dentro de ocupaciones idénticas: médicos especialistas -20%, técnicos de enfermería -13%, enfermeros -3%.
 
 ### 4.3 Ranking de factores: qué explica la brecha y cuánto
 
-Descomposición de Oaxaca-Blinder sobre la brecha total de 22.5% (CASEN 2022+2024), con y sin controles de familia:
+Descomposición de Oaxaca-Blinder sobre la brecha total de 22.6% (CASEN 2022+2024), con y sin controles de familia:
 
 | Factor | Sin hijos/estado civil | Con hijos/estado civil |
 |---|---|---|
-| Ocupación (4 dígitos) | **+22.2%** | **+18.9%** |
-| Horas trabajadas | +12.7% | +12.3% |
-| Estado civil | — | +2.1% |
-| Tiene hijos | — | -1.7% |
-| Edad | -1.6% | -2.6% |
-| Educación | **-10.7%** | **-10.9%** |
+| Horas trabajadas | **+28.7%** | **+27.8%** |
+| Ocupación (4 dígitos) | **+17.0%** | **+14.2%** |
+| Estado civil | — | +1.8% |
+| Tiene hijos | — | -1.4% |
+| Edad | -1.1% | -2.0% |
+| Educación | **-10.8%** | **-10.9%** |
 | Año | -0.4% | -0.4% |
-| **No explicado** | **77.8%** | **82.2%** |
+| **No explicado** | **66.6%** | **70.9%** |
 
 Tres lecturas de política se desprenden de esta tabla:
 
-1. **La segregación ocupacional fina es el mayor factor de composición identificado** (~1/5 de la brecha), muy por delante de las horas (~1/8).
+1. **Las horas trabajadas son el mayor factor de composición identificado (~29% de la brecha), seguidas de la segregación ocupacional fina (~17%)** — entre ambas dan cuenta de casi toda la parte explicada.
 2. **La educación protege**: las ocupadas chilenas están mejor educadas que los ocupados; si solo importara el capital humano, ganarían *más*.
 3. **Hijos y estado civil casi no aportan a la parte explicada** — hombres y mujeres no difieren tanto en composición familiar promedio. Su efecto opera por otra vía (sección 4.4).
 
 ### 4.4 La penalización por maternidad: un efecto de retornos, no de composición
 
-Interacción mujer×hijos y mujer×estado civil, controlando ocupación exacta, educación, edad, horas y año (n=176.326):
+Interacción mujer×hijos y mujer×estado civil, controlando ocupación exacta, educación, edad, horas y año (n=174.719):
 
 | Término | Efecto sobre el ingreso | p-valor |
 |---|---|---|
-| Mujer (brecha base) | -13.7% | <0.001 |
-| Tiene hijos (efecto para hombres) | **+6.3%** | <0.001 |
-| **Mujer × tiene hijos** | **-9.7%** | **<0.001** |
-| Mujer × soltera (vs. casada/conviviente) | +5.9% | <0.001 |
+| Mujer (brecha base) | -12.3% | <0.001 |
+| Tiene hijos (efecto para hombres) | **+5.0%** | <0.001 |
+| **Mujer × tiene hijos** | **-7.8%** | **<0.001** |
+| Mujer × soltera (vs. casada/conviviente) | +5.3% | <0.001 |
 
 El contraste es nítido: **la paternidad se asocia a un premio salarial; la maternidad, a una penalización adicional** por sobre la brecha que ya afecta a toda mujer — exactamente el patrón que la literatura internacional de *child penalties* documenta con datos administrativos (Kleven et al., 2019; Cortés y Pan, 2023). Notablemente, con datos ESI (sin ocupación granular) esta interacción no era estadísticamente significativa: la granularidad ocupacional fue la que permitió identificarla, lo que sugiere que parte de la penalización por maternidad en Chile opera *dentro* de las ocupaciones y no solo a través de la selección hacia ocupaciones peor pagadas.
 
-Este hallazgo también resuelve la aparente paradoja de la tabla anterior: agregar hijos y estado civil *sube* el "no explicado" (77.8% → 82.2%) porque la descomposición solo asigna al componente explicado las diferencias de composición promedio — y la penalización por maternidad es una diferencia de **retorno** (el mismo hijo impacta distinto según el sexo del progenitor), no de composición.
+Este hallazgo también resuelve la aparente paradoja de la tabla anterior: agregar hijos y estado civil *sube* el "no explicado" (66.6% → 70.9%) porque la descomposición solo asigna al componente explicado las diferencias de composición promedio — y la penalización por maternidad es una diferencia de **retorno** (el mismo hijo impacta distinto según el sexo del progenitor), no de composición.
 
 ### 4.5 Aislando el efecto sexo ocupación por ocupación
 
-El resultado central del análisis. Con el modelo de interacción completa (efecto sexo específico a cada una de las 229 ocupaciones, neto de edad, educación, horas, hijos, estado civil y año):
+El resultado central del análisis. Con el modelo de interacción completa (efecto sexo específico a cada una de las 227 ocupaciones, neto de edad, educación, horas, hijos, estado civil y año):
 
-- **102 de 229 ocupaciones (44.5%) presentan brecha ajustada estadísticamente significativa (p<0.05).**
-- **Las 102 son en contra de las mujeres. Ninguna ocupación presenta brecha significativa a favor.**
-- **El resultado resiste la corrección por comparaciones múltiples.** Con 229 contrastes simultáneos se esperarían ~11 falsos positivos por azar a p<0.05; sin embargo, 76 ocupaciones sobreviven la corrección FDR de Benjamini-Hochberg (q<0.05) y 33 sobreviven incluso el criterio de Bonferroni, el más conservador disponible — en todos los casos, la totalidad de las significativas es en contra de las mujeres.
-- Las aparentes ventajas femeninas de las comparaciones simples (joyería +59%, música +41%, traducción +36%) provienen de celdas pequeñas (n entre 55 y 148) y no se distinguen del azar (p>0.2) al contabilizar la incertidumbre.
-- La correlación entre brecha cruda y ajustada es 0.79: el orden se conserva, el promedio se modera levemente (-17.7% → -16.7%).
+- **90 de 227 ocupaciones (39.6%) presentan brecha ajustada estadísticamente significativa (p<0.05): 89 en contra de las mujeres y solo 1 a favor** (conductores de buses y trolebuses, +15.1%, p=0.029) — exactamente lo que se esperaría del azar, dado que con 227 contrastes simultáneos ~11 falsos positivos son esperables a p<0.05.
+- **Tras la corrección por comparaciones múltiples el resultado se depura**: 66 ocupaciones sobreviven la corrección FDR de Benjamini-Hochberg (q<0.05) y 30 sobreviven incluso el criterio de Bonferroni, el más conservador disponible — la totalidad, sin excepción, en contra de las mujeres (la brecha "a favor" en buses no sobrevive: p-FDR=0.08).
+- Las aparentes ventajas femeninas de las comparaciones simples se desvanecen al ajustar por composición: joyería pasa de +58.6% crudo a -5.5% ajustado (no significativo); música (+37.9%) y traducción (+47.5%) tampoco son significativas ajustadas (p>0.27; celdas de 51 a 143 casos).
+- La correlación entre brecha cruda y ajustada es 0.79: el orden se conserva, el promedio se modera (-17.8% → -14.8%).
 
 ![Brecha cruda vs ajustada por ocupación](../notebooks/outputs/figures/ranking_ajustado_vs_crudo.png)
 
-La distribución completa (229 ocupaciones, con brecha cruda, ajustada, p-valor y tamaños muestrales) está publicada como dato abierto en [`ranking_brecha_ocupacion_ajustada.csv`](../notebooks/outputs/data/ranking_brecha_ocupacion_ajustada.csv).
+La distribución completa (227 ocupaciones, con brecha cruda, ajustada, p-valor corregido por FDR y tamaños muestrales) está publicada como dato abierto en [`ranking_brecha_ocupacion_ajustada.csv`](../notebooks/outputs/data/ranking_brecha_ocupacion_ajustada.csv).
 
 ### 4.6 Síntesis del diagnóstico
 
-| Componente de la brecha (22.5% total) | Magnitud aproximada | ¿Qué es? |
+| Componente de la brecha (22.6% total) | Magnitud aproximada | ¿Qué es? |
 |---|---|---|
-| Segregación ocupacional fina | ~1/5 | Composición: dónde trabajan |
-| Horas trabajadas | ~1/8 | Composición/preferencias restringidas |
+| Horas trabajadas | ~29% | Composición/preferencias restringidas |
+| Segregación ocupacional fina | ~17% | Composición: dónde trabajan |
 | Educación | negativa (protege) | Composición |
-| Retornos desiguales (incl. penalización por maternidad) | **~4/5** | Cómo se paga a iguales características |
+| Retornos desiguales (incl. penalización por maternidad) | **~2/3** | Cómo se paga a iguales características |
 
 El problema chileno es, predominantemente, de **retornos**: características idénticas se remuneran distinto según el sexo, con la maternidad como el mecanismo identificable más claro dentro de ese residuo.
 
@@ -199,7 +200,7 @@ Rediseñar el postnatal parental incorporando **semanas exclusivas del padre no 
 
 ### R4. Expansión de oferta pública de cuidado y jornada escolar extendida *(actúa sobre: horas y participación)*
 
-La evaluación experimental chilena disponible muestra que el acceso a cuidado después de la jornada escolar aumenta significativamente el empleo materno (Martínez y Perticará, 2017). Dado que las horas trabajadas explican ~12% de la brecha y que la restricción horaria es asimétrica por sexo, la expansión de cuidado infantil y de jornada extendida tiene efecto doble: participación y convergencia de horas.
+La evaluación experimental chilena disponible muestra que el acceso a cuidado después de la jornada escolar aumenta significativamente el empleo materno (Martínez y Perticará, 2017). Dado que las horas trabajadas explican ~29% de la brecha — el mayor factor de composición identificado — y que la restricción horaria es asimétrica por sexo, la expansión de cuidado infantil y de jornada extendida tiene efecto doble: participación y convergencia de horas.
 
 ### R5. Estadística pública de brechas ajustadas *(infraestructura de política)*
 
@@ -209,11 +210,37 @@ En la misma línea, establecer **protocolos estables de acceso para investigaci�
 
 ### R6. Desegregación ocupacional: necesaria pero no suficiente *(actúa sobre: composición)*
 
-Los programas de orientación vocacional temprana y acceso de mujeres a ocupaciones de alta remuneración (y de hombres a ocupaciones de cuidado) atacan el mayor factor de composición identificado (~22%). La advertencia empírica de este trabajo: **aun eliminando completamente la segregación ocupacional fina, cerca del 80% de la brecha permanecería**. La desegregación debe acompañar —no sustituir— a los instrumentos R1-R3.
+Los programas de orientación vocacional temprana y acceso de mujeres a ocupaciones de alta remuneración (y de hombres a ocupaciones de cuidado) atacan el segundo mayor factor de composición identificado (~17%). La advertencia empírica de este trabajo: **aun eliminando completamente la segregación ocupacional fina, más del 80% de la brecha permanecería**. La desegregación debe acompañar —no sustituir— a los instrumentos R1-R3.
 
 ---
 
-## 7. Limitaciones
+## 7. Análisis de robustez
+
+Los resultados centrales fueron sometidos a la batería de robustez que un proceso de revisión exigiría (notebook 09 del repositorio). La brecha ajustada con ocupación granular bajo cada especificación:
+
+| Especificación | Brecha ajustada | n |
+|---|---|---|
+| Baseline: ingreso mensual + control de horas, todos los ocupados | **-15.3%** | 174.924 |
+| Edad prima (25-59 años) | -14.9% | 135.471 |
+| Ingreso recortado (percentiles 1-99) | -13.0% | 171.481 |
+| Solo asalariados formales (cotizan previsión) | **-12.0%** | 110.098 |
+| Solo asalariados con contrato escrito firmado | -11.9% | 110.721 |
+| Salario por hora (en vez de mensual + control de horas) | **-11.1%** | 174.924 |
+| Solo trabajadores independientes (cuenta propia y empleadores) | **-25.5%** | 44.697 |
+
+Cinco conclusiones de robustez:
+
+1. **La brecha ajustada nunca se acerca a cero**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -15%.
+2. **¿Formal con formal?** La comparación restringida a asalariados formales —el mismo universo que cubren los datos administrativos del Seguro de Cesantía— arroja -12.0%. Y la composición por formalidad casi no difiere por sexo en la muestra de ocupados con ingreso (asalariados: 74.6% de los hombres vs 77.7% de las mujeres; cotización: 73.3% vs 72.5%): la brecha no es un artefacto de mezclar universos. El hallazgo nuevo es de heterogeneidad — **la brecha más severa está entre independientes (-25.5%)**, el segmento sin contrato ni fiscalización posible, lo que acota el alcance de los instrumentos regulatorios clásicos (R1) y refuerza el rol de los instrumentos de cuidado (R2-R4), que operan sobre todos los regímenes de empleo.
+3. **El *index number problem* de Oaxaca-Blinder no altera el diagnóstico**: bajo referencia masculina, femenina o pooled (Neumark, 1988), el ranking de factores es idéntico (horas primero, ocupación granular segundo, educación en contra); el componente no explicado varía entre 49% y 71% pero nunca baja de aproximadamente la mitad de la brecha.
+4. **El patrón unidireccional por ocupación sobrevive al cambio de especificación**: en salario por hora, 41 ocupaciones sobreviven FDR (40 en contra de mujeres) y 16 sobreviven Bonferroni (todas en contra). La única excepción pro-mujer bajo FDR (conductoras de taxis, +13.1% por hora) refleja la dilución horaria de los conductores hombres, que trabajan jornadas extremas — bajo Bonferroni ninguna ocupación favorece a las mujeres en ninguna especificación.
+5. En salario por hora la brecha es menor que en ingreso mensual (-11.1% vs -15.3%): parte de la brecha mensual refleja directamente la menor cantidad de horas remuneradas de las mujeres — coherente con el peso de las horas en la descomposición y con el diagnóstico de Goldin (2014).
+
+![Robustez de especificaciones](../notebooks/outputs/figures/robustez_especificaciones.png)
+
+---
+
+## 8. Limitaciones
 
 - **Identificación.** Los datos son observacionales y de corte transversal; los coeficientes describen asociaciones condicionales, no efectos causales. El componente "no explicado" acota pero no identifica discriminación.
 - **Selección.** La participación laboral femenina es ~18 pp menor; si las mujeres que participan están positivamente seleccionadas en productividad, nuestras brechas *subestiman* el diferencial poblacional. No aplicamos correcciones de selección (Heckman) para mantener la transparencia del pipeline.
@@ -223,7 +250,7 @@ Los programas de orientación vocacional temprana y acceso de mujeres a ocupacio
 
 ---
 
-## 8. Referencias
+## 9. Referencias
 
 **Literatura académica**
 
