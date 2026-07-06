@@ -150,7 +150,7 @@ La evidencia sólida —la que resiste el control estadístico— apunta consist
 **El notebook 09 somete todo lo anterior a una batería de robustez** (salario por hora, tres vectores de referencia en Oaxaca-Blinder, edad prima, recorte de outliers, y separación formal/informal/independiente):
 
 - La brecha ajustada **nunca baja de -11%** bajo ninguna especificación: -15.3% baseline, -14.9% edad prima, -13.0% sin outliers, -12.0% solo asalariados formales que cotizan, -11.1% en salario por hora
-- **¿Formal con formal?** La composición por formalidad casi no difiere por sexo (asalariados: 74.6% hombres vs 77.7% mujeres) — la brecha no es un artefacto de mezclar universos. Pero sí es heterogénea: **entre independientes se dispara a -25.5%**, el segmento sin contrato ni fiscalización posible
+- **¿Formal con formal?** La composición por formalidad casi no difiere por sexo (asalariados: 74.6% hombres vs 77.7% mujeres) — la brecha no es un artefacto de mezclar universos. Como control en la muestra completa, la formalidad apenas mueve el coeficiente (-15.3% → -15.2%) pese a predecir fuerte el nivel de ingreso (cotizar: +30%). Pero la brecha sí es heterogénea: **entre independientes se dispara a -25.5%**, el segmento sin contrato ni fiscalización posible
 - El ranking de factores de Oaxaca-Blinder (horas primero, ocupación segundo, educación en contra) es idéntico bajo las tres referencias; el "no explicado" varía de 49% a 71% según la convención, nunca por debajo de aproximadamente la mitad
 - En salario por hora, bajo Bonferroni ninguna ocupación favorece significativamente a las mujeres (la única excepción bajo FDR — conductoras de taxis, +13.1%/hora — refleja las jornadas extremas de los conductores hombres, que diluyen su salario por hora)
 
