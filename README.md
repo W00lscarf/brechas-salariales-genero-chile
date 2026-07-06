@@ -69,7 +69,7 @@ brechas-salariales-genero-chile/
 │   ├── 06_regresion_microdatos.ipynb      ← regresión Mincer con microdatos ESI 2018-2024 (máximo de controles)
 │   ├── 07_oaxaca_blinder_hijos.ipynb      ← estado civil, hijos y descomposición Oaxaca-Blinder por factor
 │   ├── 08_ocupacion_granular_casen.ipynb  ← CASEN 2022+2024: ¿la brecha se achica con ocupación a 4 dígitos?
-│   └── 09_robustez.ipynb                  ← robustez: salario/hora, formalidad, sector público, geografía, institución, FDR
+│   └── 09_robustez.ipynb                  ← robustez y heterogeneidad: salario/hora, formalidad, sector, geografía, NSE, cuantiles
 ├── data/            ← CSVs descargados de SIMEL (se regeneran ejecutando el notebook 01)
 ├── outputs/
 │   └── figures/     ← gráficos exportados en PNG
@@ -149,11 +149,12 @@ La evidencia sólida —la que resiste el control estadístico— apunta consist
 
 **El notebook 09 somete todo lo anterior a una batería de robustez** (salario por hora, tres vectores de referencia en Oaxaca-Blinder, edad prima, recorte de outliers, y separación formal/informal/independiente):
 
-- La brecha ajustada **nunca baja de -11%** bajo ninguna especificación: -15.3% baseline, **-15.6% con la especificación máxima (todos los controles simultáneos — agregar controles no la reduce)**, -15.7% sumando región y zona urbano/rural, -15.6% sumando tipo de institución de educación superior, -14.9% edad prima, -13.0% sin outliers, -12.0% solo asalariados formales que cotizan, -11.1% en salario por hora, -10.6% solo universitarios con tipo de institución controlado
+- La brecha ajustada **nunca baja de -11%** bajo ninguna especificación: -15.3% baseline, **-15.6% con la especificación máxima (todos los controles simultáneos — agregar controles no la reduce)**, -15.7% sumando región y zona urbano/rural, -15.6% sumando tipo de institución de educación superior, -14.9% edad prima, -13.0% sin outliers, -12.9% solo jornada completa (40-45 hrs), -12.0% solo asalariados formales que cotizan, -11.1% en salario por hora, -10.6% solo universitarios con tipo de institución controlado
 - **¿Formal con formal?** La composición por formalidad casi no difiere por sexo (asalariados: 74.6% hombres vs 77.7% mujeres) — la brecha no es un artefacto de mezclar universos. Como control en la muestra completa, la formalidad apenas mueve el coeficiente (-15.3% → -15.2%) pese a predecir fuerte el nivel de ingreso (cotizar: +30%). Pero la brecha sí es heterogénea: **entre independientes se dispara a -25.5%**, el segmento sin contrato ni fiscalización posible
 - El ranking de factores de Oaxaca-Blinder (horas primero, ocupación segundo, educación en contra) es idéntico bajo las tres referencias; el "no explicado" varía de 49% a 71% según la convención, nunca por debajo de aproximadamente la mitad
 - En salario por hora, bajo Bonferroni ninguna ocupación favorece significativamente a las mujeres (la única excepción bajo FDR — conductoras de taxis, +13.1%/hora — refleja las jornadas extremas de los conductores hombres, que diluyen su salario por hora)
 - **Sector público vs privado**: la brecha es menor en el empleo público (-9.8% vs -12.7%; diferencia marginalmente significativa, p=0.078), coherente con remuneraciones regidas por escalas — pero persiste incluso ahí. Las mujeres están sobrerrepresentadas en el sector público (56% de ese empleo es femenino)
+- **La brecha no golpea parejo (heterogeneidad, sección 6 del notebook 09)**: es el doble en hogares de NSE bajo (-21.2%) que alto (-11.2%); cae con la educación (básica -21.2% → universitaria -8.4%) pero **rebota en posgrado (-14.6%)**; y tiene **forma de U** en la distribución salarial — piso pegajoso y techo de cristal simultáneos
 
 ---
 

@@ -15,6 +15,7 @@
 - **La penalización por maternidad es identificable y significativa**: dentro de la misma ocupación exacta, una mujer con hijos gana un **7.8% adicional menos** (p<0.001) que lo que la brecha general ya le descuenta, mientras que para los hombres tener hijos se asocia a un *premio* salarial (+5.0%). El costo se concentra en mujeres casadas o convivientes.
 - Al aislar el efecto sexo ocupación por ocupación, **90 de 227 ocupaciones muestran brecha estadísticamente significativa — 89 en contra de las mujeres y solo una a favor, dentro de lo esperable por azar**. Tras la corrección por comparaciones múltiples, 66 ocupaciones sobreviven FDR y 30 el criterio de Bonferroni — **todas en contra de las mujeres; ninguna a favor**. Las brechas "pro-mujer" que aparecen en comparaciones simples no sobreviven el ajuste por composición ni el control de incertidumbre estadística.
 - Los resultados sobreviven una **batería de robustez** (sección 7): especificación en salario por hora (-11.1%), restricción a asalariados formales que cotizan (-12.0%), edad prima 25-59 (-14.9%), recorte de outliers (-13.0%) y tres vectores de referencia en la descomposición. La **especificación máxima** — todos los controles disponibles simultáneamente, incluyendo sector público/privado y formalidad — arroja **-15.6%**: agregar controles no reduce la brecha. La más severa está entre trabajadores independientes (-25.5%); la más baja, en el sector público (-9.8%), donde las escalas salariales la comprimen pero no la eliminan.
+- La brecha **no golpea parejo**: es el doble en los hogares de menor nivel socioeconómico (-21.2%) que en los de mayor (-11.2%), y tiene **forma de U** a lo largo de la distribución salarial — piso pegajoso y techo de cristal simultáneos (sección 4.8). Es también un problema de desigualdad: castiga más donde cada punto de ingreso vale más.
 - Estos resultados indican que la brecha chilena es mayoritariamente un problema de **retornos desiguales** (lo que se paga a iguales características) y no solo de **composición** (dónde trabajan hombres y mujeres). Las políticas deben calibrarse a ese diagnóstico: transparencia salarial con reporte de brechas ajustadas, reforma del artículo 203 del Código del Trabajo (sala cuna), corresponsabilidad parental efectiva y expansión de la oferta pública de cuidado.
 
 ---
@@ -189,6 +190,32 @@ Y la prueba de síntesis: la **especificación máxima** — que descuenta simul
 
 Dos vías de escape permanecen abiertas, y conviene nombrarlas con honestidad. Primero, la **experiencia laboral efectiva**: la edad captura experiencia *potencial*, no trayectorias reales — si las mujeres acumulan menos años efectivos por interrupciones de carrera, parte del residuo lo reflejaría (aunque esas interrupciones son, precisamente, la penalización por maternidad operando por otro canal, no una preferencia). Segundo, el **sorting entre firmas y la negociación** (Card, Cardoso y Kline, 2016), inobservable sin datos administrativos vinculados. Ninguna de las dos rescata la lectura de "elecciones libres": la primera es en gran medida consecuencia de la asignación asimétrica del cuidado que este trabajo documenta (el efecto asimétrico de los hijos), y la segunda es un mecanismo de mercado, no una preferencia. A esto se suma que, por el problema de sobre-control (sección 2.2), estas estimaciones son **pisos**: si la segregación ocupacional o las horas son a su vez elecciones restringidas por normas y barreras, parte de lo "explicado" también es discriminación.
 
+### 4.8 ¿Para quién es más grande la brecha? Gradiente socioeconómico y forma de U
+
+La brecha promedio esconde una heterogeneidad de primera importancia para la focalización de políticas (notebook 09, sección 6). Por **nivel socioeconómico del hogar** — medido con el ingreso del *resto* del hogar per cápita, para evitar el sesgo mecánico de que el menor ingreso de las mujeres empuje a sus hogares hacia abajo — la brecha ajustada exhibe un gradiente nítido:
+
+| Corte | Brecha ajustada |
+|---|---|
+| NSE del hogar: Bajo | **-21.2%** |
+| NSE: Medio-bajo | -17.0% |
+| NSE: Medio-alto | -15.6% |
+| NSE: Alto | **-11.2%** |
+| Educación básica | -21.2% |
+| Educación media | -19.1% |
+| Técnica superior | -16.9% |
+| Universitaria | **-8.4%** |
+| Posgrado | **-14.6%** |
+
+(El quintil oficial `qaut` muestra el mismo gradiente: Q1 -22.3% → Q4 -10.5%.)
+
+Tres lecturas de política:
+
+1. **La brecha de género es también un problema de desigualdad.** Es el doble en los hogares de menor NSE que en los de mayor NSE — castiga más exactamente donde cada punto porcentual de ingreso vale más en bienestar, y donde la mujer tiene menos poder de negociación individual. Las políticas de brecha salarial suelen diseñarse pensando en profesionales de altos ingresos; estos datos indican que la urgencia distributiva está en la base.
+2. **El rebote en posgrado** (-14.6%, frente a -8.4% de las universitarias sin posgrado) es una señal de techo de cristal: las mujeres más calificadas del país enfrentan una brecha casi el doble que las universitarias.
+3. **A lo largo de la distribución salarial, la brecha tiene forma de U** (regresión cuantílica con controles completos: en torno a -15% en el decil inferior, -12% en la mediana, -16% en el decil superior): Chile exhibe **piso pegajoso y techo de cristal simultáneamente**, el patrón que Albrecht, Björklund y Vroman (2003) documentaron para Suecia y Arulampalam, Booth y Bryan (2007) para Europa. La implicancia es que no hay un instrumento único: en la base operan la fiscalización, el salario mínimo y la formalización; en la cima, la transparencia salarial, los criterios objetivos de promoción y la corresponsabilidad.
+
+![Brecha por cuantil](../notebooks/outputs/figures/brecha_por_cuantil.png)
+
 ---
 
 ## 5. Marco institucional vigente y sus límites
@@ -246,6 +273,7 @@ Los resultados centrales fueron sometidos a la batería de robustez que un proce
 | Solo universitarios y posgraduados, con tipo de institución, región y zona | **-10.6%** | 46.532 |
 | Edad prima (25-59 años) | -14.9% | 135.471 |
 | Ingreso recortado (percentiles 1-99) | -13.0% | 171.481 |
+| Solo jornada completa (40-45 horas semanales) | -12.9% | 110.716 |
 | Solo asalariados formales (cotizan previsión) | **-12.0%** | 110.098 |
 | Solo asalariados con contrato escrito firmado | -11.9% | 110.721 |
 | Formalidad como control (categoría ocupacional + cotización) | -15.2% | 174.924 |
@@ -256,7 +284,7 @@ Los resultados centrales fueron sometidos a la batería de robustez que un proce
 
 Siete conclusiones de robustez:
 
-1. **La brecha ajustada nunca se acerca a cero — y agregar controles no la reduce**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -16%. La **especificación máxima**, con todos los controles disponibles simultáneamente, arroja -15.6% — *más* que el baseline, porque varios controles (educación, formalidad, sector público) capturan composición que favorece a las mujeres; al descontarla, el diferencial atribuible al sexo queda más expuesto. En la descomposición final con todas las familias, la composición explica 27.4% y el 72.6% queda sin explicar.
+1. **La brecha ajustada nunca se acerca a cero — y agregar controles no la reduce**: el rango completo (excluyendo el caso extremo de independientes) va de -11% a -16%. La **especificación máxima**, con todos los controles disponibles simultáneamente, arroja -15.6% — *más* que el baseline, porque varios controles (educación, formalidad, sector público) capturan composición que favorece a las mujeres; al descontarla, el diferencial atribuible al sexo queda más expuesto. En la descomposición final con todas las familias, la composición explica 27.4% y el 72.6% queda sin explicar. La restricción a jornada completa (40-45 horas, el tramo de la jornada legal) deja la brecha en -12.9%: la heterogeneidad horaria no explica ni una quinta parte del diferencial.
 2. **¿Formal con formal?** La comparación restringida a asalariados formales —el mismo universo que cubren los datos administrativos del Seguro de Cesantía— arroja -12.0%. Y la composición por formalidad casi no difiere por sexo en la muestra de ocupados con ingreso (asalariados: 74.6% de los hombres vs 77.7% de las mujeres; cotización: 73.3% vs 72.5%): la brecha no es un artefacto de mezclar universos. Incluida como **control** en la muestra completa (categoría ocupacional + cotización), la formalidad apenas mueve el coeficiente de sexo (-15.3% → -15.2%), pese a ser un fuerte predictor del nivel de ingreso (cotizar se asocia a +30%; cuenta propia, a -19%); en la descomposición, su aporte compositivo es levemente negativo (-1.7%), como el de la educación. El hallazgo nuevo es de heterogeneidad — **la brecha más severa está entre independientes (-25.5%)**, el segmento sin contrato ni fiscalización posible, lo que acota el alcance de los instrumentos regulatorios clásicos (R1) y refuerza el rol de los instrumentos de cuidado (R2-R4), que operan sobre todos los regímenes de empleo.
 3. **El *index number problem* de Oaxaca-Blinder no altera el diagnóstico**: bajo referencia masculina, femenina o pooled (Neumark, 1988), el ranking de factores es idéntico (horas primero, ocupación granular segundo, educación en contra); el componente no explicado varía entre 49% y 71% pero nunca baja de aproximadamente la mitad de la brecha.
 4. **El patrón unidireccional por ocupación sobrevive al cambio de especificación**: en salario por hora, 41 ocupaciones sobreviven FDR (40 en contra de mujeres) y 16 sobreviven Bonferroni (todas en contra). La única excepción pro-mujer bajo FDR (conductoras de taxis, +13.1% por hora) refleja la dilución horaria de los conductores hombres, que trabajan jornadas extremas — bajo Bonferroni ninguna ocupación favorece a las mujeres en ninguna especificación.
@@ -300,7 +328,9 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 
 **Literatura académica**
 
+- Albrecht, J., Björklund, A. y Vroman, S. (2003). "Is There a Glass Ceiling in Sweden?". *Journal of Labor Economics*, 21(1).
 - Arrow, K. (1973). "The Theory of Discrimination". En O. Ashenfelter y A. Rees (eds.), *Discrimination in Labor Markets*. Princeton University Press.
+- Arulampalam, W., Booth, A. y Bryan, M. (2007). "Is There a Glass Ceiling over Europe? Exploring the Gender Pay Gap across the Wage Distribution". *ILR Review*, 60(2).
 - Baker, M., Halberstam, Y., Kroft, K., Mas, A. y Messacar, D. (2023). "Pay Transparency and the Gender Gap". *American Economic Journal: Applied Economics*, 15(2).
 - Becker, G. (1957). *The Economics of Discrimination*. University of Chicago Press.
 - Bennedsen, M., Simintzi, E., Tsoutsoura, M. y Wolfenzon, D. (2022). "Do Firms Respond to Gender Pay Gap Transparency?". *Journal of Finance*, 77(4).
