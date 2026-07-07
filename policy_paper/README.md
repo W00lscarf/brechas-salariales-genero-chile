@@ -236,9 +236,6 @@ El resultado central del análisis. Con el modelo de interacción completa (efec
 ![Figura 1](../notebooks/outputs/figures/ranking_ajustado_vs_crudo.png)
 
 *Nota.* Cada punto representa una ocupación CIUO-08 a 4 dígitos. En rojo, ocupaciones con brecha ajustada estadísticamente significativa (p < .05); en gris, no significativas. Elaboración propia a partir de CASEN 2022 y 2024.
-
-La distribución completa (227 ocupaciones, con brecha cruda, ajustada, valor p corregido por FDR y tamaños muestrales) está publicada como dato abierto en [`ranking_brecha_ocupacion_ajustada.csv`](../notebooks/outputs/data/ranking_brecha_ocupacion_ajustada.csv).
-
 ### 4.6 Síntesis del diagnóstico
 
 La Tabla 5 sintetiza el diagnóstico agregado.

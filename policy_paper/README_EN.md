@@ -236,9 +236,6 @@ The central result of the analysis. With the full interaction model (a sex effec
 ![Figure 1](../notebooks/outputs/figures/ranking_ajustado_vs_crudo_en.png)
 
 *Note.* Each point represents a 4-digit ISCO-08 occupation. Red: occupations with a statistically significant adjusted gap (p < .05); gray: not significant. Authors' elaboration based on CASEN 2022 and 2024.
-
-The complete distribution (227 occupations, with raw gap, adjusted gap, FDR-corrected p value, and sample sizes) is published as open data in [`ranking_brecha_ocupacion_ajustada.csv`](../notebooks/outputs/data/ranking_brecha_ocupacion_ajustada.csv).
-
 ### 4.6 Summary of the Diagnosis
 
 Table 5 summarizes the aggregate diagnosis.
