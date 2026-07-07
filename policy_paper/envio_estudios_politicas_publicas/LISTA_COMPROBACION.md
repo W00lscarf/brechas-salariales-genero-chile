@@ -25,22 +25,18 @@
 - [x] Sección final "Referencias bibliográficas" en el formato de la revista (título del artículo entre comillas, revista en cursiva, `vol(num): páginas` donde se dispone de páginas verificadas)
 - [x] Sin notas al pie usadas para referencias
 - [x] Trabajo original e inédito, no sometido a otra revista (el working paper en el repositorio de GitHub es un preprint; ver nota abajo)
-- [x] **Nombre del autor añadido**: "Nicolás Guerrero" figura en el bloque de autoría, bajo los títulos (centrado). Ver punto 3 abajo para confirmar la firma normalizada completa.
-
-## Provisional — confirma o corrige antes de enviar ⚠️
-
-- **Firma que puse:** *Nicolás Guerrero*. La revista pide firma normalizada `Apellido-Apellido, Nombre1 Nombre2`. Si tu apellido materno es, por ejemplo, "X", la forma indexada sería `Guerrero-X, Nicolás [segundo nombre]`. **Falta tu apellido materno (y segundo nombre, si lo usas).**
-- **Afiliación que puse:** *Investigador independiente*. Elegí esta y no SENAPRED porque el estudio no es un producto institucional de SENAPRED (agencia de desastres, ajena a economía laboral); atribuírselo podría ser inexacto. Si prefieres declarar SENAPRED u otra institución, dilo.
-- **Correo que puse:** *n.icolashrra@gmail.com* (personal, coherente con autoría independiente), en lugar del correo institucional.
+- [x] **Autor:** *Nicolás Guerrero Herrera*, Investigador independiente (confirmado). Figura en el bloque de autoría, centrado bajo los títulos.
+- [x] **Firma normalizada para OJS** (formato de la revista): **`Guerrero-Herrera, Nicolás`**. Ingrésala así en los metadatos del envío.
+- [x] **Afiliación:** Investigador independiente (confirmada).
+- [x] **Correo:** n.icolashrra@gmail.com (personal, coherente con autoría independiente).
 
 ## Pendientes que solo tú puedes completar ✍
 
 1. **ORCID (obligatorio).** Si no tienes, se crea gratis en https://orcid.org (5 minutos). Se ingresa en los metadatos del envío en OJS.
-2. **Registro e inicio de sesión** en el portal OJS de la revista, y carga del manuscrito + figuras.
-3. **Confirmar apellido materno / segundo nombre** para la firma normalizada (ver arriba). Con eso actualizo el bloque de autoría.
-4. **Declaración de autoría única** y consentimiento con la versión final (parte del formulario OJS).
-5. **Agradecimientos / financiamiento**: si no hay financiamiento, no se agrega la sección. Si algún fondo aplicara, usar el formato ANID normalizado de las directrices.
-6. **Nota sobre el preprint**: el manuscrito circula como working paper en GitHub. En los "comentarios al editor" del envío conviene declararlo: "Una versión de trabajo (preprint) está disponible en el repositorio público del proyecto; el manuscrito no ha sido publicado en ninguna revista ni está sometido a otra revista."
+2. **Registro e inicio de sesión** en el portal OJS de la revista, y carga del manuscrito + figuras. Firma normalizada: `Guerrero-Herrera, Nicolás`.
+3. **Declaración de autoría única** y consentimiento con la versión final (parte del formulario OJS).
+4. **Agradecimientos / financiamiento**: si no hay financiamiento, no se agrega la sección. Si algún fondo aplicara, usar el formato ANID normalizado de las directrices.
+5. **Nota sobre el preprint**: el manuscrito circula como working paper en GitHub. En los "comentarios al editor" del envío conviene declararlo: "Una versión de trabajo (preprint) está disponible en el repositorio público del proyecto; el manuscrito no ha sido publicado en ninguna revista ni está sometido a otra revista."
 
 ## Pendientes editoriales menores (opcionales antes de enviar)
 
