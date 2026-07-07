@@ -50,11 +50,11 @@ Este documento aporta a esa discusión con una ventaja metodológica poco frecue
 
 Una precisión de alcance es indispensable: ocupación a cuatro dígitos no equivale a «mismo puesto de trabajo». No observamos la empresa, el cargo jerárquico, el desempeño ni la composición de la remuneración (bonos, comisiones, horas extraordinarias), de modo que el título de este documento debe leerse en sentido estricto: misma *ocupación*, no mismo *empleo* ni «trabajo de igual valor» en el sentido jurídico del término.
 
-Este ejercicio se sitúa, además, cerca del **techo de lo estimable con datos abiertos en el país**: los diseños que la literatura internacional utiliza para ir más lejos —datos administrativos vinculados empleador-empleado, estudios de eventos en torno al nacimiento del primer hijo— requieren fuentes que en Chile existen solo de forma parcial y bajo acceso restringido (los registros del Seguro de Cesantía, usados por ejemplo en Sánchez et al. (2020), cubren únicamente al sector privado formal asalariado; los datos tributarios del SII y los paneles EPS y ELPI tienen restricciones análogas de acceso o cobertura). Esa restricción de infraestructura de datos es, en sí misma, parte del diagnóstico de este documento (recomendación R5).
+Este ejercicio se sitúa, además, cerca del **techo de lo estimable con datos abiertos en el país**: los diseños que la literatura internacional utiliza para ir más lejos —datos administrativos vinculados empleador-empleado, estudios de eventos en torno al nacimiento del primer hijo— requieren fuentes que en Chile existen solo de forma parcial y bajo acceso restringido (los registros del Seguro de Cesantía, usados por ejemplo en Sánchez et al. (2022), cubren únicamente al sector privado formal asalariado; los datos tributarios del SII y los paneles EPS y ELPI tienen restricciones análogas de acceso o cobertura). Esa restricción de infraestructura de datos es, en sí misma, parte del diagnóstico de este documento (recomendación R5).
 
 Los resultados están disponibles en un repositorio público con código y datos de acceso abierto, lo que permite a cualquier investigador o servicio público replicar, auditar y extender las estimaciones.
 
-La literatura chilena ha documentado la magnitud de la brecha y su descomposición con categorías ocupacionales amplias (Ñopo, 2006; Perticará y Bueno, 2009; boletines del INE y de la Subsecretaría del Trabajo), su relación con el poder de mercado de las firmas mediante registros administrativos de acceso restringido y cobertura parcial (Sánchez et al., 2020), los efectos causales de la maternidad con diseño de eventos (Berniell et al., 2021) y, más recientemente, los diferenciales por área de formación (Parada-Contzen y Jara, 2025). La sección 2.6 explicita qué agrega y qué no puede responder este trabajo frente a cada una de esas líneas. Ninguno de estos trabajos estaba en condiciones de descartar la interpretación dominante en el debate público —que el diferencial refleja elecciones ocupacionales, horarias, educativas o familiares de las mujeres—, porque sus controles ocupacionales eran demasiado agregados para someterla a prueba. Frente a ese estado del arte, este documento realiza cuatro contribuciones:
+La literatura chilena ha documentado la magnitud de la brecha y su descomposición con categorías ocupacionales amplias (Ñopo, 2006; Perticará y Bueno, 2009; boletines del INE y de la Subsecretaría del Trabajo), su relación con el poder de mercado de las firmas mediante registros administrativos de acceso restringido y cobertura parcial (Sánchez et al., 2022), los efectos causales de la maternidad con diseño de eventos (Berniell et al., 2023) y, más recientemente, los diferenciales por área de formación (Parada-Contzen y Jara, 2025). La sección 2.6 explicita qué agrega y qué no puede responder este trabajo frente a cada una de esas líneas. Ninguno de estos trabajos estaba en condiciones de descartar la interpretación dominante en el debate público —que el diferencial refleja elecciones ocupacionales, horarias, educativas o familiares de las mujeres—, porque sus controles ocupacionales eran demasiado agregados para someterla a prueba. Frente a ese estado del arte, este documento realiza cuatro contribuciones:
 
 1. **La primera estimación para Chile, hasta donde conocemos, de la brecha salarial dentro de la ocupación a cuatro dígitos** (354 categorías) con datos de acceso abierto, inferencia estadística por ocupación y corrección por comparaciones múltiples.
 2. **Un diseño que confronta sistemáticamente la explicación por elecciones**: catorce especificaciones que descuentan, sucesiva y conjuntamente, cada dimensión de elección observable — incluida una especificación máxima con 375 parámetros — y una tabla de contraste directo entre cada versión de la objeción y la evidencia (Tabla 6).
@@ -89,7 +89,7 @@ Goldin (2014) aporta el mecanismo complementario: buena parte de la brecha resid
 
 ### 2.4 La penalización por maternidad
 
-La literatura de *child penalties* con estudios de eventos muestra que el nacimiento del primer hijo abre una brecha de ingresos persistente entre madres y padres: alrededor de 20% en el largo plazo en Dinamarca (Kleven et al., 2019) y sustancialmente mayor en América Latina (Kleven et al., 2024). Cortés y Pan (2023) concluyen que los hijos son hoy el factor individual más importante detrás de las brechas de género restantes en los mercados laborales desarrollados. Bertrand et al. (2010) documentan el mecanismo en profesionales de alto ingreso: brecha casi nula al egreso, que se expande tras la llegada de los hijos vía interrupciones y reducción de horas — de las madres, no de los padres.
+La literatura de *child penalties* con estudios de eventos muestra que el nacimiento del primer hijo abre una brecha de ingresos persistente entre madres y padres: alrededor de 20% en el largo plazo en Dinamarca (Kleven et al., 2019) y sustancialmente mayor en América Latina (Kleven et al., 2025). Cortés y Pan (2023) concluyen que los hijos son hoy el factor individual más importante detrás de las brechas de género restantes en los mercados laborales desarrollados. Bertrand et al. (2010) documentan el mecanismo en profesionales de alto ingreso: brecha casi nula al egreso, que se expande tras la llegada de los hijos vía interrupciones y reducción de horas — de las madres, no de los padres.
 
 ### 2.5 Discriminación de gustos y estadística
 
@@ -105,9 +105,9 @@ Seis líneas de trabajo definen el estado del arte local; conviene explicitar qu
 
 **Experiencia laboral efectiva (Perticará y Bueno, 2009).** Con la Encuesta de Protección Social controlaron experiencia real e intermitencia laboral — la variable crítica que nuestra fuente no observa. Frente a esa ventaja, este trabajo aporta actualización (2022-2024), escala muestral, granularidad ocupacional y reproducibilidad con datos abiertos.
 
-**Canal de firma (Sánchez et al., 2020).** Con registros del Seguro de Cesantía y un modelo de monopsonio dinámico estiman diferenciales sustantivos asociados a las elasticidades de oferta laboral hacia la firma. Ese canal es inobservable con nuestros datos y permanece, por construcción, dentro de nuestro componente no explicado.
+**Canal de firma (Sánchez et al., 2022).** Con registros del Seguro de Cesantía y un modelo de monopsonio dinámico estiman diferenciales sustantivos asociados a las elasticidades de oferta laboral hacia la firma. Ese canal es inobservable con nuestros datos y permanece, por construcción, dentro de nuestro componente no explicado.
 
-**Maternidad con diseño de eventos (Berniell et al., 2021).** Para Chile y otros países de la región documentan caídas fuertes y persistentes del empleo, las horas y los ingresos de las madres tras el nacimiento del primer hijo, padres esencialmente inafectados y desplazamiento hacia la informalidad. Nuestros coeficientes transversales de mujer × hijos son la huella estática de ese proceso: coherentes con esa evidencia causal, pero no un sustituto de ella.
+**Maternidad con diseño de eventos (Berniell et al., 2023).** Para Chile y otros países de la región documentan caídas fuertes y persistentes del empleo, las horas y los ingresos de las madres tras el nacimiento del primer hijo, padres esencialmente inafectados y desplazamiento hacia la informalidad. Nuestros coeficientes transversales de mujer × hijos son la huella estática de ese proceso: coherentes con esa evidencia causal, pero no un sustituto de ella.
 
 **Campos de estudio (Parada-Contzen y Jara, 2025).** Para trabajadores con educación superior documentan brechas de 17-25% con un componente mayoritariamente no explicado, heterogéneo por campo de estudio. El campo capta dimensiones de capital humano que la ocupación no absorbe por completo; integrar área de formación (disponible en CASEN) y ocupación granular en una misma especificación es otra extensión directa.
 
@@ -219,7 +219,7 @@ El contraste es nítido: **la paternidad se asocia a un premio salarial; la mate
 
 Este hallazgo también resuelve la aparente paradoja de la tabla anterior: agregar hijos y estado civil *sube* el "no explicado" (de 66.6% a 70.9%) porque la descomposición solo asigna al componente explicado las diferencias de composición promedio — y la penalización por maternidad es una diferencia de **retorno** (el mismo hecho familiar se asocia a impactos distintos según el sexo del progenitor), no de composición.
 
-Corresponde precisar el estatus inferencial de estos coeficientes: al provenir de un corte transversal en que la maternidad se mide como *stock* autorreportado y no como evento fechado, describen asociaciones condicionales y no efectos causales. Su valor probatorio radica en la coherencia del patrón —asimetría por sexo ante el mismo hecho familiar, dentro de la misma ocupación— con la evidencia causal de estudios de eventos, incluida la disponible para Chile (Berniell et al., 2021; Kleven et al., 2019).
+Corresponde precisar el estatus inferencial de estos coeficientes: al provenir de un corte transversal en que la maternidad se mide como *stock* autorreportado y no como evento fechado, describen asociaciones condicionales y no efectos causales. Su valor probatorio radica en la coherencia del patrón —asimetría por sexo ante el mismo hecho familiar, dentro de la misma ocupación— con la evidencia causal de estudios de eventos, incluida la disponible para Chile (Berniell et al., 2023; Kleven et al., 2019).
 
 ### 4.5 Aislando el efecto sexo ocupación por ocupación
 
@@ -323,9 +323,9 @@ Tres lecturas de política:
 
 Chile ratificó el Convenio 100 de la OIT (igualdad de remuneración) en 1971. El instrumento interno principal es la **Ley 20.348 (2009)**, que incorporó el artículo 62 bis al Código del Trabajo: derecho a la igualdad de remuneraciones entre hombres y mujeres que presten "un mismo trabajo". Su diseño presenta tres debilidades documentadas: exige identidad de funciones (no trabajo de igual valor, el estándar OIT), radica la carga de reclamar en la trabajadora individual mediante un procedimiento interno previo, y carece de un mecanismo de reporte que haga observables las brechas. El volumen de denuncias y sanciones ha sido marginal desde su entrada en vigencia.
 
-El **artículo 203 del Código del Trabajo** obliga a financiar sala cuna solo a los empleadores con **20 o más trabajadoras**. Al gravar la contratación femenina en el margen, la norma genera exactamente la distorsión que la teoría predice: Prada et al. (2015) documentan que el costo se traslada a menores salarios de contratación de las mujeres en las firmas afectadas. El proyecto de sala cuna universal que corrige este diseño lleva años en tramitación legislativa.
+El **artículo 203 del Código del Trabajo** obliga a financiar sala cuna solo a los empleadores con **20 o más trabajadoras**. Al gravar la contratación femenina en el margen, la norma genera exactamente la distorsión que la teoría predice: Prada et al. (2015) documentan que el costo se traslada a menores salarios de contratación de las mujeres en las firmas afectadas. Reformas hacia un financiamiento universal de la sala cuna han sido discutidas de manera reiterada en el debate legislativo y de políticas públicas.
 
-La **Ley 20.545 (2011)** extendió el postnatal parental a 24 semanas con semanas transferibles al padre; el uso paterno ha sido persistentemente inferior al 1%, lo que en la práctica consolida la asignación asimétrica del cuidado que la literatura identifica como el motor de la penalización por maternidad.
+La **Ley 20.545 (2011)** extendió el postnatal parental a 24 semanas con semanas transferibles al padre; la utilización por parte de los padres ha sido históricamente muy baja, lo que en la práctica consolida la asignación asimétrica del cuidado que la literatura identifica como el motor de la penalización por maternidad.
 
 ---
 
@@ -437,7 +437,7 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 
 **8.4 Firmas y negociación.** Card et al. (2016), con datos administrativos portugueses: la combinación de la asignación (*sorting*) hacia firmas que pagan menores premios y menor captura de rentas en la negociación explica en torno a un quinto de la brecha. Este canal es completamente invisible para nuestros datos (no observamos el empleador) y queda, por construcción, dentro de nuestro 72%.
 
-**8.5 La dinámica de la maternidad.** Cortés y Pan (2023) concluyen que los hijos son hoy el principal factor detrás de las brechas restantes en países desarrollados; Kleven et al. (2019, 2024) cuantifican penalizaciones de largo plazo en torno al 20% en Dinamarca y sustancialmente mayores en América Latina. Nuestro coeficiente mujer×hijos (-7.8% transversal) es la huella estática de ese proceso dinámico: la penalización se acumula con los años posteriores al nacimiento, algo que un corte transversal solo puede subestimar.
+**8.5 La dinámica de la maternidad.** Cortés y Pan (2023) concluyen que los hijos son hoy el principal factor detrás de las brechas restantes en países desarrollados; Kleven et al. (2019, 2025) cuantifican penalizaciones de largo plazo en torno al 20% en Dinamarca y sustancialmente mayores en América Latina. Nuestro coeficiente mujer×hijos (-7.8% transversal) es la huella estática de ese proceso dinámico: la penalización se acumula con los años posteriores al nacimiento, algo que un corte transversal solo puede subestimar.
 
 **Implicancia para Chile.** Ninguno de estos mecanismos es medible hoy con datos públicos chilenos: CASEN y ESI no incluyen módulos de negociación salarial, historia laboral efectiva ni atributos socioemocionales, y la ELPI mide lo socioemocional solo en cuidadores principales de niños pequeños (mayoritariamente mujeres), lo que impide comparar entre sexos. Esto convierte el 72% en un argumento adicional para la recomendación R5: **módulos breves de negociación** (¿negoció su remuneración al ser contratado?, ¿ha pedido un aumento?, ¿el salario era presentado como negociable?) **e historia laboral** en las encuestas existentes tienen costo marginal bajo y abrirían la caja negra local. Mientras tanto, la lectura correcta del residuo no es "diferencias de preferencias inabordables", sino un conjunto de mecanismos con nombre, evidencia y — cada uno — un instrumento de política asociado: transparencia de rangos y negociabilidad (8.1), diseño del sobretiempo y la flexibilidad (8.2), corresponsabilidad en el cuidado (8.5).
 
@@ -466,7 +466,7 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Baker, M., Halberstam, Y., Kroft, K., Mas, A. y Messacar, D. (2023). Pay transparency and the gender gap. *American Economic Journal: Applied Economics*, *15*(2).
 - Becker, G. (1957). *The economics of discrimination*. University of Chicago Press.
 - Bennedsen, M., Simintzi, E., Tsoutsoura, M. y Wolfenzon, D. (2022). Do firms respond to gender pay gap transparency? *Journal of Finance*, *77*(4).
-- Berniell, I., Berniell, L., de la Mata, D., Edo, M. y Marchionni, M. (2021). *Motherhood and flexible jobs: Evidence from Latin American countries* (Documento de trabajo WIDER). UNU-WIDER.
+- Berniell, I., Berniell, L., de la Mata, D., Edo, M. y Marchionni, M. (2023). Motherhood and flexible jobs: Evidence from Latin American countries. *World Development*, *167*.
 - Bertrand, M. (2011). New perspectives on gender. En O. Ashenfelter y D. Card (Eds.), *Handbook of labor economics* (Vol. 4B). Elsevier.
 - Bertrand, M., Goldin, C. y Katz, L. (2010). Dynamics of the gender gap for young professionals in the financial and corporate sectors. *American Economic Journal: Applied Economics*, *2*(3).
 - Blau, F. y Kahn, L. (2017). The gender wage gap: Extent, trends, and explanations. *Journal of Economic Literature*, *55*(3).
@@ -481,14 +481,15 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Goldin, C. (2014). A grand gender convergence: Its last chapter. *American Economic Review*, *104*(4).
 - Goldin, C. (2021). *Career and family: Women's century-long journey toward equity*. Princeton University Press.
 - Heckman, J., Stixrud, J. y Urzúa, S. (2006). The effects of cognitive and noncognitive abilities on labor market outcomes and social behavior. *Journal of Labor Economics*, *24*(3).
-- Kleven, H., Landais, C. y Leite-Mariante, G. (2024). The child penalty atlas. *Review of Economic Studies*.
+- Kleven, H., Landais, C. y Leite-Mariante, G. (2025). The child penalty atlas. *Review of Economic Studies*.
 - Kleven, H., Landais, C. y Søgaard, J. E. (2019). Children and gender inequality: Evidence from Denmark. *American Economic Journal: Applied Economics*, *11*(4).
 - Leibbrandt, A. y List, J. (2015). Do women avoid salary negotiations? Evidence from a large-scale natural field experiment. *Management Science*, *61*(9).
 - Martínez, C. y Perticará, M. (2017). Childcare effects on maternal employment: Evidence from Chile. *Journal of Development Economics*, *126*.
 - Mincer, J. (1974). *Schooling, experience, and earnings*. National Bureau of Economic Research.
 - Mueller, G. y Plug, E. (2006). Estimating the effect of personality on male and female earnings. *ILR Review*, *60*(1).
+- Neumark, D. (1988). Employers' discriminatory behavior and the estimation of wage discrimination. *Journal of Human Resources*, *23*(3), 279-295.
 - Niederle, M. y Vesterlund, L. (2007). Do women shy away from competition? Do men compete too much? *Quarterly Journal of Economics*, *122*(3).
-- Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective* (Documento de trabajo n.º 468). Banco Interamericano de Desarrollo.
+- Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective*. Banco Interamericano de Desarrollo.
 - Ñopo, H. (2008). Matching as a tool to decompose wage gaps. *Review of Economics and Statistics*, *90*(2).
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
 - Parada-Contzen, M. y Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
@@ -498,16 +499,18 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Phelps, E. (1972). The statistical theory of racism and sexism. *American Economic Review*, *62*(4).
 - Prada, M. F., Rucci, G. y Urzúa, S. (2015). *The effect of mandated child care on female wages in Chile* (Documento de trabajo NBER n.º 21080). National Bureau of Economic Research.
 - Roussille, N. (2024). The central role of the ask gap in gender pay inequality. *Quarterly Journal of Economics*, *139*(3).
-- Sánchez, R., Finot, J. y Villena-Roldán, B. (2020). *Gender wage gap and firm market power: Evidence from Chile* (Documento de discusión IZA n.º 13856). Institute of Labor Economics.
+- Sánchez, R., Finot, J. y Villena, M. G. (2022). Gender wage gap and firm market power: Evidence from Chile. *Applied Economics*, *54*(18), 2109-2121.
 
 **Fuentes oficiales y normativa**
 
+- Código del Trabajo de Chile. Decreto con Fuerza de Ley N.º 1 (2003). Ministerio del Trabajo y Previsión Social. Artículos 62 bis y 203.
 - Instituto Nacional de Estadísticas. (2018-2024). *Encuesta Suplementaria de Ingresos* [microdatos].
 - Ley 20.348. (2009). Resguarda el derecho a la igualdad en las remuneraciones. Diario Oficial de la República de Chile.
 - Ley 20.545. (2011). Modifica las normas sobre protección a la maternidad e incorpora el permiso postnatal parental. Diario Oficial de la República de Chile.
 - Ministerio de Desarrollo Social y Familia. (2022, 2024). *Encuesta de Caracterización Socioeconómica Nacional (CASEN)* [microdatos]. Observatorio Social.
+- Organización Internacional del Trabajo. (1951). *Convenio sobre igualdad de remuneración, 1951 (núm. 100)*.
 - Organización Internacional del Trabajo. (2018). *Informe mundial sobre salarios 2018/19: ¿Qué hay detrás de la brecha salarial de género?* Oficina Internacional del Trabajo.
-- Organización para la Cooperación y el Desarrollo Económicos. (s. f.). *Gender wage gap* [indicador].
+- Organización para la Cooperación y el Desarrollo Económicos. (s. f.). *Gender wage gap* [indicador]. Consultado en julio de 2026.
 
 ---
 

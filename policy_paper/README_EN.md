@@ -50,11 +50,11 @@ This paper contributes to the discussion with a methodological advantage that is
 
 A scope clarification is indispensable: 4-digit occupation is not equivalent to "same job." We do not observe the firm, hierarchical position, performance, or the composition of pay (bonuses, commissions, overtime), so the title of this paper must be read strictly: same *occupation*, not same *job*, nor "work of equal value" in the legal sense of the term.
 
-This exercise also sits close to the **ceiling of what can be estimated with open data in the country**: the designs the international literature uses to go further — linked employer-employee administrative data, event studies around first birth — require sources that in Chile exist only partially and under restricted access (the unemployment insurance records used, for example, in Sánchez et al. (2020) cover only formal private-sector employees; SII tax records and the EPS and ELPI panels face analogous access or coverage restrictions). That data infrastructure constraint is itself part of this paper's diagnosis (Recommendation R5).
+This exercise also sits close to the **ceiling of what can be estimated with open data in the country**: the designs the international literature uses to go further — linked employer-employee administrative data, event studies around first birth — require sources that in Chile exist only partially and under restricted access (the unemployment insurance records used, for example, in Sánchez et al. (2022) cover only formal private-sector employees; SII tax records and the EPS and ELPI panels face analogous access or coverage restrictions). That data infrastructure constraint is itself part of this paper's diagnosis (Recommendation R5).
 
 The results are available in a public repository with open code and data, allowing any researcher or public agency to replicate, audit, and extend the estimates.
 
-The Chilean literature has documented the magnitude of the gap and its decomposition using broad occupational categories (Ñopo, 2006; Perticará & Bueno, 2009; INE and Undersecretariat of Labor bulletins), its relation to firms' market power using restricted-access administrative records of partial coverage (Sánchez et al., 2020), the causal effects of motherhood using event-study designs (Berniell et al., 2021), and, more recently, differentials by field of study (Parada-Contzen & Jara, 2025). Section 2.6 makes explicit what this paper adds and what it cannot answer relative to each of those strands. None of these studies was in a position to rule out the interpretation that dominates the public debate — that the differential reflects women's occupational, hours, educational, or family choices — because their occupational controls were too aggregated to test it. Against that state of the art, this paper makes four contributions:
+The Chilean literature has documented the magnitude of the gap and its decomposition using broad occupational categories (Ñopo, 2006; Perticará & Bueno, 2009; INE and Undersecretariat of Labor bulletins), its relation to firms' market power using restricted-access administrative records of partial coverage (Sánchez et al., 2022), the causal effects of motherhood using event-study designs (Berniell et al., 2023), and, more recently, differentials by field of study (Parada-Contzen & Jara, 2025). Section 2.6 makes explicit what this paper adds and what it cannot answer relative to each of those strands. None of these studies was in a position to rule out the interpretation that dominates the public debate — that the differential reflects women's occupational, hours, educational, or family choices — because their occupational controls were too aggregated to test it. Against that state of the art, this paper makes four contributions:
 
 1. **The first estimate for Chile, to the best of our knowledge, of the wage gap within 4-digit occupations** (354 categories) with openly accessible data, occupation-level statistical inference, and correction for multiple comparisons.
 2. **A design that systematically confronts the choice-based explanation**: fourteen specifications that net out, successively and jointly, each observable dimension of choice — including a maximal specification with 375 parameters — and a table directly confronting each version of the objection with the evidence (Table 6).
@@ -89,7 +89,7 @@ Goldin (2014) supplies the complementary mechanism: much of the residual within-
 
 ### 2.4 The Motherhood Penalty
 
-The *child penalties* literature based on event studies shows that the birth of the first child opens a persistent earnings gap between mothers and fathers: around 20% in the long run in Denmark (Kleven et al., 2019) and substantially larger in Latin America (Kleven et al., 2024). Cortés and Pan (2023) conclude that children are today the single most important factor behind the remaining gender gaps in developed labor markets. Bertrand et al. (2010) document the mechanism among high-earning professionals: a near-zero gap at graduation that widens after children arrive, through career interruptions and reduced hours — of mothers, not fathers.
+The *child penalties* literature based on event studies shows that the birth of the first child opens a persistent earnings gap between mothers and fathers: around 20% in the long run in Denmark (Kleven et al., 2019) and substantially larger in Latin America (Kleven et al., 2025). Cortés and Pan (2023) conclude that children are today the single most important factor behind the remaining gender gaps in developed labor markets. Bertrand et al. (2010) document the mechanism among high-earning professionals: a near-zero gap at graduation that widens after children arrive, through career interruptions and reduced hours — of mothers, not fathers.
 
 ### 2.5 Taste-Based and Statistical Discrimination
 
@@ -105,9 +105,9 @@ Six strands of work define the local state of the art; it is worth making explic
 
 **Actual labor market experience (Perticará & Bueno, 2009).** Using the Social Protection Survey they controlled for real experience and labor market intermittency — the critical variable our source does not observe. Against that advantage, this paper contributes recency (2022-2024), sample scale, occupational granularity, and reproducibility with open data.
 
-**The firm channel (Sánchez et al., 2020).** Using unemployment insurance records and a dynamic monopsony model, they estimate substantial differentials associated with labor supply elasticities to the firm. That channel is unobservable with our data and remains, by construction, inside our unexplained component.
+**The firm channel (Sánchez et al., 2022).** Using unemployment insurance records and a dynamic monopsony model, they estimate substantial differentials associated with labor supply elasticities to the firm. That channel is unobservable with our data and remains, by construction, inside our unexplained component.
 
-**Motherhood with event-study designs (Berniell et al., 2021).** For Chile and other countries in the region they document sharp and persistent declines in mothers' employment, hours, and earnings after the first birth, essentially unaffected fathers, and displacement toward informality. Our cross-sectional female × children coefficients are the static imprint of that process: consistent with that causal evidence, but not a substitute for it.
+**Motherhood with event-study designs (Berniell et al., 2023).** For Chile and other countries in the region they document sharp and persistent declines in mothers' employment, hours, and earnings after the first birth, essentially unaffected fathers, and displacement toward informality. Our cross-sectional female × children coefficients are the static imprint of that process: consistent with that causal evidence, but not a substitute for it.
 
 **Fields of study (Parada-Contzen & Jara, 2025).** For workers with higher education they document gaps of 17-25% with a mostly unexplained component, heterogeneous by field of study. Field of study captures human capital dimensions that occupation does not fully absorb; integrating field of study (available in CASEN) and granular occupation in a single specification is another direct extension.
 
@@ -219,7 +219,7 @@ The contrast is stark: **fatherhood is associated with a wage premium; motherhoo
 
 This finding also resolves the apparent paradox of the previous table: adding children and marital status *raises* the "unexplained" share (from 66.6% to 70.9%) because the decomposition assigns to the explained component only differences in average composition — and the motherhood penalty is a difference in **returns** (the same family event is associated with different impacts depending on the parent's sex), not in composition.
 
-The inferential status of these coefficients deserves precision: coming from a cross-section in which motherhood is measured as a self-reported *stock* rather than a dated event, they describe conditional associations, not causal effects. Their evidentiary value lies in the coherence of the pattern — sex asymmetry in response to the same family event, within the same occupation — with the causal evidence from event studies, including that available for Chile (Berniell et al., 2021; Kleven et al., 2019).
+The inferential status of these coefficients deserves precision: coming from a cross-section in which motherhood is measured as a self-reported *stock* rather than a dated event, they describe conditional associations, not causal effects. Their evidentiary value lies in the coherence of the pattern — sex asymmetry in response to the same family event, within the same occupation — with the causal evidence from event studies, including that available for Chile (Berniell et al., 2023; Kleven et al., 2019).
 
 ### 4.5 Isolating the Sex Effect Occupation by Occupation
 
@@ -323,9 +323,9 @@ Three policy readings:
 
 Chile ratified ILO Convention 100 (equal remuneration) in 1971. The main domestic instrument is **Law No. 20,348 (2009)**, which incorporated Article 62 bis into the Labor Code: the right to equal pay between men and women performing "the same work." Its design exhibits three documented weaknesses: it requires identity of functions (not work of equal value, the ILO standard), it places the burden of claiming on the individual worker through a prior internal procedure, and it lacks a reporting mechanism that would make gaps observable. The volume of complaints and sanctions has been marginal since its entry into force.
 
-**Article 203 of the Labor Code** obliges only employers with **20 or more female workers** to fund childcare. By taxing female hiring at the margin, the rule generates exactly the distortion theory predicts: Prada et al. (2015) document that the cost is passed through to lower starting wages for women in affected firms. The universal childcare bill that would correct this design has been under legislative discussion for years.
+**Article 203 of the Labor Code** obliges only employers with **20 or more female workers** to fund childcare. By taxing female hiring at the margin, the rule generates exactly the distortion theory predicts: Prada et al. (2015) document that the cost is passed through to lower starting wages for women in affected firms. Reforms toward universal childcare financing have been repeatedly discussed in Chilean legislative and policy debates.
 
-**Law No. 20,545 (2011)** extended parental postnatal leave to 24 weeks with weeks transferable to the father; paternal take-up has persistently remained below 1%, which in practice consolidates the asymmetric allocation of care that the literature identifies as the engine of the motherhood penalty.
+**Law No. 20,545 (2011)** extended parental postnatal leave to 24 weeks with weeks transferable to the father; take-up by fathers has historically been very low, which in practice consolidates the asymmetric allocation of care that the literature identifies as the engine of the motherhood penalty.
 
 ---
 
@@ -437,7 +437,7 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 
 **8.4 Firms and bargaining.** Card et al. (2016), with Portuguese administrative data: the combination of sorting into low-premium firms and lower rent capture in bargaining explains about one fifth of the gap. This channel is entirely invisible to our data (we do not observe the employer) and sits, by construction, inside our 72%.
 
-**8.5 The dynamics of motherhood.** Cortés and Pan (2023) conclude that children are today the main factor behind the remaining gaps in developed countries; Kleven et al. (2019, 2024) quantify long-run penalties of around 20% in Denmark and substantially larger in Latin America. Our female × children coefficient (-7.8%, cross-sectional) is the static imprint of that dynamic process: the penalty accumulates over the years following birth, something a cross-section can only underestimate.
+**8.5 The dynamics of motherhood.** Cortés and Pan (2023) conclude that children are today the main factor behind the remaining gaps in developed countries; Kleven et al. (2019, 2025) quantify long-run penalties of around 20% in Denmark and substantially larger in Latin America. Our female × children coefficient (-7.8%, cross-sectional) is the static imprint of that dynamic process: the penalty accumulates over the years following birth, something a cross-section can only underestimate.
 
 **Implication for Chile.** None of these mechanisms is measurable today with Chilean public data: CASEN and ESI include no modules on wage negotiation, actual work histories, or socioemotional attributes, and the ELPI measures socioemotional traits only for primary caregivers of young children (mostly women), precluding comparison across sexes. This turns the 72% into an additional argument for Recommendation R5: **short negotiation modules** (did you negotiate your pay when hired? have you asked for a raise? was the salary presented as negotiable?) **and work history modules** in existing surveys have low marginal cost and would open the local black box. In the meantime, the correct reading of the residual is not "intractable preference differences," but a set of mechanisms with names, evidence, and — each one — an associated policy instrument: transparency of ranges and negotiability (8.1), overtime and flexibility design (8.2), co-responsibility in care (8.5).
 
@@ -466,7 +466,7 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 - Baker, M., Halberstam, Y., Kroft, K., Mas, A., & Messacar, D. (2023). Pay transparency and the gender gap. *American Economic Journal: Applied Economics*, *15*(2).
 - Becker, G. (1957). *The economics of discrimination*. University of Chicago Press.
 - Bennedsen, M., Simintzi, E., Tsoutsoura, M., & Wolfenzon, D. (2022). Do firms respond to gender pay gap transparency? *Journal of Finance*, *77*(4).
-- Berniell, I., Berniell, L., de la Mata, D., Edo, M., & Marchionni, M. (2021). *Motherhood and flexible jobs: Evidence from Latin American countries* (WIDER Working Paper). UNU-WIDER.
+- Berniell, I., Berniell, L., de la Mata, D., Edo, M., & Marchionni, M. (2023). Motherhood and flexible jobs: Evidence from Latin American countries. *World Development*, *167*.
 - Bertrand, M. (2011). New perspectives on gender. In O. Ashenfelter & D. Card (Eds.), *Handbook of labor economics* (Vol. 4B). Elsevier.
 - Bertrand, M., Goldin, C., & Katz, L. (2010). Dynamics of the gender gap for young professionals in the financial and corporate sectors. *American Economic Journal: Applied Economics*, *2*(3).
 - Blau, F., & Kahn, L. (2017). The gender wage gap: Extent, trends, and explanations. *Journal of Economic Literature*, *55*(3).
@@ -481,14 +481,15 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 - Goldin, C. (2014). A grand gender convergence: Its last chapter. *American Economic Review*, *104*(4).
 - Goldin, C. (2021). *Career and family: Women's century-long journey toward equity*. Princeton University Press.
 - Heckman, J., Stixrud, J., & Urzúa, S. (2006). The effects of cognitive and noncognitive abilities on labor market outcomes and social behavior. *Journal of Labor Economics*, *24*(3).
-- Kleven, H., Landais, C., & Leite-Mariante, G. (2024). The child penalty atlas. *Review of Economic Studies*.
+- Kleven, H., Landais, C., & Leite-Mariante, G. (2025). The child penalty atlas. *Review of Economic Studies*.
 - Kleven, H., Landais, C., & Søgaard, J. E. (2019). Children and gender inequality: Evidence from Denmark. *American Economic Journal: Applied Economics*, *11*(4).
 - Leibbrandt, A., & List, J. (2015). Do women avoid salary negotiations? Evidence from a large-scale natural field experiment. *Management Science*, *61*(9).
 - Martínez, C., & Perticará, M. (2017). Childcare effects on maternal employment: Evidence from Chile. *Journal of Development Economics*, *126*.
 - Mincer, J. (1974). *Schooling, experience, and earnings*. National Bureau of Economic Research.
 - Mueller, G., & Plug, E. (2006). Estimating the effect of personality on male and female earnings. *ILR Review*, *60*(1).
+- Neumark, D. (1988). Employers' discriminatory behavior and the estimation of wage discrimination. *Journal of Human Resources*, *23*(3), 279-295.
 - Niederle, M., & Vesterlund, L. (2007). Do women shy away from competition? Do men compete too much? *Quarterly Journal of Economics*, *122*(3).
-- Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective* (Working Paper No. 468). Inter-American Development Bank.
+- Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective*. Inter-American Development Bank.
 - Ñopo, H. (2008). Matching as a tool to decompose wage gaps. *Review of Economics and Statistics*, *90*(2).
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
 - Parada-Contzen, M., & Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
@@ -498,15 +499,17 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 - Phelps, E. (1972). The statistical theory of racism and sexism. *American Economic Review*, *62*(4).
 - Prada, M. F., Rucci, G., & Urzúa, S. (2015). *The effect of mandated child care on female wages in Chile* (NBER Working Paper No. 21080). National Bureau of Economic Research.
 - Roussille, N. (2024). The central role of the ask gap in gender pay inequality. *Quarterly Journal of Economics*, *139*(3).
-- Sánchez, R., Finot, J., & Villena-Roldán, B. (2020). *Gender wage gap and firm market power: Evidence from Chile* (IZA Discussion Paper No. 13856). Institute of Labor Economics.
+- Sánchez, R., Finot, J., & Villena, M. G. (2022). Gender wage gap and firm market power: Evidence from Chile. *Applied Economics*, *54*(18), 2109-2121.
 
 **Official sources and legislation**
 
 - Instituto Nacional de Estadísticas. (2018-2024). *Encuesta Suplementaria de Ingresos* [Supplementary Income Survey; microdata].
+- Labor Code of Chile. Decree with Force of Law No. 1 (2003). Ministry of Labor and Social Welfare. Articles 62 bis and 203.
 - Law No. 20,348. (2009). Resguarda el derecho a la igualdad en las remuneraciones [Safeguards the right to equal pay]. Diario Oficial de la República de Chile.
 - Law No. 20,545. (2011). Modifica las normas sobre protección a la maternidad e incorpora el permiso postnatal parental [Amends maternity protection rules and introduces parental postnatal leave]. Diario Oficial de la República de Chile.
 - Ministerio de Desarrollo Social y Familia. (2022, 2024). *Encuesta de Caracterización Socioeconómica Nacional (CASEN)* [National Socioeconomic Characterization Survey; microdata]. Observatorio Social.
-- Organisation for Economic Co-operation and Development. (n.d.). *Gender wage gap* [Indicator].
+- Organisation for Economic Co-operation and Development. (n.d.). *Gender wage gap* [Indicator]. Retrieved July 2026.
+- International Labour Organization. (1951). *Equal Remuneration Convention, 1951 (No. 100)*.
 - International Labour Organization. (2018). *Global wage report 2018/19: What lies behind gender pay gaps*. International Labour Office.
 
 ---
