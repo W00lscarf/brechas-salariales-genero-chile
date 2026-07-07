@@ -2,7 +2,7 @@
 
 ## The Gender Gap That Composition Does Not Explain: Evidence From Public Microdata and Policy Proposals for Chile
 
-*Working paper based on the results of the [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile) repository. All computations are reproducible with public data and open code (notebooks 01-09). Una versión en español está disponible en [README.md](README.md).*
+*Working paper based on the results of the [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile) repository. All computations are reproducible with public data and open code (notebooks 01-09). Una versión en español está disponible en [README.md](README.md). A submission-ready PDF is available at [same_occupation_different_pay_wp.pdf](same_occupation_different_pay_wp.pdf) (regenerate with `python generar_pdf_en.py`).*
 
 **July 2026**
 
