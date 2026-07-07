@@ -10,7 +10,7 @@
 
 ## Resumen
 
-Este documento estima la brecha salarial de género en Chile agotando el espacio de explicaciones observables basadas en composición y elección que permiten los datos públicos. Con microdatos de la Encuesta CASEN (2022 y 2024; *n* = 174.924) y de la ESI (2018-2024), se estima el diferencial de ingreso laboral entre hombres y mujeres controlando por ocupación a cuatro dígitos CIUO-08 (354 categorías), horas trabajadas, educación (nivel y tipo de institución), edad, región y zona, régimen de formalidad, sector público o privado, maternidad y estado civil. La brecha ajustada se sitúa entre -11% y -16% en las catorce especificaciones evaluadas y no se reduce al agregar controles: la especificación con el conjunto completo de controles (375 parámetros) arroja -15.6%. El efecto de la maternidad es asimétrico: el mismo hijo se asocia a un premio de +5.0% para los hombres y a una penalización adicional de -7.8% para las mujeres, dentro de la misma ocupación exacta. En el análisis por ocupación, ninguna de las 227 ocupaciones examinadas presenta una brecha favorable a las mujeres que sobreviva la corrección por comparaciones múltiples, mientras que 66 presentan brechas significativas en su contra. La brecha se concentra en los hogares de menor nivel socioeconómico (-21.2%, frente a -11.2% en los de mayor nivel) y exhibe forma de U a lo largo de la distribución salarial. Se concluye que el diferencial chileno es principalmente un problema de retornos desiguales y no de composición, y se derivan seis recomendaciones de política.
+Este documento estima la brecha salarial de género en Chile agotando el espacio de explicaciones observables basadas en composición y elección que permiten los datos públicos. Con microdatos de la Encuesta CASEN (2022 y 2024; *n* = 174.924) y de la ESI (2018-2024), se estima el diferencial de ingreso laboral entre hombres y mujeres controlando por ocupación a cuatro dígitos CIUO-08 (354 categorías), horas trabajadas, educación (nivel y tipo de institución), edad, región y zona, régimen de formalidad, sector público o privado, maternidad y estado civil. La brecha ajustada se sitúa entre -11% y -16% en las catorce especificaciones evaluadas y no se reduce al agregar controles: la especificación con el conjunto completo de controles (375 parámetros) arroja -15.6%. La asociación con la maternidad es asimétrica: el mismo hijo se asocia a un premio de +5.0% para los hombres y a una penalización adicional de -7.8% para las mujeres, dentro de la misma ocupación exacta. En el análisis por ocupación, ninguna de las 227 ocupaciones examinadas presenta una brecha favorable a las mujeres que sobreviva la corrección por comparaciones múltiples, mientras que 66 presentan brechas significativas en su contra. La brecha se concentra en los hogares de menor nivel socioeconómico (-21.2%, frente a -11.2% en los de mayor nivel) y exhibe forma de U a lo largo de la distribución salarial. Se concluye que el diferencial chileno corresponde principalmente al componente no explicado por composición observable —retornos, en el sentido de Oaxaca-Blinder— y no a diferencias de composición, y se derivan seis recomendaciones de política.
 
 **Palabras clave:** brecha salarial de género, segregación ocupacional, penalización por maternidad, descomposición de Oaxaca-Blinder, Chile
 
@@ -26,7 +26,7 @@ Este documento estima la brecha salarial de género en Chile agotando el espacio
 - Al aislar el efecto sexo ocupación por ocupación, **90 de 227 ocupaciones muestran brecha estadísticamente significativa — 89 en contra de las mujeres y solo una a favor, dentro de lo esperable por azar**. Tras la corrección por comparaciones múltiples, 66 ocupaciones sobreviven la corrección por tasa de falsos descubrimientos (FDR, por su sigla en inglés) y 30 el criterio de Bonferroni — **todas en contra de las mujeres; ninguna a favor**. Las brechas aparentemente favorables a las mujeres que surgen en comparaciones simples no sobreviven el ajuste por composición ni el control de incertidumbre estadística.
 - Los resultados sobreviven una **batería de robustez** (sección 7): especificación en salario por hora (-11.1%), restricción a asalariados formales que cotizan (-12.0%), edades centrales 25-59 años (-14.9%), recorte de valores extremos (-13.0%) y tres vectores de referencia en la descomposición. La **especificación máxima** — todos los controles disponibles simultáneamente, incluyendo sector público/privado y formalidad — arroja **-15.6%**: agregar controles no reduce la brecha. La más severa está entre trabajadores independientes (-25.5%); la más baja, en el sector público (-9.8%), donde las escalas salariales la comprimen pero no la eliminan.
 - La brecha **no se distribuye de manera homogénea**: duplica su magnitud en los hogares de menor nivel socioeconómico (-21.2%) respecto de los de mayor nivel (-11.2%), y presenta **forma de U** a lo largo de la distribución salarial — piso pegajoso y techo de cristal simultáneos (sección 4.8). Constituye, además, un problema de desigualdad: es mayor donde cada punto porcentual de ingreso tiene mayor impacto en el bienestar.
-- Estos resultados indican que la brecha chilena es mayoritariamente un problema de **retornos desiguales** (lo que se paga a iguales características) y no solo de **composición** (dónde trabajan hombres y mujeres). Las políticas deben calibrarse a ese diagnóstico: transparencia salarial con reporte de brechas ajustadas, reforma del artículo 203 del Código del Trabajo (sala cuna), corresponsabilidad parental efectiva y expansión de la oferta pública de cuidado.
+- Estos resultados indican que la brecha chilena es mayoritariamente atribuible al componente de **retornos** en el sentido de Oaxaca-Blinder (remuneración distinta a iguales características observables) y no solo a la **composición** (dónde trabajan hombres y mujeres). Las políticas deben calibrarse a ese diagnóstico: transparencia salarial con reporte de brechas ajustadas, reforma del artículo 203 del Código del Trabajo (sala cuna), corresponsabilidad parental efectiva y expansión de la oferta pública de cuidado.
 
 ---
 
@@ -42,17 +42,19 @@ En ese contexto, este documento aborda la pregunta que la literatura chilena ha 
 
 > **¿Persiste la brecha salarial de género en Chile una vez agotado el conjunto completo de explicaciones observables basadas en composición y elección —ocupación exacta, horas trabajadas, educación y su calidad institucional, geografía, régimen de formalidad, sector y estructura familiar— que permiten los datos públicos? Y, de persistir, ¿en qué segmentos de la población es mayor?**
 
-La tesis que este trabajo somete a prueba, y que la evidencia sostiene, es la siguiente: *la brecha salarial de género chilena no es reducible a las elecciones observables de las mujeres. Tras descontar de manera simultánea todas las dimensiones de elección medibles con datos públicos, persiste un diferencial de entre -11% y -16% que no disminuye al agregar controles, que se concentra precisamente en los segmentos donde el margen de elección es menor —hogares de bajo nivel socioeconómico, madres casadas o convivientes y los extremos de la distribución salarial— y que corresponde, por tanto, a diferencias de retornos y no de composición.*
+La tesis que este trabajo somete a prueba, y que la evidencia sostiene, es la siguiente: *la brecha salarial de género chilena no es reducible a las elecciones observables de las mujeres. Tras descontar de manera simultánea todas las dimensiones de elección medibles con datos públicos, persiste un diferencial de entre -11% y -16% que no disminuye al agregar controles, que se concentra precisamente en los segmentos donde el margen de elección es menor —hogares de bajo nivel socioeconómico, madres casadas o convivientes y los extremos de la distribución salarial— un patrón consistente con diferencias de retornos —en el sentido de la descomposición de Oaxaca-Blinder— antes que con diferencias de composición observable.*
 
 ### 1.2 Contribuciones y relación con la literatura chilena
 
 Este documento aporta a esa discusión con una ventaja metodológica poco frecuente en el debate público chileno: el uso de la ocupación a **4 dígitos de la clasificación CIUO-08** disponible en CASEN, que permite comparar salarios dentro de la misma ocupación específica (médico especialista con médico especialista, técnico en enfermería con técnico en enfermería), en lugar de las aproximadamente nueve categorías amplias que permiten las encuestas de empleo habituales. La crítica estándar a las estimaciones de brecha "ajustada" —que el residuo no explicado sería un artefacto de controles ocupacionales demasiado gruesos— se puede someter a prueba directa. Hasta donde conocemos, los estudios chilenos publicados y los boletines oficiales de brecha salarial trabajan con agrupaciones ocupacionales amplias (1 dígito CIUO o grandes grupos); no identificamos estimaciones publicadas de brechas dentro de la ocupación a 4 dígitos con inferencia estadística y datos de acceso abierto para Chile.
 
+Una precisión de alcance es indispensable: ocupación a cuatro dígitos no equivale a «mismo puesto de trabajo». No observamos la empresa, el cargo jerárquico, el desempeño ni la composición de la remuneración (bonos, comisiones, horas extraordinarias), de modo que el título de este documento debe leerse en sentido estricto: misma *ocupación*, no mismo *empleo* ni «trabajo de igual valor» en el sentido jurídico del término.
+
 Este ejercicio se sitúa, además, cerca del **techo de lo estimable con datos abiertos en el país**: los diseños que la literatura internacional utiliza para ir más lejos —datos administrativos vinculados empleador-empleado, estudios de eventos en torno al nacimiento del primer hijo— requieren fuentes que en Chile existen solo de forma parcial y bajo acceso restringido (los registros del Seguro de Cesantía, usados por ejemplo en Sánchez et al. (2020), cubren únicamente al sector privado formal asalariado; los datos tributarios del SII y los paneles EPS y ELPI tienen restricciones análogas de acceso o cobertura). Esa restricción de infraestructura de datos es, en sí misma, parte del diagnóstico de este documento (recomendación R5).
 
 Los resultados están disponibles en un repositorio público con código y datos de acceso abierto, lo que permite a cualquier investigador o servicio público replicar, auditar y extender las estimaciones.
 
-La literatura chilena ha documentado la magnitud de la brecha y su descomposición con categorías ocupacionales amplias (Perticará y Bueno, 2009; boletines del INE y de la Subsecretaría del Trabajo), su relación con el poder de mercado de las firmas mediante registros administrativos de acceso restringido y cobertura parcial (Sánchez et al., 2020) y, más recientemente, los diferenciales por área de formación con datos CASEN. Ninguno de estos trabajos estaba en condiciones de descartar la interpretación dominante en el debate público —que el diferencial refleja elecciones ocupacionales, horarias, educativas o familiares de las mujeres—, porque sus controles ocupacionales eran demasiado agregados para someterla a prueba. Frente a ese estado del arte, este documento realiza cuatro contribuciones:
+La literatura chilena ha documentado la magnitud de la brecha y su descomposición con categorías ocupacionales amplias (Ñopo, 2006; Perticará y Bueno, 2009; boletines del INE y de la Subsecretaría del Trabajo), su relación con el poder de mercado de las firmas mediante registros administrativos de acceso restringido y cobertura parcial (Sánchez et al., 2020), los efectos causales de la maternidad con diseño de eventos (Berniell et al., 2021) y, más recientemente, los diferenciales por área de formación (Parada-Contzen y Jara, 2025). La sección 2.6 explicita qué agrega y qué no puede responder este trabajo frente a cada una de esas líneas. Ninguno de estos trabajos estaba en condiciones de descartar la interpretación dominante en el debate público —que el diferencial refleja elecciones ocupacionales, horarias, educativas o familiares de las mujeres—, porque sus controles ocupacionales eran demasiado agregados para someterla a prueba. Frente a ese estado del arte, este documento realiza cuatro contribuciones:
 
 1. **La primera estimación para Chile, hasta donde conocemos, de la brecha salarial dentro de la ocupación a cuatro dígitos** (354 categorías) con datos de acceso abierto, inferencia estadística por ocupación y corrección por comparaciones múltiples.
 2. **Un diseño orientado a agotar la explicación por elecciones**: catorce especificaciones que descuentan, sucesiva y conjuntamente, cada dimensión de elección observable — incluida una especificación máxima con 375 parámetros — y una tabla de contraste directo entre cada versión de la objeción y la evidencia (Tabla 6).
@@ -92,6 +94,22 @@ La literatura de *child penalties* con estudios de eventos muestra que el nacimi
 ### 2.5 Discriminación de gustos y estadística
 
 Los modelos clásicos de discriminación por preferencias (Becker, 1957) y discriminación estadística (Phelps, 1972; Arrow, 1973) predicen diferenciales de trato ante productividad idéntica. No podemos identificar discriminación directamente con datos observacionales, pero el diseño de la sección 4.5 —efecto sexo estimado dentro de cada ocupación exacta, neto de edad, educación, horas, hijos y estado civil— acota el espacio de explicaciones alternativas de manera considerablemente más exigente que las estimaciones convencionales.
+
+### 2.6 Posicionamiento frente a la evidencia chilena
+
+Seis líneas de trabajo definen el estado del arte local; conviene explicitar qué agrega y qué no puede responder este documento frente a cada una.
+
+**Estadística oficial (INE/ESI).** Describe brechas brutas por sexo, ocupación amplia, educación y región. Este trabajo agrega el ajuste multivariado con ocupación fina e inferencia estadística; no reemplaza la estadística oficial, y mantiene deliberadamente definiciones compatibles con ella.
+
+**Descomposiciones por emparejamiento (Ñopo, 2006).** Con CASEN 1992-2003 y comparaciones restringidas al soporte común, Ñopo documentó un componente no explicado en torno al 25% del salario femenino promedio, mayor en los percentiles altos de la distribución — plenamente coherente con la forma de U que reportamos. Su método es más exigente en comparabilidad entre individuos: una réplica con soporte común y ocupación a cuatro dígitos es la extensión natural de este trabajo.
+
+**Experiencia laboral efectiva (Perticará y Bueno, 2009).** Con la Encuesta de Protección Social controlaron experiencia real e intermitencia laboral — la variable crítica que nuestra fuente no observa. Frente a esa ventaja, este trabajo aporta actualización (2022-2024), escala muestral, granularidad ocupacional y reproducibilidad con datos abiertos.
+
+**Canal de firma (Sánchez et al., 2020).** Con registros del Seguro de Cesantía y un modelo de monopsonio dinámico estiman diferenciales sustantivos asociados a las elasticidades de oferta laboral hacia la firma. Ese canal es inobservable con nuestros datos y permanece, por construcción, dentro de nuestro componente no explicado.
+
+**Maternidad con diseño de eventos (Berniell et al., 2021).** Para Chile y otros países de la región documentan caídas fuertes y persistentes del empleo, las horas y los ingresos de las madres tras el nacimiento del primer hijo, padres esencialmente inafectados y desplazamiento hacia la informalidad. Nuestros coeficientes transversales de mujer × hijos son la huella estática de ese proceso: coherentes con esa evidencia causal, pero no un sustituto de ella.
+
+**Campos de estudio (Parada-Contzen y Jara, 2025).** Para trabajadores con educación superior documentan brechas de 17-25% con un componente mayoritariamente no explicado, heterogéneo por campo de estudio. El campo capta dimensiones de capital humano que la ocupación no absorbe por completo; integrar área de formación (disponible en CASEN) y ocupación granular en una misma especificación es otra extensión directa.
 
 ---
 
@@ -180,17 +198,17 @@ Tres lecturas de política se desprenden de esta tabla:
 2. **La educación protege**: las ocupadas chilenas están mejor educadas que los ocupados; si solo importara el capital humano, ganarían *más*.
 3. **Hijos y estado civil casi no aportan a la parte explicada** — hombres y mujeres no difieren tanto en composición familiar promedio. Su efecto opera por otra vía (sección 4.4).
 
-### 4.4 La penalización por maternidad: un efecto de retornos, no de composición
+### 4.4 La penalización por maternidad: una asociación de retornos, no de composición
 
 La Tabla 4 presenta las interacciones mujer × hijos y mujer × estado civil, controlando ocupación exacta, educación, edad, horas y año (*n* = 174.719).
 
 **Tabla 4**
 *Efectos de la maternidad y el estado civil sobre el ingreso laboral, por sexo*
 
-| Término | Efecto sobre el ingreso | Valor p |
+| Término | Asociación con el ingreso | Valor p |
 |---|---|---|
 | Mujer (brecha base) | -12.3% | < .001 |
-| Tiene hijos (efecto para hombres) | **+5.0%** | < .001 |
+| Tiene hijos (asociación para hombres) | **+5.0%** | < .001 |
 | **Mujer × tiene hijos** | **-7.8%** | **< .001** |
 | Mujer × soltera (respecto de casada o conviviente) | +5.3% | < .001 |
 
@@ -198,7 +216,9 @@ La Tabla 4 presenta las interacciones mujer × hijos y mujer × estado civil, co
 
 El contraste es nítido: **la paternidad se asocia a un premio salarial; la maternidad, a una penalización adicional** por sobre la brecha que ya afecta a toda mujer — exactamente el patrón que la literatura internacional de *child penalties* documenta con datos administrativos (Kleven et al., 2019; Cortés y Pan, 2023). Notablemente, con datos ESI (sin ocupación granular) esta interacción no era estadísticamente significativa: la granularidad ocupacional fue la que permitió identificarla, lo que sugiere que parte de la penalización por maternidad en Chile opera *dentro* de las ocupaciones y no solo a través de la selección hacia ocupaciones peor pagadas.
 
-Este hallazgo también resuelve la aparente paradoja de la tabla anterior: agregar hijos y estado civil *sube* el "no explicado" (de 66.6% a 70.9%) porque la descomposición solo asigna al componente explicado las diferencias de composición promedio — y la penalización por maternidad es una diferencia de **retorno** (el mismo hijo impacta distinto según el sexo del progenitor), no de composición.
+Este hallazgo también resuelve la aparente paradoja de la tabla anterior: agregar hijos y estado civil *sube* el "no explicado" (de 66.6% a 70.9%) porque la descomposición solo asigna al componente explicado las diferencias de composición promedio — y la penalización por maternidad es una diferencia de **retorno** (el mismo hijo se asocia a impactos distintos según el sexo del progenitor), no de composición.
+
+Corresponde precisar el estatus inferencial de estos coeficientes: al provenir de un corte transversal en que la maternidad se mide como *stock* autorreportado y no como evento fechado, describen asociaciones condicionales y no efectos causales. Su valor probatorio radica en la coherencia del patrón —asimetría por sexo ante el mismo hecho familiar, dentro de la misma ocupación— con la evidencia causal de estudios de eventos, incluida la disponible para Chile (Berniell et al., 2021; Kleven et al., 2019).
 
 ### 4.5 Aislando el efecto sexo ocupación por ocupación
 
@@ -230,11 +250,11 @@ La Tabla 5 sintetiza el diagnóstico agregado.
 | Horas trabajadas | ~29% | Composición/preferencias restringidas |
 | Segregación ocupacional fina | ~17% | Composición: dónde trabajan |
 | Educación | negativa (protege) | Composición |
-| Retornos desiguales (incl. penalización por maternidad) | **~2/3** | Cómo se paga a iguales características |
+| Retornos desiguales (incl. penalización por maternidad) | **~2/3** | Remuneración distinta a iguales características observables |
 
 *Nota.* Síntesis de las estimaciones de las secciones 4.1 a 4.5. Elaboración propia.
 
-El problema chileno es, predominantemente, de **retornos**: características idénticas se remuneran distinto según el sexo, con la maternidad como el mecanismo identificable más claro dentro de ese residuo.
+El problema chileno es, predominantemente, de **retornos** en el sentido de Oaxaca-Blinder: características observables idénticas se asocian a remuneraciones distintas según el sexo, con la maternidad como el mecanismo identificable más claro dentro de ese residuo.
 
 ### 4.7 La lectura de "elecciones": qué queda de ella
 
@@ -310,7 +330,7 @@ La **Ley 20.545 (2011)** extendió el postnatal parental a 24 semanas con semana
 
 ## 6. Recomendaciones de política
 
-Las recomendaciones se ordenan por el componente de la brecha sobre el que actúan, siguiendo el diagnóstico de la sección 4.6.
+Las recomendaciones se ordenan por el componente de la brecha sobre el que actúan, siguiendo el diagnóstico de la sección 4.6. En cada caso se distingue el fundamento que proviene de nuestras estimaciones del que descansa en evidencia externa.
 
 ### R1. Transparencia salarial obligatoria con brechas ajustadas por ocupación *(actúa sobre: retornos)*
 
@@ -407,8 +427,11 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 ## 9. Limitaciones
 
 - **Identificación.** Los datos son observacionales y de corte transversal; los coeficientes describen asociaciones condicionales, no efectos causales. El componente "no explicado" acota pero no identifica discriminación.
-- **Selección.** La participación laboral femenina es ~18 pp menor; si las mujeres que participan están positivamente seleccionadas en productividad, nuestras brechas *subestiman* el diferencial poblacional. No aplicamos correcciones de selección (Heckman) para mantener la transparencia del pipeline.
-- **Sin dimensión de firma.** No observamos el empleador, por lo que el canal de asignación entre firmas (*sorting*) y negociación (Card et al., 2016) queda dentro del residuo. Datos administrativos vinculados (Seguro de Cesantía, SII) permitirían cerrarlo; su apertura para investigación es en sí misma una recomendación.
+- **Selección.** La participación laboral femenina es ~18 pp menor; si las mujeres que participan están positivamente seleccionadas en productividad, nuestras brechas *subestiman* el diferencial poblacional. No aplicamos correcciones de selección para mantener la transparencia del pipeline; una cuantificación formal —Heckman con restricciones de exclusión defendibles, cotas a la Manski o ponderación por probabilidad inversa— es la extensión prioritaria de este trabajo.
+- **Experiencia potencial, no efectiva.** La edad aproxima experiencia potencial; la evidencia chilena con la Encuesta de Protección Social muestra que la experiencia efectiva y la intermitencia laboral son determinantes de primer orden de la brecha (Perticará y Bueno, 2009). CASEN no registra trayectorias, por lo que parte del residuo puede reflejar diferencias de experiencia efectiva — cuyo origen, a su vez, remite a la asignación asimétrica del cuidado.
+- **Diseño muestral.** Las estimaciones ponderan por factor de expansión y agrupan errores por conglomerado × año, pero no incorporan los estratos del diseño (`varstrat`); omitir la estratificación tiende a producir errores estándar conservadores (más amplios), por lo que la inferencia reportada no debería estar sesgada hacia la sobresignificancia. Un apéndice con el diseño muestral completo queda como refinamiento pendiente.
+- **Sensibilidad de la descomposición detallada.** Con variables categóricas de alta dimensión, la descomposición de Oaxaca-Blinder es sensible a la elección de categorías base (problema de normalización). Se mitiga aquí agrupando contribuciones por familias de variables y reportando tres vectores de referencia (sección 7); aun así, los porcentajes por factor deben leerse como órdenes de magnitud.
+- **Sin dimensión de firma.** No observamos el empleador — ni el cargo jerárquico, el desempeño, los bonos, las comisiones o la negociación individual —, por lo que el canal de asignación entre firmas (*sorting*) y negociación (Card et al., 2016) queda dentro del residuo; «misma ocupación» no equivale a «mismo puesto de trabajo». Datos administrativos vinculados (Seguro de Cesantía, SII) permitirían cerrarlo; su apertura para investigación es en sí misma una recomendación.
 - **Maternidad como stock, no como evento.** La pregunta `s5` de CASEN mide haber tenido hijos, no el evento del nacimiento; un estudio de eventos tipo Kleven et al. (2019) exige datos longitudinales. Los paneles chilenos existentes (EPS, ELPI) y los registros del Seguro de Cesantía permitirían aproximarlo, pero ninguno está disponible como dato abierto de propósito general — un estudio de eventos de penalización por maternidad con datos administrativos chilenos sigue siendo, hasta donde conocemos, una vacante en la literatura local.
 - **Ingreso autorreportado** y ruptura del clasificador ocupacional (CIUO-88 frente a CIUO-08) que impide extender la serie granular antes de 2022.
 
@@ -424,6 +447,7 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Baker, M., Halberstam, Y., Kroft, K., Mas, A. y Messacar, D. (2023). Pay transparency and the gender gap. *American Economic Journal: Applied Economics*, *15*(2).
 - Becker, G. (1957). *The economics of discrimination*. University of Chicago Press.
 - Bennedsen, M., Simintzi, E., Tsoutsoura, M. y Wolfenzon, D. (2022). Do firms respond to gender pay gap transparency? *Journal of Finance*, *77*(4).
+- Berniell, I., Berniell, L., de la Mata, D., Edo, M. y Marchionni, M. (2021). *Motherhood and flexible jobs: Evidence from Latin American countries* (Documento de trabajo WIDER). UNU-WIDER.
 - Bertrand, M. (2011). New perspectives on gender. En O. Ashenfelter y D. Card (Eds.), *Handbook of labor economics* (Vol. 4B). Elsevier.
 - Bertrand, M., Goldin, C. y Katz, L. (2010). Dynamics of the gender gap for young professionals in the financial and corporate sectors. *American Economic Journal: Applied Economics*, *2*(3).
 - Blau, F. y Kahn, L. (2017). The gender wage gap: Extent, trends, and explanations. *Journal of Economic Literature*, *55*(3).
@@ -445,7 +469,9 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Mincer, J. (1974). *Schooling, experience, and earnings*. National Bureau of Economic Research.
 - Mueller, G. y Plug, E. (2006). Estimating the effect of personality on male and female earnings. *ILR Review*, *60*(1).
 - Niederle, M. y Vesterlund, L. (2007). Do women shy away from competition? Do men compete too much? *Quarterly Journal of Economics*, *122*(3).
+- Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective* (Documento de trabajo n.º 468). Banco Interamericano de Desarrollo.
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
+- Parada-Contzen, M. y Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
 - Patnaik, A. (2019). Reserving time for daddy: The consequences of fathers' quotas. *Journal of Labor Economics*, *37*(4).
 - Perticará, M. y Bueno, I. (2009). A new approach to gender wage gaps in Chile. *Revista CEPAL*, *99*.
 - Petersen, T. y Morgan, L. (1995). Separate and unequal: Occupation-establishment sex segregation and the gender wage gap. *American Journal of Sociology*, *101*(2).
