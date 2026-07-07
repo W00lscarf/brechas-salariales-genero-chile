@@ -2,6 +2,12 @@
 
 ## Same occupation, different pay: the gender wage gap that composition does not explain in Chile
 
+@@AUTOR@@**Nicolás Guerrero**
+
+@@AUTOR@@Investigador independiente
+
+@@AUTOR@@n.icolashrra@gmail.com
+
 ---
 
 ## Resumen

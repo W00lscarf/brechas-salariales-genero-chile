@@ -198,6 +198,13 @@ while i < n:
             i += 1
         continue
 
+    # Bloque de autor (marcador @@AUTOR@@): centrado, bajo los títulos
+    if linea.startswith('@@AUTOR@@'):
+        p = parrafo(linea.replace('@@AUTOR@@', '').strip(),
+                    alineacion=WD_ALIGN_PARAGRAPH.CENTER, despues=2)
+        i += 1
+        continue
+
     # Vinetas
     if linea.startswith('- '):
         txt = linea[2:].strip()
@@ -239,5 +246,22 @@ while i < n:
         parrafo(txt)
 
 doc.save(OUT)
+
+# python-docx genera <w:zoom/> sin el atributo w:percent (obligatorio en el
+# esquema OOXML). Se corrige para dejar el archivo formalmente valido.
+import zipfile
+import shutil
+_tmp = OUT + '.tmp'
+with zipfile.ZipFile(OUT, 'r') as zin, zipfile.ZipFile(_tmp, 'w', zipfile.ZIP_DEFLATED) as zout:
+    for item in zin.infolist():
+        data = zin.read(item.filename)
+        if item.filename == 'word/settings.xml':
+            xml = data.decode('utf-8')
+            xml = re.sub(r'<w:zoom(?![^>]*w:percent)([^>]*)/>',
+                         r'<w:zoom w:percent="100"\1/>', xml)
+            data = xml.encode('utf-8')
+        zout.writestr(item, data)
+shutil.move(_tmp, OUT)
+
 print(f'OK: {OUT}')
 print(f'Tamaño: {os.path.getsize(OUT):,} bytes')
