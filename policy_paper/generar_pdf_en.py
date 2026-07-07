@@ -144,7 +144,7 @@ story.append(Paragraph('Working Paper', S['meta']))
 story.append(Paragraph('July 2026', S['meta']))
 story.append(Spacer(1, 0.3 * inch))
 story.append(Paragraph(
-    'Reproducible research compendium: code, open data, and notebooks 01&#8211;09 available at '
+    'Reproducible research compendium: code, open data, and notebooks 01&#8211;10 available at '
     '<font face="CourierNW" size="9">github.com/W00lscarf/brechas-salariales-genero-chile</font>',
     S['meta']))
 story.append(Spacer(1, 0.5 * inch))

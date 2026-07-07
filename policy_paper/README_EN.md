@@ -2,7 +2,7 @@
 
 ## The Gender Gap That Composition Does Not Explain: Evidence From Public Microdata and Policy Proposals for Chile
 
-*Working paper based on the results of the [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile) repository. All computations are reproducible with public data and open code (notebooks 01-09). Una versión en español está disponible en [README.md](README.md). A submission-ready PDF is available at [same_occupation_different_pay_wp.pdf](same_occupation_different_pay_wp.pdf) (regenerate with `python generar_pdf_en.py`).*
+*Working paper based on the results of the [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile) repository. All computations are reproducible with public data and open code (notebooks 01-10). Una versión en español está disponible en [README.md](README.md). A submission-ready PDF is available at [same_occupation_different_pay_wp.pdf](same_occupation_different_pay_wp.pdf) (regenerate with `python generar_pdf_en.py`).*
 
 **July 2026**
 
@@ -101,7 +101,7 @@ Six strands of work define the local state of the art; it is worth making explic
 
 **Official statistics (INE/ESI).** They describe raw gaps by sex, broad occupation, education, and region. This paper adds multivariate adjustment with fine occupation and statistical inference; it does not replace official statistics, and deliberately keeps definitions compatible with them.
 
-**Matching decompositions (Ñopo, 2006).** Using CASEN 1992-2003 and comparisons restricted to the common support, Ñopo documented an unexplained component of around 25% of average female wages, larger at the top percentiles of the distribution — fully consistent with the U-shape we report. His method is more demanding in terms of comparability across individuals: a replication with common support and 4-digit occupation is the natural extension of this work.
+**Matching decompositions (Ñopo, 2006).** Using CASEN 1992-2003 and comparisons restricted to the common support, Ñopo documented an unexplained component of around 25% of average female wages, larger at the top percentiles of the distribution — fully consistent with the U-shape we report. His method is more demanding in terms of comparability across individuals; Section 7.1 implements that replication with 4-digit occupation and finds that the unexplained component within the common support coincides with the regression estimate.
 
 **Actual labor market experience (Perticará & Bueno, 2009).** Using the Social Protection Survey they controlled for real experience and labor market intermittency — the critical variable our source does not observe. Against that advantage, this paper contributes recency (2022-2024), sample scale, occupational granularity, and reproducibility with open data.
 
@@ -142,6 +142,7 @@ Employed persons with positive income and valid occupation: **176,542 individual
 3. **Female × children and female × marital status interactions**, using CASEN's direct fertility question (unlike ESI, which requires approximating motherhood from household composition).
 4. **Full interaction model `female × occupation`** over the 227 occupations: common controls are estimated on the full sample (approximately 149,000 observations) and the sex effect is allowed to vary freely by occupation. The occupation-specific effect is recovered as a linear combination of coefficients, with variance computed from the cluster-robust covariance matrix. This design is more efficient than estimating 227 separate regressions with 50-100 cases each.
 5. **Robustness battery** (Section 7): hourly wages, three Oaxaca-Blinder reference vectors, prime age, trimming of extreme values, and separation by formality (formal/informal employees and the self-employed, via occupational category `o15`, signed contract `o19`, and pension contributions `o32`).
+6. **Exact-matching decomposition with common support** (Ñopo, 2008), with a 100-replication bootstrap for inference (Section 7.1).
 
 ### 3.4 Reproducibility
 
@@ -397,6 +398,24 @@ Seven robustness conclusions:
 6. **The public sector compresses the gap but does not eliminate it.** Women are overrepresented in public employment (56.1% of that segment; it concentrates 19.0% of female employment versus 11.0% of male employment), and the adjusted gap there is smaller than in the private sector: **-9.8% versus -12.7%** (a marginally significant difference; female × public interaction, p = .078). The pattern is consistent with pay governed by public scales and grades — local evidence in favor of pay transparency (R1) — but the remaining -9.8% indicates that scales are not enough: allowances, overtime, and promotion speed lie beyond their reach.
 7. **Neither geography nor the quality of higher education explains the gap.** Region and urban/rural fixed effects leave the coefficient at -15.7%, and the type of higher education institution — which does strongly predict income levels (Council of Rectors and state universities are associated with around +20% over a technical training center, all else equal) — leaves it at -15.6%. The finest test: **among university graduates and postgraduates only**, with institution type, region, zone, exact occupation, hours, family, and formality controlled, the gap is **-10.6%**. Data note: CASEN records the institution's *name* only for those currently studying; for graduates, only the type — the ideal control (institution × program fixed effects) requires the SIES/Ministry of Education records linked to earnings, another input for R5.
 
+### 7.1 Matching Decomposition With Common Support
+
+The most serious comparability objection against regression-adjusted gaps is extrapolation outside the common support under an imposed functional form. Following Ñopo (2008), we replicate the central result with **exact matching**: the total gap decomposes additively into an unexplained component between comparable individuals (Δ0), differences in the distribution of characteristics within the support (ΔX), and the parts attributable to men and women without an exact counterpart of the other sex (ΔM, ΔF). Table 9 presents the unexplained component under increasingly demanding matching sets (notebook 10 of the repository).
+
+**Table 9**
+*Unexplained Component (Δ0) of the Ñopo Decomposition, by Matching Variables*
+
+| Exact matching on | Cells in support | % of women in support | Δ0 (% of female wage) | Equivalent in the text's convention |
+|---|---|---|---|---|
+| Year + education + age band | 50 | 100.0 | 34.4% | -25.6% |
+| + occupation (1 digit) | 433 | 100.0 | 32.6% | -24.6% |
+| + occupation (4 digits) | 5,429 | 91.2 | **17.9%** | **-15.2%** |
+| + workweek band | 7,664 | 82.6 | 13.4% | -11.8% |
+
+*Note.* Decomposition weighted by expansion factors; Δ0 compares men and women within the common support, reweighting the male cell distribution to the female one. Bootstrap 95% confidence interval (100 replications) for Δ0 with 4-digit occupation: [15.5, 18.8]. The equivalence is computed as −Δ0/(1+Δ0). Authors' elaboration based on CASEN 2022 and 2024.
+
+Three readings follow from Table 9. First, **the convergence of methods**: Δ0 with 4-digit occupation is equivalent to -15.2% in the text's convention — practically identical to the regression-adjusted gap (-15.3%; Table 2). A nonparametric method, with no functional form assumptions and no extrapolation outside the support, delivers the same answer as the weighted regression. Second, **the common support is wide even at the 4-digit level** (80.0% of men and 91.2% of women, weighted, across 5,429 matched cells): the gap does not arise from comparing incomparable individuals. Third, the reading against Ñopo (2006) for 1992-2003: his figures (around 25% with demographic matching) and ours (33-34% in equivalent demographic specifications; 17.9% with fine occupation) are not directly comparable given different characteristic sets and periods, but the joint message is the same — the bulk of the Chilean gap survives comparison between equivalent individuals.
+
 **Figure 3**
 *Adjusted Gap Under Alternative Specifications, With 95% Confidence Intervals*
 
@@ -470,6 +489,7 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 - Mueller, G., & Plug, E. (2006). Estimating the effect of personality on male and female earnings. *ILR Review*, *60*(1).
 - Niederle, M., & Vesterlund, L. (2007). Do women shy away from competition? Do men compete too much? *Quarterly Journal of Economics*, *122*(3).
 - Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective* (Working Paper No. 468). Inter-American Development Bank.
+- Ñopo, H. (2008). Matching as a tool to decompose wage gaps. *Review of Economics and Statistics*, *90*(2).
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
 - Parada-Contzen, M., & Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
 - Patnaik, A. (2019). Reserving time for daddy: The consequences of fathers' quotas. *Journal of Labor Economics*, *37*(4).
@@ -491,4 +511,4 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 
 ---
 
-*This document is generated from a reproducible pipeline. Notebooks 01-09 of the repository contain all the computations cited; the occupation-level tables are available as CSV files in [`notebooks/outputs/data/`](../notebooks/outputs/data/).*
+*This document is generated from a reproducible pipeline. Notebooks 01-10 of the repository contain all the computations cited; the occupation-level tables are available as CSV files in [`notebooks/outputs/data/`](../notebooks/outputs/data/).*

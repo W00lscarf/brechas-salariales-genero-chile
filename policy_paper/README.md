@@ -2,7 +2,7 @@
 
 ## La brecha de género que la composición no explica: evidencia desde microdatos públicos y propuestas de política para Chile
 
-*Documento de trabajo elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-09). An English version is available at [README_EN.md](README_EN.md).*
+*Documento de trabajo elaborado a partir de los resultados del repositorio [`brechas-salariales-genero-chile`](https://github.com/W00lscarf/brechas-salariales-genero-chile). Todos los cálculos son reproducibles con datos públicos y código abierto (notebooks 01-10). An English version is available at [README_EN.md](README_EN.md).*
 
 **Julio 2026**
 
@@ -101,7 +101,7 @@ Seis líneas de trabajo definen el estado del arte local; conviene explicitar qu
 
 **Estadística oficial (INE/ESI).** Describe brechas brutas por sexo, ocupación amplia, educación y región. Este trabajo agrega el ajuste multivariado con ocupación fina e inferencia estadística; no reemplaza la estadística oficial, y mantiene deliberadamente definiciones compatibles con ella.
 
-**Descomposiciones por emparejamiento (Ñopo, 2006).** Con CASEN 1992-2003 y comparaciones restringidas al soporte común, Ñopo documentó un componente no explicado en torno al 25% del salario femenino promedio, mayor en los percentiles altos de la distribución — plenamente coherente con la forma de U que reportamos. Su método es más exigente en comparabilidad entre individuos: una réplica con soporte común y ocupación a cuatro dígitos es la extensión natural de este trabajo.
+**Descomposiciones por emparejamiento (Ñopo, 2006).** Con CASEN 1992-2003 y comparaciones restringidas al soporte común, Ñopo documentó un componente no explicado en torno al 25% del salario femenino promedio, mayor en los percentiles altos de la distribución — plenamente coherente con la forma de U que reportamos. Su método es más exigente en comparabilidad entre individuos; la sección 7.1 implementa esa réplica con ocupación a cuatro dígitos y encuentra que el componente no explicado dentro del soporte común coincide con la estimación por regresión.
 
 **Experiencia laboral efectiva (Perticará y Bueno, 2009).** Con la Encuesta de Protección Social controlaron experiencia real e intermitencia laboral — la variable crítica que nuestra fuente no observa. Frente a esa ventaja, este trabajo aporta actualización (2022-2024), escala muestral, granularidad ocupacional y reproducibilidad con datos abiertos.
 
@@ -142,6 +142,7 @@ Ocupados con ingreso positivo y ocupación válida: **176.542 personas** (2022+2
 3. **Interacciones mujer×hijos y mujer×estado civil**, con la pregunta directa de fecundidad de CASEN (a diferencia de la ESI, que exige aproximar maternidad por composición del hogar).
 4. **Modelo de interacción completa `mujer × ocupación`** sobre las 227 ocupaciones: los controles comunes se estiman con toda la muestra (aproximadamente 149.000 observaciones) y el efecto sexo se deja variar libremente por ocupación. El efecto por ocupación se recupera como combinación lineal de coeficientes, con varianza calculada desde la matriz de covarianza robusta por conglomerado. Este diseño es más eficiente que estimar 227 regresiones separadas con 50-100 casos cada una.
 5. **Batería de robustez** (sección 7): salario por hora, tres vectores de referencia de Oaxaca-Blinder, edades centrales, recorte de valores extremos y separación por formalidad (asalariados formales/informales/independientes, vía categoría ocupacional `o15`, contrato firmado `o19` y cotización previsional `o32`).
+6. **Descomposición por emparejamiento exacto con soporte común** (Ñopo, 2008), con bootstrap de 100 réplicas para la inferencia (sección 7.1).
 
 ### 3.4 Reproducibilidad
 
@@ -397,6 +398,24 @@ Siete conclusiones de robustez:
 6. **El sector público comprime la brecha, pero no la elimina.** Las mujeres están sobrerrepresentadas en el empleo público (56.1% de ese segmento; concentra el 19.0% del empleo femenino frente al 11.0% del masculino), y la brecha ajustada ahí es menor que en el privado: **-9.8% frente a -12.7%** (diferencia marginalmente significativa; interacción mujer×público, p = .078). El patrón es coherente con remuneraciones regidas por escalas y grados públicos — evidencia local a favor de la transparencia salarial (R1) — pero el -9.8% remanente indica que las escalas no bastan: asignaciones, horas extraordinarias y velocidad de ascenso quedan fuera de su alcance.
 7. **Ni la geografía ni la calidad de la educación superior explican la brecha.** Los efectos fijos de región y zona urbano/rural dejan el coeficiente en -15.7%, y el tipo de institución de educación superior — que sí predice con fuerza el nivel de ingreso (universidades CRUCH y estatales se asocian a cerca de +20% sobre un centro de formación técnica, a igualdad de todo lo demás) — lo deja en -15.6%. La prueba más fina: **solo entre universitarios y posgraduados**, con tipo de institución, región, zona, ocupación exacta, horas, familia y formalidad controladas, la brecha es **-10.6%**. Nota de datos: CASEN solo registra el *nombre* de la institución para quienes estudian actualmente; para los titulados solo el tipo — el control ideal (efectos fijos por institución×carrera) requiere los registros SIES/Mineduc vinculados a ingresos, otro insumo para R5.
 
+### 7.1 Descomposición por emparejamiento con soporte común
+
+La objeción de comparabilidad más seria contra las brechas ajustadas por regresión es la extrapolación fuera del soporte común bajo una forma funcional impuesta. Siguiendo a Ñopo (2008), replicamos el resultado central con **emparejamiento exacto**: la brecha total se descompone aditivamente en un componente no explicado entre personas comparables (Δ0), diferencias de distribución de características dentro del soporte (ΔX) y las partes atribuibles a hombres y mujeres sin contraparte exacta del otro sexo (ΔM, ΔF). La Tabla 9 presenta el componente no explicado bajo niveles crecientes de exigencia del emparejamiento (notebook 10 del repositorio).
+
+**Tabla 9**
+*Componente no explicado (Δ0) de la descomposición de Ñopo, según variables de emparejamiento*
+
+| Emparejamiento exacto por | Celdas en soporte | % de mujeres en soporte | Δ0 (% del salario femenino) | Equivalente en la convención del texto |
+|---|---|---|---|---|
+| Año + educación + tramo etario | 50 | 100.0 | 34.4% | -25.6% |
+| + ocupación (1 dígito) | 433 | 100.0 | 32.6% | -24.6% |
+| + ocupación (4 dígitos) | 5.429 | 91.2 | **17.9%** | **-15.2%** |
+| + jornada | 7.664 | 82.6 | 13.4% | -11.8% |
+
+*Nota.* Descomposición ponderada por factores de expansión; Δ0 compara hombres y mujeres dentro del soporte común, reponderando la distribución masculina de celdas a la distribución femenina. Intervalo de confianza al 95% por bootstrap (100 réplicas) para Δ0 con ocupación a 4 dígitos: [15.5, 18.8]. La equivalencia se calcula como −Δ0/(1+Δ0). Elaboración propia a partir de CASEN 2022 y 2024.
+
+Tres lecturas se desprenden de la Tabla 9. Primero, **la convergencia de métodos**: el Δ0 con ocupación a 4 dígitos equivale a -15.2% en la convención del texto — prácticamente idéntico a la brecha ajustada por regresión (-15.3%; Tabla 2). Un método no paramétrico, sin supuestos de forma funcional y sin extrapolación fuera del soporte, entrega la misma respuesta que la regresión ponderada. Segundo, **el soporte común es amplio incluso al nivel de 4 dígitos** (80.0% de los hombres y 91.2% de las mujeres, ponderado, con 5.429 celdas emparejadas): la brecha no proviene de comparar personas incomparables. Tercero, la lectura frente a Ñopo (2006) para 1992-2003: sus cifras (en torno al 25% con emparejamiento demográfico) y las nuestras (33-34% en especificaciones demográficas equivalentes; 17.9% con ocupación fina) no son directamente comparables por diferencias de características y período, pero el mensaje conjunto es el mismo — el grueso de la brecha chilena sobrevive a la comparación entre personas equivalentes.
+
 **Figura 3**
 *Brecha ajustada bajo especificaciones alternativas, con intervalos de confianza al 95%*
 
@@ -470,6 +489,7 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 - Mueller, G. y Plug, E. (2006). Estimating the effect of personality on male and female earnings. *ILR Review*, *60*(1).
 - Niederle, M. y Vesterlund, L. (2007). Do women shy away from competition? Do men compete too much? *Quarterly Journal of Economics*, *122*(3).
 - Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective* (Documento de trabajo n.º 468). Banco Interamericano de Desarrollo.
+- Ñopo, H. (2008). Matching as a tool to decompose wage gaps. *Review of Economics and Statistics*, *90*(2).
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
 - Parada-Contzen, M. y Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
 - Patnaik, A. (2019). Reserving time for daddy: The consequences of fathers' quotas. *Journal of Labor Economics*, *37*(4).
@@ -491,4 +511,4 @@ El 72.6% que la especificación máxima deja sin explicar no es una caja negra n
 
 ---
 
-*Este documento se genera desde un pipeline reproducible. Los notebooks 01-09 del repositorio contienen todos los cálculos citados; las tablas por ocupación están disponibles como CSV en [`notebooks/outputs/data/`](../notebooks/outputs/data/).*
+*Este documento se genera desde un pipeline reproducible. Los notebooks 01-10 del repositorio contienen todos los cálculos citados; las tablas por ocupación están disponibles como CSV en [`notebooks/outputs/data/`](../notebooks/outputs/data/).*

@@ -69,7 +69,8 @@ brechas-salariales-genero-chile/
 │   ├── 06_regresion_microdatos.ipynb      ← regresión Mincer con microdatos ESI 2018-2024 (máximo de controles)
 │   ├── 07_oaxaca_blinder_hijos.ipynb      ← estado civil, hijos y descomposición Oaxaca-Blinder por factor
 │   ├── 08_ocupacion_granular_casen.ipynb  ← CASEN 2022+2024: ¿la brecha se achica con ocupación a 4 dígitos?
-│   └── 09_robustez.ipynb                  ← robustez y heterogeneidad: salario/hora, formalidad, sector, geografía, NSE, cuantiles
+│   ├── 09_robustez.ipynb                  ← robustez y heterogeneidad: salario/hora, formalidad, sector, geografía, NSE, cuantiles
+│   └── 10_nopo_soporte_comun.ipynb        ← descomposición de Ñopo: emparejamiento exacto y soporte común, con bootstrap
 ├── data/            ← CSVs descargados de SIMEL (se regeneran ejecutando el notebook 01)
 ├── outputs/
 │   └── figures/     ← gráficos exportados en PNG
@@ -155,6 +156,7 @@ La evidencia sólida —la que resiste el control estadístico— apunta consist
 - En salario por hora, bajo Bonferroni ninguna ocupación favorece significativamente a las mujeres (la única excepción bajo FDR — conductoras de taxis, +13.1%/hora — refleja las jornadas extremas de los conductores hombres, que diluyen su salario por hora)
 - **Sector público vs privado**: la brecha es menor en el empleo público (-9.8% vs -12.7%; diferencia marginalmente significativa, p=0.078), coherente con remuneraciones regidas por escalas — pero persiste incluso ahí. Las mujeres están sobrerrepresentadas en el sector público (56% de ese empleo es femenino)
 - **La brecha no golpea parejo (heterogeneidad, sección 6 del notebook 09)**: es el doble en hogares de NSE bajo (-21.2%) que alto (-11.2%); cae con la educación (básica -21.2% → universitaria -8.4%) pero **rebota en posgrado (-14.6%)**; y tiene **forma de U** en la distribución salarial — piso pegajoso y techo de cristal simultáneos
+- **Convergencia de métodos (notebook 10)**: la descomposición de Ñopo — emparejamiento exacto dentro del soporte común, sin forma funcional ni extrapolación — arroja un componente no explicado de 17.9% del salario femenino al emparejar por ocupación a 4 dígitos, **equivalente a -15.2%: prácticamente idéntico al -15.3% de la regresión**. El 80% de los hombres y el 91% de las mujeres tienen contraparte exacta del otro sexo
 
 ---
 
@@ -167,7 +169,7 @@ pip install -r requirements.txt
 jupyter lab
 # Notebooks 01-05: ejecutar en orden, no requieren nada adicional (descargan datos SIMEL automáticamente)
 # Notebooks 06-07: requieren descargar microdatos ESI 2018-2024 del INE y ubicarlos en ../ESI/
-# Notebooks 08-09: requieren descargar microdatos CASEN 2022 y 2024 y ubicarlos en ../CASEN/
+# Notebooks 08-10: requieren descargar microdatos CASEN 2022 y 2024 y ubicarlos en ../CASEN/
 ```
 
 ---
