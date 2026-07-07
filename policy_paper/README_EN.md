@@ -212,9 +212,9 @@ The central result of the analysis. With the full interaction model (a sex effec
 **Figure 1**
 *Raw and Adjusted Gap by Occupation*
 
-![Figure 1](../notebooks/outputs/figures/ranking_ajustado_vs_crudo.png)
+![Figure 1](../notebooks/outputs/figures/ranking_ajustado_vs_crudo_en.png)
 
-*Note.* Each point represents a 4-digit ISCO-08 occupation. Red: occupations with a statistically significant adjusted gap (p < .05); gray: not significant. Figure labels are in Spanish, as produced by the reproducible pipeline. Authors' elaboration based on CASEN 2022 and 2024.
+*Note.* Each point represents a 4-digit ISCO-08 occupation. Red: occupations with a statistically significant adjusted gap (p < .05); gray: not significant. Authors' elaboration based on CASEN 2022 and 2024.
 
 The complete distribution (227 occupations, with raw gap, adjusted gap, FDR-corrected p value, and sample sizes) is published as open data in [`ranking_brecha_ocupacion_ajustada.csv`](../notebooks/outputs/data/ranking_brecha_ocupacion_ajustada.csv).
 
@@ -292,9 +292,9 @@ Three policy readings:
 **Figure 2**
 *Adjusted Gap Along the Wage Distribution*
 
-![Figure 2](../notebooks/outputs/figures/brecha_por_cuantil.png)
+![Figure 2](../notebooks/outputs/figures/brecha_por_cuantil_en.png)
 
-*Note.* Quantile regression (quantiles 10 to 90) with the full set of controls; without expansion factors due to method constraints. The dashed line indicates the mean gap estimated by weighted least squares. Figure labels are in Spanish, as produced by the reproducible pipeline. Authors' elaboration based on CASEN 2022 and 2024.
+*Note.* Quantile regression (quantiles 10 to 90) with the full set of controls; without expansion factors due to method constraints. The dashed line indicates the mean gap estimated by weighted least squares. Authors' elaboration based on CASEN 2022 and 2024.
 
 ---
 
@@ -380,9 +380,9 @@ Seven robustness conclusions:
 **Figure 3**
 *Adjusted Gap Under Alternative Specifications, With 95% Confidence Intervals*
 
-![Figure 3](../notebooks/outputs/figures/robustez_especificaciones.png)
+![Figure 3](../notebooks/outputs/figures/robustez_especificaciones_en.png)
 
-*Note.* Dark bars: specifications with 4-digit occupation. Figure labels are in Spanish, as produced by the reproducible pipeline. Authors' elaboration based on CASEN 2022 and 2024.
+*Note.* Dark bars: specifications with 4-digit occupation. Authors' elaboration based on CASEN 2022 and 2024.
 
 ---
 
