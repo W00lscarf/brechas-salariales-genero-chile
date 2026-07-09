@@ -66,7 +66,7 @@ CASEN has a complex sampling design. All estimates use the official expansion fa
 
 The baseline is a weighted least squares Mincer equation:
 
-ln w_i = α + δ·Female_i + x_i′β + θ_o(i) + ε_i,  (1)
+ln w_i = α + δ·Female_i + x_i'β + θ_o(i) + ε_i,  (1)
 
 where x_i contains age, age squared, educational level (five categories), weekly hours, and wave fixed effects, and θ_o(i) denotes occupation fixed effects. We estimate (1) twice, holding everything constant except the occupational classification: 1-digit ISCO (roughly nine categories, the maximum available in standard employment surveys) versus 4-digit ISCO (354 categories). The difference between the two estimates of δ isolates the pure contribution of occupational granularity. The adjusted gap in percentage terms is 100·(exp(δ)−1).
 
@@ -231,7 +231,7 @@ The convergence of methods is the salient finding: the nonparametric Δ0 with 4-
 
 ### 6.4 Selection into employment
 
-The participation gap in the 25-64 population is 20.9 percentage points (82.5% versus 61.6%, weighted). In the first-stage probit, the exclusion restrictions behave as theory predicts, with a sharp sex asymmetry: children are associated with higher male participation (+0.260) and lower female participation (interaction -0.389), and non-labor income reduces participation (all p < .001). The inverse Mills ratio is highly significant in the wage equation (coefficient -0.129, p = 1.6×10⁻²¹): selection into employment is real. The selection-corrected gap is **-12.2%** (bootstrap 95% CI [-13.9, -10.8]), against -15.4% uncorrected in the same 25-64 subsample. Two lessons follow: the observed gap among workers is not an artifact of positive selection — correcting for selection reduces it by about three points but does not eliminate it — and the common conjecture that selection necessarily implies the observed gap *understates* the population differential is not supported in these data.
+The participation gap in the 25-64 population is 20.9 percentage points (82.5% versus 61.6%, weighted). In the first-stage probit, the exclusion restrictions behave as theory predicts, with a sharp sex asymmetry: children are associated with higher male participation (+0.260) and lower female participation (interaction -0.389), and non-labor income reduces participation (all p < .001). The inverse Mills ratio is highly significant in the wage equation (coefficient -0.129, p < .001): selection into employment is real. The selection-corrected gap is **-12.2%** (bootstrap 95% CI [-13.9, -10.8]), against -15.4% uncorrected in the same 25-64 subsample. Two lessons follow: the observed gap among workers is not an artifact of positive selection — correcting for selection reduces it by about three points but does not eliminate it — and the common conjecture that selection necessarily implies the observed gap *understates* the population differential is not supported in these data.
 
 ### 6.5 Survey-design inference
 
