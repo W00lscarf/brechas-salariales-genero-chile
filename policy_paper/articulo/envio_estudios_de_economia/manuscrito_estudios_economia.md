@@ -1,0 +1,346 @@
+# Same occupation, different pay: decomposing the gender wage gap within 4-digit occupations in Chile
+
+@@AUTOR@@**Nicolás Guerrero Herrera**
+
+@@AUTOR@@Independent researcher
+
+@@AUTOR@@Santiago, Chile — n.icolashrra@gmail.com
+
+---
+
+## Abstract
+
+We estimate the gender wage gap in Chile using the most granular controls available in public microdata, including 4-digit ISCO-08 occupation (354 categories), field of study, formality, sector, geography, and family structure (CASEN 2022-2024, *n* = 174,924). The adjusted gap ranges between -11% and -16% across fourteen specifications and does not shrink as controls are added. Results are robust to survey-design inference, Heckman selection correction (-12.2%), and a Ñopo matching decomposition that reproduces the regression estimate. Parenthood is asymmetrically associated with income, and no occupation shows a corrected gap favoring women.
+
+**Keywords:** gender wage gap; occupational segregation; motherhood penalty; Oaxaca-Blinder decomposition; Chile
+
+**JEL classification:** J16, J31, J71
+
+---
+
+## 1. Introduction
+
+Female labor force participation in Chile stands at around 53%, some 18 percentage points below the male rate, and women who do participate systematically earn less. The reported magnitude of the gap varies with its definition: the OECD indicator — median earnings of full-time employees — yields figures below 10% for Chile, while means over all employed persons place it above 20%, consistent with the factor-weighted global average of around 19% estimated by the ILO (2018).
+
+For both economic analysis and policy design, the magnitude matters less than its **decomposition**: how much of the differential arises because men and women work in different occupations, sectors, and schedules (composition), and how much because identical observable characteristics are associated with different pay depending on sex (returns)? The dominant reading in the Chilean public debate attributes the gap to women's choices — of career, hours, sector, and family. That interpretation has remained largely untested because the occupational controls available in standard employment surveys are too coarse: within a 1-digit category such as "Professionals," physicians, lawyers, engineers, and journalists coexist, with very different pay levels and gender compositions.
+
+This paper addresses the question that the Chilean literature has left open: **does the gender wage gap persist once the most granular set of observable compositional controls that public data allow — exact occupation, hours worked, education and its institutional quality, field of study, geography, formality regime, sector, and family structure — is accounted for? And, if it persists, in which population segments is it largest?**
+
+We exploit a feature of the CASEN household survey that, to the best of our knowledge, has not been used for this purpose with statistical inference and openly accessible data: occupation coded at the 4-digit ISCO-08 level, which allows wages to be compared within 354 specific occupations. A scope clarification is indispensable from the outset: 4-digit occupation is not equivalent to "same job." We do not observe the firm, hierarchical position, performance, or the composition of pay (bonuses, commissions, overtime), so our title must be read strictly: same *occupation*, not same *job*, nor "work of equal value" in the legal sense of the term.
+
+This paper makes four contributions. First, it provides the first estimate for Chile of the wage gap within 4-digit occupations with openly accessible data, occupation-level statistical inference, and correction for multiple comparisons. Second, it implements a design that systematically confronts the choice-based explanation: fourteen specifications that net out, successively and jointly, each observable dimension of choice — including a maximal specification with 375 parameters — complemented by a Heckman (1979) correction for selection into employment and an exact-matching decomposition within the common support (Ñopo, 2008). Third, it provides the first distributional characterization of the adjusted gap for Chile at this granularity: a socioeconomic gradient — the gap doubles in the lowest-status households — and a U-shape along the wage distribution, with sticky floor and glass ceiling operating simultaneously. Fourth, the entire empirical apparatus is reproducible with public data and open code.
+
+Our central findings are easily summarized. The adjusted gap moves from -20.9% under 1-digit occupational controls to -15.3% under 4-digit controls: fine occupational segregation is real, but explains a minority of the differential. The gap never approaches zero under any specification — the full range is -11% to -16% — and adding controls does not reduce it, because several controls (education, formality, public-sector employment) capture composition that favors women. Selection into employment is substantial (the participation gap is 21 percentage points in the 25-64 population) and statistically detectable, but correcting for it leaves a gap of -12.2%. A nonparametric matching decomposition within the common support delivers the same answer as the weighted regression to within one decimal point. And the residual is not distributed at random: it is concentrated precisely where choice-based explanations are least plausible — low-income households, married or cohabiting mothers, and the tails of the wage distribution.
+
+The remainder of the paper is organized as follows. Section 2 reviews the related literature. Section 3 describes the data. Section 4 presents the empirical strategy. Section 5 reports the main results, Section 6 the robustness analysis, and Section 7 discusses mechanisms and policy implications. Section 8 concludes.
+
+---
+
+## 2. Related literature
+
+### 2.1 International evidence
+
+The canonical starting point is the Mincer (1974) earnings function; the decomposition of wage differentials into composition and returns components follows Oaxaca (1973) and Blinder (1973). Blau and Kahn (2017) document for the United States that conventional human capital ceased to explain the gender gap, with occupation, industry, and the unexplained component becoming dominant. Two interpretive caveats accompany this framework and apply throughout: the "unexplained" component is not synonymous with discrimination — it includes any omitted variable correlated with sex — and the "explained" component is not necessarily non-discriminatory, since occupational segregation may itself result from barriers and norms (Bertrand et al., 2010).
+
+On the granularity question, Petersen and Morgan (1995) showed that comparing within occupation-establishment cells drastically reduces the U.S. gap, and Card et al. (2016) quantified the firm channel — sorting into low-premium firms and lower rent capture in bargaining — at about one fifth of the gap in Portugal. Goldin (2014) supplies the within-occupation mechanism: convex returns to hours in "greedy" jobs penalize the flexibility that women demand more, given the asymmetric allocation of care (Goldin, 2021; Bolotnyy & Emanuel, 2022). The child-penalty literature based on event studies shows that the first birth opens a persistent earnings gap between mothers and fathers — around 20% in the long run in Denmark (Kleven et al., 2019) and substantially larger in Latin America (Kleven et al., 2025) — and Cortés and Pan (2023) conclude that children are today the single most important factor behind remaining gender gaps. On distribution, Albrecht et al. (2003) documented the glass ceiling in Sweden and Arulampalam et al. (2007) glass ceilings and sticky floors across Europe.
+
+### 2.2 Chilean evidence and this paper's position
+
+Six strands define the local state of the art. Official statistics (INE/ESI) describe raw gaps by sex and broad occupation; we add multivariate adjustment with fine occupation and inference. Ñopo (2006), using CASEN 1992-2003 and comparisons restricted to the common support, documented an unexplained component of around 25% of average female wages, larger at top percentiles — fully consistent with the U-shape we report; we implement his decomposition with 4-digit matching in Section 6. Perticará and Bueno (2009), using the Social Protection Survey, controlled for actual labor market experience and intermittency — the critical variable our source does not observe; against that advantage, we contribute recency, sample scale, occupational granularity, and reproducibility. Sánchez et al. (2022) estimate, with unemployment-insurance administrative records and a dynamic monopsony model, that differences in firm-level labor supply elasticities can generate differentials of 19-28%; that channel is unobservable with our data and remains, by construction, inside our unexplained component. Berniell et al. (2023) document with event studies for Chile and other Latin American countries sharp and persistent declines in mothers' employment, hours, and earnings after the first birth, with essentially unaffected fathers; our cross-sectional parenthood coefficients are the static imprint of that process, consistent with — but not a substitute for — that causal evidence. Finally, Parada-Contzen and Jara (2025) document gaps of 17-25% by field of study among workers with higher education; we incorporate field of study directly in Section 6 and show that its contribution is largely absorbed by exact occupation.
+
+---
+
+## 3. Data
+
+We use the two public microdata sources that jointly cover the requirements of the analysis. The primary source is the National Socioeconomic Characterization Survey (CASEN) waves 2022 and 2024, the only Chilean public survey coding occupation at the 4-digit ISCO-08 level and including a direct fertility question (`s5`) and marital status. The Supplementary Income Survey (ESI 2018-2024) is used for context on the aggregate gap. CASEN 2017 is excluded because it codes occupation under ISCO-88, which is not comparable with ISCO-08.
+
+The analytical sample pools the 2022 and 2024 waves: employed persons with positive main-job labor income and valid occupation (176,542 individuals across 444 occupation codes). Records with invalid weekly hours (code -88, "does not know," or above 112 hours) are excluded, leaving **174,924 individuals**; 354 occupation codes reach at least 30 observations. Occupation-specific analyses further require at least 20 men and 20 women per cell, leaving 227 occupations. The outcome is the logarithm of main-job labor income (`ytrabajocor`); hours are weekly hours in the main job.
+
+CASEN has a complex sampling design. All estimates use the official expansion factors; inference uses standard errors clustered by primary sampling unit × wave in the main text, and Section 6.5 shows that fully design-based standard errors — Taylor linearization with strata (`varstrat`), clusters (`varunit`), and weights — are marginally *smaller*, so the reported inference is, if anything, conservative. In the pooled 25-64 population used for the selection analysis, the employment-sample participation rate is 82.5% for men and 61.6% for women (weighted), a 20.9-point gap that motivates the selection correction in Section 6.6.
+
+---
+
+## 4. Empirical strategy
+
+### 4.1 Wage equations at two levels of occupational granularity
+
+The baseline is a weighted least squares Mincer equation:
+
+ln w_i = α + δ·Female_i + x_i'β + θ_o(i) + ε_i,  (1)
+
+where x_i contains age, age squared, educational level (five categories), weekly hours, and wave fixed effects, and θ_o(i) denotes occupation fixed effects. We estimate (1) twice, holding everything constant except the occupational classification: 1-digit ISCO (roughly nine categories, the maximum available in standard employment surveys) versus 4-digit ISCO (354 categories). The difference between the two estimates of δ isolates the pure contribution of occupational granularity. The adjusted gap in percentage terms is 100·(exp(δ)−1).
+
+### 4.2 Decomposition
+
+We decompose the total log gap with the Oaxaca (1973)-Blinder (1973) procedure, grouping detailed contributions into variable families (hours, occupation, education, age, family structure, formality, year) and, following Neumark (1988), reporting male, female, and pooled reference coefficient vectors to address the index number problem. Because high-dimensional categorical variables make detailed decompositions sensitive to the choice of base categories, family-level percentages should be read as orders of magnitude.
+
+### 4.3 Occupation-specific gaps and multiple testing
+
+To estimate a sex effect specific to each occupation without fitting 227 underpowered regressions, we estimate a single model interacting Female with occupation dummies, with common controls estimated on the full sample. The occupation-specific gap is recovered as a linear combination of coefficients, with variance from the cluster-robust covariance matrix. With 227 simultaneous tests, approximately 11 false positives are expected at p < .05; we therefore report Benjamini-Hochberg false-discovery-rate and Bonferroni corrections.
+
+### 4.4 Matching decomposition with common support
+
+Following Ñopo (2008), we decompose the gap by exact matching on characteristic cells: Δ = Δ0 + ΔX + ΔM + ΔF, where Δ0 is the unexplained difference between comparable men and women within the common support (reweighting the male cell distribution to the female one), ΔX captures distribution differences within the support, and ΔM, ΔF the parts attributable to individuals without an exact counterpart of the other sex. The method imposes no functional form and does not extrapolate outside the support; additivity is verified exactly. Inference uses a 500-replication bootstrap.
+
+### 4.5 Selection into employment
+
+Because wages are observed only for workers and participation differs sharply by sex, we implement the Heckman (1979) two-step correction. The first stage is a participation probit on the 25-64 population with exclusion restrictions that plausibly shift participation but not conditional wages: presence of children, marital status, non-labor household income per capita, and their interactions with sex. The second stage adds the inverse Mills ratio to equation (1). Confidence intervals bootstrap both stages jointly (120 replications). As in any Heckman application, validity rests on the exclusion restrictions; we read the result as a robustness bound rather than causal identification.
+
+---
+
+## 5. Results
+
+### 5.1 The granularity test
+
+Table 1 presents the central comparison: same data, same specification, different occupational resolution.
+
+**Table 1**
+*Adjusted Gender Gap by Granularity of the Occupational Control*
+
+| Specification | Adjusted gap | 95% CI | SE (log) | R² |
+|---|---|---|---|---|
+| 1-digit occupation (~9 categories) | -20.9% | [-21.7, -20.0] | 0.0052 | .488 |
+| 4-digit occupation (354 categories) | -15.3% | [-16.2, -14.4] | 0.0055 | .537 |
+| Difference | +5.6 pp | | | |
+
+*Note.* Weighted least squares with expansion factors; design-based standard errors (Taylor linearization with strata and clusters). *n* = 174,924. Source: authors' elaboration based on CASEN 2022 and 2024.
+
+Granularity matters: a real share of what coarse estimates report as "unexplained" is fine occupational segregation — within "Professionals," men concentrate in the better-paid specialties. But the gap does not vanish: -15.3% persists comparing the same exact occupation. Descriptively, within identical occupations: medical specialists -20%, nursing technicians -13%, nurses -3%.
+
+### 5.2 Decomposition: what explains the gap, and how much
+
+Table 2 reports the Oaxaca-Blinder decomposition of the total gap (22.6% of the female mean), with and without family-composition controls.
+
+**Table 2**
+*Oaxaca-Blinder Decomposition of the Total Wage Gap (Male Reference)*
+
+| Factor | Without children/marital status | With children/marital status |
+|---|---|---|
+| Hours worked | +28.7% | +27.8% |
+| Occupation (4 digits) | +17.0% | +14.2% |
+| Marital status | — | +1.8% |
+| Has children | — | -1.4% |
+| Age | -1.1% | -2.0% |
+| Education | -10.8% | -10.9% |
+| Year | -0.4% | -0.4% |
+| **Unexplained** | **66.6%** | **70.9%** |
+
+*Note.* Percentages of the total log gap attributable to the composition of each factor; negative values indicate factors operating in women's favor. Under female and pooled reference vectors the unexplained component is 49.0% and 65.8% respectively, with an identical ordering of factors. Source: authors' elaboration based on CASEN 2022 and 2024.
+
+Three readings follow. Hours worked are the largest compositional factor (about 29%), followed by fine occupational segregation (about 17%); together they account for nearly all of the explained share. Education operates in reverse: employed women are more educated than employed men. And family variables contribute almost nothing to the explained share — men and women do not differ much in average family composition. Their effect operates through returns, as the next subsection shows.
+
+### 5.3 Parenthood: a returns-side association
+
+Table 3 presents the Female × children and Female × marital status interactions, controlling for exact occupation, education, age, hours, and year (*n* = 174,719).
+
+**Table 3**
+*Associations of Parenthood and Marital Status With Labor Income, by Sex*
+
+| Term | Association with income | p value |
+|---|---|---|
+| Female (base gap) | -12.3% | < .001 |
+| Has children (association for men) | +5.0% | < .001 |
+| Female × has children | -7.8% | < .001 |
+| Female × single (vs. married/cohabiting) | +5.3% | < .001 |
+
+*Note.* Weighted least squares with interactions; marital status reference: married or cohabiting. Source: authors' elaboration based on CASEN 2022 and 2024.
+
+The contrast is stark: fatherhood is associated with a wage premium; motherhood with an additional penalty on top of the gap affecting all women — the pattern documented causally by the event-study literature (Kleven et al., 2019; Berniell et al., 2023). These coefficients are conditional associations, not causal effects: motherhood is measured as a self-reported stock, not a dated event. Their evidentiary value lies in the coherence of the pattern — sex asymmetry in response to the same family event, within the same occupation — with the causal evidence. This also resolves the apparent paradox of Table 2: adding family variables *raises* the unexplained share because the motherhood penalty is a difference in returns (the same child is associated with different impacts depending on the parent's sex), not in composition.
+
+### 5.4 Isolating the sex effect occupation by occupation
+
+With the full interaction model, 90 of 227 occupations (39.6%) show a statistically significant adjusted gap at p < .05: 89 against women and one in favor (bus and trolleybus drivers, +15.1%, p = .029) — exactly what chance would produce given approximately 11 expected false positives. Correction for multiple comparisons purges the result: 66 occupations survive the FDR correction (q < .05) and 30 survive Bonferroni — all of them, without exception, against women. Apparent female advantages in raw comparisons dissolve under adjustment: jewelry moves from +58.6% raw to -5.5% adjusted (not significant); music (+37.9%) and translation (+47.5%) are likewise insignificant once adjusted. The correlation between raw and adjusted occupation-level gaps is .79, with the mean moderating from -17.8% to -14.8%.
+
+### 5.5 For whom is the gap largest?
+
+The average conceals policy-relevant heterogeneity. By household socioeconomic status — measured with the per capita income of the *rest* of the household, to avoid the mechanical bias whereby women's lower earnings push their own households down the ranking — the adjusted gap displays a clear gradient (Table 4).
+
+**Table 4**
+*Adjusted Gap by Household Socioeconomic Status and by Educational Level*
+
+| Segment | Adjusted gap |
+|---|---|
+| Household SES: low | -21.2% |
+| Household SES: lower-middle | -17.0% |
+| Household SES: upper-middle | -15.6% |
+| Household SES: high | -11.2% |
+| Primary education | -21.2% |
+| Secondary education | -19.1% |
+| Technical tertiary | -16.9% |
+| University | -8.4% |
+| Postgraduate | -14.6% |
+
+*Note.* SES measured through weighted quintiles of the per capita income of the rest of the household. All estimates control for 4-digit occupation, age, age squared, education, hours, and year. The official household income quintile shows the same gradient (from -22.3% in the first quintile to -10.5% in the fourth). Source: authors' elaboration based on CASEN 2022 and 2024.
+
+The gap is twice as large in low-SES households as in high-SES ones — largest precisely where each percentage point of income matters most and where individual bargaining power is weakest. The rebound at the postgraduate level (-14.6% versus -8.4% for university graduates) is a glass-ceiling signal. Along the wage distribution, quantile regressions with the full control set yield a U-shape: around -15% at the bottom decile, -12% at the median, and -16% at the top decile — sticky floor and glass ceiling simultaneously, the pattern of Albrecht et al. (2003) and Arulampalam et al. (2007).
+
+---
+
+## 6. Robustness
+
+### 6.1 Specification battery
+
+Table 5 reports the adjusted gap under alternative specifications and subsamples.
+
+**Table 5**
+*Adjusted Gap Under Alternative Specifications*
+
+| Specification | Adjusted gap | *n* |
+|---|---|---|
+| Reference: monthly income + hours control, all employed | -15.3% | 174,924 |
+| Maximal specification (all controls; 375 parameters) | -15.6% | 174,719 |
+| Maximal + region and urban/rural fixed effects | -15.7% | 174,719 |
+| Maximal + geography + higher-ed institution type | -15.6% | 174,719 |
+| University graduates only, with institution type | -10.6% | 46,532 |
+| Prime age (25-59) | -14.9% | 135,471 |
+| Income trimmed at percentiles 1-99 | -13.0% | 171,481 |
+| Full-time only (40-45 weekly hours) | -12.9% | 110,716 |
+| Formal employees only (pension contributors) | -12.0% | 110,098 |
+| Employees with signed contract only | -11.9% | 110,721 |
+| Formality as a control | -15.2% | 174,924 |
+| Hourly wage | -11.1% | 174,924 |
+| Public sector employees only | -9.8% | 27,222 |
+| Private sector employees only | -12.7% | 98,163 |
+| Self-employed only | -25.5% | 44,697 |
+
+*Note.* Unless noted, all specifications include 4-digit occupation controls, expansion factors, and clustered standard errors. Source: authors' elaboration based on CASEN 2022 and 2024.
+
+The gap never approaches zero, and adding controls does not reduce it: the maximal specification yields -15.6%, *more* than the reference, because several controls capture composition that favors women. Formality composition barely differs by sex (employees: 74.6% of men versus 77.7% of women), so the gap is not an artifact of mixing labor market segments; the most severe gap is among the self-employed (-25.5%) and the smallest in the public sector (-9.8% versus -12.7% private; interaction p = .078), consistent with pay governed by public scales — which compress, but do not eliminate, the differential.
+
+### 6.2 Field of study
+
+Among workers with higher education (n = 69,956), field of study (CINE-F 2013, ten areas, full coverage) explains a real share of the gap — from -17.1% with neither field nor occupation to -13.7% with field only — consistent with Parada-Contzen and Jara (2025). But its contribution is largely redundant with exact occupation: occupation alone brings the gap to -11.5%, and adding field on top contributes only one additional point (-10.4%). Even comparing professionals with the same education level, same field of study, and same exact occupation, a gap of about 10% persists.
+
+### 6.3 Matching decomposition with common support
+
+Table 6 reports the Ñopo decomposition under increasingly demanding matching sets.
+
+**Table 6**
+*Unexplained Component (Δ0) of the Matching Decomposition*
+
+| Exact matching on | Cells in support | % of women in support | Δ0 (% of female wage) | Regression-convention equivalent |
+|---|---|---|---|---|
+| Year + education + age band | 50 | 100.0 | 34.4% | -25.6% |
+| + occupation (1 digit) | 433 | 100.0 | 32.6% | -24.6% |
+| + occupation (4 digits) | 5,429 | 91.2 | 17.9% | -15.2% |
+| + workweek band | 7,664 | 82.6 | 13.4% | -11.8% |
+
+*Note.* Weighted decomposition; Δ0 compares men and women within the common support, reweighting the male cell distribution to the female one. Bootstrap 95% CI (500 replications) for Δ0 with 4-digit occupation: [15.3, 19.0]. Equivalence computed as −Δ0/(1+Δ0). Source: authors' elaboration based on CASEN 2022 and 2024.
+
+The convergence of methods is the salient finding: the nonparametric Δ0 with 4-digit matching is equivalent to -15.2%, virtually identical to the regression estimate of -15.3%, with a wide common support (80% of men, 91% of women, 5,429 matched cells). The gap does not arise from comparing incomparable individuals or from functional-form assumptions.
+
+### 6.4 Selection into employment
+
+The participation gap in the 25-64 population is 20.9 percentage points (82.5% versus 61.6%, weighted). In the first-stage probit, the exclusion restrictions behave as theory predicts, with a sharp sex asymmetry: children are associated with higher male participation (+0.260) and lower female participation (interaction -0.389), and non-labor income reduces participation (all p < .001). The inverse Mills ratio is highly significant in the wage equation (coefficient -0.129, p < .001): selection into employment is real. The selection-corrected gap is **-12.2%** (bootstrap 95% CI [-13.9, -10.8]), against -15.4% uncorrected in the same 25-64 subsample. Two lessons follow: the observed gap among workers is not an artifact of positive selection — correcting for selection reduces it by about three points but does not eliminate it — and the common conjecture that selection necessarily implies the observed gap *understates* the population differential is not supported in these data.
+
+### 6.5 Survey-design inference
+
+Replacing cluster-robust standard errors with fully design-based ones — Taylor linearization with 1,511 strata, 24,450 primary sampling units, and expansion factors — leaves point estimates unchanged and yields standard errors marginally *smaller* than cluster-only (ratio 0.997 for the granular specification; the single-stratum case reproduces the cluster-robust benchmark exactly). The inference reported throughout is therefore conservative.
+
+### 6.6 Multiple-testing and functional form
+
+The one-directional occupation-level pattern survives the hourly-wage specification: 41 occupations survive FDR (40 against women) and 16 survive Bonferroni (all against women); the only female-favorable exception under FDR (taxi drivers, +13.1% per hour) reflects the extreme schedules of male drivers, which dilute their hourly rate. In hourly wages the gap is smaller than in monthly income (-11.1% versus -15.3%), consistent with the weight of hours in the decomposition.
+
+---
+
+## 7. Discussion
+
+### 7.1 What lies inside the unexplained component
+
+The roughly two thirds of the gap that composition does not explain is not a black box. The international literature with experimental and administrative designs has named its components: the ask gap — women request about 3% less for the same profile, and displaying market medians eliminates the difference (Roussille, 2024; Leibbrandt & List, 2015; Exley et al., 2020); overtime and schedule flexibility within occupations (Bolotnyy & Emanuel, 2022; Goldin, 2014), whose imprint appears in our data both in the weight of hours and in the taxi-driver exception; competitiveness and personality attributes, which explain a small-to-moderate share (Niederle & Vesterlund, 2007; Buser et al., 2014; Croson & Gneezy, 2009; Mueller & Plug, 2006; Heckman et al., 2006; Bertrand, 2011; Blau & Kahn, 2017); firm-level sorting and bargaining, about one fifth of the gap where measurable (Card et al., 2016) and invisible to our data; and the dynamics of motherhood (Cortés & Pan, 2023; Kleven et al., 2019; Berniell et al., 2023), whose static imprint we estimate at -7.8% within occupations. None of these mechanisms is measurable today with Chilean public data — household surveys include no modules on wage negotiation, actual work histories, or socioemotional attributes — which itself defines a data-infrastructure agenda.
+
+### 7.2 Policy implications
+
+The diagnosis — a gap that is mostly a returns phenomenon, concentrated among low-SES households and mothers, with sticky floors and glass ceilings — maps onto instruments in a specific way. Pay transparency with occupation-adjusted gap reporting attacks the returns component directly, with favorable causal evidence (Bennedsen et al., 2022; Baker et al., 2023; Cullen, 2024), and should include the negotiability and salary ranges of positions (Roussille, 2024); the compressed public-sector gap we document (-9.8% versus -12.7%) is local evidence consistent with rule-based pay, while its persistence indicates that transparency must cover total remuneration. Care policy attacks the motherhood mechanism: replacing Chile's employer-specific childcare mandate (Article 203 of the Labor Code, which taxes female hiring at the margin; Prada et al., 2015) with collective financing, non-transferable paternal leave quotas (Patnaik, 2019), and expanded public childcare (Martínez & Perticará, 2017). Occupational desegregation policies attack the second-largest compositional factor (~17%), but even eliminating fine segregation entirely would leave more than 80% of the gap in place. Finally, the distributional evidence indicates that enforcement, minimum-wage, and formalization instruments matter at the bottom of the distribution, where the gap is largest and least visible to transparency-based tools designed for professional labor markets.
+
+---
+
+## 8. Concluding remarks
+
+Using the most granular occupational classification available in Chilean public microdata, this paper shows that the gender wage gap is not reducible to observable choices. The adjusted gap of -15.3% within 4-digit occupations survives a fourteen-specification battery, field-of-study controls, fully design-based inference, a Heckman selection correction (-12.2%), and an exact-matching decomposition within the common support that reproduces the regression estimate almost exactly. The associations of parenthood with income are sharply asymmetric by sex within identical occupations, and the gap is largest precisely where the scope for choice is smallest.
+
+Three limitations bound the interpretation. The data are cross-sectional: all estimates are conditional associations, and the unexplained component bounds but does not identify discrimination. Age proxies potential, not actual, experience — the variable that Chilean panel evidence identifies as first-order (Perticará & Bueno, 2009) — so part of the residual may reflect actual-experience differences, themselves largely a consequence of the asymmetric allocation of care. And we do not observe the employer, so the firm channel quantified by Sánchez et al. (2022) remains inside our unexplained component. Linked administrative data — unemployment insurance, tax, and pension records — would allow the natural extensions: firm fixed effects, event studies of motherhood, and actual work histories. Opening those records to research under stable protocols is, in itself, one of the paper's implications.
+
+---
+
+## References
+
+Albrecht, J., A. Björklund and S. Vroman. (2003). "Is There a Glass Ceiling in Sweden?", *Journal of Labor Economics*, Vol. 21(1).
+
+Arulampalam, W., A. Booth and M. Bryan. (2007). "Is There a Glass Ceiling over Europe? Exploring the Gender Pay Gap across the Wage Distribution", *ILR Review*, Vol. 60(2).
+
+Baker, M., Y. Halberstam, K. Kroft, A. Mas and D. Messacar. (2023). "Pay Transparency and the Gender Gap", *American Economic Journal: Applied Economics*, Vol. 15(2).
+
+Bennedsen, M., E. Simintzi, M. Tsoutsoura and D. Wolfenzon. (2022). "Do Firms Respond to Gender Pay Gap Transparency?", *Journal of Finance*, Vol. 77(4).
+
+Berniell, I., L. Berniell, D. de la Mata, M. Edo and M. Marchionni. (2023). "Motherhood and Flexible Jobs: Evidence from Latin American Countries", *World Development*, Vol. 167.
+
+Bertrand, M. (2011). "New Perspectives on Gender", in O. Ashenfelter and D. Card (eds.), *Handbook of Labor Economics*, Vol. 4B. Elsevier.
+
+Bertrand, M., C. Goldin and L. Katz. (2010). "Dynamics of the Gender Gap for Young Professionals in the Financial and Corporate Sectors", *American Economic Journal: Applied Economics*, Vol. 2(3).
+
+Blau, F. and L. Kahn. (2017). "The Gender Wage Gap: Extent, Trends, and Explanations", *Journal of Economic Literature*, Vol. 55(3); 789-865.
+
+Blinder, A. (1973). "Wage Discrimination: Reduced Form and Structural Estimates", *Journal of Human Resources*, Vol. 8(4); 436-455.
+
+Bolotnyy, V. and N. Emanuel. (2022). "Why Do Women Earn Less Than Men? Evidence from Bus and Train Operators", *Journal of Labor Economics*, Vol. 40(2).
+
+Buser, T., M. Niederle and H. Oosterbeek. (2014). "Gender, Competitiveness, and Career Choices", *Quarterly Journal of Economics*, Vol. 129(3).
+
+Card, D., A. R. Cardoso and P. Kline. (2016). "Bargaining, Sorting, and the Gender Wage Gap: Quantifying the Impact of Firms on the Relative Pay of Women", *Quarterly Journal of Economics*, Vol. 131(2).
+
+Cortés, P. and J. Pan. (2023). "Children and the Remaining Gender Gaps in the Labor Market", *Journal of Economic Literature*, Vol. 61(4).
+
+Croson, R. and U. Gneezy. (2009). "Gender Differences in Preferences", *Journal of Economic Literature*, Vol. 47(2); 448-474.
+
+Cullen, Z. (2024). "Is Pay Transparency Good?", *Journal of Economic Perspectives*, Vol. 38(1).
+
+Exley, C., M. Niederle and L. Vesterlund. (2020). "Knowing When to Ask: The Cost of Leaning In", *Journal of Political Economy*, Vol. 128(3).
+
+Goldin, C. (2014). "A Grand Gender Convergence: Its Last Chapter", *American Economic Review*, Vol. 104(4); 1091-1119.
+
+Goldin, C. (2021). *Career and Family: Women's Century-Long Journey toward Equity*. Princeton University Press.
+
+Heckman, J. (1979). "Sample Selection Bias as a Specification Error", *Econometrica*, Vol. 47(1); 153-161.
+
+Heckman, J., J. Stixrud and S. Urzúa. (2006). "The Effects of Cognitive and Noncognitive Abilities on Labor Market Outcomes and Social Behavior", *Journal of Labor Economics*, Vol. 24(3).
+
+Kleven, H., C. Landais and G. Leite-Mariante. (2025). "The Child Penalty Atlas", *Review of Economic Studies*.
+
+Kleven, H., C. Landais and J. E. Søgaard. (2019). "Children and Gender Inequality: Evidence from Denmark", *American Economic Journal: Applied Economics*, Vol. 11(4); 181-209.
+
+Leibbrandt, A. and J. List. (2015). "Do Women Avoid Salary Negotiations? Evidence from a Large-Scale Natural Field Experiment", *Management Science*, Vol. 61(9).
+
+Martínez, C. and M. Perticará. (2017). "Childcare Effects on Maternal Employment: Evidence from Chile", *Journal of Development Economics*, Vol. 126.
+
+Mincer, J. (1974). *Schooling, Experience, and Earnings*. National Bureau of Economic Research.
+
+Mueller, G. and E. Plug. (2006). "Estimating the Effect of Personality on Male and Female Earnings", *ILR Review*, Vol. 60(1); 3-22.
+
+Neumark, D. (1988). "Employers' Discriminatory Behavior and the Estimation of Wage Discrimination", *Journal of Human Resources*, Vol. 23(3); 279-295.
+
+Niederle, M. and L. Vesterlund. (2007). "Do Women Shy Away from Competition? Do Men Compete Too Much?", *Quarterly Journal of Economics*, Vol. 122(3); 1067-1101.
+
+Ñopo, H. (2006). "The Gender Wage Gap in Chile 1992-2003 from a Matching Comparisons Perspective". Inter-American Development Bank.
+
+Ñopo, H. (2008). "Matching as a Tool to Decompose Wage Gaps", *Review of Economics and Statistics*, Vol. 90(2); 290-299.
+
+Oaxaca, R. (1973). "Male-Female Wage Differentials in Urban Labor Markets", *International Economic Review*, Vol. 14(3); 693-709.
+
+Parada-Contzen, M. and F. Jara. (2025). "Gender Wage Gap among the Educated: Evidence from Fields of Study in Chile", *Humanities and Social Sciences Communications*, Vol. 12.
+
+Patnaik, A. (2019). "Reserving Time for Daddy: The Consequences of Fathers' Quotas", *Journal of Labor Economics*, Vol. 37(4).
+
+Perticará, M. and I. Bueno. (2009). "A New Approach to Gender Wage Gaps in Chile", *CEPAL Review*, Vol. 99.
+
+Petersen, T. and L. Morgan. (1995). "Separate and Unequal: Occupation-Establishment Sex Segregation and the Gender Wage Gap", *American Journal of Sociology*, Vol. 101(2); 329-365.
+
+Prada, M. F., G. Rucci and S. Urzúa. (2015). "The Effect of Mandated Child Care on Female Wages in Chile", NBER Working Paper No. 21080.
+
+Roussille, N. (2024). "The Central Role of the Ask Gap in Gender Pay Inequality", *Quarterly Journal of Economics*, Vol. 139(3).
+
+Sánchez, R., J. Finot and M. G. Villena. (2022). "Gender Wage Gap and Firm Market Power: Evidence from Chile", *Applied Economics*, Vol. 54(18); 2109-2121.
+
+---
+
+*Replication code and derived data are available in a public repository; all microdata are freely downloadable from official sources (INE; Ministry of Social Development, Observatorio Social).*
