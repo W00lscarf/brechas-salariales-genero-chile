@@ -30,7 +30,9 @@ def latex_a_omml(latex):
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 MD = os.path.join(AQUI, 'manuscrito_estudios_economia.md')
-OUT = os.path.join(AQUI, 'manuscrito_estudios_economia.docx')
+ANON = '--anon' in sys.argv
+OUT = os.path.join(AQUI, 'manuscrito_estudios_economia_anonimo.docx' if ANON
+                   else 'manuscrito_estudios_economia.docx')
 DIR_PAPER = os.path.dirname(AQUI)  # articulo/
 
 doc = Document()
@@ -125,6 +127,11 @@ def agregar_tabla(filas):
 
 # ---------------- Parseo ----------------
 lineas = open(MD, encoding='utf-8').read().split('\n')
+if ANON:
+    lineas = [l for l in lineas if not l.startswith('@@AUTOR@@')]
+    idx = next(i for i, l in enumerate(lineas) if l.startswith('# '))
+    lineas.insert(idx + 1, '')
+    lineas.insert(idx + 2, '@@AUTOR@@*(Author information withheld for double-blind peer review)*')
 n = len(lineas)
 i = 0
 en_refs = False
@@ -273,6 +280,11 @@ while i < n:
     else:
         parrafo(txt)
 
+cp = doc.core_properties
+cp.author = '' if ANON else 'Nicolás Guerrero Herrera'
+cp.last_modified_by = ''
+cp.title = ('Same occupation, different pay: decomposing the gender wage gap '
+            'within 4-digit occupations in Chile')
 doc.save(OUT)
 
 # python-docx genera <w:zoom/> sin el atributo w:percent (obligatorio en el

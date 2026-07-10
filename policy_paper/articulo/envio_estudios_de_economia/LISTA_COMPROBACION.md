@@ -4,7 +4,8 @@
 
 | Archivo | Descripción |
 |---|---|
-| `manuscrito_estudios_economia.docx` | **El archivo de envío** (Word, inglés, doble espacio, márgenes de 3 cm) |
+| `manuscrito_estudios_economia.docx` | **El archivo de envío** (Word, inglés, doble espacio, márgenes de 3 cm, 5 ecuaciones nativas) |
+| `manuscrito_estudios_economia_anonimo.docx` | **Versión anonimizada** para revisión ciega: sin autor en la portada, metadatos del archivo limpios, cero cadenas identificadoras (verificado). Se regenera con `python generar_docx_ee.py --anon` |
 | `manuscrito_estudios_economia.md` | Fuente (se regenera el .docx con `python generar_docx_ee.py`) |
 | `generar_docx_ee.py` | Conversor Markdown → Word |
 
