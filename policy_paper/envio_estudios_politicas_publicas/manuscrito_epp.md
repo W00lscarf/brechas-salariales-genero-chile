@@ -103,7 +103,7 @@ Seis líneas de trabajo definen el estado del arte local; conviene explicitar qu
 
 **Maternidad con diseño de eventos (Berniell et al., 2023).** Para Chile y otros países de la región documentan caídas fuertes y persistentes del empleo, las horas y los ingresos de las madres tras el nacimiento del primer hijo, padres esencialmente inafectados y desplazamiento hacia la informalidad. Nuestros coeficientes transversales de mujer × hijos son la huella estática de ese proceso: coherentes con esa evidencia causal, pero no un sustituto de ella.
 
-**Campos de estudio (Parada-Contzen y Jara, 2025).** Para trabajadores con educación superior documentan brechas de 17-25% con un componente mayoritariamente no explicado, heterogéneo por campo de estudio. El campo capta dimensiones de capital humano que la ocupación no absorbe por completo; integrar área de formación (disponible en CASEN) y ocupación granular en una misma especificación es otra extensión directa.
+**Campos de estudio (Parada-Contzen y Jara, 2025).** Para trabajadores con educación superior documentan brechas de 17-25% antes de la pandemia (con reducciones de 2-5 puntos porcentuales después), un componente no explicado creciente y efectos heterogéneos por campo de estudio. El campo capta dimensiones de capital humano que la ocupación no absorbe por completo; integrar área de formación (disponible en CASEN) y ocupación granular en una misma especificación es otra extensión directa.
 
 ---
 
@@ -420,7 +420,7 @@ Nota: Barras oscuras: especificaciones con ocupación a 4 dígitos. Fuente: elab
 
 El 72.6% que la especificación máxima deja sin explicar no es una caja negra ni un sinónimo automático de "preferencias inobservables". La literatura internacional —con diseños experimentales y datos administrativos que Chile no tiene— ha identificado y cuantificado sus componentes principales:
 
-**8.1 La brecha de peticiones (*ask gap*).** Roussille (2024) documenta, en una plataforma de contratación donde los candidatos publican su pretensión salarial, que las mujeres piden en torno a 3% menos por el mismo perfil — y esa diferencia de *petición* da cuenta de prácticamente toda la brecha en las ofertas finales. El hallazgo de política es notable: cuando la plataforma comenzó a mostrar la mediana salarial de mercado para cada perfil, la brecha de peticiones (y con ella la de ofertas) prácticamente desapareció. En la misma línea, Leibbrandt y List (2015) muestran que cuando la negociabilidad del salario es ambigua los hombres negocian más, y que explicitar "salario negociable" elimina la diferencia. Exley et al. (2020) advierten el reverso: empujar a las mujeres a negociar más no siempre les conviene, porque el castigo por pedir difiere según el sexo — el problema es el *entorno* de negociación, no una deficiencia femenina que corregir.
+**8.1 La brecha de peticiones (*ask gap*).** Roussille (2024) documenta, en una plataforma de contratación donde los candidatos publican su pretensión salarial, que las mujeres piden 2.9% menos por el mismo perfil — y esa diferencia de *petición* da cuenta de prácticamente toda la brecha en las ofertas finales. El hallazgo de política es notable: cuando la plataforma comenzó a mostrar la mediana salarial de mercado para cada perfil, la brecha de peticiones (y con ella la de ofertas) prácticamente desapareció. En la misma línea, Leibbrandt y List (2015) muestran que cuando la negociabilidad del salario es ambigua los hombres negocian más, y que explicitar "salario negociable" elimina la diferencia. Exley et al. (2020) advierten el reverso: empujar a las mujeres a negociar más no siempre les conviene, porque el castigo por pedir difiere según el sexo — el problema es el *entorno* de negociación, no una deficiencia femenina que corregir.
 
 **8.2 Sobretiempo y flexibilidad: el mecanismo dentro de la ocupación.** Bolotnyy y Emanuel (2022) estudian el caso más limpio disponible: operadores de buses y trenes de Boston — mismo cargo, mismo sindicato, misma tarifa horaria por contrato. Los hombres terminan ganando más porque aceptan más sobretiempo (especialmente el de última hora, mejor pagado) y las mujeres eligen configuraciones horarias compatibles con el cuidado. Es la versión micro del diagnóstico de Goldin (2014) sobre la no-linealidad de los retornos a las horas. Nuestros propios datos muestran la huella de ese mecanismo: las horas son el mayor factor observable de la descomposición (23.3%), y el único caso favorable a las mujeres que sobrevive FDR (conductoras de taxi, en salario por hora) refleja precisamente jornadas masculinas extremas que diluyen el precio-hora.
 
@@ -529,7 +529,7 @@ Organización Internacional del Trabajo (2018), *Informe mundial sobre salarios 
 
 Organización para la Cooperación y el Desarrollo Económicos (s. f.), *Gender wage gap*, indicador. En línea: «https://data.oecd.org» (consulta: julio 2026).
 
-Parada-Contzen, M. y Jara, F. (2025), "Gender Wage Gap among the Educated: Evidence from Fields of Study in Chile", *Humanities and Social Sciences Communications*, 12.
+Parada-Contzen, M. y Jara, F. (2025), "Gender Wage Gap among the Educated: Evidence from Fields of Study in Chile", *Humanities and Social Sciences Communications*, 12: 961. DOI: 10.1057/s41599-025-05312-x.
 
 Patnaik, A. (2019), "Reserving Time for Daddy: The Consequences of Fathers' Quotas", *Journal of Labor Economics*, 37(4).
 
@@ -541,7 +541,7 @@ Phelps, E. (1972), "The Statistical Theory of Racism and Sexism", *American Econ
 
 Prada, M. F., Rucci, G. y Urzúa, S. (2015), "The Effect of Mandated Child Care on Female Wages in Chile", NBER Working Paper 21080. Cambridge, MA: National Bureau of Economic Research.
 
-Roussille, N. (2024), "The Central Role of the Ask Gap in Gender Pay Inequality", *Quarterly Journal of Economics*, 139(3).
+Roussille, N. (2024), "The Role of the Ask Gap in Gender Pay Inequality", *Quarterly Journal of Economics*, 139(3): 1557-1610. DOI: 10.1093/qje/qjae004.
 
 Sánchez, R., Finot, J. y Villena, M. G. (2022), "Gender Wage Gap and Firm Market Power: Evidence from Chile", *Applied Economics*, 54(18): 2109-2121. DOI: 10.1080/00036846.2021.1985070.
 

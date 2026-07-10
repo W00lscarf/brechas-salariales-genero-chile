@@ -109,7 +109,7 @@ Six strands of work define the local state of the art; it is worth making explic
 
 **Motherhood with event-study designs (Berniell et al., 2023).** For Chile and other countries in the region they document sharp and persistent declines in mothers' employment, hours, and earnings after the first birth, essentially unaffected fathers, and displacement toward informality. Our cross-sectional female × children coefficients are the static imprint of that process: consistent with that causal evidence, but not a substitute for it.
 
-**Fields of study (Parada-Contzen & Jara, 2025).** For workers with higher education they document gaps of 17-25% with a mostly unexplained component, heterogeneous by field of study. Field of study captures human capital dimensions that occupation does not fully absorb; integrating field of study (available in CASEN) and granular occupation in a single specification is another direct extension.
+**Fields of study (Parada-Contzen & Jara, 2025).** For workers with higher education they document gaps of 17-25% before the pandemic (falling 2-5 percentage points afterwards), a growing unexplained component, and heterogeneous effects across fields of study. Field of study captures human capital dimensions that occupation does not fully absorb; integrating field of study (available in CASEN) and granular occupation in a single specification is another direct extension.
 
 ---
 
@@ -426,7 +426,7 @@ Three readings follow from Table 9. First, **the convergence of methods**: Δ0 w
 
 The 72.6% that the maximal specification leaves unexplained is neither a black box nor an automatic synonym for "unobservable preferences." The international literature — with experimental designs and administrative data that Chile lacks — has identified and quantified its main components:
 
-**8.1 The ask gap.** Roussille (2024) documents, on a hiring platform where candidates post their desired salary, that women ask for about 3% less for the same profile — and that difference in *asks* accounts for essentially the entire gap in final offers. The policy finding is remarkable: when the platform began displaying the market median salary for each profile, the ask gap (and with it the offer gap) essentially disappeared. In the same vein, Leibbrandt and List (2015) show that when the negotiability of pay is ambiguous men negotiate more, and that stating "salary negotiable" eliminates the difference. Exley et al. (2020) warn of the flip side: pushing women to negotiate more does not always benefit them, because the penalty for asking differs by sex — the problem is the negotiation *environment*, not a female deficiency to be corrected.
+**8.1 The ask gap.** Roussille (2024) documents, on a hiring platform where candidates post their desired salary, that women ask for 2.9% less for the same profile — and that difference in *asks* accounts for essentially the entire gap in final offers. The policy finding is remarkable: when the platform began displaying the market median salary for each profile, the ask gap (and with it the offer gap) essentially disappeared. In the same vein, Leibbrandt and List (2015) show that when the negotiability of pay is ambiguous men negotiate more, and that stating "salary negotiable" eliminates the difference. Exley et al. (2020) warn of the flip side: pushing women to negotiate more does not always benefit them, because the penalty for asking differs by sex — the problem is the negotiation *environment*, not a female deficiency to be corrected.
 
 **8.2 Overtime and flexibility: the within-occupation mechanism.** Bolotnyy and Emanuel (2022) study the cleanest available case: bus and train operators in Boston — same job, same union, same contractual hourly rate. Men end up earning more because they take more overtime (especially last-minute overtime, which pays better) while women choose schedules compatible with care. It is the micro version of Goldin's (2014) diagnosis on the nonlinearity of returns to hours. Our own data show the imprint of that mechanism: hours are the largest observable factor in the decomposition (23.3%), and the only female-favorable case that survives FDR (taxi drivers, in hourly wages) reflects precisely extreme male schedules that dilute the hourly rate.
 
@@ -489,13 +489,13 @@ The 72.6% that the maximal specification leaves unexplained is neither a black b
 - Ñopo, H. (2006). *The gender wage gap in Chile 1992-2003 from a matching comparisons perspective*. Inter-American Development Bank.
 - Ñopo, H. (2008). Matching as a tool to decompose wage gaps. *Review of Economics and Statistics*, *90*(2).
 - Oaxaca, R. (1973). Male-female wage differentials in urban labor markets. *International Economic Review*, *14*(3).
-- Parada-Contzen, M., & Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*.
+- Parada-Contzen, M., & Jara, F. (2025). Gender wage gap among the educated: Evidence from fields of study in Chile. *Humanities and Social Sciences Communications*, *12*, 961. https://doi.org/10.1057/s41599-025-05312-x
 - Patnaik, A. (2019). Reserving time for daddy: The consequences of fathers' quotas. *Journal of Labor Economics*, *37*(4).
 - Perticará, M., & Bueno, I. (2009). A new approach to gender wage gaps in Chile. *CEPAL Review*, *99*.
 - Petersen, T., & Morgan, L. (1995). Separate and unequal: Occupation-establishment sex segregation and the gender wage gap. *American Journal of Sociology*, *101*(2).
 - Phelps, E. (1972). The statistical theory of racism and sexism. *American Economic Review*, *62*(4).
 - Prada, M. F., Rucci, G., & Urzúa, S. (2015). *The effect of mandated child care on female wages in Chile* (NBER Working Paper No. 21080). National Bureau of Economic Research.
-- Roussille, N. (2024). The central role of the ask gap in gender pay inequality. *Quarterly Journal of Economics*, *139*(3).
+- Roussille, N. (2024). The role of the ask gap in gender pay inequality. *Quarterly Journal of Economics*, *139*(3), 1557-1610. https://doi.org/10.1093/qje/qjae004
 - Sánchez, R., Finot, J., & Villena, M. G. (2022). Gender wage gap and firm market power: Evidence from Chile. *Applied Economics*, *54*(18), 2109-2121.
 
 **Official sources and legislation**
