@@ -66,25 +66,41 @@ CASEN has a complex sampling design. All estimates use the official expansion fa
 
 The baseline is a weighted least squares Mincer equation:
 
-ln w_i = α + δ·Female_i + x_i'β + θ_o(i) + ε_i,  (1)
+$$\ln w_i = \alpha + \delta F_i + x_i'\beta + \theta_{o(i)} + \varepsilon_i$$ (1)
 
-where x_i contains age, age squared, educational level (five categories), weekly hours, and wave fixed effects, and θ_o(i) denotes occupation fixed effects. We estimate (1) twice, holding everything constant except the occupational classification: 1-digit ISCO (roughly nine categories, the maximum available in standard employment surveys) versus 4-digit ISCO (354 categories). The difference between the two estimates of δ isolates the pure contribution of occupational granularity. The adjusted gap in percentage terms is 100·(exp(δ)−1).
+where F_i is an indicator for women, x_i contains age, age squared, educational level (five categories), weekly hours, and wave fixed effects, and θ_o(i) denotes occupation fixed effects. We estimate (1) twice, holding everything constant except the occupational classification: 1-digit ISCO (roughly nine categories, the maximum available in standard employment surveys) versus 4-digit ISCO (354 categories). The difference between the two estimates of δ isolates the pure contribution of occupational granularity. The adjusted gap in percentage terms is 100·(exp(δ)−1).
 
 ### 4.2 Decomposition
 
-We decompose the total log gap with the Oaxaca (1973)-Blinder (1973) procedure, grouping detailed contributions into variable families (hours, occupation, education, age, family structure, formality, year) and, following Neumark (1988), reporting male, female, and pooled reference coefficient vectors to address the index number problem. Because high-dimensional categorical variables make detailed decompositions sensitive to the choice of base categories, family-level percentages should be read as orders of magnitude.
+We decompose the total log gap with the Oaxaca (1973)-Blinder (1973) procedure:
+
+$$\Delta \equiv \overline{\ln w}_m - \overline{\ln w}_f = (\bar{x}_m - \bar{x}_f)'\hat{\beta}_m + \bar{x}_f'(\hat{\beta}_m - \hat{\beta}_f)$$ (2)
+
+where the first term is the component explained by average characteristics and the second the unexplained component. We group detailed contributions into variable families (hours, occupation, education, age, family structure, formality, year) and, following Neumark (1988), report male, female, and pooled reference coefficient vectors to address the index number problem. Because high-dimensional categorical variables make detailed decompositions sensitive to the choice of base categories, family-level percentages should be read as orders of magnitude.
 
 ### 4.3 Occupation-specific gaps and multiple testing
 
-To estimate a sex effect specific to each occupation without fitting 227 underpowered regressions, we estimate a single model interacting Female with occupation dummies, with common controls estimated on the full sample. The occupation-specific gap is recovered as a linear combination of coefficients, with variance from the cluster-robust covariance matrix. With 227 simultaneous tests, approximately 11 false positives are expected at p < .05; we therefore report Benjamini-Hochberg false-discovery-rate and Bonferroni corrections.
+To estimate a sex effect specific to each occupation without fitting 227 underpowered regressions, we estimate a single model interacting the female indicator with occupation dummies, with common controls estimated on the full sample:
+
+$$\ln w_i = \alpha + \sum_{o} (\delta + \gamma_o) F_i D_{io} + x_i'\beta + \theta_{o(i)} + \varepsilon_i$$ (3)
+
+where D_io indicates occupation o. The occupation-specific gap δ + γ_o is recovered as a linear combination of coefficients, with variance from the cluster-robust covariance matrix. With 227 simultaneous tests, approximately 11 false positives are expected at p < .05; we therefore report Benjamini-Hochberg false-discovery-rate and Bonferroni corrections.
 
 ### 4.4 Matching decomposition with common support
 
-Following Ñopo (2008), we decompose the gap by exact matching on characteristic cells: Δ = Δ0 + ΔX + ΔM + ΔF, where Δ0 is the unexplained difference between comparable men and women within the common support (reweighting the male cell distribution to the female one), ΔX captures distribution differences within the support, and ΔM, ΔF the parts attributable to individuals without an exact counterpart of the other sex. The method imposes no functional form and does not extrapolate outside the support; additivity is verified exactly. Inference uses a 500-replication bootstrap.
+Following Ñopo (2008), we decompose the gap by exact matching on characteristic cells:
+
+$$\Delta = \Delta_0 + \Delta_X + \Delta_M + \Delta_F$$ (4)
+
+where Δ0 is the unexplained difference between comparable men and women within the common support (reweighting the male cell distribution to the female one), ΔX captures distribution differences within the support, and ΔM, ΔF the parts attributable to individuals without an exact counterpart of the other sex. The method imposes no functional form and does not extrapolate outside the support; additivity is verified exactly. Inference uses a 500-replication bootstrap.
 
 ### 4.5 Selection into employment
 
-Because wages are observed only for workers and participation differs sharply by sex, we implement the Heckman (1979) two-step correction. The first stage is a participation probit on the 25-64 population with exclusion restrictions that plausibly shift participation but not conditional wages: presence of children, marital status, non-labor household income per capita, and their interactions with sex. The second stage adds the inverse Mills ratio to equation (1). Confidence intervals bootstrap both stages jointly (120 replications). As in any Heckman application, validity rests on the exclusion restrictions; we read the result as a robustness bound rather than causal identification.
+Because wages are observed only for workers and participation differs sharply by sex, we implement the Heckman (1979) two-step correction. The first stage is a participation probit on the 25-64 population with exclusion restrictions that plausibly shift participation but not conditional wages: presence of children, marital status, non-labor household income per capita, and their interactions with sex. The second stage augments equation (1) with the inverse Mills ratio:
+
+$$\ln w_i = \alpha + \delta F_i + x_i'\beta + \theta_{o(i)} + \rho \hat{\lambda}_i + \varepsilon_i, \quad \hat{\lambda}_i = \frac{\phi(z_i'\hat{\gamma})}{\Phi(z_i'\hat{\gamma})}$$ (5)
+
+where z_i collects the participation determinants including the exclusion restrictions. Confidence intervals bootstrap both stages jointly (120 replications). As in any Heckman application, validity rests on the exclusion restrictions; we read the result as a robustness bound rather than causal identification.
 
 ---
 

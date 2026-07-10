@@ -15,6 +15,18 @@ from docx import Document
 from docx.shared import Pt, Cm, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_LINE_SPACING
 from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.text import WD_TAB_ALIGNMENT
+import latex2mathml.converter
+from lxml import etree
+
+_XSL_OMML = etree.XSLT(etree.parse(
+    r'C:\Program Files\Microsoft Office\root\Office16\MML2OMML.XSL'))
+
+def latex_a_omml(latex):
+    """Convierte LaTeX a un elemento OMML (ecuacion nativa de Word)."""
+    mathml = latex2mathml.converter.convert(latex)
+    omml = _XSL_OMML(etree.fromstring(mathml))
+    return omml.getroot()
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 MD = os.path.join(AQUI, 'manuscrito_estudios_economia.md')
@@ -196,6 +208,22 @@ while i < n:
             parrafo(lineas[i].strip(), tamano=10, antes=4, despues=10,
                     alineacion=WD_ALIGN_PARAGRAPH.JUSTIFY)
             i += 1
+        continue
+
+    # Ecuacion display: $$latex$$ (N) -> ecuacion nativa OMML centrada con numero
+    m_eq = re.match(r'^\$\$(.+)\$\$\s*\((\d+)\)\s*$', linea.strip())
+    if m_eq:
+        latex, num = m_eq.group(1).strip(), m_eq.group(2)
+        p = doc.add_paragraph()
+        pf = p.paragraph_format
+        pf.tab_stops.add_tab_stop(Cm(7.5), WD_TAB_ALIGNMENT.CENTER)
+        pf.tab_stops.add_tab_stop(Cm(15.0), WD_TAB_ALIGNMENT.RIGHT)
+        pf.space_before = Pt(6)
+        pf.space_after = Pt(6)
+        p.add_run('\t')
+        p._p.append(latex_a_omml(latex))
+        p.add_run(f'\t({num})')
+        i += 1
         continue
 
     # Bloque de autor (marcador @@AUTOR@@): centrado, bajo los títulos
